@@ -1,0 +1,57 @@
+@using ToSic.Eav.Data
+@using ToSic.Eav.Interfaces
+@using ToSic.Eav.Persistence.File
+@using ToSic.Eav.Enums
+@using ToSic.Eav.Logging.Simple
+@{
+    var target = App.PhysicalPath + "\\export\\";
+
+    // Important: this uses very internal, secret APIs which are prone to change
+    // Only use for this, don't try to immitate this in your code
+    // as it will stop working some time in the future
+    var log = new Log("Exp.Temp");
+    var appMan = new ToSic.Eav.Apps.AppRuntime(App.AppId, log);
+    var types = appMan.Package.ContentTypes;
+
+    // find only the ones we'll export
+    var expCts = types
+        .Where(t => { 
+            var ct = (t as ContentType);
+            return ct.Scope == "System" && !ct.AlwaysShareConfiguration;
+        })
+        .ToList();
+
+    IContentType selected = null;
+    string message = "";
+    // save step - again using very internal API
+    var fileSysLoader = new FileSystemLoader(target, Repositories.TestFiles, true, log);
+    if(!String.IsNullOrEmpty(Request.QueryString["Scope"])) {
+        selected = expCts.FirstOrDefault(ct => 
+            ct.Scope == Request.QueryString["Scope"] 
+            && ct.Name == Request.QueryString["Name"]
+        );
+        if(selected != null){
+            fileSysLoader.SaveContentType(selected);
+            message = "exported '" + selected.Name + "'";
+        }
+    }
+
+}
+
+<div>
+    <h3>Stats</h3>
+    Type Count: @types.Count() <br/>
+    Export Count: @expCts.Count() <br/>
+    Selected: @selected <br/>
+    Target: @target <br/>
+    Message: @message <br/>
+</div>
+<br/>
+<div>
+    <h3>List</h3>
+    <ol>
+        @foreach(var t in expCts){
+            <li>@t.Name - <a href='@Link.To(parameters:"export=1&scope=" + t.Scope + "&name=" + t.Name)'>export</a></li>
+        }
+    </ol>
+</div>
