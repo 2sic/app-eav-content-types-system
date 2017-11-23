@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.09.00" ExportDate="2017-11-22T10:03:00.1125249+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.09.00" ExportDate="2017-11-23T15:21:22.5431642+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -179,8 +179,53 @@
     </AttributeSet>
     <AttributeSet StaticName="@Entity" Name="@Entity" Description="Entity UI Definitions" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="true" />
-        <Attribute StaticName="EntityType" Type="String" IsTitle="false" />
+        <Attribute StaticName="EntityType" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e061de25-75e8-4408-bf19-397b72347fca" KeyNumber="11031">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Entity Type" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The type name of the entity to select. If empty, will return all entities (not usually a good idea). &lt;br/&gt;&lt;br/&gt;If you are using a query, this can still be usefull if you want to enable the users to create new items, as this type would be used.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="False" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3f7376b2-03a6-42d0-bd21-7fc16c8e4d48" KeyNumber="11031" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="5ba8c909-5716-45a0-8575-616f332655c5" KeyNumber="11031">
+            <Value Key="RowCount" Value="0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupUiFeatures" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7366e8e3-457b-4a60-a6a9-ebc81251585c" KeyNumber="11076">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="UI Features of the Entity Picker" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="1ad9b729-cf36-4f0f-8eb1-8eda7186a795" KeyNumber="11076">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9cf370a4-e906-4229-acdb-b7cb2a7ef602" KeyNumber="11030">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Multiple Items" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Allow picking multiple items - otherwise the user can only pick 1 item.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="False" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="aeafaa93-8956-4b2a-bd2e-947eab052c66" KeyNumber="11030" />
+        </Attribute>
         <Attribute StaticName="EnableEdit" Type="Boolean" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b5c1ac93-4599-4ac7-afe5-a41a8bf3fdc5" KeyNumber="11032">
             <Value Key="DefaultValue" Value="true" Type="String" />
@@ -245,6 +290,82 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="17952c33-ea5b-4edc-8d9c-6b3bc26bb786" KeyNumber="11036" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@entity-query" Name="@entity-query" Description="entity-picker with query configuration" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Query" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fbebbad2-659c-46bd-adde-e553421ac9cc" KeyNumber="11083">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Query" Type="String" />
+            <Value Key="Notes" Value="Pick the query which would be used to prepare the items a user can select." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3439b79c-222e-4fef-8fc1-1267c6233eb2" KeyNumber="11083" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0db25a10-469d-46d8-a7bf-33254714fe5b" KeyNumber="11083">
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UrlParameters" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0981c811-b101-424e-a2af-fc3d89796810" KeyNumber="11078">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Parameters" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If your query needs additional parameters in the URL, you can specify them here, in the same syntax as a url. For advanced scenarios you can also use field-names of this content-item to use as a query parameter.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Category=27&lt;/li&gt;&lt;li&gt;Category=[Category]&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="cdc65456-1b61-4741-8bb7-6064ce1cff19" KeyNumber="11078" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3f8eb44f-334b-4d07-b11c-2530a76bcb8d" KeyNumber="11078">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@entity-query" Name="@entity-query" Description="entity-picker with query configuration" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Query" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fbebbad2-659c-46bd-adde-e553421ac9cc" KeyNumber="11083">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Query" Type="String" />
+            <Value Key="Notes" Value="Pick the query which would be used to prepare the items a user can select." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3439b79c-222e-4fef-8fc1-1267c6233eb2" KeyNumber="11083" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0db25a10-469d-46d8-a7bf-33254714fe5b" KeyNumber="11083">
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UrlParameters" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0981c811-b101-424e-a2af-fc3d89796810" KeyNumber="11078">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Parameters" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If your query needs additional parameters in the URL, you can specify them here, in the same syntax as a url. For advanced scenarios you can also use field-names of this content-item to use as a query parameter.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Category=27&lt;/li&gt;&lt;li&gt;Category=[Category]&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="cdc65456-1b61-4741-8bb7-6064ce1cff19" KeyNumber="11078" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3f8eb44f-334b-4d07-b11c-2530a76bcb8d" KeyNumber="11078">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -542,6 +663,185 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="@string-dropdown" Name="@string-dropdown" Description="Dropdown string-input configuration" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="DropdownValues" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5bd40264-ef9e-4eab-b093-b3b620e8ac63" KeyNumber="11064">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Example&#xA;Example showing this text, but storing the value 27:27" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Values" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Type in the values, one per line and separate keys:values with a &quot;:&quot;. &lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1&lt;/strong&gt;&lt;br /&gt;&#xA;(none):&#xA;&lt;br /&gt;&#xA;Left:l&#xA;&lt;br /&gt;&#xA;Right:r&#xA;&lt;br /&gt;&#xA;Top:t&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;br /&gt;&#xA;MIT License:MIT&lt;br /&gt;&#xA;GUN Licnese:GNU&lt;br /&gt;&#xA;GPL-3 with mentioning of Author:GPL-3-BY&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="ef9d3d36-afdd-4994-be14-701d42f175c3" KeyNumber="11064" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ad7b7c85-4eee-400e-beda-a30befb455e4" KeyNumber="11064">
+            <Value Key="RowCount" Value="12" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="148087de-0e4a-4003-9909-ea4c548cfa74" KeyNumber="11070">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="false" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Enable Free Text" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Allow users to type other things than are in the drop-down. Two common situations for this: &lt;ul&gt;&lt;li&gt;situations where the drop-down will suggest typical values, but others are also possible&lt;/li&gt; &lt;li&gt;Situations where you need tokens like [Parameter:Category] which will later be resolved to a real value&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="8399706a-0a6c-4f58-b816-04a2272295f3" KeyNumber="11070" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@string-dropdown-query" Name="@string-dropdown-query" Description="Dropdown which receives data from a query" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Query" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ef0df2c9-dd1f-4ac9-b8db-e5edd3edc3e3" KeyNumber="11084">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Query" Type="String" />
+            <Value Key="Notes" Value="Pick the query which would be used to prepare the items a user can select." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="595aa647-1ee4-4c5e-a22c-0cb8de96b66a" KeyNumber="11084" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="eb69a6f3-ebe7-44c7-a3fd-662bf06bce52" KeyNumber="11084">
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UrlParameters" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="051c2733-e788-4abf-8b70-b2a4b3bc92a6" KeyNumber="11080">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Parameters" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If your query needs additional parameters in the URL, you can specify them here, in the same syntax as a url. For advanced scenarios you can also use field-names of this content-item to use as a query parameter.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Category=27&lt;/li&gt;&lt;li&gt;Category=[Category]&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="aa200ed5-1ae1-43a9-a27f-71795abe2095" KeyNumber="11080" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ba52761a-4821-4852-9d5d-a4a081c311d7" KeyNumber="11080">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Value" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d872b7c1-8902-4794-8bc1-65eb86855a20" KeyNumber="11081">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Value Field" Type="String" />
+            <Value Key="Notes" Value="The field of the items which will be stored as a value." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="18df3c8c-e0c3-4245-a21d-54282e4f4d0b" KeyNumber="11081" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="9066a099-8063-4b0c-b386-2be00c737a57" KeyNumber="11081">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Label" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5416a76a-99b7-4894-87c5-57e7b2834bc1" KeyNumber="11082">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Label" Type="String" />
+            <Value Key="Notes" Value="The field which will be shown in the dropdown as the visible field for the user to select." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6088d6bb-0e91-4c32-9fe0-3e17bf458e74" KeyNumber="11082" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3c39c80a-7d41-41c4-85c4-a622b546dbba" KeyNumber="11082">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@string-dropdown-query" Name="@string-dropdown-query" Description="Dropdown which receives data from a query" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Query" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ef0df2c9-dd1f-4ac9-b8db-e5edd3edc3e3" KeyNumber="11084">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Query" Type="String" />
+            <Value Key="Notes" Value="Pick the query which would be used to prepare the items a user can select." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="595aa647-1ee4-4c5e-a22c-0cb8de96b66a" KeyNumber="11084" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="eb69a6f3-ebe7-44c7-a3fd-662bf06bce52" KeyNumber="11084">
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UrlParameters" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="051c2733-e788-4abf-8b70-b2a4b3bc92a6" KeyNumber="11080">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Parameters" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If your query needs additional parameters in the URL, you can specify them here, in the same syntax as a url. For advanced scenarios you can also use field-names of this content-item to use as a query parameter.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Category=27&lt;/li&gt;&lt;li&gt;Category=[Category]&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="aa200ed5-1ae1-43a9-a27f-71795abe2095" KeyNumber="11080" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ba52761a-4821-4852-9d5d-a4a081c311d7" KeyNumber="11080">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Value" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d872b7c1-8902-4794-8bc1-65eb86855a20" KeyNumber="11081">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Value Field" Type="String" />
+            <Value Key="Notes" Value="The field of the items which will be stored as a value." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="18df3c8c-e0c3-4245-a21d-54282e4f4d0b" KeyNumber="11081" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="9066a099-8063-4b0c-b386-2be00c737a57" KeyNumber="11081">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Label" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5416a76a-99b7-4894-87c5-57e7b2834bc1" KeyNumber="11082">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Label" Type="String" />
+            <Value Key="Notes" Value="The field which will be shown in the dropdown as the visible field for the user to select." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6088d6bb-0e91-4c32-9fe0-3e17bf458e74" KeyNumber="11082" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3c39c80a-7d41-41c4-85c4-a622b546dbba" KeyNumber="11082">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="@string-font-icon-picker" Name="@string-font-icon-picker" Description="Configure a font-icon picker" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="CssPrefix" Type="String" IsTitle="true">
@@ -646,7 +946,7 @@
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
       <Value Key="RequiredVersion" Value="08.09.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="00.00.03" Type="String" />
+      <Value Key="Version" Value="00.00.04" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="76564f6d-38ad-4f63-b639-1ee8461fd656" KeyNumber="770" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="8476503a-6065-4956-993c-30adfc281795" KeyNumber="770" />
@@ -666,10 +966,10 @@
       <Value Key="ViewNameInUrl" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="8b606bc8-ea55-4c5c-a7cb-d886a6a751b1" KeyString="@string-dropdown">
-      <Value Key="Description" Value="Dropdown string-input configuration" Type="String" />
+      <Value Key="Description" Value="standard drop-down with text entries" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;To discover more about the drop-down type, consult the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="@string-dropdown" Type="String" />
+      <Value Key="Label" Value="drop-down" Type="String" />
       <Value Key="Link" Value="https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
@@ -687,6 +987,22 @@
       <Value Key="Type" Value="C# Razor" Type="String" />
       <Value Key="UseForList" Value="False" Type="Boolean" />
       <Value Key="ViewNameInUrl" Value="export/.*" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c67b1c33-a864-40ba-abae-47409c4ec0b9" KeyString="@entity-query">
+      <Value Key="Description" Value="use a query to provide entities which we'll show" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;In addition to the primary type, you can also use a query. This allows you to use different criterias for pre-filtering the data you want to allow, or to provide data from other apps. You can read more about this in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-entity-query&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="entity from query" Type="String" />
+      <Value Key="Link" Value="https://github.com/2sic/2sxc/wiki/ui-field-entity-query" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="89be0a7f-22f9-440e-b4ef-ef5a3a0abeb5" KeyString="@string-dropdown-query">
+      <Value Key="Description" Value="drop-down with values from a query" Type="String" />
+      <Value Key="EditInstructions" Value="" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="drop-down from query" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />
