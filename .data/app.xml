@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.09.00" ExportDate="2017-11-23T15:21:22.5431642+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.09.00" ExportDate="2017-11-25T11:17:40.2818847+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -946,7 +946,7 @@
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
       <Value Key="RequiredVersion" Value="08.09.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="00.00.04" Type="String" />
+      <Value Key="Version" Value="09.10.00" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="76564f6d-38ad-4f63-b639-1ee8461fd656" KeyNumber="770" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="8476503a-6065-4956-993c-30adfc281795" KeyNumber="770" />
@@ -972,21 +972,6 @@
       <Value Key="Label" Value="drop-down" Type="String" />
       <Value Key="Link" Value="https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="010ee6a8-ac28-45e3-9186-e4370f915fdb">
-      <Value Key="ContentTypeStaticName" Value="" Type="String" />
-      <Value Key="IsHidden" Value="False" Type="Boolean" />
-      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
-      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="Location" Value="Portal File System" Type="String" />
-      <Value Key="Name" Value="Export" Type="String" />
-      <Value Key="Path" Value="_export.cshtml" Type="String" />
-      <Value Key="PresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="PublishData" Value="False" Type="Boolean" />
-      <Value Key="StreamsToPublish" Value="" Type="String" />
-      <Value Key="Type" Value="C# Razor" Type="String" />
-      <Value Key="UseForList" Value="False" Type="Boolean" />
-      <Value Key="ViewNameInUrl" Value="export/.*" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c67b1c33-a864-40ba-abae-47409c4ec0b9" KeyString="@entity-query">
       <Value Key="Description" Value="use a query to provide entities which we'll show" Type="String" />

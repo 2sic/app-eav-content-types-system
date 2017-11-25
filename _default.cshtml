@@ -7,13 +7,9 @@
         this app manages all core data types which we'll distribute from now on...
     </div>
 
-
     <div>
         Click here 
-        @Edit.Toolbar(actions: "app") 
-        to manage the app
-    </div>
-    <div>
-        start <a href='@Link.To(parameters: "export=1")'>export</a>
+        @Edit.Toolbar(actions: "app", settings: new { hover = "none", show = "always" }) 
+        to manage the app. In there, export the types in the export UI (go to debug-mode)
     </div>
 </div>
