@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.10.00" ExportDate="2017-11-30T11:55:52.5183442+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.10.00" ExportDate="2017-11-30T13:37:00.0646295+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -222,7 +222,7 @@
             <Value Key="Notes" Value="&lt;p&gt;Allow picking multiple items - otherwise the user can only pick 1 item.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="False" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="aeafaa93-8956-4b2a-bd2e-947eab052c66" KeyNumber="11030" />
         </Attribute>
@@ -751,6 +751,22 @@
             <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f5cf7114-8285-4f91-9ac3-528e1ecd1429" KeyNumber="11292">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Advanced settings" Type="String" />
+            <Value Key="Notes" Value="In this section you can configure fairly advanced settings - use with care :)" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="44ebf48e-27af-4925-b870-685814c03f5b" KeyNumber="11292">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="UrlParameters" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="051c2733-e788-4abf-8b70-b2a4b3bc92a6" KeyNumber="11080">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -818,6 +834,36 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3c39c80a-7d41-41c4-85c4-a622b546dbba" KeyNumber="11082">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupMultiSelect" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9756cd4e-5078-4276-873d-b96d1a00ba2b" KeyNumber="11291">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Multi-Select Options" Type="String" />
+            <Value Key="Notes" Value="Use these if you want to enable selecting multiple items" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="32845684-2e3b-40a1-8140-fb2cc76b7613" KeyNumber="11291">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8051a38f-2bd1-4309-9d0b-91c687e592ac" KeyNumber="11289">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Multiple Items" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Allow picking multiple items - otherwise the user can only pick 1 item.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="4a61c144-e35f-4dd1-85a3-5348cf682a6c" KeyNumber="11289" />
         </Attribute>
         <Attribute StaticName="Separator" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2671d0ea-9743-4503-920f-75470645dc9c" KeyNumber="11287">
@@ -857,6 +903,22 @@
             <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f5cf7114-8285-4f91-9ac3-528e1ecd1429" KeyNumber="11292">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Advanced settings" Type="String" />
+            <Value Key="Notes" Value="In this section you can configure fairly advanced settings - use with care :)" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="44ebf48e-27af-4925-b870-685814c03f5b" KeyNumber="11292">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="UrlParameters" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="051c2733-e788-4abf-8b70-b2a4b3bc92a6" KeyNumber="11080">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -924,6 +986,36 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3c39c80a-7d41-41c4-85c4-a622b546dbba" KeyNumber="11082">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupMultiSelect" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9756cd4e-5078-4276-873d-b96d1a00ba2b" KeyNumber="11291">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Multi-Select Options" Type="String" />
+            <Value Key="Notes" Value="Use these if you want to enable selecting multiple items" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="32845684-2e3b-40a1-8140-fb2cc76b7613" KeyNumber="11291">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8051a38f-2bd1-4309-9d0b-91c687e592ac" KeyNumber="11289">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Multiple Items" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Allow picking multiple items - otherwise the user can only pick 1 item.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="4a61c144-e35f-4dd1-85a3-5348cf682a6c" KeyNumber="11289" />
         </Attribute>
         <Attribute StaticName="Separator" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2671d0ea-9743-4503-920f-75470645dc9c" KeyNumber="11287">
