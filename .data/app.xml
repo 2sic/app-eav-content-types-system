@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.11.01" ExportDate="2017-12-06T23:15:47.5043169+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.15.00" ExportDate="2018-03-06T18:22:33.5467825+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -1436,6 +1436,102 @@
       <Value Key="Name" Value="App" Type="String" />
       <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
       <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 320,&#xD;&#xA;  &quot;Left&quot;: 411&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="82311e3d-0dab-4eb9-81e3-1186ac950028" KeyString="@custom-gps">
+      <Value Key="Description" Value="Configure the input for gps selection" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configuration of a GPS-Field. It can automatically detect the address - but you'll have to tell it which fields it can read to build / auto-detect the address.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Custom: GPS" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="5d37829c-be50-4f0a-a10e-30ddf1361706" KeyString="@Boolean">
+      <Value Key="Description" Value="Boolean UI Definitions" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;The boolean field doesn't have any settings to configure.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Boolean (yes/no)" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="9c2f4c24-7f7b-4bd2-b437-a3b2db21d139" KeyString="@DateTime">
+      <Value Key="Description" Value="DateTime UI Definitions" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;The general date-time doesn't have much to configure. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-datetime-default&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Date and Time" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="136aba8f-6006-439c-beb6-1f0313ef3b33" KeyString="@empty-default">
+      <Value Key="Description" Value="Configuration of the field-group field" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Empty fields don't get stored in the DB, but are ideal to structure the input-dialog.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Empty - For Titles and Instructions" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="edacdb34-9c26-43df-8281-56cbb2ffd272" KeyString="@Entity">
+      <Value Key="Description" Value="Entity UI Definitions" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Entities / Relationships let the user pick other data. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-entity&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Entities or Relationships" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="6aec670e-c79c-4289-8586-531abec79745" KeyString="@Hyperlink">
+      <Value Key="Description" Value="File UI Definitions" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Point to a link, a file, or even a set of files.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Hyperlink / Link / File / Document" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="948c4e1f-97fe-4bcf-a792-c06147e263f2" KeyString="@hyperlink-library">
+      <Value Key="Description" Value="to configure a library-field" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Many files, optionally in folders - just for this field. Ideal for galeries and more. Each file and folder can also have additional metadata if configured.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="File Library" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="9c662c7f-65d6-4aa5-9bd5-5a40c6a42b2f" KeyString="@Number">
+      <Value Key="Description" Value="Configuration for a number field" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Let users pick / set a number.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Number" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="1ec6d12a-c479-486b-aaed-b08fa0dfd3cd" KeyString="@string-default">
+      <Value Key="Description" Value="Default single or multi-line string input" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Basic strings / texts are simple text fields. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-default&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="String / Text Basic" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="ce686c77-a248-464a-8499-4e9c7f2c0488" KeyString="@string-font-icon-picker">
+      <Value Key="Description" Value="Configure a font-icon picker" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Select an icon from an icon-font. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-font-icon-picker&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for detailed instructions.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Font-Icon Picker" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="925f1d0a-8946-40ef-b46c-e0ad01f5617e" KeyString="@string-url-path">
+      <Value Key="Description" Value="Configuration for a string-url-path field" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Allows text-input, but only for url-valid characters. Ideal to auto-generate path-parts based on other fields like the title. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-url-path&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="URL Path / Path-Part" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="38418965-ca2d-4b3b-8c7b-d19a120fa238" KeyString="@All">
+      <Value Key="Description" Value="the fields used on all input types" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;General field configuration which is valid for almost any field. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-all&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="General Settings" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />
