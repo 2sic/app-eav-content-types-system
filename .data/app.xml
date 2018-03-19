@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.15.00" ExportDate="2018-03-12T15:12:22.5890613+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.15.00" ExportDate="2018-03-19T14:12:54.5318648+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -3498,6 +3498,23 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="Identity" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9698ff5c-330c-477b-8d22-13dda68413dd" KeyNumber="12288">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Identity" Type="String" />
+            <Value Key="Notes" Value="a key to identifying a user - in case this permission is specifically built for a specific user" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="False" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="20e5f2c4-5f9a-43b7-816f-dcd7c1ef9b9f" KeyNumber="12288" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f771be81-f781-45b1-92a4-cdef397301f3" KeyNumber="12288">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="Condition" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bceeaca4-3bed-4234-9306-3e82e06c6a98" KeyNumber="11942">
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -3524,7 +3541,7 @@
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="5c8e94dd-b3b2-40bd-87d6-d7540ef76278" KeyNumber="11943" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="35e59922-5e4c-409a-805d-026d8f0b7676" KeyNumber="11943">
-            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;BETA - Read schema (applies to content-types):$&#xA;BETA - Read drafts (applies to content-types):r̄&#xA;BETA - Create draft (applies to content-types):c̄&#xA;BETA - Edit draft CRUD (applies to centent-types):c̄r̄ūd̄" Type="String" />
+            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;All Content + Permissions:crudap&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;BETA - Read schema (applies to content-types):$&#xA;BETA - Read drafts (applies to content-types):ř&#xA;BETA - Create draft (applies to content-types):č&#xA;BETA - Update drafts (applies to content-types):ǔ&#xA;BETA - Edit draft CRUD (applies to centent-types):řčǔď" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -3542,6 +3559,23 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="Identity" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9698ff5c-330c-477b-8d22-13dda68413dd" KeyNumber="12288">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Identity" Type="String" />
+            <Value Key="Notes" Value="a key to identifying a user - in case this permission is specifically built for a specific user" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="False" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="20e5f2c4-5f9a-43b7-816f-dcd7c1ef9b9f" KeyNumber="12288" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f771be81-f781-45b1-92a4-cdef397301f3" KeyNumber="12288">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="Condition" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bceeaca4-3bed-4234-9306-3e82e06c6a98" KeyNumber="11942">
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -3568,7 +3602,7 @@
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="5c8e94dd-b3b2-40bd-87d6-d7540ef76278" KeyNumber="11943" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="35e59922-5e4c-409a-805d-026d8f0b7676" KeyNumber="11943">
-            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;BETA - Read schema (applies to content-types):$&#xA;BETA - Read drafts (applies to content-types):r̄&#xA;BETA - Create draft (applies to content-types):c̄&#xA;BETA - Edit draft CRUD (applies to centent-types):c̄r̄ūd̄" Type="String" />
+            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;All Content + Permissions:crudap&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;BETA - Read schema (applies to content-types):$&#xA;BETA - Read drafts (applies to content-types):ř&#xA;BETA - Create draft (applies to content-types):č&#xA;BETA - Update drafts (applies to content-types):ǔ&#xA;BETA - Edit draft CRUD (applies to centent-types):řčǔď" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
