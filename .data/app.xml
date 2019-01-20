@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.15.00" ExportDate="2018-03-28T17:29:03.5715673+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.33.00" ExportDate="2019-01-20T21:51:38.1914049+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -350,6 +350,28 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="@custom-json-editor" Name="@custom-json-editor" Description="Configuration for a json-editor field" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Rows" Type="Number" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="992553d3-8e76-4177-96b9-e25e3f08f930" KeyNumber="12941">
+            <Value Key="InputType" Value="number-default" Type="String" />
+            <Value Key="Name" Value="Rows" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@custom-json-editor" Name="@custom-json-editor" Description="Configuration for a json-editor field" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Rows" Type="Number" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="992553d3-8e76-4177-96b9-e25e3f08f930" KeyNumber="12941">
+            <Value Key="InputType" Value="number-default" Type="String" />
+            <Value Key="Name" Value="Rows" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="@DateTime" Name="@DateTime" Description="DateTime UI Definitions" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="UseTimePicker" Type="Boolean" IsTitle="true">
@@ -663,6 +685,18 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="17952c33-ea5b-4edc-8d9c-6b3bc26bb786" KeyNumber="11036" />
         </Attribute>
       </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@entity-content-blocks" Name="@entity-content-blocks" Description="Container for inner-content references" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="@entity-content-blocks" Name="@entity-content-blocks" Description="Container for inner-content references" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="@entity-default" Name="@entity-default" Description="default entitty/relationship picker" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="@entity-default" Name="@entity-default" Description="default entitty/relationship picker" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes />
     </AttributeSet>
     <AttributeSet StaticName="@entity-query" Name="@entity-query" Description="entity-picker with query configuration" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
@@ -823,12 +857,16 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Custom File Extensions" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Enter the allowed file extensions, comma-separated. Example: *.jpg,*.bmp,*.png,*.gif&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Enter the allowed file extensions, comma-separated. Example: &quot;*.jpg,*.bmp,*.png,*.gif&quot; or you can also do &quot;jpg,png,doc&quot; or use regex like &quot;[0-9]{2}.*\.(jpg|png)&quot;&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d3597846-0b56-480b-a61a-0c95cc156d0e" KeyNumber="11037" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d3597846-0b56-480b-a61a-0c95cc156d0e" KeyNumber="11037">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="17f774d8-fdbb-4624-9cac-5ba196b1c559" KeyNumber="11037">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -994,12 +1032,16 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Custom File Extensions" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Enter the allowed file extensions, comma-separated. Example: *.jpg,*.bmp,*.png,*.gif&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Enter the allowed file extensions, comma-separated. Example: &quot;*.jpg,*.bmp,*.png,*.gif&quot; or you can also do &quot;jpg,png,doc&quot; or use regex like &quot;[0-9]{2}.*\.(jpg|png)&quot;&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d3597846-0b56-480b-a61a-0c95cc156d0e" KeyNumber="11037" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d3597846-0b56-480b-a61a-0c95cc156d0e" KeyNumber="11037">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="17f774d8-fdbb-4624-9cac-5ba196b1c559" KeyNumber="11037">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -3267,9 +3309,6 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="11001010-251c-eafe-2792-000000000003" Name="ContentType" Description="an EAV ContentType" Scope="System" AlwaysShareConfiguration="false">
-      <Attributes />
-    </AttributeSet>
     <AttributeSet StaticName="ContentType" Name="ContentType" Description="Metadata for a content-type" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Label" Type="String" IsTitle="true">
@@ -3536,6 +3575,20 @@
             <Value Key="RowCount" Value="5" Type="Number" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="DisableI18n" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="11a0e6e2-c856-4a3d-86dd-572f477311b7" KeyNumber="14856">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="false" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Disable Internationalization" Type="String" />
+            <Value Key="Notes" Value="Don't allow this information to be translated - for example when the user presses translate-all" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="b669c659-8956-4fcc-a23e-f4b385994ca1" KeyNumber="14856" />
+        </Attribute>
       </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="ContentType-InputType" Name="ContentType-InputType" Description="Input type definition for a content-type" Scope="System" AlwaysShareConfiguration="false">
@@ -3579,6 +3632,20 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b1518a30-d502-4a48-a071-4209a1892983" KeyNumber="11930">
             <Value Key="RowCount" Value="5" Type="Number" />
           </Entity>
+        </Attribute>
+        <Attribute StaticName="DisableI18n" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="11a0e6e2-c856-4a3d-86dd-572f477311b7" KeyNumber="14856">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="false" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Disable Internationalization" Type="String" />
+            <Value Key="Notes" Value="Don't allow this information to be translated - for example when the user presses translate-all" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="b669c659-8956-4fcc-a23e-f4b385994ca1" KeyNumber="14856" />
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -3853,6 +3920,88 @@
     <AttributeSet StaticName="b25db367-c501-4929-a5d6-5e65affe9078" Name="dummy1" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
+    <AttributeSet StaticName="094941f2-688e-4df1-89c9-51a51c8bbb2e" Name="FeaturesConfiguration" Description="manages features for this installation" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Signature" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="693b44be-b822-4f54-8268-6c36ae63ca39" KeyNumber="12940">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Signature" Type="String" />
+            <Value Key="Notes" Value="a verification key to ensure the configuration is certified / approved" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="40096cff-23f1-426a-9a22-c832e52a350a" KeyNumber="12940">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="bd9fac39-0f81-4933-8e9d-17dfb58c3345" KeyNumber="12940">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Features" Type="Custom" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0356e586-bf9d-44a2-ba4a-7a5110c89517" KeyNumber="12939">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="custom-json-editor" Type="String" />
+            <Value Key="Name" Value="Features" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@custom-json-editor" AttributeSetName="@custom-json-editor" EntityGUID="4c2ac5fd-48d1-4e20-9a11-23a9b885cd2d" KeyNumber="12939">
+            <Value Key="Rows" Value="20" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="094941f2-688e-4df1-89c9-51a51c8bbb2e" Name="FeaturesConfiguration" Description="manages features for this installation" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Signature" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="693b44be-b822-4f54-8268-6c36ae63ca39" KeyNumber="12940">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Signature" Type="String" />
+            <Value Key="Notes" Value="a verification key to ensure the configuration is certified / approved" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="40096cff-23f1-426a-9a22-c832e52a350a" KeyNumber="12940">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="bd9fac39-0f81-4933-8e9d-17dfb58c3345" KeyNumber="12940">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Features" Type="Custom" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0356e586-bf9d-44a2-ba4a-7a5110c89517" KeyNumber="12939">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="custom-json-editor" Type="String" />
+            <Value Key="Name" Value="Features" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@custom-json-editor" AttributeSetName="@custom-json-editor" EntityGUID="4c2ac5fd-48d1-4e20-9a11-23a9b885cd2d" KeyNumber="12939">
+            <Value Key="Rows" Value="20" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="PermissionConfiguration" Name="PermissionConfiguration" Description="For configuring permissions." Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
@@ -3871,13 +4020,17 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Identity β" Type="String" />
-            <Value Key="Notes" Value="β = BETA feature, still in development. This is a key to identifying a user - in case this permission is specifically built for a specific user" Type="String" />
+            <Value Key="Name" Value="Identity" Type="String" />
+            <Value Key="Notes" Value="You can type in a user GUID here, or group number(s) like &quot;5, 12&quot;. Make sure you enable the feature." Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="20e5f2c4-5f9a-43b7-816f-dcd7c1ef9b9f" KeyNumber="12288" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="20e5f2c4-5f9a-43b7-816f-dcd7c1ef9b9f" KeyNumber="12288">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f771be81-f781-45b1-92a4-cdef397301f3" KeyNumber="12288">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -3906,9 +4059,13 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="5c8e94dd-b3b2-40bd-87d6-d7540ef76278" KeyNumber="11943" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="5c8e94dd-b3b2-40bd-87d6-d7540ef76278" KeyNumber="11943">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="35e59922-5e4c-409a-805d-026d8f0b7676" KeyNumber="11943">
-            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;All Content + Permissions:crudap&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;BETA - Read schema (applies to content-types):$&#xA;BETA - Read drafts (applies to content-types):ř&#xA;BETA - Create draft (applies to content-types):č&#xA;BETA - Update drafts (applies to content-types):ǔ&#xA;BETA - Edit draft CRUD (applies to centent-types):řčǔď" Type="String" />
+            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;All Content + Permissions:crudap&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;Read schema (applies to content-types):$&#xA;Read drafts (applies to content-types):ř&#xA;Create draft (applies to content-types):č&#xA;Update drafts (applies to content-types):ǔ&#xA;Edit draft CRUD (applies to centent-types):řčǔď" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -3932,13 +4089,17 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Identity β" Type="String" />
-            <Value Key="Notes" Value="β = BETA feature, still in development. This is a key to identifying a user - in case this permission is specifically built for a specific user" Type="String" />
+            <Value Key="Name" Value="Identity" Type="String" />
+            <Value Key="Notes" Value="You can type in a user GUID here, or group number(s) like &quot;5, 12&quot;. Make sure you enable the feature." Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="20e5f2c4-5f9a-43b7-816f-dcd7c1ef9b9f" KeyNumber="12288" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="20e5f2c4-5f9a-43b7-816f-dcd7c1ef9b9f" KeyNumber="12288">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f771be81-f781-45b1-92a4-cdef397301f3" KeyNumber="12288">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -3967,9 +4128,13 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="5c8e94dd-b3b2-40bd-87d6-d7540ef76278" KeyNumber="11943" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="5c8e94dd-b3b2-40bd-87d6-d7540ef76278" KeyNumber="11943">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="35e59922-5e4c-409a-805d-026d8f0b7676" KeyNumber="11943">
-            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;All Content + Permissions:crudap&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;BETA - Read schema (applies to content-types):$&#xA;BETA - Read drafts (applies to content-types):ř&#xA;BETA - Create draft (applies to content-types):č&#xA;BETA - Update drafts (applies to content-types):ǔ&#xA;BETA - Edit draft CRUD (applies to centent-types):řčǔď" Type="String" />
+            <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;All Content + Permissions:crudap&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;Read schema (applies to content-types):$&#xA;Read drafts (applies to content-types):ř&#xA;Create draft (applies to content-types):č&#xA;Update drafts (applies to content-types):ǔ&#xA;Edit draft CRUD (applies to centent-types):řčǔď" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -4019,7 +4184,7 @@
       <Value Key="UseForList" Value="False" Type="Boolean" />
       <Value Key="ViewNameInUrl" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="8b606bc8-ea55-4c5c-a7cb-d886a6a751b1" KeyString="@string-dropdown">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="8b606bc8-ea55-4c5c-a7cb-d886a6a751b1" KeyString="@string-dropdown">
       <Value Key="Description" Value="standard drop-down with text entries" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;To discover more about the drop-down type, consult the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4027,15 +4192,7 @@
       <Value Key="Link" Value="https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c67b1c33-a864-40ba-abae-47409c4ec0b9" KeyString="@entity-query">
-      <Value Key="Description" Value="use a query to provide entities which we'll show" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;In addition to the primary type, you can also use a query. This allows you to use different criterias for pre-filtering the data you want to allow, or to provide data from other apps. You can read more about this in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-entity-query&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Note that this is especially useful to select data from a query, where you want to save a relationship (like blog-post / tag, book/author, etc.).&amp;nbsp;If you want to store a text-value, like a field-name, a value from SQL etc. you want to use the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown-query&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;string-dropdown-query&lt;/a&gt; instead.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="entity from query" Type="String" />
-      <Value Key="Link" Value="https://github.com/2sic/2sxc/wiki/ui-field-entity-query" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="89be0a7f-22f9-440e-b4ef-ef5a3a0abeb5" KeyString="@string-dropdown-query">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="89be0a7f-22f9-440e-b4ef-ef5a3a0abeb5" KeyString="@string-dropdown-query">
       <Value Key="Description" Value="drop-down with values from a query" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;This configuration lets you specify a query which shows the items a user will pick.&amp;nbsp;This allows you to use different criterias for pre-filtering the data you want to allow, or to provide data from other apps. You can read more about this in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown-query&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Note that this is especially useful to select data from a query, where you want to save a text-value (like a field-name, a value from SQL etc.). If you want to store an item-relationship, you should use the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-entity-query&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;entity-query field&lt;/a&gt; instead.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4048,37 +4205,7 @@
       <Value Key="StreamName" Value="Default" Type="String" />
       <Value Key="UrlParameters" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="15e8bb61-c2f9-4376-8724-1514f1d4f278">
-      <Value Key="AllowEdit" Value="True" Type="Boolean" />
-      <Value Key="Description" Value="" Type="String" />
-      <Value Key="Name" Value="Test1" Type="String" />
-      <Value Key="StreamsOut" Value="ListContent,Default,Pipelines,Parts" Type="String" />
-      <Value Key="StreamWiring" Value="2bed473c-8deb-4bdf-adba-181ffdb07dd9:DataPipeline&gt;Out:Pipelines&#xD;&#xA;2bed473c-8deb-4bdf-adba-181ffdb07dd9:DataPipelinePart&gt;Out:Parts" Type="String" />
-      <Value Key="TestParameters" Value="[Module:ModuleID]=6925" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="4a723c04-d016-4365-886b-5c2038b8fd7e">
-      <Value Key="AllowEdit" Value="True" Type="Boolean" />
-      <Value Key="Description" Value="" Type="String" />
-      <Value Key="Name" Value="Test2" Type="String" />
-      <Value Key="StreamsOut" Value="" Type="String" />
-      <Value Key="StreamWiring" Value="" Type="String" />
-      <Value Key="TestParameters" Value="[Module:ModuleID]=6925" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="2bed473c-8deb-4bdf-adba-181ffdb07dd9" KeyGuid="15e8bb61-c2f9-4376-8724-1514f1d4f278">
-      <Value Key="Description" Value="" Type="String" />
-      <Value Key="Name" Value="App" Type="String" />
-      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
-      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 320,&#xD;&#xA;  &quot;Left&quot;: 411&#xD;&#xA;}" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="82311e3d-0dab-4eb9-81e3-1186ac950028" KeyString="@custom-gps">
-      <Value Key="Description" Value="Configure the input for gps selection" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Configuration of a GPS-Field. It can automatically detect the address - but you'll have to tell it which fields it can read to build / auto-detect the address.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="Custom: GPS" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="5d37829c-be50-4f0a-a10e-30ddf1361706" KeyString="@Boolean">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="5d37829c-be50-4f0a-a10e-30ddf1361706" KeyString="@Boolean">
       <Value Key="Description" Value="Boolean UI Definitions" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;The boolean field doesn't have any settings to configure.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4086,7 +4213,7 @@
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="9c2f4c24-7f7b-4bd2-b437-a3b2db21d139" KeyString="@DateTime">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="9c2f4c24-7f7b-4bd2-b437-a3b2db21d139" KeyString="@DateTime">
       <Value Key="Description" Value="DateTime UI Definitions" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;The general date-time doesn't have much to configure. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-datetime-default&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4094,23 +4221,7 @@
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="136aba8f-6006-439c-beb6-1f0313ef3b33" KeyString="@empty-default">
-      <Value Key="Description" Value="Configuration of the field-group field" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Empty fields don't get stored in the DB, but are ideal to structure the input-dialog.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="Empty - For Titles and Instructions" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="edacdb34-9c26-43df-8281-56cbb2ffd272" KeyString="@Entity">
-      <Value Key="Description" Value="Entity UI Definitions" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Entities / Relationships let the user pick other data. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-entity&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="Entities or Relationships" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="6aec670e-c79c-4289-8586-531abec79745" KeyString="@Hyperlink">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="6aec670e-c79c-4289-8586-531abec79745" KeyString="@Hyperlink">
       <Value Key="Description" Value="File UI Definitions" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;Point to a link, a file, or even a set of files.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4118,15 +4229,7 @@
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="948c4e1f-97fe-4bcf-a792-c06147e263f2" KeyString="@hyperlink-library">
-      <Value Key="Description" Value="to configure a library-field" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Many files, optionally in folders - just for this field. Ideal for galeries and more. Each file and folder can also have additional metadata if configured.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="File Library" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="9c662c7f-65d6-4aa5-9bd5-5a40c6a42b2f" KeyString="@Number">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="9c662c7f-65d6-4aa5-9bd5-5a40c6a42b2f" KeyString="@Number">
       <Value Key="Description" Value="Configuration for a number field" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;Let users pick / set a number.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4134,7 +4237,7 @@
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="1ec6d12a-c479-486b-aaed-b08fa0dfd3cd" KeyString="@string-default">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="1ec6d12a-c479-486b-aaed-b08fa0dfd3cd" KeyString="@string-default">
       <Value Key="Description" Value="Default single or multi-line string input" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;Basic strings / texts are simple text fields. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-default&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4142,7 +4245,7 @@
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="ce686c77-a248-464a-8499-4e9c7f2c0488" KeyString="@string-font-icon-picker">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="ce686c77-a248-464a-8499-4e9c7f2c0488" KeyString="@string-font-icon-picker">
       <Value Key="Description" Value="Configure a font-icon picker" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;Select an icon from an icon-font. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-font-icon-picker&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for detailed instructions.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4150,7 +4253,7 @@
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="925f1d0a-8946-40ef-b46c-e0ad01f5617e" KeyString="@string-url-path">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="925f1d0a-8946-40ef-b46c-e0ad01f5617e" KeyString="@string-url-path">
       <Value Key="Description" Value="Configuration for a string-url-path field" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;Allows text-input, but only for url-valid characters. Ideal to auto-generate path-parts based on other fields like the title. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-url-path&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4158,7 +4261,7 @@
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="38418965-ca2d-4b3b-8c7b-d19a120fa238" KeyString="@All">
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="38418965-ca2d-4b3b-8c7b-d19a120fa238" KeyString="@All">
       <Value Key="Description" Value="the fields used on all input types" Type="String" />
       <Value Key="EditInstructions" Value="&lt;p&gt;General field configuration which is valid for almost any field. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-all&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
@@ -4192,7 +4295,7 @@
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="bc962fea-544d-4cad-9da9-8bef0fb1d29c" KeyString="PermissionConfiguration">
       <Value Key="Description" Value="For configuring permissions." Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Configure the permissions of views or content-types.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure the permissions of views or content-types (see &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/concept-permissions&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;).&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;If you want to use new user-identity or groups in the permissions, you'll need to enable the &lt;a href=&quot;https://2sxc.org/en/installations/feat/47c71ee9-ac7b-45bf-a08b-dfc8ce7c7775&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;user-feature&lt;/a&gt; or &lt;a href=&quot;https://2sxc.org/en/installations/feat/0fd479cc-300f-47fd-88fd-8f2fe092bc09&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;group-feature&lt;/a&gt;.&amp;nbsp;For the public-users-can-&lt;em&gt;only-create draft data&lt;/em&gt;, make sure you also enable &lt;a href=&quot;https://2sxc.org/en/installations/feat/d93baf71-74c6-4956-9fe0-8281acdfd14a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;that feature&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
       <Value Key="Label" Value="Permission Configuration" Type="String" />
       <Value Key="Link" Value="" Type="Hyperlink" />
@@ -4284,6 +4387,109 @@
       <Value Key="Description" Value="to pick a location with a map - can also store the values in separate number fields and auto-find an address based on values in the form" Type="String" />
       <Value Key="Label" Value="GPS Picker" Type="String" />
       <Value Key="Type" Value="custom-gps" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="55db935b-2331-47c8-92ae-4988484ac22a" KeyString="2102f62e-2071-4b63-a2a9-f64da0995a72">
+      <Value Key="Description" Value="Configuration for a json-editor field" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Beta field - please be careful with it. It's basically just a multi-line text field, and doesn't do json validation at the moment.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Custom JSON" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="1c3a6fe6-3318-4308-b063-0716d8de472d" KeyString="@custom-json-editor">
+      <Value Key="Description" Value="Configuration for a json-editor field" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Careful - this is still in beta - it's basically just a multi-line field without any features. So it won't do json validation for you.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Custom JSON editor" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="094941f2-688e-4df1-89c9-51a51c8bbb2e" AttributeSetName="FeaturesConfiguration" EntityGUID="0b5f33c3-b566-4c19-9492-2955462084c8">
+      <Value Key="Features" Value="{&#xA;&#x9;&quot;features&quot;: [{&#xA;&#x9;&#x9;&quot;id&quot;: &quot;f6b8d6da-4744-453b-9543-0de499aa2352&quot;,&#xA;&#x9;&#x9;&quot;enabled&quot;: false,&#xA;&#x9;&#x9;&quot;expires&quot;: &quot;2025-04-14T00:00:00+02:00&quot;&#xA;&#x9;},&#xA;&#x9;{&#xA;&#x9;&#x9;&quot;id&quot;: &quot;4f3d0021-1c8b-4286-a33b-3210ed3b2d9a&quot;,&#xA;&#x9;&#x9;&quot;enabled&quot;: false,&#xA;&#x9;&#x9;&quot;expires&quot;: &quot;2018-04-14T00:00:00+02:00&quot;&#xA;&#x9;},&#xA;&#x9;{&#xA;&#x9;&#x9;&quot;id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;,&#xA;&#x9;&#x9;&quot;enabled&quot;: false,&#xA;&#x9;&#x9;&quot;expires&quot;: &quot;2018-04-13T00:00:00+02:00&quot;&#xA;&#x9;}]&#xA;}" Type="Custom" />
+      <Value Key="Signature" Value="testing" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="12297a3a-1e70-4a76-bd70-f9cca8fc185d" KeyString="@empty-default">
+      <Value Key="Assets" Value="" Type="String" />
+      <Value Key="Description" Value="An empty field (will not store data) for Headings/Groups" Type="String" />
+      <Value Key="DisableI18n" Value="True" Type="Boolean" />
+      <Value Key="Label" Value="Empty (default) for Field Groups" Type="String" />
+      <Value Key="Type" Value="empty-default" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="d7df774a-6a29-4db9-8352-d44e25266916" KeyString="@empty-default">
+      <Value Key="Description" Value="CT Configuration of the field-group field" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Empty fields don't get stored in the DB, but are ideal to structure the input-dialog.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="CT Empty - For Titles and Instructions" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="baf97dd4-5f6e-466a-b7b2-b2ed0cda2ac6" KeyString="@hyperlink-library">
+      <Value Key="Description" Value="Configure a file-library field containing folders, files and more." Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Many files, optionally in folders - just for this field. Ideal for galeries and more. Each file and folder can also have additional metadata if configured.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="File Library" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="a71a80c1-1c62-40f7-a0d6-7dac593d9bb4" KeyString="@entity-default">
+      <Value Key="Description" Value="to choose one or more content items preserving the sorting-order" Type="String" />
+      <Value Key="EditInstructions" Value="" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="default (entity picker)" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="b4c4b321-1611-40cf-a1d8-b818f0076c39" KeyString="@entity-default">
+      <Value Key="Assets" Value="" Type="String" />
+      <Value Key="Description" Value="standard single/multiple entity/item picker" Type="String" />
+      <Value Key="DisableI18n" Value="True" Type="Boolean" />
+      <Value Key="Label" Value="default (entity/item picker)" Type="String" />
+      <Value Key="Type" Value="entity-default" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="2dc2667a-4eb8-4f27-bc41-2730d92f7987" KeyString="@hyperlink-library">
+      <Value Key="Assets" Value="" Type="String" />
+      <Value Key="Description" Value="Library of files, optionally with folders and file/folder metadata" Type="String" />
+      <Value Key="DisableI18n" Value="True" Type="Boolean" />
+      <Value Key="Label" Value="Library of files" Type="String" />
+      <Value Key="Type" Value="hyperlink-library" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="942f090c-9daf-44de-8539-4f8d604cf78d" KeyString="@entity-content-blocks">
+      <Value Key="Description" Value="Container for inner-content references" Type="String" />
+      <Value Key="EditInstructions" Value="" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Content-Blocks Container" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="c546fe23-367e-4ea3-99e6-90e53c2ef570" KeyString="@entity-content-blocks">
+      <Value Key="Assets" Value="" Type="String" />
+      <Value Key="Description" Value="Use this to manage inner content-blocks - discover more on 2sxc.org/help?tag=content-blocks" Type="String" />
+      <Value Key="DisableI18n" Value="True" Type="Boolean" />
+      <Value Key="Label" Value="Content Block Items" Type="String" />
+      <Value Key="Type" Value="entity-content-blocks" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c17b1bb9-7715-4eae-a8a3-18e0d110ce61" KeyString="@entity-query">
+      <Value Key="Description" Value="entity-picker with query configuration" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;In addition to the primary type, you can also use a query. This allows you to use different criterias for pre-filtering the data you want to allow, or to provide data from other apps. You can read more about this in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-entity-query&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Note that this is especially useful to select data from a query, where you want to save a relationship (like blog-post / tag, book/author, etc.).&amp;nbsp;If you want to store a text-value, like a field-name, a value from SQL etc. you want to use the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-dropdown-query&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;string-dropdown-query&lt;/a&gt; instead.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Query based item-picker" Type="String" />
+      <Value Key="Link" Value="https://github.com/2sic/2sxc/wiki/ui-field-entity-query" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="80bb6bfa-7a46-4f2b-a453-27648807c9a9" KeyString="@Entity">
+      <Value Key="Description" Value="Entity UI Definitions" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Entities / Relationships let the user pick other data. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-entity&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Entities or Relationships" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="099ad0ba-f521-410b-a072-525d1acf5241" KeyString="@entity-query">
+      <Value Key="Assets" Value="" Type="String" />
+      <Value Key="Description" Value="Select items/relationships based on visual queries." Type="String" />
+      <Value Key="DisableI18n" Value="True" Type="Boolean" />
+      <Value Key="Label" Value="Query based entity/item-picker" Type="String" />
+      <Value Key="Type" Value="entity-query" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />
