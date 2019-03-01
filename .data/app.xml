@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.33.00" ExportDate="2019-01-20T21:51:38.1914049+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.40.00" ExportDate="2019-03-01T16:24:01.5992388+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -16,7 +16,7 @@
         </Attribute>
         <Attribute StaticName="Notes" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="57004e54-c530-4777-ba86-f0eb0eafe729" KeyNumber="11016">
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="Notes" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Add notes / helpfull comments to aid the editor in adding his information. Note that you have a WYSIWYG for this field, but be really carefull to not add too much nonsense or similar because it might break the tool-tip in DotNetNuke. &lt;/p&gt;&#xD;&#xA;&lt;p&gt;You can also add helpfull links if necessary, like &lt;a href=&quot;http://www.2sexycontent.org&quot; target=&quot;_blank&quot;&gt;www.2sexycontent.org&lt;/a&gt;, just remember to set the link target to &quot;_blank&quot; (new window). &lt;/p&gt;&#xD;&#xA;&lt;p&gt;Also note that the current version of DNN has a bug, so links in tool-tips cannot be clicked on. &lt;/p&gt;" Type="String" />
           </Entity>
@@ -127,7 +127,7 @@
         </Attribute>
         <Attribute StaticName="Notes" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="57004e54-c530-4777-ba86-f0eb0eafe729" KeyNumber="11016">
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="Notes" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Add notes / helpfull comments to aid the editor in adding his information. Note that you have a WYSIWYG for this field, but be really carefull to not add too much nonsense or similar because it might break the tool-tip in DotNetNuke. &lt;/p&gt;&#xD;&#xA;&lt;p&gt;You can also add helpfull links if necessary, like &lt;a href=&quot;http://www.2sexycontent.org&quot; target=&quot;_blank&quot;&gt;www.2sexycontent.org&lt;/a&gt;, just remember to set the link target to &quot;_blank&quot; (new window). &lt;/p&gt;&#xD;&#xA;&lt;p&gt;Also note that the current version of DNN has a bug, so links in tool-tips cannot be clicked on. &lt;/p&gt;" Type="String" />
           </Entity>
