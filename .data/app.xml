@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.43.00" ExportDate="2019-05-08T10:01:22.7105669+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.44.00" ExportDate="2019-05-20T10:19:07.5092254+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -4578,7 +4578,7 @@
       <Value Key="Title" Value="guid" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="e0342e24-fca1-412c-8b72-7220833a1410" KeyString="@custom-gps">
-      <Value Key="AngularAssets" Value="[System:Path]/dist/ng-edit/elements/field-custom-gps/main.js" Type="String" />
+      <Value Key="AngularAssets" Value="[System:Path]/dist/ng-edit/elements/field-custom-gps/gps-picker.js" Type="String" />
       <Value Key="AngularMode" Value="dialog-default" Type="String" />
       <Value Key="Assets" Value="[System:Path]/dist/edit/extensions/field-custom-gps/custom-gps.js" Type="String" />
       <Value Key="Description" Value="to pick a location with a map - can also store the values in separate number fields and auto-find an address based on values in the form" Type="String" />
@@ -4703,23 +4703,13 @@
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="7c8aad9f-40a8-4756-94fb-2c3e58e8a2f6" KeyString="@string-wysiwyg">
-      <Value Key="AngularAssets" Value="https://cdn.tinymce.com/4.6/tinymce.min.js&#xA;[System:Path]/dist/elements/field-string-wysiwyg/tinymce-wysiwyg.css&#xA;[System:Path]/dist/elements/field-string-wysiwyg/main.js" Type="String" />
+      <Value Key="AngularAssets" Value="https://cdn.tinymce.com/4.6/tinymce.min.js&#xA;[System:Path]/dist/elements/field-string-wysiwyg/tinymce-wysiwyg.css&#xA;[System:Path]/dist/elements/field-string-wysiwyg/wysiwyg-tinymce.js" Type="String" />
       <Value Key="AngularMode" Value="dialog-default" Type="String" />
       <Value Key="Assets" Value="" Type="String" />
       <Value Key="Description" Value="light wysiwyg-editor (recommended) - without images or advanced formating, as is usually the case in professional content-templates." Type="String" />
       <Value Key="DisableI18n" Value="False" Type="Boolean" />
-      <Value Key="Label" Value="wysiwyg editor (recommended)" Type="String" />
+      <Value Key="Label" Value="wysiwyg editor (default)" Type="String" />
       <Value Key="Type" Value="string-wysiwyg" Type="String" />
-      <Value Key="UseAdam" Value="True" Type="Boolean" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="f2c9d74e-561c-481f-819a-4d446578d2a0" KeyString="@string-wysiwyg-tinymce">
-      <Value Key="AngularAssets" Value="https://cdn.tinymce.com/4.6/tinymce.min.js&#xA;[System:Path]/dist/elements/field-string-wysiwyg/tinymce-wysiwyg.css&#xA;[System:Path]/dist/elements/field-string-wysiwyg/main.js" Type="String" />
-      <Value Key="AngularMode" Value="dialog-default" Type="String" />
-      <Value Key="Assets" Value="" Type="String" />
-      <Value Key="Description" Value="WYSIWYG editing with TinyMCE" Type="String" />
-      <Value Key="DisableI18n" Value="False" Type="Boolean" />
-      <Value Key="Label" Value="WYSIWYG TinyMCE" Type="String" />
-      <Value Key="Type" Value="string-wysiwyg-tinymce" Type="String" />
       <Value Key="UseAdam" Value="True" Type="Boolean" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="787d547a-85c0-485f-9f69-00570397e928" KeyString="ContentType-InputType">
@@ -4838,6 +4828,16 @@
       <Value Key="DisableI18n" Value="False" Type="Boolean" />
       <Value Key="Label" Value="default (link, page, file, ...)" Type="String" />
       <Value Key="Type" Value="hyperlink-default" Type="String" />
+      <Value Key="UseAdam" Value="True" Type="Boolean" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="81d6b7a1-27c9-43c0-8f86-f633ff9c1d8d" KeyString="@string-wysiwyg-tinymce">
+      <Value Key="AngularAssets" Value="https://cdn.tinymce.com/4.6/tinymce.min.js&#xA;[System:Path]/dist/elements/field-string-wysiwyg/tinymce-wysiwyg.css&#xA;[System:Path]/dist/elements/field-string-wysiwyg/wysiwyg-tinymce.js" Type="String" />
+      <Value Key="AngularMode" Value="dialog-default" Type="String" />
+      <Value Key="Assets" Value="" Type="String" />
+      <Value Key="Description" Value="light wysiwyg-editor (recommended) - without images or advanced formating, as is usually the case in professional content-templates." Type="String" />
+      <Value Key="DisableI18n" Value="False" Type="Boolean" />
+      <Value Key="Label" Value="wysiwyg editor (tinymce)" Type="String" />
+      <Value Key="Type" Value="string-wysiwyg-tinymce" Type="String" />
       <Value Key="UseAdam" Value="True" Type="Boolean" />
     </Entity>
   </Entities>
