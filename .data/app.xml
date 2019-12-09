@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.09.02" ExportDate="2019-11-04T18:33:11.5848664+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.21.01" ExportDate="2019-12-09T22:46:03.2042702+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -4699,6 +4699,42 @@
             <Value Key="RowCount" Value="10" Type="Number" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="ParametersGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fdcb6b4a-f22d-45ca-817e-c14b68a03828" KeyNumber="17844">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Parameters for Testing and Runtime" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The &lt;strong&gt;Test Parameters&lt;/strong&gt; are for testing only, while the &lt;strong&gt;Parameters&lt;/strong&gt; are used for the Params LookUp - for tokens like [Params:Id]&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="5d34f96d-02db-4858-959e-80870dda0708" KeyNumber="17844">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Params" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a67f614b-d57a-48f7-bfd8-05604fa88725" KeyNumber="17845">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Parameters" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Parameters used in this query. One on each line. Format like Key=Value. Examples:&amp;nbsp;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Id=27&lt;/li&gt;&#xA;&lt;li&gt;Id=[QueryString:Id]&lt;/li&gt;&#xA;&lt;li&gt;Id=[QueryString:Id||27]&lt;/li&gt;&#xA;&lt;/ul&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="86929de5-86c8-4a85-8854-7cedaaa3693a" KeyNumber="17845">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="81f36eff-3f91-4a23-9b90-13a3137e08c1" KeyNumber="17845">
+            <Value Key="RowCount" Value="10" Type="Number" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="TestParameters" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e6a6e692-f106-45c6-b0b4-729df0ccb67e" KeyNumber="11936">
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -4707,7 +4743,10 @@
             <Value Key="Notes" Value="Static Parameters to test the Pipeline with. Format as [Token:Property]=Value" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c760b162-4fc8-4071-8c57-e467ed0c0491" KeyNumber="11936" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c760b162-4fc8-4071-8c57-e467ed0c0491" KeyNumber="11936">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="6f2e2e67-4a77-45af-88f6-0577d77e6c38" KeyNumber="11936">
             <Value Key="RowCount" Value="10" Type="Number" />
           </Entity>
@@ -4777,6 +4816,42 @@
             <Value Key="RowCount" Value="10" Type="Number" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="ParametersGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fdcb6b4a-f22d-45ca-817e-c14b68a03828" KeyNumber="17844">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Parameters for Testing and Runtime" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The &lt;strong&gt;Test Parameters&lt;/strong&gt; are for testing only, while the &lt;strong&gt;Parameters&lt;/strong&gt; are used for the Params LookUp - for tokens like [Params:Id]&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="5d34f96d-02db-4858-959e-80870dda0708" KeyNumber="17844">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Params" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a67f614b-d57a-48f7-bfd8-05604fa88725" KeyNumber="17845">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Parameters" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Parameters used in this query. One on each line. Format like Key=Value. Examples:&amp;nbsp;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Id=27&lt;/li&gt;&#xA;&lt;li&gt;Id=[QueryString:Id]&lt;/li&gt;&#xA;&lt;li&gt;Id=[QueryString:Id||27]&lt;/li&gt;&#xA;&lt;/ul&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="86929de5-86c8-4a85-8854-7cedaaa3693a" KeyNumber="17845">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="81f36eff-3f91-4a23-9b90-13a3137e08c1" KeyNumber="17845">
+            <Value Key="RowCount" Value="10" Type="Number" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="TestParameters" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e6a6e692-f106-45c6-b0b4-729df0ccb67e" KeyNumber="11936">
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -4785,7 +4860,10 @@
             <Value Key="Notes" Value="Static Parameters to test the Pipeline with. Format as [Token:Property]=Value" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c760b162-4fc8-4071-8c57-e467ed0c0491" KeyNumber="11936" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c760b162-4fc8-4071-8c57-e467ed0c0491" KeyNumber="11936">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="6f2e2e67-4a77-45af-88f6-0577d77e6c38" KeyNumber="11936">
             <Value Key="RowCount" Value="10" Type="Number" />
           </Entity>
@@ -5659,6 +5737,8 @@
     <Folder Id="4124" RelativePath="adam/System-Types/jUznVDmVukSc4AJdt6QuDA/Notes/" />
     <Folder Id="4698" RelativePath="adam/System-Types/k6zBtZlFx0qv5aQai_P9xQ/" />
     <Folder Id="4699" RelativePath="adam/System-Types/k6zBtZlFx0qv5aQai_P9xQ/Notes/" />
+    <Folder Id="5442" RelativePath="adam/System-Types/kuam5gbxxkWwtHKd8My2fg/" />
+    <Folder Id="5443" RelativePath="adam/System-Types/kuam5gbxxkWwtHKd8My2fg/Notes/" />
     <Folder Id="4690" RelativePath="adam/System-Types/Lovo4esTa0mQeRCKHJNTjg/" />
     <Folder Id="4691" RelativePath="adam/System-Types/Lovo4esTa0mQeRCKHJNTjg/Notes/" />
     <Folder Id="4121" RelativePath="adam/System-Types/LwIIVMLfiUm2RRvna7bYmw/" />
@@ -5667,6 +5747,10 @@
     <Folder Id="4701" RelativePath="adam/System-Types/-QtaTuc1p0KfUPO8wMxjhQ/Notes/" />
     <Folder Id="4706" RelativePath="adam/System-Types/S0sjet5-hE-m4W55eDhC4A/" />
     <Folder Id="4707" RelativePath="adam/System-Types/S0sjet5-hE-m4W55eDhC4A/Notes/" />
+    <Folder Id="5440" RelativePath="adam/System-Types/S2F_pnrV90i_2AVgT6iHJQ/" />
+    <Folder Id="5441" RelativePath="adam/System-Types/S2F_pnrV90i_2AVgT6iHJQ/Notes/" />
+    <Folder Id="5438" RelativePath="adam/System-Types/SmvL_S3yykWBfsFLaKA4KA/" />
+    <Folder Id="5439" RelativePath="adam/System-Types/SmvL_S3yykWBfsFLaKA4KA/Notes/" />
     <Folder Id="4710" RelativePath="adam/System-Types/v30Z3UrLZEu-qEQuhVJf0g/" />
     <Folder Id="4711" RelativePath="adam/System-Types/v30Z3UrLZEu-qEQuhVJf0g/Notes/" />
     <Folder Id="4704" RelativePath="adam/System-Types/VE4AVzDFd0e6hvDrDq_nKQ/" />
