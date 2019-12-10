@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.21.01" ExportDate="2019-12-09T22:46:03.2042702+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.21.01" ExportDate="2019-12-10T17:52:26.3395198+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-US" />
@@ -50,6 +50,39 @@
             <Value Key="Dialog" Value="inline" Type="String" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="InputType" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e3449540-fdc5-49ab-ab67-aa5a86eb3ffe" KeyNumber="11021">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Input Type" Type="String" />
+            <Value Key="Notes" Value="Hidden field which tells the UI what input-type to use in a dynamic form" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="aca2720d-2df6-4028-a716-8378f12036f2" KeyNumber="11021" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c7481400-af83-43ea-a186-933d68aee54e" KeyNumber="11021">
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UiGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="04019772-2133-4513-8f0f-408082b70534" KeyNumber="17853">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="UI Settings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Configure how this field behaves in the input form.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="c4519a06-85f3-4661-bc76-292c9721083a" KeyNumber="17853">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="VisibleInEditUI" Type="Boolean" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="750f4dfc-c243-4076-bb03-c0733dae7758" KeyNumber="11017">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -80,12 +113,15 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Default Value" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;The default value for an input field. &lt;/p&gt;&#xD;&#xA;&lt;p&gt;Note that you can also set the default value of a drop-down, just remember to use the &lt;em&gt;Key&lt;/em&gt; of the drop-down, not the displayed text. &lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The default value for this field. Used when this field is first populated.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Note that you can also set the default value of a drop-down, just remember to use the Key of the drop-down, not the displayed text.&lt;/em&gt;&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b0b97f60-a550-48eb-98a0-bb6dfd1aa100" KeyNumber="11019" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b0b97f60-a550-48eb-98a0-bb6dfd1aa100" KeyNumber="11019">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="eaa1a860-527f-4ecb-92c0-dbeaf4aa096a" KeyNumber="11019">
             <Value Key="RowCount" Value="2" Type="Number" />
           </Entity>
@@ -100,32 +136,83 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="InputType" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e3449540-fdc5-49ab-ab67-aa5a86eb3ffe" KeyNumber="11021">
+        <Attribute StaticName="ValidationGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="69cf3253-e0d6-4394-9fb3-eb8945392cb8" KeyNumber="17850">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="True" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Input Type" Type="String" />
-            <Value Key="Notes" Value="Hidden field which tells the UI what input-type to use in a dynamic form" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Field Validations" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Configure validation settings here to ensure that the field is ok to save or show warnings only. Read more about &lt;a href=&quot;https://r.2sxc.org/FieldValidation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Field Validation in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="aca2720d-2df6-4028-a716-8378f12036f2" KeyNumber="11021" />
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c7481400-af83-43ea-a186-933d68aee54e" KeyNumber="11021">
-            <Value Key="RowCount" Value="" Type="Number" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="1c78d23c-098c-4692-b078-32f9c7c42da5" KeyNumber="17850">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Errors" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="69f44c1b-bb08-416c-8b68-41388d6ba734" KeyNumber="17852">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="Errors" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;These regular expressions will be used to check if the field is ok. If not valid, will prevent the form from saving. Read more about &lt;a href=&quot;https://r.2sxc.org/FieldValidation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Field Validation in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="b452fa04-e347-4ab7-ba4c-e9ab53ab9e8c" KeyNumber="17852">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="False" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="False" Type="Boolean" />
+            <Value Key="EntityType" Value="RegExCheck" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Warnings" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7ec70497-a426-448a-a730-ce79f35dd47b" KeyNumber="17851">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="Warnings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;These regular expressions will be used to check if the field is ok, but only show warnings if they fail. So the user can still store the data, but he'll be notified that something might be wrong. Read more about &lt;a href=&quot;https://r.2sxc.org/FieldValidation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Field Validation in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="39f71721-57b4-4a69-9a3b-261f4b694961" KeyNumber="17851">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="False" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="False" Type="Boolean" />
+            <Value Key="EntityType" Value="RegExCheck" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ValidationRegExJavaScript" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fd6326de-4ffe-4f77-8580-436ec502ae4c" KeyNumber="11022">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="ValidationRegExJavaScript" Type="String" />
-            <Value Key="Notes" Value="Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot;&gt;help with tag validation&lt;/a&gt; for more infos" Type="String" />
+            <Value Key="Name" Value="Old ValidationRegExJavaScript" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;OLD feature: Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;/desktopmodules/tosic_sexycontent/dist/ng-edit/2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;help with tag validation&lt;/a&gt; for more infos.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="890ee484-9888-4ed6-9c03-0ee03bea1617" KeyNumber="11022">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="4530d30b-db0e-4541-8cab-08363eb03fe6" KeyNumber="11022" />
         </Attribute>
         <Attribute StaticName="CustomJavaScript" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="53550e09-cf1b-48bc-a78a-93c98d546bdb" KeyNumber="11023">
@@ -190,6 +277,39 @@
             <Value Key="Dialog" Value="inline" Type="String" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="InputType" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e3449540-fdc5-49ab-ab67-aa5a86eb3ffe" KeyNumber="11021">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Input Type" Type="String" />
+            <Value Key="Notes" Value="Hidden field which tells the UI what input-type to use in a dynamic form" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="aca2720d-2df6-4028-a716-8378f12036f2" KeyNumber="11021" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c7481400-af83-43ea-a186-933d68aee54e" KeyNumber="11021">
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UiGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="04019772-2133-4513-8f0f-408082b70534" KeyNumber="17853">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="UI Settings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Configure how this field behaves in the input form.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="c4519a06-85f3-4661-bc76-292c9721083a" KeyNumber="17853">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="VisibleInEditUI" Type="Boolean" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="750f4dfc-c243-4076-bb03-c0733dae7758" KeyNumber="11017">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -220,12 +340,15 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Default Value" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;The default value for an input field. &lt;/p&gt;&#xD;&#xA;&lt;p&gt;Note that you can also set the default value of a drop-down, just remember to use the &lt;em&gt;Key&lt;/em&gt; of the drop-down, not the displayed text. &lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The default value for this field. Used when this field is first populated.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Note that you can also set the default value of a drop-down, just remember to use the Key of the drop-down, not the displayed text.&lt;/em&gt;&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b0b97f60-a550-48eb-98a0-bb6dfd1aa100" KeyNumber="11019" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b0b97f60-a550-48eb-98a0-bb6dfd1aa100" KeyNumber="11019">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="eaa1a860-527f-4ecb-92c0-dbeaf4aa096a" KeyNumber="11019">
             <Value Key="RowCount" Value="2" Type="Number" />
           </Entity>
@@ -240,32 +363,83 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="InputType" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e3449540-fdc5-49ab-ab67-aa5a86eb3ffe" KeyNumber="11021">
+        <Attribute StaticName="ValidationGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="69cf3253-e0d6-4394-9fb3-eb8945392cb8" KeyNumber="17850">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="True" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Input Type" Type="String" />
-            <Value Key="Notes" Value="Hidden field which tells the UI what input-type to use in a dynamic form" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Field Validations" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Configure validation settings here to ensure that the field is ok to save or show warnings only. Read more about &lt;a href=&quot;https://r.2sxc.org/FieldValidation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Field Validation in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="aca2720d-2df6-4028-a716-8378f12036f2" KeyNumber="11021" />
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c7481400-af83-43ea-a186-933d68aee54e" KeyNumber="11021">
-            <Value Key="RowCount" Value="" Type="Number" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="1c78d23c-098c-4692-b078-32f9c7c42da5" KeyNumber="17850">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Errors" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="69f44c1b-bb08-416c-8b68-41388d6ba734" KeyNumber="17852">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="Errors" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;These regular expressions will be used to check if the field is ok. If not valid, will prevent the form from saving. Read more about &lt;a href=&quot;https://r.2sxc.org/FieldValidation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Field Validation in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="b452fa04-e347-4ab7-ba4c-e9ab53ab9e8c" KeyNumber="17852">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="False" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="False" Type="Boolean" />
+            <Value Key="EntityType" Value="RegExCheck" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Warnings" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7ec70497-a426-448a-a730-ce79f35dd47b" KeyNumber="17851">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="Warnings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;These regular expressions will be used to check if the field is ok, but only show warnings if they fail. So the user can still store the data, but he'll be notified that something might be wrong. Read more about &lt;a href=&quot;https://r.2sxc.org/FieldValidation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Field Validation in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="39f71721-57b4-4a69-9a3b-261f4b694961" KeyNumber="17851">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="False" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="False" Type="Boolean" />
+            <Value Key="EntityType" Value="RegExCheck" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ValidationRegExJavaScript" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fd6326de-4ffe-4f77-8580-436ec502ae4c" KeyNumber="11022">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="ValidationRegExJavaScript" Type="String" />
-            <Value Key="Notes" Value="Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot;&gt;help with tag validation&lt;/a&gt; for more infos" Type="String" />
+            <Value Key="Name" Value="Old ValidationRegExJavaScript" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;OLD feature: Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;/desktopmodules/tosic_sexycontent/dist/ng-edit/2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;help with tag validation&lt;/a&gt; for more infos.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="890ee484-9888-4ed6-9c03-0ee03bea1617" KeyNumber="11022">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="4530d30b-db0e-4541-8cab-08363eb03fe6" KeyNumber="11022" />
         </Attribute>
         <Attribute StaticName="CustomJavaScript" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="53550e09-cf1b-48bc-a78a-93c98d546bdb" KeyNumber="11023">
@@ -4706,7 +4880,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="Parameters for Testing and Runtime" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;The &lt;strong&gt;Test Parameters&lt;/strong&gt; are for testing only, while the &lt;strong&gt;Parameters&lt;/strong&gt; are used for the Params LookUp - for tokens like [Params:Id]&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The &lt;strong&gt;Test Parameters&lt;/strong&gt; are for testing only, while the &lt;strong&gt;Parameters&lt;/strong&gt; are used for the Params LookUp - for tokens like [Params:Id]. Read more about &lt;a href=&quot;https://r.2sxc.org/QueryParams&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Query Params in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -4718,7 +4892,7 @@
         <Attribute StaticName="Params" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a67f614b-d57a-48f7-bfd8-05604fa88725" KeyNumber="17845">
             <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Parameters" Type="String" />
@@ -4823,7 +4997,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="Parameters for Testing and Runtime" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;The &lt;strong&gt;Test Parameters&lt;/strong&gt; are for testing only, while the &lt;strong&gt;Parameters&lt;/strong&gt; are used for the Params LookUp - for tokens like [Params:Id]&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The &lt;strong&gt;Test Parameters&lt;/strong&gt; are for testing only, while the &lt;strong&gt;Parameters&lt;/strong&gt; are used for the Params LookUp - for tokens like [Params:Id]. Read more about &lt;a href=&quot;https://r.2sxc.org/QueryParams&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Query Params in the docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -4835,7 +5009,7 @@
         <Attribute StaticName="Params" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a67f614b-d57a-48f7-bfd8-05604fa88725" KeyNumber="17845">
             <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Parameters" Type="String" />
@@ -5201,6 +5375,160 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="35e59922-5e4c-409a-805d-026d8f0b7676" KeyNumber="11943">
             <Value Key="DropdownValues" Value="None (no permissions defined):-&#xA;Read:r&#xA;Create (no read or edit):c&#xA;Update (read and modify existing):ru&#xA;Delete:d&#xA;Edit (Create, Read, Update, Delete):crud&#xA;All Content (CRUD + Approve):cruda&#xA;All Content + Permissions:crudap&#xA;Design/Develop (modify internal structure):crudav&#xA;Design and Permissions:crudavp&#xA;Full Control (usually host only):crudavpz&#xA;Read schema (applies to content-types):$&#xA;Read drafts (applies to content-types):ř&#xA;Create draft (applies to content-types):č&#xA;Update drafts (applies to content-types):ǔ&#xA;Edit draft CRUD (applies to centent-types):řčǔď" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="4a8eded3-727e-4990-b986-019d84b3d220" Name="RegExCheck" Description="Used to validate fields" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2e6fcfd2-9a79-4332-9c8b-e2722c6b63fd" KeyNumber="17846">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Test for ..." Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a nice title for your convenience, so you know what this regex is for.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="84e67299-b1cb-4713-935e-57e5d039df4c" KeyNumber="17846">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ffc53071-f755-4296-ab7d-d596a926ec01" KeyNumber="17846" />
+        </Attribute>
+        <Attribute StaticName="RegEx" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c69b94bb-9421-425c-99be-806f03bc20ed" KeyNumber="17847">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="RegEx" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The Regular Expression in JS standard.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="75d70f0e-9e16-4f18-bfff-971695cb6473" KeyNumber="17847">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="957493e7-138b-43b7-8584-373b1054fedd" KeyNumber="17847">
+            <Value Key="RowCount" Value="5" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Message" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a1d9cc4f-ffb3-49af-8e1a-fb403984c7a9" KeyNumber="17848">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Warning: field validation failed." Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Message" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Message to show to the user if the expression fails.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3dd50a69-dc2b-4b7a-976e-aba713ff2ffa" KeyNumber="17848">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="5720d287-635c-4297-86fd-de40f4f190df" KeyNumber="17848">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Invert" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7bde51e5-b169-4da3-b09d-56d150f93a05" KeyNumber="17849">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Invert Result" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Normally an expression is ok, if the regex matches the value found. In some cases, you would rather say &quot;it shouldn't match the expression&quot; for blacklisting certain things. So if you want the expression to&amp;nbsp;&lt;em&gt;not match&lt;/em&gt;, then activate this toggle.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="4a8eded3-727e-4990-b986-019d84b3d220" Name="RegExCheck" Description="Used to validate fields" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2e6fcfd2-9a79-4332-9c8b-e2722c6b63fd" KeyNumber="17846">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Test for ..." Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a nice title for your convenience, so you know what this regex is for.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="84e67299-b1cb-4713-935e-57e5d039df4c" KeyNumber="17846">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ffc53071-f755-4296-ab7d-d596a926ec01" KeyNumber="17846" />
+        </Attribute>
+        <Attribute StaticName="RegEx" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c69b94bb-9421-425c-99be-806f03bc20ed" KeyNumber="17847">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="RegEx" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The Regular Expression in JS standard.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="75d70f0e-9e16-4f18-bfff-971695cb6473" KeyNumber="17847">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="957493e7-138b-43b7-8584-373b1054fedd" KeyNumber="17847">
+            <Value Key="RowCount" Value="5" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Message" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a1d9cc4f-ffb3-49af-8e1a-fb403984c7a9" KeyNumber="17848">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Warning: field validation failed." Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Message" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Message to show to the user if the expression fails.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3dd50a69-dc2b-4b7a-976e-aba713ff2ffa" KeyNumber="17848">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="5720d287-635c-4297-86fd-de40f4f190df" KeyNumber="17848">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Invert" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7bde51e5-b169-4da3-b09d-56d150f93a05" KeyNumber="17849">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Invert Result" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Normally an expression is ok, if the regex matches the value found. In some cases, you would rather say &quot;it shouldn't match the expression&quot; for blacklisting certain things. So if you want the expression to&amp;nbsp;&lt;em&gt;not match&lt;/em&gt;, then activate this toggle.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -5711,24 +6039,47 @@
       <Value Key="Type" Value="string-wysiwyg-tinymce" Type="String" />
       <Value Key="UseAdam" Value="True" Type="Boolean" />
     </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="498f424b-db24-4a79-aab7-056ad5e410d6" KeyString="4a8eded3-727e-4990-b986-019d84b3d220">
+      <Value Key="Description" Value="Used to validate fields" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configura a regular expression check here. It will usually be used in JavaScript, so make sure your RegEx adheres to the JavaScript RegEx standard. You can develop/test your regex in online tools like the &lt;a href=&quot;https://regexr.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RegExr&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Regular Expression" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
   </Entities>
   <PortalFiles />
   <PortalFolders>
     <Folder Id="2548" RelativePath="adam/System-Types/" />
+    <Folder Id="5451" RelativePath="adam/System-Types/0s9vLnmaMkOci-JyLGtj_Q/" />
+    <Folder Id="5452" RelativePath="adam/System-Types/0s9vLnmaMkOci-JyLGtj_Q/Notes/" />
     <Folder Id="4127" RelativePath="adam/System-Types/1B7ayatCR0mVfX9AwMRKlA/" />
     <Folder Id="4131" RelativePath="adam/System-Types/1B7ayatCR0mVfX9AwMRKlA/EditInstructions/" />
     <Folder Id="4128" RelativePath="adam/System-Types/1B7ayatCR0mVfX9AwMRKlA/Icon/" />
     <Folder Id="4129" RelativePath="adam/System-Types/1B7ayatCR0mVfX9AwMRKlA/Link/" />
     <Folder Id="4132" RelativePath="adam/System-Types/1B7ayatCR0mVfX9AwMRKlA/ListInstructions/" />
     <Folder Id="4130" RelativePath="adam/System-Types/1B7ayatCR0mVfX9AwMRKlA/Notes/" />
+    <Folder Id="5477" RelativePath="adam/System-Types/24_9p21n6UWFsxm3sOsSFQ/" />
+    <Folder Id="5478" RelativePath="adam/System-Types/24_9p21n6UWFsxm3sOsSFQ/Notes/" />
+    <Folder Id="5469" RelativePath="adam/System-Types/3iZj_f5Pd0-FgENuxQKuTA/" />
+    <Folder Id="5470" RelativePath="adam/System-Types/3iZj_f5Pd0-FgENuxQKuTA/Notes/" />
     <Folder Id="4694" RelativePath="adam/System-Types/4-hmc3tFYEqmqevIElFYXA/" />
     <Folder Id="4695" RelativePath="adam/System-Types/4-hmc3tFYEqmqevIElFYXA/Notes/" />
     <Folder Id="4712" RelativePath="adam/System-Types/5SMFInWw6EySSguYB4yooQ/" />
     <Folder Id="4713" RelativePath="adam/System-Types/5SMFInWw6EySSguYB4yooQ/Notes/" />
+    <Folder Id="5457" RelativePath="adam/System-Types/5VHee2mxo02wnVbRUPk6BQ/" />
+    <Folder Id="5458" RelativePath="adam/System-Types/5VHee2mxo02wnVbRUPk6BQ/Notes/" />
     <Folder Id="4708" RelativePath="adam/System-Types/8cEHc8BUzkaXvbPjPfV4BA/" />
     <Folder Id="4709" RelativePath="adam/System-Types/8cEHc8BUzkaXvbPjPfV4BA/Notes/" />
     <Folder Id="4692" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/" />
     <Folder Id="4693" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/Notes/" />
+    <Folder Id="5473" RelativePath="adam/System-Types/bjmne0qlb0mO5YZcR9I-Jw/" />
+    <Folder Id="5474" RelativePath="adam/System-Types/bjmne0qlb0mO5YZcR9I-Jw/Notes/" />
+    <Folder Id="5475" RelativePath="adam/System-Types/cpcBBDMhE0WPD0CAgrcFNA/" />
+    <Folder Id="5476" RelativePath="adam/System-Types/cpcBBDMhE0WPD0CAgrcFNA/Notes/" />
+    <Folder Id="5471" RelativePath="adam/System-Types/G0z0aQi7bEGLaEE4jWunNA/" />
+    <Folder Id="5472" RelativePath="adam/System-Types/G0z0aQi7bEGLaEE4jWunNA/Notes/" />
     <Folder Id="4696" RelativePath="adam/System-Types/jAKgbq6t60m2TSMdRfM_OA/" />
     <Folder Id="4697" RelativePath="adam/System-Types/jAKgbq6t60m2TSMdRfM_OA/Notes/" />
     <Folder Id="4702" RelativePath="adam/System-Types/JoO90U_xlE-TgIBG_eDxgA/" />
@@ -5743,14 +6094,32 @@
     <Folder Id="4691" RelativePath="adam/System-Types/Lovo4esTa0mQeRCKHJNTjg/Notes/" />
     <Folder Id="4121" RelativePath="adam/System-Types/LwIIVMLfiUm2RRvna7bYmw/" />
     <Folder Id="4122" RelativePath="adam/System-Types/LwIIVMLfiUm2RRvna7bYmw/Notes/" />
+    <Folder Id="5461" RelativePath="adam/System-Types/lwTHfiakikSnMM55813Uew/" />
+    <Folder Id="5462" RelativePath="adam/System-Types/lwTHfiakikSnMM55813Uew/Notes/" />
+    <Folder Id="5463" RelativePath="adam/System-Types/ome3TE_YI0O3UMsrFgiPDQ/" />
+    <Folder Id="5464" RelativePath="adam/System-Types/ome3TE_YI0O3UMsrFgiPDQ/Notes/" />
     <Folder Id="4700" RelativePath="adam/System-Types/-QtaTuc1p0KfUPO8wMxjhQ/" />
     <Folder Id="4701" RelativePath="adam/System-Types/-QtaTuc1p0KfUPO8wMxjhQ/Notes/" />
+    <Folder Id="5444" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/" />
+    <Folder Id="5449" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/EditInstructions/" />
+    <Folder Id="5446" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/Icon/" />
+    <Folder Id="5448" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/Link/" />
+    <Folder Id="5450" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/ListInstructions/" />
+    <Folder Id="5447" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/Notes/" />
     <Folder Id="4706" RelativePath="adam/System-Types/S0sjet5-hE-m4W55eDhC4A/" />
     <Folder Id="4707" RelativePath="adam/System-Types/S0sjet5-hE-m4W55eDhC4A/Notes/" />
     <Folder Id="5440" RelativePath="adam/System-Types/S2F_pnrV90i_2AVgT6iHJQ/" />
     <Folder Id="5441" RelativePath="adam/System-Types/S2F_pnrV90i_2AVgT6iHJQ/Notes/" />
     <Folder Id="5438" RelativePath="adam/System-Types/SmvL_S3yykWBfsFLaKA4KA/" />
     <Folder Id="5439" RelativePath="adam/System-Types/SmvL_S3yykWBfsFLaKA4KA/Notes/" />
+    <Folder Id="5455" RelativePath="adam/System-Types/T8zZobP_r0mOGvtAOYTHqQ/" />
+    <Folder Id="5456" RelativePath="adam/System-Types/T8zZobP_r0mOGvtAOYTHqQ/Notes/" />
+    <Folder Id="5453" RelativePath="adam/System-Types/u5SbxiGUXEKZvoBvA7wg7Q/" />
+    <Folder Id="5454" RelativePath="adam/System-Types/u5SbxiGUXEKZvoBvA7wg7Q/Notes/" />
+    <Folder Id="5465" RelativePath="adam/System-Types/uksPAVg9H0iggrfE1D9oxA/" />
+    <Folder Id="5466" RelativePath="adam/System-Types/uksPAVg9H0iggrfE1D9oxA/Message/" />
+    <Folder Id="5459" RelativePath="adam/System-Types/UzLPadbglEOfs-uJRTksuA/" />
+    <Folder Id="5460" RelativePath="adam/System-Types/UzLPadbglEOfs-uJRTksuA/Notes/" />
     <Folder Id="4710" RelativePath="adam/System-Types/v30Z3UrLZEu-qEQuhVJf0g/" />
     <Folder Id="4711" RelativePath="adam/System-Types/v30Z3UrLZEu-qEQuhVJf0g/Notes/" />
     <Folder Id="4704" RelativePath="adam/System-Types/VE4AVzDFd0e6hvDrDq_nKQ/" />
