@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.07.01" ExportDate="2020-09-29T21:47:26.143738+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.08.00" ExportDate="2020-11-09T12:42:17.1820497+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -332,6 +332,48 @@
             <Value Key="RowCount" Value="12" Type="Number" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="GroupCalculations" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ed7aea66-7a76-4c72-9f5f-23a1f1c882c0" KeyNumber="23110">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Calculations (Beta / WIP)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is experimental / work in progress. Goal is to have formulas for calculating values etc.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="6cc95e17-0baf-46db-a20c-9031135cc53a" KeyNumber="23110">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Calculations" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="822c72d5-d864-4e2c-ba28-63117973a1d5" KeyNumber="23111">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="Calculations / Formulas" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="0e862ce8-c341-4c5a-937f-09e37a5f5677" KeyNumber="23111">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="False" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="UiFormula" Type="String" />
+          </Entity>
+        </Attribute>
       </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="@All" Name="@All" Description="the fields used on all input types" Scope="System.Fields" AlwaysShareConfiguration="false">
@@ -658,6 +700,48 @@
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="2b3ee05b-91c5-4b79-8d75-211ec1445a39" KeyNumber="11023">
             <Value Key="RowCount" Value="12" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupCalculations" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ed7aea66-7a76-4c72-9f5f-23a1f1c882c0" KeyNumber="23110">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Calculations (Beta / WIP)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is experimental / work in progress. Goal is to have formulas for calculating values etc.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="6cc95e17-0baf-46db-a20c-9031135cc53a" KeyNumber="23110">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Calculations" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="822c72d5-d864-4e2c-ba28-63117973a1d5" KeyNumber="23111">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="Calculations / Formulas" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="0e862ce8-c341-4c5a-937f-09e37a5f5677" KeyNumber="23111">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="False" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="UiFormula" Type="String" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -6920,6 +7004,168 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" Name="UiFormula" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a5aca5c0-4e4f-41ff-b6f6-61d74d73c2ed" KeyNumber="23112">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Target" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6e0db16d-261c-43d7-a9af-9801d11ccbc0" KeyNumber="23113">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="value" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Target" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1d4a41de-2b2d-4dd3-8c90-10c12d6b76e6" KeyNumber="23113">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="c3a1471f-4c34-4cad-baf1-325b04f91287" KeyNumber="23113">
+            <Value Key="DropdownValues" Value="The field value:value&#xA;Visibility (show/hide):visible&#xA;Required (must be filled in):required&#xA;Enabled (can be edited):enabled" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Formula" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="377a1d4e-5131-4ce4-904c-07ac0801fcf2" KeyNumber="23114">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="js(context) { return 'hello'; }" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Formula" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The formula - still WIP.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="17f5e665-ac5a-45d5-bb13-b2633302ef58" KeyNumber="23114">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aef05229-76ff-4ae6-955b-4c5adaec58cb" KeyNumber="23114">
+            <Value Key="RowCount" Value="3" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="db877d55-b910-415c-bfda-a474178c3727" KeyNumber="23115">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Add your own notes so you know what this is for or what it does.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6f952f1c-289e-4aba-afa8-30cdfd0ff756" KeyNumber="23115">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="1c339a04-2e98-4a54-b259-2c5ade275979" KeyNumber="23115">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="ContentCss" Value="" Type="Hyperlink" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" Name="UiFormula" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a5aca5c0-4e4f-41ff-b6f6-61d74d73c2ed" KeyNumber="23112">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Target" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6e0db16d-261c-43d7-a9af-9801d11ccbc0" KeyNumber="23113">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="value" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Target" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1d4a41de-2b2d-4dd3-8c90-10c12d6b76e6" KeyNumber="23113">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="c3a1471f-4c34-4cad-baf1-325b04f91287" KeyNumber="23113">
+            <Value Key="DropdownValues" Value="The field value:value&#xA;Visibility (show/hide):visible&#xA;Required (must be filled in):required&#xA;Enabled (can be edited):enabled" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Formula" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="377a1d4e-5131-4ce4-904c-07ac0801fcf2" KeyNumber="23114">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="js(context) { return 'hello'; }" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Formula" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The formula - still WIP.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="17f5e665-ac5a-45d5-bb13-b2633302ef58" KeyNumber="23114">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aef05229-76ff-4ae6-955b-4c5adaec58cb" KeyNumber="23114">
+            <Value Key="RowCount" Value="3" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="db877d55-b910-415c-bfda-a474178c3727" KeyNumber="23115">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Add your own notes so you know what this is for or what it does.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6f952f1c-289e-4aba-afa8-30cdfd0ff756" KeyNumber="23115">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="1c339a04-2e98-4a54-b259-2c5ade275979" KeyNumber="23115">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="ContentCss" Value="" Type="Hyperlink" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="11001010-251c-eafe-2792-000000000001" Name="Zone" Description="An EAV Zone description" Scope="System.Experimental" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Id" Type="Number" IsTitle="false">
@@ -7501,7 +7747,16 @@
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
       <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="11.07.01" Type="String" />
+      <Value Key="Version" Value="11.08.00" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="ba7533db-4b2d-48fa-bbd1-56405b2f42a6" KeyString="772dfff1-b236-4aa9-8359-5f53c08ff7bf">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;This is still BETA &amp;amp; Work in Progress, so please don't use this yet.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="UI Formula / Calculation" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />
@@ -7517,6 +7772,9 @@
     <Folder Id="4130" RelativePath="adam/System-Types/1B7ayatCR0mVfX9AwMRKlA/Notes/" />
     <Folder Id="5477" RelativePath="adam/System-Types/24_9p21n6UWFsxm3sOsSFQ/" />
     <Folder Id="5478" RelativePath="adam/System-Types/24_9p21n6UWFsxm3sOsSFQ/Notes/" />
+    <Folder Id="8631" RelativePath="adam/System-Types/2zN1ui1L-ki70VZAWy9Cpg/" />
+    <Folder Id="8633" RelativePath="adam/System-Types/2zN1ui1L-ki70VZAWy9Cpg/Icon/" />
+    <Folder Id="8632" RelativePath="adam/System-Types/2zN1ui1L-ki70VZAWy9Cpg/Link/" />
     <Folder Id="5469" RelativePath="adam/System-Types/3iZj_f5Pd0-FgENuxQKuTA/" />
     <Folder Id="5470" RelativePath="adam/System-Types/3iZj_f5Pd0-FgENuxQKuTA/Notes/" />
     <Folder Id="4694" RelativePath="adam/System-Types/4-hmc3tFYEqmqevIElFYXA/" />
@@ -7542,6 +7800,8 @@
     <Folder Id="4693" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/Notes/" />
     <Folder Id="5473" RelativePath="adam/System-Types/bjmne0qlb0mO5YZcR9I-Jw/" />
     <Folder Id="5474" RelativePath="adam/System-Types/bjmne0qlb0mO5YZcR9I-Jw/Notes/" />
+    <Folder Id="8629" RelativePath="adam/System-Types/BJozHJguVEqyWSxa3idZeQ/" />
+    <Folder Id="8630" RelativePath="adam/System-Types/BJozHJguVEqyWSxa3idZeQ/ContentCss/" />
     <Folder Id="8388" RelativePath="adam/System-Types/C5JrptgFQU240DNkgGJ3ag/" />
     <Folder Id="8390" RelativePath="adam/System-Types/C5JrptgFQU240DNkgGJ3ag/Icon/" />
     <Folder Id="8389" RelativePath="adam/System-Types/C5JrptgFQU240DNkgGJ3ag/Link/" />
