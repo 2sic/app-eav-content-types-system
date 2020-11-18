@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.08.00" ExportDate="2020-11-09T12:42:17.1820497+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.10.01" ExportDate="2020-11-18T08:45:46.9168735+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -3594,9 +3594,11 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Dialog Type" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Determines if the wysiwyg is opened in a dialog (default behaviour in 2sxc 10).&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -3606,7 +3608,7 @@
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="8ae00964-b775-40bf-aa26-b8a5986aaebc" KeyNumber="15045">
-            <Value Key="DropdownValues" Value="Default (dialog):&#xA;Use dialog:dialog&#xA;Place in form without dialog:inline" Type="String" />
+            <Value Key="DropdownValues" Value="Default (inline):&#xA;Use dialog:dialog&#xA;Place in form without dialog:inline" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -3698,9 +3700,11 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Dialog Type" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Determines if the wysiwyg is opened in a dialog (default behaviour in 2sxc 10).&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -3710,7 +3714,7 @@
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="8ae00964-b775-40bf-aa26-b8a5986aaebc" KeyNumber="15045">
-            <Value Key="DropdownValues" Value="Default (dialog):&#xA;Use dialog:dialog&#xA;Place in form without dialog:inline" Type="String" />
+            <Value Key="DropdownValues" Value="Default (inline):&#xA;Use dialog:dialog&#xA;Place in form without dialog:inline" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -7747,7 +7751,7 @@
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
       <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="11.08.00" Type="String" />
+      <Value Key="Version" Value="11.10.01" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="ba7533db-4b2d-48fa-bbd1-56405b2f42a6" KeyString="772dfff1-b236-4aa9-8359-5f53c08ff7bf">
       <Value Key="Description" Value="" Type="String" />
