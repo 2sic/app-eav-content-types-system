@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.10.01" ExportDate="2020-11-18T08:45:46.9168735+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.11.04" ExportDate="2021-02-10T09:30:24.5471549+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -297,9 +297,11 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Old ValidationRegExJavaScript" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;OLD feature: Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;/desktopmodules/tosic_sexycontent/dist/ng-edit/2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;help with tag validation&lt;/a&gt; for more infos.&lt;/p&gt;" Type="String" />
+            <Value Key="Name" Value="Validation RegEx JavaScript" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;OLD feature: Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;https://2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;help with tag validation&lt;/a&gt; for more infos. We're working on a new improved feature.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -667,9 +669,11 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Old ValidationRegExJavaScript" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;OLD feature: Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;/desktopmodules/tosic_sexycontent/dist/ng-edit/2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;help with tag validation&lt;/a&gt; for more infos.&lt;/p&gt;" Type="String" />
+            <Value Key="Name" Value="Validation RegEx JavaScript" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;OLD feature: Help text: regular expression to validate the input - the UI will not allow saving if this condition is not met - see &lt;a href=&quot;https://2sxc.org/help?tag=validation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;help with tag validation&lt;/a&gt; for more infos. We're working on a new improved feature.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -1089,14 +1093,20 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="Name" Value="Collapsed by default" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;If set to true, then the field group is collapsed by default.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="7fae583e-963b-42a3-8b71-cf7628b518a9" KeyNumber="11029" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="7fae583e-963b-42a3-8b71-cf7628b518a9" KeyNumber="11029">
+            <Value Key="TitleFalse" Value="Open / Uncollapsed when dialog loads" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Collapsed when the dialog loads" Type="String" />
+          </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -1107,14 +1117,20 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="Name" Value="Collapsed by default" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;If set to true, then the field group is collapsed by default.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="7fae583e-963b-42a3-8b71-cf7628b518a9" KeyNumber="11029" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="7fae583e-963b-42a3-8b71-cf7628b518a9" KeyNumber="11029">
+            <Value Key="TitleFalse" Value="Open / Uncollapsed when dialog loads" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Collapsed when the dialog loads" Type="String" />
+          </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -1290,6 +1306,46 @@
             <Value Key="TitleTrue" Value="" Type="String" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="GroupExperimental" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="487df46d-3ec2-4d53-87a7-c0e02a182340" KeyNumber="24436">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Experimental / Beta Features" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;These features are not final, so you should only use them with caution and the way they are configured may still change.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="a1db0df3-753a-4d72-888a-a99c53105b48" KeyNumber="24436">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Prefill" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fac91655-1777-4775-bdea-16b0c71e3ab6" KeyNumber="24435">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Prefill (Beta)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is still a beta feature. Goal is that you can specify prefill-values for new entities generated through this. It's not documented, since it's still WIP and may change as we complete the implementation.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="56b5211c-7067-4da2-a4f3-f308ebcd0311" KeyNumber="24435">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b649b222-9167-4b3a-961b-35b48c6d18c1" KeyNumber="24435">
+            <Value Key="RowCount" Value="5" Type="Number" />
+          </Entity>
+        </Attribute>
       </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="@Entity" Name="@Entity" Description="Entity UI Definitions" Scope="System.Fields" AlwaysShareConfiguration="false">
@@ -1462,6 +1518,46 @@
             <Value Key="TitleFalse" Value="" Type="String" />
             <Value Key="TitleIndeterminate" Value="" Type="String" />
             <Value Key="TitleTrue" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupExperimental" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="487df46d-3ec2-4d53-87a7-c0e02a182340" KeyNumber="24436">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Experimental / Beta Features" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;These features are not final, so you should only use them with caution and the way they are configured may still change.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="a1db0df3-753a-4d72-888a-a99c53105b48" KeyNumber="24436">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Prefill" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fac91655-1777-4775-bdea-16b0c71e3ab6" KeyNumber="24435">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Prefill (Beta)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is still a beta feature. Goal is that you can specify prefill-values for new entities generated through this. It's not documented, since it's still WIP and may change as we complete the implementation.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="56b5211c-7067-4da2-a4f3-f308ebcd0311" KeyNumber="24435">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b649b222-9167-4b3a-961b-35b48c6d18c1" KeyNumber="24435">
+            <Value Key="RowCount" Value="5" Type="Number" />
           </Entity>
         </Attribute>
       </Attributes>
