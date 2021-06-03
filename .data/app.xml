@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.02.00" ExportDate="2021-06-01T22:57:27.4751667+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.02.00" ExportDate="2021-06-03T23:52:58.8885029+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -142,7 +142,10 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="859a787b-f9d4-4069-89de-4e51d2a21bd2" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="User Interface (UI) Settings" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Configure how this field behaves in the input form.&amp;nbsp;&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
@@ -596,7 +599,10 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="859a787b-f9d4-4069-89de-4e51d2a21bd2" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="User Interface (UI) Settings" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Configure how this field behaves in the input form.&amp;nbsp;&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
@@ -969,7 +975,9 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="ae75440d-d7d7-46c9-b405-9508603322ea" Type="Entity" />
             <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Title when Indeterminate" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;This is shown when the field has no value - so it's only relevant for boolean input fields which have 3 states.&amp;nbsp;&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
@@ -980,6 +988,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="43472eaa-d4b6-41a7-8d9a-d4cb5b490407" KeyNumber="20641">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="eb953a6e-f9e6-47c3-ad07-7903846bc9c6" KeyNumber="20641">
             <Value Key="RowCount" Value="1" Type="Number" />
@@ -991,7 +1000,9 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Reverse Toggle" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Sometimes you're storing a negative-named-value like &lt;em&gt;Disable.&lt;/em&gt; But you want to show the user &lt;strong&gt;Enabled&lt;/strong&gt; when the value is &lt;em&gt;false&lt;/em&gt;, showing an active toggle. This reverses what the toggle visual shows.&amp;nbsp;&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
@@ -1000,7 +1011,7 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="59b42099-e4b2-44ce-845a-53f175bd005e" KeyNumber="24846">
-            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="ReverseToggle" Value="True" Type="Boolean" />
             <Value Key="TitleFalse" Value="Normal Toggle: true shows the active toggle" Type="String" />
             <Value Key="TitleIndeterminate" Value="Default Toggle: true shows the active toggle" Type="String" />
             <Value Key="TitleTrue" Value="Reverse Toggle: false shows the active toggle" Type="String" />
@@ -1063,7 +1074,9 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="ae75440d-d7d7-46c9-b405-9508603322ea" Type="Entity" />
             <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Title when Indeterminate" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;This is shown when the field has no value - so it's only relevant for boolean input fields which have 3 states.&amp;nbsp;&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
@@ -1074,6 +1087,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="43472eaa-d4b6-41a7-8d9a-d4cb5b490407" KeyNumber="20641">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="eb953a6e-f9e6-47c3-ad07-7903846bc9c6" KeyNumber="20641">
             <Value Key="RowCount" Value="1" Type="Number" />
@@ -1085,7 +1099,9 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Reverse Toggle" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Sometimes you're storing a negative-named-value like &lt;em&gt;Disable.&lt;/em&gt; But you want to show the user &lt;strong&gt;Enabled&lt;/strong&gt; when the value is &lt;em&gt;false&lt;/em&gt;, showing an active toggle. This reverses what the toggle visual shows.&amp;nbsp;&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
@@ -1094,7 +1110,7 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="59b42099-e4b2-44ce-845a-53f175bd005e" KeyNumber="24846">
-            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="ReverseToggle" Value="True" Type="Boolean" />
             <Value Key="TitleFalse" Value="Normal Toggle: true shows the active toggle" Type="String" />
             <Value Key="TitleIndeterminate" Value="Default Toggle: true shows the active toggle" Type="String" />
             <Value Key="TitleTrue" Value="Reverse Toggle: false shows the active toggle" Type="String" />
@@ -3183,6 +3199,32 @@
             <Value Key="Decimals" Value="0" Type="Number" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="InputFontFamily" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="41af71f5-a567-4773-9a53-a23dda4caa88" KeyNumber="24953">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Font" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b2be2a5a-7c9b-48d2-859e-064e08ab3e80" KeyNumber="24953">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="a8c8e552-c0c0-46fe-b9fc-3271b1521b38" KeyNumber="24953">
+            <Value Key="DropdownValues" Value="Standard form font (default):&#xA;Monospace for code-style (usually Courier):monospace" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
       </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="@string-default" Name="@string-default" Description="Default single or multi-line string input" Scope="System.Fields" AlwaysShareConfiguration="false">
@@ -3203,6 +3245,32 @@
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Number" AttributeSetName="@Number" EntityGUID="057ed9d6-679a-437c-b87c-5b2ebbc22933" KeyNumber="11063">
             <Value Key="Decimals" Value="0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="InputFontFamily" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="41af71f5-a567-4773-9a53-a23dda4caa88" KeyNumber="24953">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Font" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b2be2a5a-7c9b-48d2-859e-064e08ab3e80" KeyNumber="24953">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="a8c8e552-c0c0-46fe-b9fc-3271b1521b38" KeyNumber="24953">
+            <Value Key="DropdownValues" Value="Standard form font (default):&#xA;Monospace for code-style (usually Courier):monospace" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -5558,10 +5626,35 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="21c7077f-1441-4c96-b5c3-ca21f6f9f1c3" KeyNumber="24852">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="4af51efc-6099-46ae-8749-e17117830025" KeyNumber="24852">
-            <Value Key="DropdownValues" Value="Please choose...:&#xA;View doesn't need Data:-&#xA;Single Content Item:c&#xA;List of Content Items:cl&#xA;Data from Query:q&#xA;Data from Query with Option to Create New Items:cq&#xA;Show all Settings:clq" Type="String" />
+            <Value Key="DropdownValues" Value="Please choose...:&#xA;View doesn't need Data:-&#xA;Single Content Item:c&#xA;List of Content Items:cl&#xA;Data from Query:q&#xA;Data from Query with Module-Content:cq&#xA;Show all Settings:clq" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="VarPresentation" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="acb08960-2653-4d4b-be18-35e755d773c3" KeyNumber="24857">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="True" Type="Boolean" />
+            <Value Key="Formulas" Value="7ef8345b-d7dd-45d6-b786-025a839f9e50,fb171277-ef31-4a9b-957d-97f19ab3d7eb" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="Show Presentation Settings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Content-items can have a &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Presentation item&lt;/a&gt; to describe how it should be styled when shown on a specific Module instance.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="c22acd85-0b45-4919-87e0-28d36c0af349" KeyNumber="24857">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Don't use Presentation on Content-Items" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Activate Presentation on Content-Items" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupContent" Type="Empty" IsTitle="false">
@@ -5647,30 +5740,6 @@
             <Value Key="InputType" Value="empty-end" Type="String" />
             <Value Key="Name" Value="GroupEndi2" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="VarPresentation" Type="Boolean" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="acb08960-2653-4d4b-be18-35e755d773c3" KeyNumber="24857">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="7ef8345b-d7dd-45d6-b786-025a839f9e50,fb171277-ef31-4a9b-957d-97f19ab3d7eb" Type="Entity" />
-            <Value Key="InputType" Value="boolean-default" Type="String" />
-            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="Show Presentation Settings" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Content-items can have a &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Presentation item&lt;/a&gt; to describe how it should be styled when shown on a specific Module instance.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="c22acd85-0b45-4919-87e0-28d36c0af349" KeyNumber="24857">
-            <Value Key="ReverseToggle" Value="" Type="Boolean" />
-            <Value Key="TitleFalse" Value="Don't use Presentation on Content-Items" Type="String" />
-            <Value Key="TitleIndeterminate" Value="" Type="String" />
-            <Value Key="TitleTrue" Value="Activate Presentation on Content-Items" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupContentPresentation" Type="Empty" IsTitle="false">
@@ -5965,7 +6034,7 @@
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Search Indexing Configuration" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;If the platform like DNN has built-in search, it will find the data shown on this view point to the page this view is on. There are cases where you may want to customize this, like in list-details scenarios where the search-result should point to the details page. To do this, you must write some C# code which changes the data before it's given to the search indexer.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If the platform like DNN has built-in search, it will find the data shown on this view point to the page this view is on. There are cases where you may want to customize this. See &lt;a href=&quot;https://r.2sxc.org/customize-search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
@@ -5975,6 +6044,30 @@
             <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="VarSearchIsDefault" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e4655b81-2b3c-4161-b38f-075658f811be" KeyNumber="24951">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="true" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="a71cb2c5-6724-44aa-95c1-f5d56e3b0dc6" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="VarSearchIsDefault" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="24133bc9-4f4f-41f0-a085-a9c1d5e76440" KeyNumber="24951">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Custom Search Indexing (configure yourself)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Default Search Indexing (all Module-Data is given to the Search Index)" Type="String" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="SearchIndexingDisabled" Type="Boolean" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3167240f-9739-41d9-84c5-884d0fcdb072" KeyNumber="24946">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -5982,6 +6075,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="fc7fdefa-49b0-43d0-b0ea-e7065f8c7a3c" Type="Entity" />
             <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="SearchIndexingDisabled" Type="String" />
@@ -5996,6 +6090,89 @@
             <Value Key="TitleFalse" Value="Enable Search Indexing (default)" Type="String" />
             <Value Key="TitleIndeterminate" Value="" Type="String" />
             <Value Key="TitleTrue" Value="Disable Search Index (will not give data to the search indexer)" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="VarCustomSearchStreams" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="86036beb-68a5-4222-8621-740ea47507c5" KeyNumber="24948">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="8f0eb938-3077-40d4-a09d-d2bb240f216c,e9388505-2517-4d00-8cbe-1574371b53a5" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="VarCustomSearchStreams" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="bcdc7191-29d0-45ea-959b-026b7ab1751d" KeyNumber="24948">
+            <Value Key="ReverseToggle" Value="True" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Pass all Query-Streams to the Search Index (default)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Restrict which Streams in the Query are passed to the Search Index" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="SearchIndexingStreams" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="02969b50-b35e-44bd-9897-754214a18c05" KeyNumber="24947">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="60332050-45b6-434a-b982-eeb2dee9db0a" Type="Entity" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Query Streams to Use in the Search Index" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="56b069d8-c4dc-4760-9a7b-bdbb93c023bb" KeyNumber="24947">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="e9b79aee-b5f4-4d78-b45b-2b43d57736fe" KeyNumber="24947">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="False" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.QueryInfo" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="QueryName=[Pipeline]&amp;StreamName=Default" Type="String" />
+            <Value Key="Value" Value="Name" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="VarCustomViewController" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6415e564-b7d3-4c73-a5af-e74a300e4d69" KeyNumber="24952">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="79b8d7f1-9f3b-441b-be61-633dee1526dd" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="VarCustomViewController" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="3be8ba4e-5be1-4cf5-931a-dcc2c15e970f" KeyNumber="24952">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Index Data As-Is / Unmodified (default)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Use Code to Customize how Data is Modified" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ViewController" Type="String" IsTitle="false">
@@ -6065,7 +6242,7 @@
             <Value Key="Formulas" Value="d4c5db00-2209-44fe-8a29-d1ad03c6b5df" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Advanced Data Publishing Settings" Type="String" />
+            <Value Key="Name" Value="Advanced Data Publishing Settings (Old, Deprecated, Avoid using)" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;These&amp;nbsp;settings are fairly advanced and you will usually not need them. Read &lt;a href=&quot;http://2sxc.org/help?tag=templates&quot; target=&quot;_blank&quot;&gt;more&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -6548,10 +6725,35 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="21c7077f-1441-4c96-b5c3-ca21f6f9f1c3" KeyNumber="24852">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="4af51efc-6099-46ae-8749-e17117830025" KeyNumber="24852">
-            <Value Key="DropdownValues" Value="Please choose...:&#xA;View doesn't need Data:-&#xA;Single Content Item:c&#xA;List of Content Items:cl&#xA;Data from Query:q&#xA;Data from Query with Option to Create New Items:cq&#xA;Show all Settings:clq" Type="String" />
+            <Value Key="DropdownValues" Value="Please choose...:&#xA;View doesn't need Data:-&#xA;Single Content Item:c&#xA;List of Content Items:cl&#xA;Data from Query:q&#xA;Data from Query with Module-Content:cq&#xA;Show all Settings:clq" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="VarPresentation" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="acb08960-2653-4d4b-be18-35e755d773c3" KeyNumber="24857">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="True" Type="Boolean" />
+            <Value Key="Formulas" Value="7ef8345b-d7dd-45d6-b786-025a839f9e50,fb171277-ef31-4a9b-957d-97f19ab3d7eb" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="Show Presentation Settings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Content-items can have a &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Presentation item&lt;/a&gt; to describe how it should be styled when shown on a specific Module instance.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="c22acd85-0b45-4919-87e0-28d36c0af349" KeyNumber="24857">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Don't use Presentation on Content-Items" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Activate Presentation on Content-Items" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupContent" Type="Empty" IsTitle="false">
@@ -6637,30 +6839,6 @@
             <Value Key="InputType" Value="empty-end" Type="String" />
             <Value Key="Name" Value="GroupEndi2" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="VarPresentation" Type="Boolean" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="acb08960-2653-4d4b-be18-35e755d773c3" KeyNumber="24857">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="7ef8345b-d7dd-45d6-b786-025a839f9e50,fb171277-ef31-4a9b-957d-97f19ab3d7eb" Type="Entity" />
-            <Value Key="InputType" Value="boolean-default" Type="String" />
-            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="Show Presentation Settings" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Content-items can have a &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Presentation item&lt;/a&gt; to describe how it should be styled when shown on a specific Module instance.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="c22acd85-0b45-4919-87e0-28d36c0af349" KeyNumber="24857">
-            <Value Key="ReverseToggle" Value="" Type="Boolean" />
-            <Value Key="TitleFalse" Value="Don't use Presentation on Content-Items" Type="String" />
-            <Value Key="TitleIndeterminate" Value="" Type="String" />
-            <Value Key="TitleTrue" Value="Activate Presentation on Content-Items" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupContentPresentation" Type="Empty" IsTitle="false">
@@ -6955,7 +7133,7 @@
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Search Indexing Configuration" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;If the platform like DNN has built-in search, it will find the data shown on this view point to the page this view is on. There are cases where you may want to customize this, like in list-details scenarios where the search-result should point to the details page. To do this, you must write some C# code which changes the data before it's given to the search indexer.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If the platform like DNN has built-in search, it will find the data shown on this view point to the page this view is on. There are cases where you may want to customize this. See &lt;a href=&quot;https://r.2sxc.org/customize-search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
@@ -6965,6 +7143,30 @@
             <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
+        <Attribute StaticName="VarSearchIsDefault" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e4655b81-2b3c-4161-b38f-075658f811be" KeyNumber="24951">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="true" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="a71cb2c5-6724-44aa-95c1-f5d56e3b0dc6" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="VarSearchIsDefault" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="24133bc9-4f4f-41f0-a085-a9c1d5e76440" KeyNumber="24951">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Custom Search Indexing (configure yourself)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Default Search Indexing (all Module-Data is given to the Search Index)" Type="String" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="SearchIndexingDisabled" Type="Boolean" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3167240f-9739-41d9-84c5-884d0fcdb072" KeyNumber="24946">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -6972,6 +7174,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="fc7fdefa-49b0-43d0-b0ea-e7065f8c7a3c" Type="Entity" />
             <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="SearchIndexingDisabled" Type="String" />
@@ -6986,6 +7189,89 @@
             <Value Key="TitleFalse" Value="Enable Search Indexing (default)" Type="String" />
             <Value Key="TitleIndeterminate" Value="" Type="String" />
             <Value Key="TitleTrue" Value="Disable Search Index (will not give data to the search indexer)" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="VarCustomSearchStreams" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="86036beb-68a5-4222-8621-740ea47507c5" KeyNumber="24948">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="8f0eb938-3077-40d4-a09d-d2bb240f216c,e9388505-2517-4d00-8cbe-1574371b53a5" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="VarCustomSearchStreams" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="bcdc7191-29d0-45ea-959b-026b7ab1751d" KeyNumber="24948">
+            <Value Key="ReverseToggle" Value="True" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Pass all Query-Streams to the Search Index (default)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Restrict which Streams in the Query are passed to the Search Index" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="SearchIndexingStreams" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="02969b50-b35e-44bd-9897-754214a18c05" KeyNumber="24947">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="60332050-45b6-434a-b982-eeb2dee9db0a" Type="Entity" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Query Streams to Use in the Search Index" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="56b069d8-c4dc-4760-9a7b-bdbb93c023bb" KeyNumber="24947">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="e9b79aee-b5f4-4d78-b45b-2b43d57736fe" KeyNumber="24947">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="False" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.QueryInfo" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="QueryName=[Pipeline]&amp;StreamName=Default" Type="String" />
+            <Value Key="Value" Value="Name" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="VarCustomViewController" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6415e564-b7d3-4c73-a5af-e74a300e4d69" KeyNumber="24952">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="79b8d7f1-9f3b-441b-be61-633dee1526dd" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="IsEphemeral" Value="True" Type="Boolean" />
+            <Value Key="Name" Value="VarCustomViewController" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="3be8ba4e-5be1-4cf5-931a-dcc2c15e970f" KeyNumber="24952">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Index Data As-Is / Unmodified (default)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Use Code to Customize how Data is Modified" Type="String" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ViewController" Type="String" IsTitle="false">
@@ -7055,7 +7341,7 @@
             <Value Key="Formulas" Value="d4c5db00-2209-44fe-8a29-d1ad03c6b5df" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Advanced Data Publishing Settings" Type="String" />
+            <Value Key="Name" Value="Advanced Data Publishing Settings (Old, Deprecated, Avoid using)" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;These&amp;nbsp;settings are fairly advanced and you will usually not need them. Read &lt;a href=&quot;http://2sxc.org/help?tag=templates&quot; target=&quot;_blank&quot;&gt;more&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -7877,22 +8163,27 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="05690831-7509-42fb-89e8-df7796ceab1e" KeyNumber="11923" />
         </Attribute>
         <Attribute StaticName="Icon" Type="Hyperlink" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="18de4b80-06da-4f59-8c72-a015c44935a1" Json="True" KeyNumber="11924">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="18de4b80-06da-4f59-8c72-a015c44935a1" KeyNumber="11924">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="hyperlink-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Icon" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;You can give this content-type an icon to use in tile-style buttons. Read the recommendations in &lt;a href=&quot;http://2sxc.org/help?tag=content-type&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Give this content-type an icon to use in tile-style buttons (&lt;a href=&quot;https://r.2sxc.org/app-icons&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;).&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="Drop file or use [App:Path]/file-in-your-app.png" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="5320a089-48d4-4204-834f-f2e631311847" Json="True" KeyNumber="11924">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="5320a089-48d4-4204-834f-f2e631311847" KeyNumber="11924">
             <Value Key="Buttons" Value="adam,more" Type="String" />
             <Value Key="DefaultDialog" Value="" Type="String" />
             <Value Key="FileFilter" Value="" Type="String" />
             <Value Key="Paths" Value="" Type="String" />
+            <Value Key="ServerResourceMapping" Value="" Type="String" />
             <Value Key="ShowAdam" Value="True" Type="Boolean" />
             <Value Key="ShowFileManager" Value="False" Type="Boolean" />
             <Value Key="ShowImageManager" Value="False" Type="Boolean" />
@@ -8049,22 +8340,27 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="05690831-7509-42fb-89e8-df7796ceab1e" KeyNumber="11923" />
         </Attribute>
         <Attribute StaticName="Icon" Type="Hyperlink" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="18de4b80-06da-4f59-8c72-a015c44935a1" Json="True" KeyNumber="11924">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="18de4b80-06da-4f59-8c72-a015c44935a1" KeyNumber="11924">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="hyperlink-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Icon" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;You can give this content-type an icon to use in tile-style buttons. Read the recommendations in &lt;a href=&quot;http://2sxc.org/help?tag=content-type&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Give this content-type an icon to use in tile-style buttons (&lt;a href=&quot;https://r.2sxc.org/app-icons&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;).&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="Drop file or use [App:Path]/file-in-your-app.png" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="5320a089-48d4-4204-834f-f2e631311847" Json="True" KeyNumber="11924">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="5320a089-48d4-4204-834f-f2e631311847" KeyNumber="11924">
             <Value Key="Buttons" Value="adam,more" Type="String" />
             <Value Key="DefaultDialog" Value="" Type="String" />
             <Value Key="FileFilter" Value="" Type="String" />
             <Value Key="Paths" Value="" Type="String" />
+            <Value Key="ServerResourceMapping" Value="" Type="String" />
             <Value Key="ShowAdam" Value="True" Type="Boolean" />
             <Value Key="ShowFileManager" Value="False" Type="Boolean" />
             <Value Key="ShowImageManager" Value="False" Type="Boolean" />
@@ -8698,7 +8994,22 @@
       </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="b25db367-c501-4929-a5d6-5e65affe9078" Name="dummy1" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
-      <Attributes />
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5b148023-6473-447d-9377-82daecec3d59" KeyNumber="24949">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Test" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="999861bc-6b3b-405d-a7ce-d6b41905d5b9" KeyNumber="24950">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Test" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="094941f2-688e-4df1-89c9-51a51c8bbb2e" Name="FeaturesConfiguration" Description="manages features for this installation" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
@@ -9260,8 +9571,10 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="17f5e665-ac5a-45d5-bb13-b2633302ef58" KeyNumber="23114">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aef05229-76ff-4ae6-955b-4c5adaec58cb" KeyNumber="23114">
+            <Value Key="InputFontFamily" Value="monospace" Type="String" />
             <Value Key="RowCount" Value="10" Type="Number" />
           </Entity>
         </Attribute>
@@ -9410,8 +9723,10 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="17f5e665-ac5a-45d5-bb13-b2633302ef58" KeyNumber="23114">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aef05229-76ff-4ae6-955b-4c5adaec58cb" KeyNumber="23114">
+            <Value Key="InputFontFamily" Value="monospace" Type="String" />
             <Value Key="RowCount" Value="10" Type="Number" />
           </Entity>
         </Attribute>
@@ -10189,13 +10504,17 @@
       <Value Key="Location" Value="Site" Type="String" />
       <Value Key="Name" Value="test" Type="String" />
       <Value Key="Path" Value="_default.cshtml" Type="String" />
+      <Value Key="Pipeline" Value="092bdf56-7495-47b9-905c-96e47b4d45f6" Type="Entity" />
       <Value Key="PresentationTypeStaticName" Value="" Type="String" />
       <Value Key="PublishData" Value="False" Type="Boolean" />
       <Value Key="Resources" Value="6be568d1-c44a-40b9-a7b3-d454a64eaf16" Type="Entity" />
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean" />
+      <Value Key="SearchIndexingStreams" Value="anotherDummy,dummy1" Type="String" />
       <Value Key="Settings" Value="169316de-1d1a-4b46-8f99-5367e5d39ae5" Type="Entity" />
       <Value Key="StreamsToPublish" Value="" Type="String" />
       <Value Key="Type" Value="C# Razor" Type="String" />
       <Value Key="UseForList" Value="False" Type="Boolean" />
+      <Value Key="ViewController" Value="" Type="String" />
       <Value Key="ViewNameInUrl" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="8896d0cb-1366-4508-90db-59825a86fb0f">
@@ -10318,7 +10637,7 @@
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="b4f42c20-54fc-431b-8794-3fd3439615a7">
       <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data, context) {&#xA;console.log('var show advanced', data, context);&#xA;  if(context.cache.notFirstRun) return data.value || false;&#xA;  context.cache.notFirstRun = true;&#xA;&#xA;  // Init with true if advanced stuff is set&#xA;  if(data.Type != 'C# Razor') return true;&#xA;  // check for both old/new value, as the value-init may not have run already&#xA;  if(data.Location != 'Site' &amp;&amp; data.Location != 'Portal File System') return true;&#xA;  if(data.PublishData == true) return true;&#xA;&#xA;  // don't init otherwise&#xA;  return false;&#xA;}" Type="String" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;// console.log('var show advanced', data, context);&#xA;  if(context.cache.notFirstRun) return data.value || false;&#xA;  context.cache.notFirstRun = true;&#xA;&#xA;  // Init with true if advanced stuff is set&#xA;  if(data.Type != 'C# Razor') return true;&#xA;  // check for both old/new value, as the value-init may not have run already&#xA;  if(data.Location != 'Site' &amp;&amp; data.Location != 'Portal File System') return true;&#xA;  if(data.PublishData == true) return true;&#xA;&#xA;  // don't init otherwise&#xA;  return false;&#xA;}" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
       <Value Key="Target" Value="Field.Value" Type="String" />
       <Value Key="Title" Value="Value: Initialize if already using advanced stuff" Type="String" />
@@ -10666,17 +10985,118 @@
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="06582961-f1e3-4a1c-b470-c72e883ba829">
       <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data, context) {&#xA;  var hint = data.SearchIndexingDisabled &#xA;    ? 'disabled'&#xA;    : (data.ViewController ? 'custom: ' + data.ViewController: 'use default behavior');&#xA;  return data.default + ' (' + hint + ')'; &#xA;}" Type="String" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  var hint = data.SearchIndexingDisabled &#xA;    ? 'disabled'&#xA;    : (data.ViewController ? '⚙ ' + data.ViewController : 'use default behavior');&#xA;&#xA;  if(data.SearchIndexingStreams.length &gt; 0)&#xA;    hint += '; filter Query-Streams';&#xA;  return data.default + ' (' + hint + ')'; &#xA;}" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
       <Value Key="Target" Value="Field.Settings.Name" Type="String" />
       <Value Key="Title" Value="Setting Name:  show checkbox if used" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="567a2811-c819-4ce5-bc50-3f757628dace">
       <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data, context) { return !data.SearchIndexingDisabled; }" Type="String" />
+      <Value Key="Formula" Value="v1(data, context) { &#xA;  return !data.VarSearchIsDefault // hide if default&#xA;    &amp;&amp; !data.SearchIndexingDisabled // hide if disabled&#xA;    // show if has content or toggle is on&#xA;    &amp;&amp; (!!data.ViewController || data.VarCustomViewController);&#xA;}" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
       <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
       <Value Key="Title" Value="Setting Visible" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="8f0eb938-3077-40d4-a09d-d2bb240f216c">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return data.Pipeline.length == 1 &amp;&amp; !data.VarSearchIsDefault; }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible: Show if query" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="60332050-45b6-434a-b982-eeb2dee9db0a">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return !!data.SearchIndexingStreams || data.VarCustomSearchStreams; }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="e9388505-2517-4d00-8cbe-1574371b53a5">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;&#xA;  return !!data.SearchIndexingStreams;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Value" Type="String" />
+      <Value Key="Title" Value="Value: Initial true if already set" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="092bdf56-7495-47b9-905c-96e47b4d45f6">
+      <Value Key="AllowEdit" Value="True" Type="Boolean" />
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="TestQueryWithManyStreams" Type="String" />
+      <Value Key="Params" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String" />
+      <Value Key="StreamsOut" Value="Default,Header,dummy1,anotherDummy" Type="String" />
+      <Value Key="StreamWiring" Value="6c5e5570-2528-4239-830f-de68dd1f0098:Header&gt;Out:Header&#xD;&#xA;6c5e5570-2528-4239-830f-de68dd1f0098:Default&gt;Out:Default&#xD;&#xA;45a15713-38e4-4c80-a4ff-ea1e14af4003:dummy1&gt;Out:dummy1&#xD;&#xA;45a15713-38e4-4c80-a4ff-ea1e14af4003:anotherDummy&gt;Out:anotherDummy" Type="String" />
+      <Value Key="TestParameters" Value="[Demo:Demo]=true" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="6c5e5570-2528-4239-830f-de68dd1f0098" KeyGuid="092bdf56-7495-47b9-905c-96e47b4d45f6">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="CMS Block" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Sxc.DataSources.CmsBlock, ToSic.Sxc" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 540,&#xD;&#xA;  &quot;Left&quot;: 420&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="45a15713-38e4-4c80-a4ff-ea1e14af4003" KeyGuid="092bdf56-7495-47b9-905c-96e47b4d45f6">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="App" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 540,&#xD;&#xA;  &quot;Left&quot;: 100&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="b25db367-c501-4929-a5d6-5e65affe9078" AttributeSetName="dummy1" EntityGUID="6e18a815-7278-4f84-941f-a7d1cd31f2e5">
+      <Value Key="Test" Value="test" Type="String" />
+      <Value Key="Title" Value="test" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="a71cb2c5-6724-44aa-95c1-f5d56e3b0dc6">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;return &#xA;  !data.SearchIndexingDisabled&#xA;  &amp;&amp; SearchIndexingStreams.length == 0&#xA;  &amp;&amp; ViewController == ''&#xA;; &#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Value" Type="String" />
+      <Value Key="Title" Value="Value" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="fc7fdefa-49b0-43d0-b0ea-e7065f8c7a3c">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return !data.VarSearchIsDefault; }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="79b8d7f1-9f3b-441b-be61-633dee1526dd">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { &#xA;  var result =  !data.ViewController &#xA;    &amp;&amp; !data.VarSearchIsDefault &#xA;    &amp;&amp; !data.SearchIndexingDisabled;  &#xA;  return result;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="77d48043-c9ef-4f26-8cc7-b8f2fa2d74c3">
+      <Value Key="ContentTypeStaticName" Value="" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Identifier" Value="" Type="String" />
+      <Value Key="IsHidden" Value="False" Type="Boolean" />
+      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="Location" Value="Site" Type="String" />
+      <Value Key="Name" Value="aoeu" Type="String" />
+      <Value Key="Path" Value="_default.cshtml" Type="String" />
+      <Value Key="PresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="PublishData" Value="False" Type="Boolean" />
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean" />
+      <Value Key="SearchIndexingStreams" Value="" Type="String" />
+      <Value Key="StreamsToPublish" Value="" Type="String" />
+      <Value Key="Type" Value="C# Razor" Type="String" />
+      <Value Key="UseForList" Value="False" Type="Boolean" />
+      <Value Key="ViewController" Value="SearchMapper3.cs" Type="String" />
+      <Value Key="ViewNameInUrl" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="859a787b-f9d4-4069-89de-4e51d2a21bd2">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  var hints = [];&#xA;  if(!data.VisibleInEditUI) hints.push('hidden');&#xA;  if(data.Disabled) hints.push('disabled');&#xA;  if(data.Required) hints.push('required');&#xA;  if(data.DisableTranslation) hints.push('no i18n');&#xA;  if(data.IsEphemeral) hints.push('no-save');&#xA;  var hint = hints.length ? ' (' + hints.join(', ') + ')' : '';&#xA;  return data.default + hint; &#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Name" Type="String" />
+      <Value Key="Title" Value="Setting Name" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="ae75440d-d7d7-46c9-b405-9508603322ea">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context, exp) {&#xA;  var entities = exp.getEntities();&#xA;  var isTristate = entities.find(a =&gt; a.type.id == '@boolean-tristate');&#xA;  // console.log('found', isTristate);&#xA;  return !!isTristate;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible: Tristate only" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />
@@ -10737,6 +11157,8 @@
     <Folder Id="4709" RelativePath="adam/System-Types/8cEHc8BUzkaXvbPjPfV4BA/Notes/" />
     <Folder Id="4692" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/" />
     <Folder Id="4693" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/Notes/" />
+    <Folder Id="10479" RelativePath="adam/System-Types/arlCK0Adzka9ylcqXy3jug/" />
+    <Folder Id="10480" RelativePath="adam/System-Types/arlCK0Adzka9ylcqXy3jug/Icon/" />
     <Folder Id="10455" RelativePath="adam/System-Types/ARxHoVm5jkiT5TOOVNQ7vQ/" />
     <Folder Id="10456" RelativePath="adam/System-Types/ARxHoVm5jkiT5TOOVNQ7vQ/Icon/" />
     <Folder Id="10477" RelativePath="adam/System-Types/AyCkGG9uykaI3QiWxmK_Tw/" />
@@ -10750,6 +11172,8 @@
     <Folder Id="8388" RelativePath="adam/System-Types/C5JrptgFQU240DNkgGJ3ag/" />
     <Folder Id="8390" RelativePath="adam/System-Types/C5JrptgFQU240DNkgGJ3ag/Icon/" />
     <Folder Id="8389" RelativePath="adam/System-Types/C5JrptgFQU240DNkgGJ3ag/Link/" />
+    <Folder Id="10487" RelativePath="adam/System-Types/C9D2-PGULkOBWi_OJXjc0w/" />
+    <Folder Id="10488" RelativePath="adam/System-Types/C9D2-PGULkOBWi_OJXjc0w/Icon/" />
     <Folder Id="8394" RelativePath="adam/System-Types/cDw2wKQgtk2HdUl6mEJFmg/" />
     <Folder Id="8396" RelativePath="adam/System-Types/cDw2wKQgtk2HdUl6mEJFmg/Icon/" />
     <Folder Id="8395" RelativePath="adam/System-Types/cDw2wKQgtk2HdUl6mEJFmg/Link/" />
@@ -10790,12 +11214,18 @@
     <Folder Id="10426" RelativePath="adam/System-Types/jSHyEyR50k6IW7wc7NqeeA/Icon/" />
     <Folder Id="4123" RelativePath="adam/System-Types/jUznVDmVukSc4AJdt6QuDA/" />
     <Folder Id="4124" RelativePath="adam/System-Types/jUznVDmVukSc4AJdt6QuDA/Notes/" />
+    <Folder Id="10493" RelativePath="adam/System-Types/k6G9CcR-EE6oeE92tkNasA/" />
+    <Folder Id="10494" RelativePath="adam/System-Types/k6G9CcR-EE6oeE92tkNasA/Icon/" />
     <Folder Id="4698" RelativePath="adam/System-Types/k6zBtZlFx0qv5aQai_P9xQ/" />
     <Folder Id="4699" RelativePath="adam/System-Types/k6zBtZlFx0qv5aQai_P9xQ/Notes/" />
     <Folder Id="5442" RelativePath="adam/System-Types/kuam5gbxxkWwtHKd8My2fg/" />
     <Folder Id="5443" RelativePath="adam/System-Types/kuam5gbxxkWwtHKd8My2fg/Notes/" />
+    <Folder Id="10485" RelativePath="adam/System-Types/L0z4HDa7Q0SrZSW-_T8SNg/" />
+    <Folder Id="10486" RelativePath="adam/System-Types/L0z4HDa7Q0SrZSW-_T8SNg/Icon/" />
     <Folder Id="10431" RelativePath="adam/System-Types/lbFNAoQhlkmZN1s3rb0pPQ/" />
     <Folder Id="10432" RelativePath="adam/System-Types/lbFNAoQhlkmZN1s3rb0pPQ/Icon/" />
+    <Folder Id="10481" RelativePath="adam/System-Types/lirQ66HsUEOg-7IVgDULxg/" />
+    <Folder Id="10482" RelativePath="adam/System-Types/lirQ66HsUEOg-7IVgDULxg/Icon/" />
     <Folder Id="4690" RelativePath="adam/System-Types/Lovo4esTa0mQeRCKHJNTjg/" />
     <Folder Id="4691" RelativePath="adam/System-Types/Lovo4esTa0mQeRCKHJNTjg/Notes/" />
     <Folder Id="10368" RelativePath="adam/System-Types/Lrv0xt-mzkCmSX6cE5YuEA/" />
@@ -10818,8 +11248,12 @@
     <Folder Id="10413" RelativePath="adam/System-Types/Pe_mUTgYm0yc6bLMZCSMYg/Link/" />
     <Folder Id="10382" RelativePath="adam/System-Types/PyQndYtxgE-K9YrpTCJCCw/" />
     <Folder Id="10383" RelativePath="adam/System-Types/PyQndYtxgE-K9YrpTCJCCw/ContentCss/" />
+    <Folder Id="10491" RelativePath="adam/System-Types/Q4DUd-_JJk-Mx7jy-i10ww/" />
+    <Folder Id="10492" RelativePath="adam/System-Types/Q4DUd-_JJk-Mx7jy-i10ww/Icon/" />
     <Folder Id="4700" RelativePath="adam/System-Types/-QtaTuc1p0KfUPO8wMxjhQ/" />
     <Folder Id="4701" RelativePath="adam/System-Types/-QtaTuc1p0KfUPO8wMxjhQ/Notes/" />
+    <Folder Id="10483" RelativePath="adam/System-Types/Rs28Pl1-K0mAg0vL4Ajbug/" />
+    <Folder Id="10484" RelativePath="adam/System-Types/Rs28Pl1-K0mAg0vL4Ajbug/Icon/" />
     <Folder Id="5444" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/" />
     <Folder Id="5449" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/EditInstructions/" />
     <Folder Id="5446" RelativePath="adam/System-Types/S0KPSSTbeUqqtwVq1eQQ1g/Icon/" />
@@ -10878,6 +11312,8 @@
     <Folder Id="8404" RelativePath="adam/System-Types/X5Kn_rE_pEK5IxYfLryEwQ/" />
     <Folder Id="8405" RelativePath="adam/System-Types/X5Kn_rE_pEK5IxYfLryEwQ/Icon/" />
     <Folder Id="8406" RelativePath="adam/System-Types/X5Kn_rE_pEK5IxYfLryEwQ/Link/" />
+    <Folder Id="10489" RelativePath="adam/System-Types/ywoyZaafQ0iAYJzIoo0tWg/" />
+    <Folder Id="10490" RelativePath="adam/System-Types/ywoyZaafQ0iAYJzIoo0tWg/Icon/" />
     <Folder Id="10459" RelativePath="adam/System-Types/Z9kUnjOuiEyynqYhvztcOQ/" />
     <Folder Id="10460" RelativePath="adam/System-Types/Z9kUnjOuiEyynqYhvztcOQ/Icon/" />
     <Folder Id="10371" RelativePath="adam/System-Types/zM4wzlKcEkSqlTalw_zgqw/" />
