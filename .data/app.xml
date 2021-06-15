@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.02.00" ExportDate="2021-06-03T23:52:58.8885029+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.02.02" ExportDate="2021-06-15T23:15:31.9280559+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -3187,8 +3187,10 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="True" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="number-default" Type="String" />
-            <Value Key="Name" Value="RowCount" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Rows" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -3197,6 +3199,8 @@
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Number" AttributeSetName="@Number" EntityGUID="057ed9d6-679a-437c-b87c-5b2ebbc22933" KeyNumber="11063">
             <Value Key="Decimals" Value="0" Type="Number" />
+            <Value Key="Max" Value="" Type="Number" />
+            <Value Key="Min" Value="" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="InputFontFamily" Type="String" IsTitle="false">
@@ -3208,7 +3212,7 @@
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Font" Type="String" />
+            <Value Key="Name" Value="Font Family" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -3221,7 +3225,7 @@
             <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="a8c8e552-c0c0-46fe-b9fc-3271b1521b38" KeyNumber="24953">
-            <Value Key="DropdownValues" Value="Standard form font (default):&#xA;Monospace for code-style (usually Courier):monospace" Type="String" />
+            <Value Key="DropdownValues" Value="Standard font (default):&#xA;Monospace for code-style (usually Courier):monospace" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -3235,8 +3239,10 @@
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="True" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="number-default" Type="String" />
-            <Value Key="Name" Value="RowCount" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Rows" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -3245,6 +3251,8 @@
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Number" AttributeSetName="@Number" EntityGUID="057ed9d6-679a-437c-b87c-5b2ebbc22933" KeyNumber="11063">
             <Value Key="Decimals" Value="0" Type="Number" />
+            <Value Key="Max" Value="" Type="Number" />
+            <Value Key="Min" Value="" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="InputFontFamily" Type="String" IsTitle="false">
@@ -3256,7 +3264,7 @@
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Font" Type="String" />
+            <Value Key="Name" Value="Font Family" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -3269,7 +3277,7 @@
             <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="a8c8e552-c0c0-46fe-b9fc-3271b1521b38" KeyNumber="24953">
-            <Value Key="DropdownValues" Value="Standard form font (default):&#xA;Monospace for code-style (usually Courier):monospace" Type="String" />
+            <Value Key="DropdownValues" Value="Standard font (default):&#xA;Monospace for code-style (usually Courier):monospace" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -4558,6 +4566,616 @@
     <AttributeSet StaticName="@string-wysiwyg-tinymce" Name="@string-wysiwyg-tinymce" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
+    <AttributeSet StaticName="f5764f60-2621-4a5d-9391-100fbe664640" Name="⚙️GoogleMaps" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="SettingsIdentifier" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f1d1ccd8-f9f1-41e9-80b5-c8eb8d3e0a3e" KeyNumber="25006">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="GoogleMaps" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Title / Settings Identifier" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="2eb275b8-b5c2-4afa-b494-10c6c727ae5d" KeyNumber="25006">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b3d0af8c-a179-4002-9dfe-ebbecd799019" KeyNumber="25006">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="InitialZoom" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c5360f9d-d049-46c9-8dd2-29634f788cc7" KeyNumber="25007">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Initial Zoom of the Map (default is 14)" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="cdecbdf9-e77d-4155-b496-bb36274c5610" KeyNumber="25007">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="535c605b-93d2-432f-b98d-ce8fa4e42780" KeyNumber="25007">
+            <Value Key="DropdownValues" Value="1 (show as much as possible):1&#xA;2:2&#xA;3:3&#xA;4:4&#xA;5:5&#xA;6:6&#xA;7:7&#xA;8:8&#xA;9:9&#xA;10:10&#xA;11:11&#xA;12:12&#xA;13:13&#xA;14:14&#xA;15:15&#xA;16:16&#xA;17:17&#xA;18:18&#xA;19:19&#xA;20 (zoom as close as possible):20" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ApiKey" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3a024141-f6ac-44fd-9786-ead31b01dcc2" KeyNumber="25008">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Google Maps Api Key" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="17d48b76-3efa-4eee-82a6-08587661451a" KeyNumber="25008">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aad0d742-e928-4d6c-923f-8fb69830cbba" KeyNumber="25008">
+            <Value Key="InputFontFamily" Value="monospace" Type="String" />
+            <Value Key="RowCount" Value="2" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowApiKeyWarning" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3c6fd668-f7e6-4db0-b4fa-de7bfd7b8d5b" KeyNumber="25009">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Show Api Key Warning" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="c2f10ab2-4d97-4139-a098-b8019ec0ea90" KeyNumber="25009">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Don't show API-Key warning" Type="String" />
+            <Value Key="TitleIndeterminate" Value="Show API-Key Warning (Default: show warning if default key)" Type="String" />
+            <Value Key="TitleTrue" Value="Show Api Key Warning" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MarkerIcon" Type="Hyperlink" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fa2d78fc-dbb2-4e34-93fe-78bb116b3769" KeyNumber="25015">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="hyperlink-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Marker Icon" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This will set the &lt;a href=&quot;https://developers.google.com/maps/documentation/javascript/markers&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;marker icon&lt;/a&gt; (the 📍). Leave empty for the google-maps default.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="6b052128-2aad-4154-a89c-ee1e6679f287" KeyNumber="25015">
+            <Value Key="Buttons" Value="adam,more" Type="String" />
+            <Value Key="DefaultDialog" Value="" Type="String" />
+            <Value Key="FileFilter" Value="" Type="String" />
+            <Value Key="Paths" Value="" Type="String" />
+            <Value Key="ServerResourceMapping" Value="" Type="String" />
+            <Value Key="ShowAdam" Value="True" Type="Boolean" />
+            <Value Key="ShowFileManager" Value="False" Type="Boolean" />
+            <Value Key="ShowImageManager" Value="False" Type="Boolean" />
+            <Value Key="ShowPagePicker" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="f5764f60-2621-4a5d-9391-100fbe664640" Name="⚙️GoogleMaps" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="SettingsIdentifier" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f1d1ccd8-f9f1-41e9-80b5-c8eb8d3e0a3e" KeyNumber="25006">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="GoogleMaps" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Title / Settings Identifier" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="2eb275b8-b5c2-4afa-b494-10c6c727ae5d" KeyNumber="25006">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b3d0af8c-a179-4002-9dfe-ebbecd799019" KeyNumber="25006">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="InitialZoom" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c5360f9d-d049-46c9-8dd2-29634f788cc7" KeyNumber="25007">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Initial Zoom of the Map (default is 14)" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="cdecbdf9-e77d-4155-b496-bb36274c5610" KeyNumber="25007">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="535c605b-93d2-432f-b98d-ce8fa4e42780" KeyNumber="25007">
+            <Value Key="DropdownValues" Value="1 (show as much as possible):1&#xA;2:2&#xA;3:3&#xA;4:4&#xA;5:5&#xA;6:6&#xA;7:7&#xA;8:8&#xA;9:9&#xA;10:10&#xA;11:11&#xA;12:12&#xA;13:13&#xA;14:14&#xA;15:15&#xA;16:16&#xA;17:17&#xA;18:18&#xA;19:19&#xA;20 (zoom as close as possible):20" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ApiKey" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3a024141-f6ac-44fd-9786-ead31b01dcc2" KeyNumber="25008">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Google Maps Api Key" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="17d48b76-3efa-4eee-82a6-08587661451a" KeyNumber="25008">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aad0d742-e928-4d6c-923f-8fb69830cbba" KeyNumber="25008">
+            <Value Key="InputFontFamily" Value="monospace" Type="String" />
+            <Value Key="RowCount" Value="2" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowApiKeyWarning" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3c6fd668-f7e6-4db0-b4fa-de7bfd7b8d5b" KeyNumber="25009">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Show Api Key Warning" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="c2f10ab2-4d97-4139-a098-b8019ec0ea90" KeyNumber="25009">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Don't show API-Key warning" Type="String" />
+            <Value Key="TitleIndeterminate" Value="Show API-Key Warning (Default: show warning if default key)" Type="String" />
+            <Value Key="TitleTrue" Value="Show Api Key Warning" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MarkerIcon" Type="Hyperlink" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fa2d78fc-dbb2-4e34-93fe-78bb116b3769" KeyNumber="25015">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="hyperlink-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Marker Icon" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This will set the &lt;a href=&quot;https://developers.google.com/maps/documentation/javascript/markers&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;marker icon&lt;/a&gt; (the 📍). Leave empty for the google-maps default.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="6b052128-2aad-4154-a89c-ee1e6679f287" KeyNumber="25015">
+            <Value Key="Buttons" Value="adam,more" Type="String" />
+            <Value Key="DefaultDialog" Value="" Type="String" />
+            <Value Key="FileFilter" Value="" Type="String" />
+            <Value Key="Paths" Value="" Type="String" />
+            <Value Key="ServerResourceMapping" Value="" Type="String" />
+            <Value Key="ShowAdam" Value="True" Type="Boolean" />
+            <Value Key="ShowFileManager" Value="False" Type="Boolean" />
+            <Value Key="ShowImageManager" Value="False" Type="Boolean" />
+            <Value Key="ShowPagePicker" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="5ad95efe-1dc9-4681-adb8-42d9e7f0183b" Name="⚙️QuickEdit" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="SettingsIdentifier" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4f243a10-1795-4b51-afc9-118bab0cdd11" KeyNumber="24995">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="QuickEdit" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Title / Settings Identifier" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1bebc016-265b-488d-8b15-b9429930cf0c" KeyNumber="24995">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="99f85172-ad98-4edc-a6fa-8ce4682bf3d5" KeyNumber="24995">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Parts" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8f910efd-f176-43e3-b642-08d62f4b1486" KeyNumber="24996">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Parts" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="666bd355-4a79-4b88-bf6f-0e39d25e6860" KeyNumber="24996">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="⚙️QuickEditPart" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="5ad95efe-1dc9-4681-adb8-42d9e7f0183b" Name="⚙️QuickEdit" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="SettingsIdentifier" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4f243a10-1795-4b51-afc9-118bab0cdd11" KeyNumber="24995">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="QuickEdit" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Title / Settings Identifier" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1bebc016-265b-488d-8b15-b9429930cf0c" KeyNumber="24995">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="99f85172-ad98-4edc-a6fa-8ce4682bf3d5" KeyNumber="24995">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Parts" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8f910efd-f176-43e3-b642-08d62f4b1486" KeyNumber="24996">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Parts" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="666bd355-4a79-4b88-bf6f-0e39d25e6860" KeyNumber="24996">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="⚙️QuickEditPart" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="46cd1afc-c840-4473-8586-6bb1f35656a8" Name="⚙️QuickEditPart" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="SettingsIdentifier" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="847bf7af-2f9e-43bd-9477-389c101b025f" KeyNumber="24997">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="bf0b980d-1e5c-487c-8732-ae780b7e84e0" Type="Entity" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="SettingsIdentifier" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9ee0bf8d-7dde-426b-afd5-2eee0f1701ca" KeyNumber="24997">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="d850de1d-1ae4-4623-b110-1c9a947ec669" KeyNumber="24997">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Part" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4544b653-e57c-42d8-92e6-291b4d5de48e" KeyNumber="24998">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Default" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Part" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d7a1450e-417a-44f1-8560-c0c125d03528" KeyNumber="24998">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fafd16ef-fcc9-42db-89ba-c6c2da5b6290" KeyNumber="24998">
+            <Value Key="DropdownValues" Value="Default:Default&#xA;Module:Module&#xA;Inner Content Area:InnerContentArea&#xA;Inner Content WYSIWYG / Dynamic:InnerContentDynamic" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Enable" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e7c1f9da-a305-4845-a837-a5dbc0247bd3" KeyNumber="25000">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="Enable" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AddApp" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="02856302-f4da-41ef-8f1b-f50ab0614e6a" KeyNumber="25001">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="AddApp" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AddContent" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fd280ad2-9dcf-48f2-86fe-bda9b927cda1" KeyNumber="25002">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="AddContent" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Select" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cd637330-f49f-46a0-b61c-3cba6620a870" KeyNumber="25003">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="Select" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Paste" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cae6aa41-bfec-4bd9-999c-fc83fd1beff4" KeyNumber="25004">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="Paste" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Move" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="30e2e6d1-edb8-491c-9d7f-73ee742777f0" KeyNumber="25005">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Move" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="2cc1ecbb-7853-4013-b064-bd34d45e39f0" KeyNumber="25005">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="46cd1afc-c840-4473-8586-6bb1f35656a8" Name="⚙️QuickEditPart" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="SettingsIdentifier" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="847bf7af-2f9e-43bd-9477-389c101b025f" KeyNumber="24997">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="bf0b980d-1e5c-487c-8732-ae780b7e84e0" Type="Entity" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="SettingsIdentifier" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9ee0bf8d-7dde-426b-afd5-2eee0f1701ca" KeyNumber="24997">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="d850de1d-1ae4-4623-b110-1c9a947ec669" KeyNumber="24997">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Part" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4544b653-e57c-42d8-92e6-291b4d5de48e" KeyNumber="24998">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Default" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Part" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d7a1450e-417a-44f1-8560-c0c125d03528" KeyNumber="24998">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fafd16ef-fcc9-42db-89ba-c6c2da5b6290" KeyNumber="24998">
+            <Value Key="DropdownValues" Value="Default:Default&#xA;Module:Module&#xA;Inner Content Area:InnerContentArea&#xA;Inner Content WYSIWYG / Dynamic:InnerContentDynamic" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Enable" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e7c1f9da-a305-4845-a837-a5dbc0247bd3" KeyNumber="25000">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="Enable" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AddApp" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="02856302-f4da-41ef-8f1b-f50ab0614e6a" KeyNumber="25001">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="AddApp" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AddContent" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fd280ad2-9dcf-48f2-86fe-bda9b927cda1" KeyNumber="25002">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="AddContent" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Select" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cd637330-f49f-46a0-b61c-3cba6620a870" KeyNumber="25003">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="Select" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Paste" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cae6aa41-bfec-4bd9-999c-fc83fd1beff4" KeyNumber="25004">
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="Name" Value="Paste" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Move" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="30e2e6d1-edb8-491c-9d7f-73ee742777f0" KeyNumber="25005">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Move" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="2cc1ecbb-7853-4013-b064-bd34d45e39f0" KeyNumber="25005">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="2SexyContent-App" Name="2SexyContent-App" Description="Describes a 2SexyContent app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="DisplayName" Type="String" IsTitle="true">
@@ -5664,7 +6282,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="58a965e4-844e-42e7-86eb-272a5518c4f1" Type="Entity" />
+            <Value Key="Formulas" Value="58a965e4-844e-42e7-86eb-272a5518c4f1,c0459a50-fec5-44af-a9ec-178c11cc0066,aa42949c-b740-4132-91f7-b32bb4b13cac" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Content-Item" Type="String" />
@@ -5987,7 +6605,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="8adcdefa-88e1-46d4-9874-c6a541774b6b" Type="Entity" />
+            <Value Key="Formulas" Value="8adcdefa-88e1-46d4-9874-c6a541774b6b,b8e974f6-1a2a-4f56-8481-0ac781714f29,1c1ac0c8-4d72-4314-a2ae-9fa54807e8e1" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Query Data for this Template" Type="String" />
@@ -6289,79 +6907,69 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="Formulas" Value="0c93c5e3-43d7-46e8-a8fc-6e5b04814277" Type="Entity" />
+            <Value Key="Formulas" Value="0c93c5e3-43d7-46e8-a8fc-6e5b04814277,04e7161e-5867-4108-8a6b-aab2bd1778f2" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="View Resources and Settings (BETA)" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Name" Value="View Settings and Resources (new in 12.02)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Settings allow your Razor templates to be configured at View-level, or you can also use the Identifier for this. Resources are for multi-language labels and logos. &lt;a href=&quot;https://r.2sxc.org/views&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;See View docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="20938536-6f9e-4a9d-a5b1-e93b2c030efe" KeyNumber="24924">
-            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="VarResourcesType" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="22b3093b-4af0-469f-83ba-2ba8e22b8834" KeyNumber="24931">
+        <Attribute StaticName="VarCustomIdentifier" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8a1939a7-903c-4a09-b5b0-4a78d1e6f0a3" KeyNumber="24943">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="Formulas" Value="6cac1021-b78b-4164-9736-dd66397e7432" Type="Entity" />
-            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="Formulas" Value="a58024ab-bcca-4e5a-a288-82d3ab36e668" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="ResourcesType" Type="String" />
+            <Value Key="Name" Value="Use a Custom Identifier" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42f4603e-aad1-4a49-ac2a-f2c61e5d7610" KeyNumber="24931">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="b0d4853a-ce5f-4b87-814a-10d65484c0c3" KeyNumber="24943">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Don't use a Custom Identifier (default)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Use a Custom Identifier for this View" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Identifier" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ac8c6055-851f-44c5-bd2f-e259842eb49b" KeyNumber="24942">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="7ed0691d-067d-41f3-8398-cfe75d21e77c" Type="Entity" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Custom Identifier" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is a unique ID for the view, which your code may access on &lt;a href=&quot;https://docs.2sxc.org/api/dot-net/ToSic.Sxc.Context.ICmsView.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CmsContext.View.Identifier&lt;/a&gt; to change it's behaviour based on this identifier. Usually you will either use this OR use the settings.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="Templates can change their behavior based on this Identifier" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42ebbe7f-626c-4081-995a-4de81870d868" KeyNumber="24942">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="906010c9-8e14-4c9b-9d1e-f6f2252ff04b" KeyNumber="24931">
-            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
-            <Value Key="EnableEdit" Value="False" Type="Boolean" />
-            <Value Key="EnableRemove" Value="True" Type="Boolean" />
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
-            <Value Key="Label" Value="Name" Type="String" />
-            <Value Key="Query" Value="Eav.Queries.Global.ContentTypes" Type="String" />
-            <Value Key="Separator" Value="," Type="String" />
-            <Value Key="StreamName" Value="Default" Type="String" />
-            <Value Key="UrlParameters" Value="appid=[App:AppId]&amp;scope=System.Configuration" Type="String" />
-            <Value Key="Value" Value="StaticName" Type="String" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="Resources" Type="Entity" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d7090d73-c986-4cc0-9063-fabcd899ad08" KeyNumber="24925">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="InputType" Value="entity-default" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Resources" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="ffbcad72-19e7-4bfa-ba23-8c010bc0f8e0" KeyNumber="24925">
-            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
-            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
-            <Value Key="EnableCreate" Value="True" Type="Boolean" />
-            <Value Key="EnableDelete" Value="False" Type="Boolean" />
-            <Value Key="EnableEdit" Value="True" Type="Boolean" />
-            <Value Key="EnableRemove" Value="True" Type="Boolean" />
-            <Value Key="EntityType" Value="[VarResourcesType]" Type="String" />
-            <Value Key="Prefill" Value="" Type="String" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b060d9e9-957a-4dcb-a8dd-e8f4b34745b6" KeyNumber="24942">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="VarSettingsType" Type="String" IsTitle="false">
@@ -6374,9 +6982,9 @@
             <Value Key="Formulas" Value="8f95c620-6b88-4212-b1cf-4f5a7b66ef46" Type="Entity" />
             <Value Key="InputType" Value="string-dropdown-query" Type="String" />
             <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="SettingsType" Type="String" />
+            <Value Key="Name" Value="Settings Content-Type" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Placeholder" Value="Types in the Configuration Scope" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -6384,6 +6992,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="2d334fbb-2221-4bd5-a32e-88f15ea8fe43" KeyNumber="24932">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="70dc81b7-0f04-45dd-960e-d82221ddf9af" KeyNumber="24932">
             <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
@@ -6405,9 +7014,10 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="87dd3509-3510-49d8-8534-4a6f7136f34c" Type="Entity" />
             <Value Key="InputType" Value="entity-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Settings" Type="String" />
+            <Value Key="Name" Value="Settings Item" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -6425,51 +7035,68 @@
             <Value Key="Prefill" Value="" Type="String" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="VarCustomIdentifier" Type="Boolean" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8a1939a7-903c-4a09-b5b0-4a78d1e6f0a3" KeyNumber="24943">
+        <Attribute StaticName="VarResourcesType" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="22b3093b-4af0-469f-83ba-2ba8e22b8834" KeyNumber="24931">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Formulas" Value="6cac1021-b78b-4164-9736-dd66397e7432" Type="Entity" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
             <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="VarCustomIdentifier" Type="String" />
+            <Value Key="Name" Value="Resources Content-Type" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="Types in the Configuration Scope" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42f4603e-aad1-4a49-ac2a-f2c61e5d7610" KeyNumber="24931">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="906010c9-8e14-4c9b-9d1e-f6f2252ff04b" KeyNumber="24931">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableEdit" Value="False" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.ContentTypes" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="appid=[App:AppId]&amp;scope=System.Configuration" Type="String" />
+            <Value Key="Value" Value="StaticName" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Resources" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d7090d73-c986-4cc0-9063-fabcd899ad08" KeyNumber="24925">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="7ec071ef-228d-4c9b-a86d-49d5724bc7ba" Type="Entity" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Resources Item" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="b0d4853a-ce5f-4b87-814a-10d65484c0c3" KeyNumber="24943">
-            <Value Key="ReverseToggle" Value="" Type="Boolean" />
-            <Value Key="TitleFalse" Value="" Type="String" />
-            <Value Key="TitleIndeterminate" Value="" Type="String" />
-            <Value Key="TitleTrue" Value="" Type="String" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="ffbcad72-19e7-4bfa-ba23-8c010bc0f8e0" KeyNumber="24925">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="False" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="[VarResourcesType]" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
           </Entity>
-        </Attribute>
-        <Attribute StaticName="Identifier" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ac8c6055-851f-44c5-bd2f-e259842eb49b" KeyNumber="24942">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="Formulas" Value="7ed0691d-067d-41f3-8398-cfe75d21e77c" Type="Entity" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Identifier" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;This is a unique ID for the view, which your code may access on &lt;a href=&quot;https://docs.2sxc.org/api/dot-net/ToSic.Sxc.Context.ICmsView.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CmsContext.View.Identifier&lt;/a&gt; to change it's behaviour based on this identifier. Usually you will either use this OR use the settings.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="Templates can change their behavior based on this Identifier" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42ebbe7f-626c-4081-995a-4de81870d868" KeyNumber="24942">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b060d9e9-957a-4dcb-a8dd-e8f4b34745b6" KeyNumber="24942" />
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -6763,7 +7390,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="58a965e4-844e-42e7-86eb-272a5518c4f1" Type="Entity" />
+            <Value Key="Formulas" Value="58a965e4-844e-42e7-86eb-272a5518c4f1,c0459a50-fec5-44af-a9ec-178c11cc0066,aa42949c-b740-4132-91f7-b32bb4b13cac" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Content-Item" Type="String" />
@@ -7086,7 +7713,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="8adcdefa-88e1-46d4-9874-c6a541774b6b" Type="Entity" />
+            <Value Key="Formulas" Value="8adcdefa-88e1-46d4-9874-c6a541774b6b,b8e974f6-1a2a-4f56-8481-0ac781714f29,1c1ac0c8-4d72-4314-a2ae-9fa54807e8e1" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Query Data for this Template" Type="String" />
@@ -7388,79 +8015,69 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="Formulas" Value="0c93c5e3-43d7-46e8-a8fc-6e5b04814277" Type="Entity" />
+            <Value Key="Formulas" Value="0c93c5e3-43d7-46e8-a8fc-6e5b04814277,04e7161e-5867-4108-8a6b-aab2bd1778f2" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="View Resources and Settings (BETA)" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Name" Value="View Settings and Resources (new in 12.02)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Settings allow your Razor templates to be configured at View-level, or you can also use the Identifier for this. Resources are for multi-language labels and logos. &lt;a href=&quot;https://r.2sxc.org/views&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;See View docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="20938536-6f9e-4a9d-a5b1-e93b2c030efe" KeyNumber="24924">
-            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="VarResourcesType" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="22b3093b-4af0-469f-83ba-2ba8e22b8834" KeyNumber="24931">
+        <Attribute StaticName="VarCustomIdentifier" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8a1939a7-903c-4a09-b5b0-4a78d1e6f0a3" KeyNumber="24943">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="Formulas" Value="6cac1021-b78b-4164-9736-dd66397e7432" Type="Entity" />
-            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="Formulas" Value="a58024ab-bcca-4e5a-a288-82d3ab36e668" Type="Entity" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="ResourcesType" Type="String" />
+            <Value Key="Name" Value="Use a Custom Identifier" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42f4603e-aad1-4a49-ac2a-f2c61e5d7610" KeyNumber="24931">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="b0d4853a-ce5f-4b87-814a-10d65484c0c3" KeyNumber="24943">
+            <Value Key="ReverseToggle" Value="" Type="Boolean" />
+            <Value Key="TitleFalse" Value="Don't use a Custom Identifier (default)" Type="String" />
+            <Value Key="TitleIndeterminate" Value="" Type="String" />
+            <Value Key="TitleTrue" Value="Use a Custom Identifier for this View" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Identifier" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ac8c6055-851f-44c5-bd2f-e259842eb49b" KeyNumber="24942">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="7ed0691d-067d-41f3-8398-cfe75d21e77c" Type="Entity" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Custom Identifier" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is a unique ID for the view, which your code may access on &lt;a href=&quot;https://docs.2sxc.org/api/dot-net/ToSic.Sxc.Context.ICmsView.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CmsContext.View.Identifier&lt;/a&gt; to change it's behaviour based on this identifier. Usually you will either use this OR use the settings.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="Templates can change their behavior based on this Identifier" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42ebbe7f-626c-4081-995a-4de81870d868" KeyNumber="24942">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="906010c9-8e14-4c9b-9d1e-f6f2252ff04b" KeyNumber="24931">
-            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
-            <Value Key="EnableEdit" Value="False" Type="Boolean" />
-            <Value Key="EnableRemove" Value="True" Type="Boolean" />
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
-            <Value Key="Label" Value="Name" Type="String" />
-            <Value Key="Query" Value="Eav.Queries.Global.ContentTypes" Type="String" />
-            <Value Key="Separator" Value="," Type="String" />
-            <Value Key="StreamName" Value="Default" Type="String" />
-            <Value Key="UrlParameters" Value="appid=[App:AppId]&amp;scope=System.Configuration" Type="String" />
-            <Value Key="Value" Value="StaticName" Type="String" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="Resources" Type="Entity" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d7090d73-c986-4cc0-9063-fabcd899ad08" KeyNumber="24925">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="InputType" Value="entity-default" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Resources" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="ffbcad72-19e7-4bfa-ba23-8c010bc0f8e0" KeyNumber="24925">
-            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
-            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
-            <Value Key="EnableCreate" Value="True" Type="Boolean" />
-            <Value Key="EnableDelete" Value="False" Type="Boolean" />
-            <Value Key="EnableEdit" Value="True" Type="Boolean" />
-            <Value Key="EnableRemove" Value="True" Type="Boolean" />
-            <Value Key="EntityType" Value="[VarResourcesType]" Type="String" />
-            <Value Key="Prefill" Value="" Type="String" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b060d9e9-957a-4dcb-a8dd-e8f4b34745b6" KeyNumber="24942">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="VarSettingsType" Type="String" IsTitle="false">
@@ -7473,9 +8090,9 @@
             <Value Key="Formulas" Value="8f95c620-6b88-4212-b1cf-4f5a7b66ef46" Type="Entity" />
             <Value Key="InputType" Value="string-dropdown-query" Type="String" />
             <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="SettingsType" Type="String" />
+            <Value Key="Name" Value="Settings Content-Type" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Placeholder" Value="Types in the Configuration Scope" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -7483,6 +8100,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="2d334fbb-2221-4bd5-a32e-88f15ea8fe43" KeyNumber="24932">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="70dc81b7-0f04-45dd-960e-d82221ddf9af" KeyNumber="24932">
             <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
@@ -7504,9 +8122,10 @@
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="87dd3509-3510-49d8-8534-4a6f7136f34c" Type="Entity" />
             <Value Key="InputType" Value="entity-default" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Settings" Type="String" />
+            <Value Key="Name" Value="Settings Item" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -7524,51 +8143,68 @@
             <Value Key="Prefill" Value="" Type="String" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="VarCustomIdentifier" Type="Boolean" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8a1939a7-903c-4a09-b5b0-4a78d1e6f0a3" KeyNumber="24943">
+        <Attribute StaticName="VarResourcesType" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="22b3093b-4af0-469f-83ba-2ba8e22b8834" KeyNumber="24931">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
             <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Formulas" Value="6cac1021-b78b-4164-9736-dd66397e7432" Type="Entity" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
             <Value Key="IsEphemeral" Value="True" Type="Boolean" />
-            <Value Key="Name" Value="VarCustomIdentifier" Type="String" />
+            <Value Key="Name" Value="Resources Content-Type" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="Types in the Configuration Scope" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42f4603e-aad1-4a49-ac2a-f2c61e5d7610" KeyNumber="24931">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="906010c9-8e14-4c9b-9d1e-f6f2252ff04b" KeyNumber="24931">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableEdit" Value="False" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.ContentTypes" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="appid=[App:AppId]&amp;scope=System.Configuration" Type="String" />
+            <Value Key="Value" Value="StaticName" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Resources" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d7090d73-c986-4cc0-9063-fabcd899ad08" KeyNumber="24925">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="7ec071ef-228d-4c9b-a86d-49d5724bc7ba" Type="Entity" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Resources Item" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
             <Value Key="Placeholder" Value="" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="b0d4853a-ce5f-4b87-814a-10d65484c0c3" KeyNumber="24943">
-            <Value Key="ReverseToggle" Value="" Type="Boolean" />
-            <Value Key="TitleFalse" Value="" Type="String" />
-            <Value Key="TitleIndeterminate" Value="" Type="String" />
-            <Value Key="TitleTrue" Value="" Type="String" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="ffbcad72-19e7-4bfa-ba23-8c010bc0f8e0" KeyNumber="24925">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="False" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="[VarResourcesType]" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
           </Entity>
-        </Attribute>
-        <Attribute StaticName="Identifier" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ac8c6055-851f-44c5-bd2f-e259842eb49b" KeyNumber="24942">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="Formulas" Value="7ed0691d-067d-41f3-8398-cfe75d21e77c" Type="Entity" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Identifier" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;This is a unique ID for the view, which your code may access on &lt;a href=&quot;https://docs.2sxc.org/api/dot-net/ToSic.Sxc.Context.ICmsView.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CmsContext.View.Identifier&lt;/a&gt; to change it's behaviour based on this identifier. Usually you will either use this OR use the settings.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="Templates can change their behavior based on this Identifier" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42ebbe7f-626c-4081-995a-4de81870d868" KeyNumber="24942">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b060d9e9-957a-4dcb-a8dd-e8f4b34745b6" KeyNumber="24942" />
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -8993,6 +9629,73 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="f2f33a09-9d43-4364-991f-f6bf60e7630a" Name="DateFormulas" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="DateNow" Type="DateTime" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b114dfb7-316b-46b0-bcd1-a75ca26d1176" KeyNumber="24961">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="ef527f77-06bf-4510-874c-4096f81b21a5" Type="Entity" />
+            <Value Key="InputType" Value="datetime-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="DateNow" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@DateTime" AttributeSetName="@DateTime" EntityGUID="4e547b6a-9b5c-4ab6-a59f-de6d860bc634" KeyNumber="24961">
+            <Value Key="UseTimePicker" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DateAsLoadedPlus1D" Type="DateTime" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="39d23a33-a38c-4552-8284-d684fec9f8d6" KeyNumber="24962">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="4a9baf0f-217e-4808-997e-cac58c6c4217" Type="Entity" />
+            <Value Key="InputType" Value="datetime-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="DateAsLoadedPlus1D" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@DateTime" AttributeSetName="@DateTime" EntityGUID="4c90c222-27eb-4b2c-a9f6-861cd7a3246e" KeyNumber="24962">
+            <Value Key="UseTimePicker" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MondayThisWeek" Type="DateTime" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="92a1d724-809b-4253-b9e7-bc01ba79ed80" KeyNumber="24963">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="b2db62ff-71bd-45a5-a72c-e4b450a79a2b" Type="Entity" />
+            <Value Key="InputType" Value="datetime-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="MondayThisWeek" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@DateTime" AttributeSetName="@DateTime" EntityGUID="f6f2f907-e93b-4388-81ec-e530f7150661" KeyNumber="24963">
+            <Value Key="UseTimePicker" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="b25db367-c501-4929-a5d6-5e65affe9078" Name="dummy1" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
@@ -9004,9 +9707,28 @@
         </Attribute>
         <Attribute StaticName="Test" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="999861bc-6b3b-405d-a7ce-d6b41905d5b9" KeyNumber="24950">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
             <Value Key="Name" Value="Test" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1b6845d7-d026-4689-aede-6d5fe885c7a0" KeyNumber="24950">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="9211f4d0-5242-4012-8107-7415ebaa047f" KeyNumber="24950">
+            <Value Key="InputFontFamily" Value="monospace" Type="String" />
+            <Value Key="RowCount" Value="4" Type="Number" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -9458,6 +10180,306 @@
             <Value Key="InputType" Value="number-default" Type="String" />
             <Value Key="Name" Value="test2" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="813a3cb7-1a89-4477-bdfe-8863ab3ae59a" Name="SystemSettings" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2cb4d735-f4dc-44c5-8890-36e7b8f50201" KeyNumber="24992">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="System Settings" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="050a85b3-1508-4200-852a-93d04889492f" KeyNumber="24992">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="81c65f11-5b9c-4994-9dd8-ab4c33259d4c" KeyNumber="24992">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="SettingsEntityScope" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="198ac2ed-06af-4cf0-9ae4-94a665fba259" KeyNumber="25013">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Scope / Reach of these Settings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6bf1cfc3-8a1e-4f48-a7c9-9f86ea03894a" KeyNumber="25013">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="d8b1df1c-1a22-4a5d-9e72-69da716c7126" KeyNumber="25013">
+            <Value Key="DropdownValues" Value="Default (current App):&#xA;Site (these Settings affect Apps of this Site - only works on the Content-App):site" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupContent" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="33d8eef3-9a7f-4756-8c82-11f6e8b79c69" KeyNumber="25011">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Content / Output Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="a54af856-06e3-4915-ba80-5ea3900871c3" KeyNumber="25011">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GoogleMaps" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5b9ddffb-03e2-45a2-a109-cff38919e4f0" KeyNumber="24994">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Google Maps Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="51fc1f39-6e7a-4bed-a26b-12254214526f" KeyNumber="24994">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="⚙️GoogleMaps" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupInPage" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2c04ce26-d2bd-4696-acab-36d5265481a3" KeyNumber="25010">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="In-Page Edit Experience Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="1851dc87-f322-4346-acd3-38b778fbd2d9" KeyNumber="25010">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="QuickEdit" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="92c49d95-789d-49b7-a98d-a9a9d05e8035" KeyNumber="24993">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="QuickEdit Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="f3872579-aec0-45c2-80a7-7e86d2fe35e5" KeyNumber="24993">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="⚙️QuickEdit" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="813a3cb7-1a89-4477-bdfe-8863ab3ae59a" Name="SystemSettings" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2cb4d735-f4dc-44c5-8890-36e7b8f50201" KeyNumber="24992">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="System Settings" Type="String" />
+            <Value Key="Disabled" Value="True" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="050a85b3-1508-4200-852a-93d04889492f" KeyNumber="24992">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="81c65f11-5b9c-4994-9dd8-ab4c33259d4c" KeyNumber="24992">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="SettingsEntityScope" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="198ac2ed-06af-4cf0-9ae4-94a665fba259" KeyNumber="25013">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Scope / Reach of these Settings" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6bf1cfc3-8a1e-4f48-a7c9-9f86ea03894a" KeyNumber="25013">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="d8b1df1c-1a22-4a5d-9e72-69da716c7126" KeyNumber="25013">
+            <Value Key="DropdownValues" Value="Default (current App):&#xA;Site (these Settings affect Apps of this Site - only works on the Content-App):site" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupContent" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="33d8eef3-9a7f-4756-8c82-11f6e8b79c69" KeyNumber="25011">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Content / Output Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="a54af856-06e3-4915-ba80-5ea3900871c3" KeyNumber="25011">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GoogleMaps" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5b9ddffb-03e2-45a2-a109-cff38919e4f0" KeyNumber="24994">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Google Maps Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="51fc1f39-6e7a-4bed-a26b-12254214526f" KeyNumber="24994">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="⚙️GoogleMaps" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupInPage" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2c04ce26-d2bd-4696-acab-36d5265481a3" KeyNumber="25010">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="In-Page Edit Experience Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="1851dc87-f322-4346-acd3-38b778fbd2d9" KeyNumber="25010">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="QuickEdit" Type="Entity" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="92c49d95-789d-49b7-a98d-a9a9d05e8035" KeyNumber="24993">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="QuickEdit Settings" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="f3872579-aec0-45c2-80a7-7e86d2fe35e5" KeyNumber="24993">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="True" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="⚙️QuickEdit" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -9981,7 +11003,7 @@
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="a66b920b-05d8-4d41-b8d0-33648062776a" KeyString="2SexyContent-Template">
       <Value Key="Description" Value="Contains all registered 2sxc templates" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Templates / Views determine how output is shown. This dialog helps you configure what file is used, what data it expects and more.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Templates / Views determine how output is shown. This dialog helps you configure what file is used, what data it expects and more. See &lt;a href=&quot;https://r.2sxc.org/views&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;View docs for more&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
       <Value Key="Label" Value="View Configuration" Type="String" />
       <Value Key="Link" Value="" Type="Hyperlink" />
@@ -10368,7 +11390,7 @@
       <Value Key="RequiredOqtaneVersion" Value="" Type="String" />
       <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="11.90.00" Type="String" />
+      <Value Key="Version" Value="12.03.00" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="ba7533db-4b2d-48fa-bbd1-56405b2f42a6" KeyString="772dfff1-b236-4aa9-8359-5f53c08ff7bf">
       <Value Key="Description" Value="Formula for a UI element" Type="String" />
@@ -10496,13 +11518,13 @@
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="d1451fdb-0427-46e2-b177-f498fe91b767">
       <Value Key="ContentDemoEntity" Value="3dfc1655-dd6d-45be-a04e-ab35ba8817fd" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="6e65443d-df3c-46d8-8814-ac54718d8bac" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Identifier" Value="" Type="String" />
+      <Value Key="Icon" Value="xyz" Type="Hyperlink" />
+      <Value Key="Identifier" Value="4-COLS" Type="String" />
       <Value Key="IsHidden" Value="False" Type="Boolean" />
       <Value Key="ListContentTypeStaticName" Value="" Type="String" />
       <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
       <Value Key="Location" Value="Site" Type="String" />
-      <Value Key="Name" Value="test" Type="String" />
+      <Value Key="Name" Value="Demo with Resources etc." Type="String" />
       <Value Key="Path" Value="_default.cshtml" Type="String" />
       <Value Key="Pipeline" Value="092bdf56-7495-47b9-905c-96e47b4d45f6" Type="Entity" />
       <Value Key="PresentationTypeStaticName" Value="" Type="String" />
@@ -10801,7 +11823,7 @@
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="1d80d0b3-9ffe-4496-90f1-9ae1027e6d16">
       <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data) {&#xA;  return data.default + (data.Path ? ' (' + data.Path + ')'  : '' );&#xA;}" Type="String" />
+      <Value Key="Formula" Value="v1(data) {&#xA;  var path = data.Path ? data.Path : '';&#xA;  var icon = data.Icon ? '🖼️' : '';&#xA;  var add = path + (path || icon ? ' ' : '') + icon;&#xA;  if(add) add = ' (' + add + ')';&#xA;  return data.default + add;&#xA;}" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
       <Value Key="Target" Value="Field.Settings.Name" Type="String" />
       <Value Key="Title" Value="Setting Name: with path" Type="String" />
@@ -10871,7 +11893,7 @@
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="0c93c5e3-43d7-46e8-a8fc-6e5b04814277">
       <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data, context) { return !!window.beta || !!data.Resources.length || !!data.Settings.Length; }" Type="String" />
+      <Value Key="Formula" Value="v1(data, context) { return !!data.Path; }" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
       <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
       <Value Key="Title" Value="Setting Visible: Hide till window.beta = true" Type="String" />
@@ -11067,7 +12089,7 @@
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="77d48043-c9ef-4f26-8cc7-b8f2fa2d74c3">
       <Value Key="ContentTypeStaticName" Value="" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Identifier" Value="" Type="String" />
+      <Value Key="Identifier" Value="oeu" Type="String" />
       <Value Key="IsHidden" Value="False" Type="Boolean" />
       <Value Key="ListContentTypeStaticName" Value="" Type="String" />
       <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
@@ -11098,6 +12120,187 @@
       <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
       <Value Key="Title" Value="Setting Visible: Tristate only" Type="String" />
     </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="04e7161e-5867-4108-8a6b-aab2bd1778f2">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  var resSuffix = data.Resources.length ? 'Resources: ✅' : '';&#xA;  var setSuffix = data.Settings.length ? 'Settings: ✅' : '';&#xA;  var setIdent = data.Identifier ? 'Ident: ' + data.Identifier : '';&#xA;  var suffix = resSuffix + (resSuffix &amp;&amp; setSuffix ? ', ' : '') + setSuffix;&#xA;  suffix = suffix + (suffix &amp;&amp; setIdent ? ', ' : '') + setIdent;&#xA;  if(suffix) suffix = ' (' + suffix + ')';&#xA;  return data.default + suffix;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Name" Type="String" />
+      <Value Key="Title" Value="Setting Name: Show if we have values" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="a58024ab-bcca-4e5a-a288-82d3ab36e668">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return !data.Identifier; }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible: Hide if set" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="c0459a50-fec5-44af-a9ec-178c11cc0066">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  return !!data.ContentTypeStaticName;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Collapsed" Type="String" />
+      <Value Key="Title" Value="Setting Collapsed:  on load if already set" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="b8e974f6-1a2a-4f56-8481-0ac781714f29">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  return !!data.Pipeline;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Collapsed" Type="String" />
+      <Value Key="Title" Value="Setting Collapsed: onload if already has value" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="1c1ac0c8-4d72-4314-a2ae-9fa54807e8e1">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return data.default + (data.Pipeline ? ' (✅)' : '');&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Name" Type="String" />
+      <Value Key="Title" Value="Setting Name: Show value" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="aa42949c-b740-4132-91f7-b32bb4b13cac">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return data.default + (data.ContentTypeStaticName ? ' ✅' : '');&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Name" Type="String" />
+      <Value Key="Title" Value="Setting Name: Show if configured" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="ef527f77-06bf-4510-874c-4096f81b21a5">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;console.log('date', data.value);&#xA;  if(!data.value) return new Date();&#xA;&#xA;  var x = new Date(data.value.replace('Z', ''));&#xA;  var y = new Date(x.getFullYear(), x.getMonth(), x.getDate());&#xA;console.log('x', x, 'y', y);&#xA;return y;&#xA;  return data.value;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Value" Type="String" />
+      <Value Key="Title" Value="Value" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="4a9baf0f-217e-4808-997e-cac58c6c4217">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return data.value; }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Value" Type="String" />
+      <Value Key="Title" Value="Value" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="b2db62ff-71bd-45a5-a72c-e4b450a79a2b">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  var d = new Date();&#xA;  var day = d.getDay();&#xA;  var diff = d.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday&#xA;  d.setDate(diff);&#xA;  return d;&#xA;}" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Value" Type="String" />
+      <Value Key="Title" Value="Value" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="f2f33a09-9d43-4364-991f-f6bf60e7630a" AttributeSetName="DateFormulas" EntityGUID="6ebcf0b0-d3f4-4aae-a888-13d91222c5e0">
+      <Value Key="DateAsLoadedPlus1D" Value="" Type="DateTime" />
+      <Value Key="DateNow" Value="2021-06-08T00:00:00" Type="DateTime" />
+      <Value Key="MondayThisWeek" Value="2021-06-07T18:01:26" Type="DateTime" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="7ec071ef-228d-4c9b-a86d-49d5724bc7ba">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return !!(data.Resources.length || data.VarResourcesType); }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible: Hide if empty and no type selected" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="87dd3509-3510-49d8-8534-4a6f7136f34c">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return !!(data.Settings.length || data.VarSettingsType); }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible: hide if empty and no settings-type" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="bf0b980d-1e5c-487c-8732-ae780b7e84e0">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return &quot;QuickEdit.Parts.&quot; + data.Part; }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Value" Type="String" />
+      <Value Key="Title" Value="Value" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="5ad95efe-1dc9-4681-adb8-42d9e7f0183b" AttributeSetName="⚙️QuickEdit" EntityGUID="a88c329c-cc6e-4744-b3ec-88c186502d9d">
+      <Value Key="Parts" Value="c8e3769a-96e9-4312-8cb4-da24f90b9fdd,02667ae8-dbb6-4431-81ae-125a22f9e5ac,89c89890-ab00-42f7-9ee1-c81d79855533,7cb78140-86e6-401b-bca5-a46ee525b925" Type="Entity" />
+      <Value Key="SettingsIdentifier" Value="QuickEdit" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="813a3cb7-1a89-4477-bdfe-8863ab3ae59a" AttributeSetName="SystemSettings" EntityGUID="8c87f24f-959c-4ff1-b537-077556e8d439">
+      <Value Key="GoogleMaps" Value="c459f03d-bb65-4813-ac8a-0a780f72eab7" Type="Entity" />
+      <Value Key="QuickEdit" Value="a88c329c-cc6e-4744-b3ec-88c186502d9d" Type="Entity" />
+      <Value Key="Title" Value="System Settings" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="46cd1afc-c840-4473-8586-6bb1f35656a8" AttributeSetName="⚙️QuickEditPart" EntityGUID="c8e3769a-96e9-4312-8cb4-da24f90b9fdd">
+      <Value Key="AddApp" Value="True" Type="Boolean" />
+      <Value Key="AddContent" Value="True" Type="Boolean" />
+      <Value Key="Enable" Value="True" Type="Boolean" />
+      <Value Key="Move" Value="True" Type="Boolean" />
+      <Value Key="Part" Value="Default" Type="String" />
+      <Value Key="Paste" Value="True" Type="Boolean" />
+      <Value Key="Select" Value="True" Type="Boolean" />
+      <Value Key="SettingsIdentifier" Value="QuickEdit.Parts.Default" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="46cd1afc-c840-4473-8586-6bb1f35656a8" AttributeSetName="⚙️QuickEditPart" EntityGUID="02667ae8-dbb6-4431-81ae-125a22f9e5ac">
+      <Value Key="AddApp" Value="True" Type="Boolean" />
+      <Value Key="AddContent" Value="True" Type="Boolean" />
+      <Value Key="Enable" Value="True" Type="Boolean" />
+      <Value Key="Move" Value="True" Type="Boolean" />
+      <Value Key="Part" Value="Module" Type="String" />
+      <Value Key="Paste" Value="True" Type="Boolean" />
+      <Value Key="Select" Value="True" Type="Boolean" />
+      <Value Key="SettingsIdentifier" Value="QuickEdit.Parts.Module" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="46cd1afc-c840-4473-8586-6bb1f35656a8" AttributeSetName="⚙️QuickEditPart" EntityGUID="89c89890-ab00-42f7-9ee1-c81d79855533">
+      <Value Key="AddApp" Value="True" Type="Boolean" />
+      <Value Key="AddContent" Value="True" Type="Boolean" />
+      <Value Key="Enable" Value="True" Type="Boolean" />
+      <Value Key="Move" Value="False" Type="Boolean" />
+      <Value Key="Part" Value="InnerContentArea" Type="String" />
+      <Value Key="Paste" Value="True" Type="Boolean" />
+      <Value Key="Select" Value="True" Type="Boolean" />
+      <Value Key="SettingsIdentifier" Value="QuickEdit.Parts.InnerContentArea" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="46cd1afc-c840-4473-8586-6bb1f35656a8" AttributeSetName="⚙️QuickEditPart" EntityGUID="7cb78140-86e6-401b-bca5-a46ee525b925">
+      <Value Key="AddApp" Value="True" Type="Boolean" />
+      <Value Key="AddContent" Value="True" Type="Boolean" />
+      <Value Key="Enable" Value="True" Type="Boolean" />
+      <Value Key="Move" Value="False" Type="Boolean" />
+      <Value Key="Part" Value="InnerContentDynamic" Type="String" />
+      <Value Key="Paste" Value="False" Type="Boolean" />
+      <Value Key="Select" Value="True" Type="Boolean" />
+      <Value Key="SettingsIdentifier" Value="QuickEdit.Parts.InnerContentDynamic" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="f5764f60-2621-4a5d-9391-100fbe664640" AttributeSetName="⚙️GoogleMaps" EntityGUID="c459f03d-bb65-4813-ac8a-0a780f72eab7">
+      <Value Key="ApiKey" Value="AIzaSyAKEFBVw7SddUQ&#xA;R0YnAuTam5wpXvDomzts" Type="String" />
+      <Value Key="InitialZoom" Value="14" Type="String" />
+      <Value Key="MarkerIcon" Value="" Type="Hyperlink" />
+      <Value Key="SettingsIdentifier" Value="GoogleMaps" Type="String" />
+      <Value Key="ShowApiKeyWarning" Value="True" Type="Boolean" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="3999a623-f1df-4bac-a5f9-46965f95b6d6" KeyString="9ff77f4e-84be-4617-95b3-b530c562406d">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure / Override global settings. Please read the &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="FormSettings" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="&lt;p&gt;These settings override defaults provided at the global level. Make sure you understand Settings before doing much here. &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read the docs please&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Note: you should usually only have exactly 1 item in this list - except in rare cases where you have two items (one for the current App, one for the Site.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c0313d2f-899f-4d31-b863-6c10ff6f8383" KeyString="813a3cb7-1a89-4477-bdfe-8863ab3ae59a">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure / Override global settings. Please &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;read the docs&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Everything here is Work-In-Progress / Beta.&lt;/strong&gt;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="System Settings" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="&lt;p&gt;These settings override defaults provided at the global level. Make sure you understand Settings before doing much here. &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read the docs please&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Note: you should usually only have exactly 1 item in this list - except in rare cases where you have two items (one for the current App, one for the Site.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c83fbbf0-ef8c-43c7-8c70-42814991b30a" KeyString="5ad95efe-1dc9-4681-adb8-42d9e7f0183b">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Important: This data is still experimental and more Proof-Of-Concept. It doesn't have an affect yet, so we recommend you don't add your own settings.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="⚙️QuickEdit" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="feafce82-757f-401d-8973-b161928203aa" KeyString="f5764f60-2621-4a5d-9391-100fbe664640">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure how Google Maps should work.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="⚙️GoogleMaps" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
   </Entities>
   <PortalFiles />
   <PortalFolders>
@@ -11122,6 +12325,8 @@
     <Folder Id="10407" RelativePath="adam/System-Types/2zN1ui1L-ki70VZAWy9Cpg/EditInstructions/" />
     <Folder Id="8633" RelativePath="adam/System-Types/2zN1ui1L-ki70VZAWy9Cpg/Icon/" />
     <Folder Id="8632" RelativePath="adam/System-Types/2zN1ui1L-ki70VZAWy9Cpg/Link/" />
+    <Folder Id="10501" RelativePath="adam/System-Types/3BTB_pvuQEaXEvtLCFtCjA/" />
+    <Folder Id="10502" RelativePath="adam/System-Types/3BTB_pvuQEaXEvtLCFtCjA/Icon/" />
     <Folder Id="5469" RelativePath="adam/System-Types/3iZj_f5Pd0-FgENuxQKuTA/" />
     <Folder Id="5470" RelativePath="adam/System-Types/3iZj_f5Pd0-FgENuxQKuTA/Notes/" />
     <Folder Id="10469" RelativePath="adam/System-Types/4b2FzvdarEy2tZWsr3C-rA/" />
@@ -11135,6 +12340,8 @@
     <Folder Id="10367" RelativePath="adam/System-Types/4VxQxrg7REiGtIAZxqgrEQ/ContentCss/" />
     <Folder Id="10463" RelativePath="adam/System-Types/51Ij8ZngF0qIxjm3D-n26g/" />
     <Folder Id="10464" RelativePath="adam/System-Types/51Ij8ZngF0qIxjm3D-n26g/Icon/" />
+    <Folder Id="10515" RelativePath="adam/System-Types/5FD_U-fjlUK2XoWMkIZWRA/" />
+    <Folder Id="10516" RelativePath="adam/System-Types/5FD_U-fjlUK2XoWMkIZWRA/Icon/" />
     <Folder Id="4712" RelativePath="adam/System-Types/5SMFInWw6EySSguYB4yooQ/" />
     <Folder Id="4713" RelativePath="adam/System-Types/5SMFInWw6EySSguYB4yooQ/Notes/" />
     <Folder Id="5457" RelativePath="adam/System-Types/5VHee2mxo02wnVbRUPk6BQ/" />
@@ -11155,6 +12362,11 @@
     <Folder Id="8399" RelativePath="adam/System-Types/7EVxDKe4MEuYYhlzYuAQrw/Link/" />
     <Folder Id="4708" RelativePath="adam/System-Types/8cEHc8BUzkaXvbPjPfV4BA/" />
     <Folder Id="4709" RelativePath="adam/System-Types/8cEHc8BUzkaXvbPjPfV4BA/Notes/" />
+    <Folder Id="10517" RelativePath="adam/System-Types/8FHdoWF8C0GOBHvkCM6AHA/" />
+    <Folder Id="10518" RelativePath="adam/System-Types/8FHdoWF8C0GOBHvkCM6AHA/Icon/" />
+    <Folder Id="10527" RelativePath="adam/System-Types/8Ls_yIzvx0OMcEKBSZGzCg/" />
+    <Folder Id="10529" RelativePath="adam/System-Types/8Ls_yIzvx0OMcEKBSZGzCg/Icon/" />
+    <Folder Id="10528" RelativePath="adam/System-Types/8Ls_yIzvx0OMcEKBSZGzCg/Link/" />
     <Folder Id="4692" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/" />
     <Folder Id="4693" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/Notes/" />
     <Folder Id="10479" RelativePath="adam/System-Types/arlCK0Adzka9ylcqXy3jug/" />
@@ -11181,6 +12393,8 @@
     <Folder Id="5476" RelativePath="adam/System-Types/cpcBBDMhE0WPD0CAgrcFNA/Notes/" />
     <Folder Id="10423" RelativePath="adam/System-Types/cqVHPPAu7Eqj2Z7AivF3zQ/" />
     <Folder Id="10424" RelativePath="adam/System-Types/cqVHPPAu7Eqj2Z7AivF3zQ/Icon/" />
+    <Folder Id="10499" RelativePath="adam/System-Types/Cvtal0hSQEyXAuIfNF1PxQ/" />
+    <Folder Id="10500" RelativePath="adam/System-Types/Cvtal0hSQEyXAuIfNF1PxQ/Icon/" />
     <Folder Id="10467" RelativePath="adam/System-Types/DdETvCXZX0ydvGxWnXFy7w/" />
     <Folder Id="10468" RelativePath="adam/System-Types/DdETvCXZX0ydvGxWnXFy7w/Icon/" />
     <Folder Id="5471" RelativePath="adam/System-Types/G0z0aQi7bEGLaEE4jWunNA/" />
@@ -11194,11 +12408,17 @@
     <Folder Id="10414" RelativePath="adam/System-Types/GPAhania20qlL-BMLUkoFQ/" />
     <Folder Id="10416" RelativePath="adam/System-Types/GPAhania20qlL-BMLUkoFQ/Icon/" />
     <Folder Id="10415" RelativePath="adam/System-Types/GPAhania20qlL-BMLUkoFQ/Link/" />
+    <Folder Id="10530" RelativePath="adam/System-Types/gs6v_n91HUCJc7FhkoIDqg/" />
+    <Folder Id="10532" RelativePath="adam/System-Types/gs6v_n91HUCJc7FhkoIDqg/Icon/" />
+    <Folder Id="10531" RelativePath="adam/System-Types/gs6v_n91HUCJc7FhkoIDqg/Link/" />
     <Folder Id="10384" RelativePath="adam/System-Types/H7OeYEbHAE-YgL3SjQDG1A/" />
     <Folder Id="10386" RelativePath="adam/System-Types/H7OeYEbHAE-YgL3SjQDG1A/Icon/" />
     <Folder Id="10385" RelativePath="adam/System-Types/H7OeYEbHAE-YgL3SjQDG1A/Link/" />
     <Folder Id="10453" RelativePath="adam/System-Types/hE032veOQUidzkkp8J2_XA/" />
     <Folder Id="10454" RelativePath="adam/System-Types/hE032veOQUidzkkp8J2_XA/Icon/" />
+    <Folder Id="10521" RelativePath="adam/System-Types/I6aZOd_xrEul-UaWX5W21g/" />
+    <Folder Id="10523" RelativePath="adam/System-Types/I6aZOd_xrEul-UaWX5W21g/Icon/" />
+    <Folder Id="10522" RelativePath="adam/System-Types/I6aZOd_xrEul-UaWX5W21g/Link/" />
     <Folder Id="10473" RelativePath="adam/System-Types/i6kT0M1fH0aWYqC6nlmrrg/" />
     <Folder Id="10474" RelativePath="adam/System-Types/i6kT0M1fH0aWYqC6nlmrrg/Icon/" />
     <Folder Id="10361" RelativePath="adam/System-Types/i8T3uQ9i40Cbs1V-G4Etlg/" />
@@ -11235,17 +12455,28 @@
     <Folder Id="4122" RelativePath="adam/System-Types/LwIIVMLfiUm2RRvna7bYmw/Notes/" />
     <Folder Id="5461" RelativePath="adam/System-Types/lwTHfiakikSnMM55813Uew/" />
     <Folder Id="5462" RelativePath="adam/System-Types/lwTHfiakikSnMM55813Uew/Notes/" />
+    <Folder Id="10524" RelativePath="adam/System-Types/Lz0xwJ-JMU24Y2wQ_2-Dgw/" />
+    <Folder Id="10526" RelativePath="adam/System-Types/Lz0xwJ-JMU24Y2wQ_2-Dgw/Icon/" />
+    <Folder Id="10525" RelativePath="adam/System-Types/Lz0xwJ-JMU24Y2wQ_2-Dgw/Link/" />
     <Folder Id="10364" RelativePath="adam/System-Types/M_i2KnVgiE-Yl7luYOfoXw/" />
     <Folder Id="10365" RelativePath="adam/System-Types/M_i2KnVgiE-Yl7luYOfoXw/ContentCss/" />
+    <Folder Id="10509" RelativePath="adam/System-Types/nqu5ymQbHEq729QloRxfGg/" />
+    <Folder Id="10510" RelativePath="adam/System-Types/nqu5ymQbHEq729QloRxfGg/Icon/" />
+    <Folder Id="10507" RelativePath="adam/System-Types/nvczEiWtzEqXYnNZCViBYA/" />
+    <Folder Id="10508" RelativePath="adam/System-Types/nvczEiWtzEqXYnNZCViBYA/Icon/" />
     <Folder Id="10461" RelativePath="adam/System-Types/o5HL7TUn1EKU3nmMHrzTGw/" />
     <Folder Id="10462" RelativePath="adam/System-Types/o5HL7TUn1EKU3nmMHrzTGw/Icon/" />
     <Folder Id="5463" RelativePath="adam/System-Types/ome3TE_YI0O3UMsrFgiPDQ/" />
     <Folder Id="5464" RelativePath="adam/System-Types/ome3TE_YI0O3UMsrFgiPDQ/Notes/" />
+    <Folder Id="10513" RelativePath="adam/System-Types/omHck90dBkm5cIRLc1J3Hw/" />
+    <Folder Id="10514" RelativePath="adam/System-Types/omHck90dBkm5cIRLc1J3Hw/Icon/" />
     <Folder Id="10429" RelativePath="adam/System-Types/pcSTV7zgN02OgpbbXAOApw/" />
     <Folder Id="10430" RelativePath="adam/System-Types/pcSTV7zgN02OgpbbXAOApw/Icon/" />
     <Folder Id="10411" RelativePath="adam/System-Types/Pe_mUTgYm0yc6bLMZCSMYg/" />
     <Folder Id="10412" RelativePath="adam/System-Types/Pe_mUTgYm0yc6bLMZCSMYg/Icon/" />
     <Folder Id="10413" RelativePath="adam/System-Types/Pe_mUTgYm0yc6bLMZCSMYg/Link/" />
+    <Folder Id="10533" RelativePath="adam/System-Types/PfBZxGW7E0isigp4D3Lqtw/" />
+    <Folder Id="10534" RelativePath="adam/System-Types/PfBZxGW7E0isigp4D3Lqtw/MarkerIcon/" />
     <Folder Id="10382" RelativePath="adam/System-Types/PyQndYtxgE-K9YrpTCJCCw/" />
     <Folder Id="10383" RelativePath="adam/System-Types/PyQndYtxgE-K9YrpTCJCCw/ContentCss/" />
     <Folder Id="10491" RelativePath="adam/System-Types/Q4DUd-_JJk-Mx7jy-i10ww/" />
@@ -11294,6 +12525,8 @@
     <Folder Id="10374" RelativePath="adam/System-Types/VoFZ7D5cv0-YUIBXMI9tFw/" />
     <Folder Id="10375" RelativePath="adam/System-Types/VoFZ7D5cv0-YUIBXMI9tFw/Icon/" />
     <Folder Id="10376" RelativePath="adam/System-Types/VoFZ7D5cv0-YUIBXMI9tFw/Link/" />
+    <Folder Id="10511" RelativePath="adam/System-Types/VoX5kL_r-0a3PQj-u1LjNg/" />
+    <Folder Id="10512" RelativePath="adam/System-Types/VoX5kL_r-0a3PQj-u1LjNg/Icon/" />
     <Folder Id="10447" RelativePath="adam/System-Types/VqKjfySQgkqqShgum-Kfrw/" />
     <Folder Id="10448" RelativePath="adam/System-Types/VqKjfySQgkqqShgum-Kfrw/Icon/" />
     <Folder Id="10475" RelativePath="adam/System-Types/vxVj-hiyN0mllBbOAOZqKw/" />
@@ -11309,6 +12542,8 @@
     <Folder Id="10396" RelativePath="adam/System-Types/w6qSW0UsqkaBCWB2r8Hlxw/" />
     <Folder Id="10398" RelativePath="adam/System-Types/w6qSW0UsqkaBCWB2r8Hlxw/Icon/" />
     <Folder Id="10399" RelativePath="adam/System-Types/w6qSW0UsqkaBCWB2r8Hlxw/Link/" />
+    <Folder Id="10505" RelativePath="adam/System-Types/wZfKg1ykVUGeBMyHm9EHjg/" />
+    <Folder Id="10506" RelativePath="adam/System-Types/wZfKg1ykVUGeBMyHm9EHjg/Icon/" />
     <Folder Id="8404" RelativePath="adam/System-Types/X5Kn_rE_pEK5IxYfLryEwQ/" />
     <Folder Id="8405" RelativePath="adam/System-Types/X5Kn_rE_pEK5IxYfLryEwQ/Icon/" />
     <Folder Id="8406" RelativePath="adam/System-Types/X5Kn_rE_pEK5IxYfLryEwQ/Link/" />
