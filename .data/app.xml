@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.03.00" ExportDate="2021-07-08T19:04:29.1364967+03:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.03.00" ExportDate="2021-08-20T00:28:21.0661757+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -1121,6 +1121,9 @@
     <AttributeSet StaticName="@boolean-default" Name="@boolean-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
+    <AttributeSet StaticName="@boolean-default" Name="@boolean-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
     <AttributeSet StaticName="@boolean-tristate" Name="@boolean-tristate" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
@@ -1396,6 +1399,9 @@
           </Entity>
         </Attribute>
       </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@datetime-default" Name="@datetime-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
+      <Attributes />
     </AttributeSet>
     <AttributeSet StaticName="@datetime-default" Name="@datetime-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes />
@@ -2663,6 +2669,9 @@
     <AttributeSet StaticName="@hyperlink-default" Name="@hyperlink-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
+    <AttributeSet StaticName="@hyperlink-default" Name="@hyperlink-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
     <AttributeSet StaticName="@hyperlink-library" Name="@hyperlink-library" Description="to configure a library-field" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="FolderDepth" Type="Number" IsTitle="true">
@@ -2888,6 +2897,9 @@
           </Entity>
         </Attribute>
       </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="@number-default" Name="@number-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
+      <Attributes />
     </AttributeSet>
     <AttributeSet StaticName="@number-default" Name="@number-default" Description="" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes />
@@ -5178,7 +5190,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@number-dropdown" AttributeSetName="@number-dropdown" EntityGUID="5f494775-cb1a-47cf-836c-d7e45d3c0234" KeyNumber="25184">
             <Value Key="DropdownValues" Value=":Empty / no value&#xA;1:Square 1:1&#xA;2:Twice as wide, 2:1 - ideal for blogs / Social Media&#xA;1.618:Golden Ratio Wide&#xA;0.618:Golden Ratio Tall&#xA;1.333:Classic TV Wide 4:3&#xA;0.75:Classic TV Tall 4:3&#xA;1.777:Cinema / Smartphone Wide 16:9&#xA;0.5625:Cinema / Smartphone Tall 16:9&#xA;" Type="String" />
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String" />
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ResizeMode" Type="String" IsTitle="false">
@@ -5337,7 +5349,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@number-dropdown" AttributeSetName="@number-dropdown" EntityGUID="5f494775-cb1a-47cf-836c-d7e45d3c0234" KeyNumber="25184">
             <Value Key="DropdownValues" Value=":Empty / no value&#xA;1:Square 1:1&#xA;2:Twice as wide, 2:1 - ideal for blogs / Social Media&#xA;1.618:Golden Ratio Wide&#xA;0.618:Golden Ratio Tall&#xA;1.333:Classic TV Wide 4:3&#xA;0.75:Classic TV Tall 4:3&#xA;1.777:Cinema / Smartphone Wide 16:9&#xA;0.5625:Cinema / Smartphone Tall 16:9&#xA;" Type="String" />
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String" />
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ResizeMode" Type="String" IsTitle="false">
@@ -5905,7 +5917,8 @@
             <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="7fc87496-192e-4d70-8884-74392a3fcee0" KeyNumber="25024">
-            <Value Key="DropdownValues" Value="Bootstrap4:Bootstrap4&#xA;Bootstrap5:Bootstrap5&#xA;FancyBox3:fancybox3&#xA;FontAwesome5:FontAwesome5" Type="String" />
+            <Value Key="DropdownValues" Value="Bootstrap4:Bootstrap4&#xA;Bootstrap5:Bootstrap5&#xA;fancybox3:fancybox3&#xA;fancybox4:fancybox4&#xA;FontAwesome5:FontAwesome5" Type="String" />
+            <Value Key="DropdownValuesFormat" Value="" Type="String" />
             <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -6011,7 +6024,8 @@
             <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="7fc87496-192e-4d70-8884-74392a3fcee0" KeyNumber="25024">
-            <Value Key="DropdownValues" Value="Bootstrap4:Bootstrap4&#xA;Bootstrap5:Bootstrap5&#xA;FancyBox3:fancybox3&#xA;FontAwesome5:FontAwesome5" Type="String" />
+            <Value Key="DropdownValues" Value="Bootstrap4:Bootstrap4&#xA;Bootstrap5:Bootstrap5&#xA;fancybox3:fancybox3&#xA;fancybox4:fancybox4&#xA;FontAwesome5:FontAwesome5" Type="String" />
+            <Value Key="DropdownValuesFormat" Value="" Type="String" />
             <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -6117,7 +6131,7 @@
             <Value Key="EnableDelete" Value="True" Type="Boolean" />
             <Value Key="EnableEdit" Value="True" Type="Boolean" />
             <Value Key="EnableRemove" Value="True" Type="Boolean" />
-            <Value Key="EntityType" Value="⚙WebResourcePart" Type="String" />
+            <Value Key="EntityType" Value="⚙️WebResourceItem" Type="String" />
             <Value Key="Prefill" Value="" Type="String" />
           </Entity>
         </Attribute>
@@ -6174,7 +6188,7 @@
             <Value Key="EnableDelete" Value="True" Type="Boolean" />
             <Value Key="EnableEdit" Value="True" Type="Boolean" />
             <Value Key="EnableRemove" Value="True" Type="Boolean" />
-            <Value Key="EntityType" Value="⚙WebResourcePart" Type="String" />
+            <Value Key="EntityType" Value="⚙️WebResourceItem" Type="String" />
             <Value Key="Prefill" Value="" Type="String" />
           </Entity>
         </Attribute>
@@ -13590,7 +13604,7 @@
       <Value Key="Title" Value="Value" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="9ff20ccf-3ff7-4a76-b749-dd22771df730" AttributeSetName="⚙️WebResources" EntityGUID="06f4fa58-2e91-4896-a16e-3bbaf9a5f491">
-      <Value Key="Items" Value="e6d3d600-ea17-4957-9c56-9bae78329c67,72286f65-e38b-42ee-a0da-0c73e55f7ba4,4b9ef331-480a-4a38-86f1-a580f8345677,38e0226d-4c31-4d2e-ab97-8e16483ddf94" Type="Entity" />
+      <Value Key="Items" Value="e6d3d600-ea17-4957-9c56-9bae78329c67,72286f65-e38b-42ee-a0da-0c73e55f7ba4,4b9ef331-480a-4a38-86f1-a580f8345677,3356ad17-91ce-4814-83c1-9f527697391a,38e0226d-4c31-4d2e-ab97-8e16483ddf94" Type="Entity" />
       <Value Key="SettingsIdentifier" Value="WebResources" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResourceItem" EntityGUID="e6d3d600-ea17-4957-9c56-9bae78329c67">
@@ -13784,6 +13798,12 @@
       <Value Key="ListInstructions" Value="" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResourceItem" EntityGUID="3356ad17-91ce-4814-83c1-9f527697391a">
+      <Value Key="Enabled" Value="" Type="Boolean" />
+      <Value Key="Html" Value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css&quot; /&gt;&#xA;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js&quot;&gt;&lt;/script&gt;" Type="String" />
+      <Value Key="ItemIdentifier" Value="fancybox4" Type="String" />
+      <Value Key="SettingsIdentifier" Value="WebResources.fancybox4" Type="String" />
+    </Entity>
   </Entities>
   <PortalFiles />
   <PortalFolders>
@@ -13933,6 +13953,9 @@
     <Folder Id="10776" RelativePath="adam/System-Types/IrGp_LKzRkyIQH8O8jgN0A/Link/" />
     <Folder Id="4696" RelativePath="adam/System-Types/jAKgbq6t60m2TSMdRfM_OA/" />
     <Folder Id="4697" RelativePath="adam/System-Types/jAKgbq6t60m2TSMdRfM_OA/Notes/" />
+    <Folder Id="10848" RelativePath="adam/System-Types/jFTpqfgCtkeS2U0NKjyDHw/" />
+    <Folder Id="10851" RelativePath="adam/System-Types/jFTpqfgCtkeS2U0NKjyDHw/Icon/" />
+    <Folder Id="10850" RelativePath="adam/System-Types/jFTpqfgCtkeS2U0NKjyDHw/Link/" />
     <Folder Id="10380" RelativePath="adam/System-Types/-jkAj5_SBEeb1lXNGyGKwA/" />
     <Folder Id="10381" RelativePath="adam/System-Types/-jkAj5_SBEeb1lXNGyGKwA/ContentCss/" />
     <Folder Id="4702" RelativePath="adam/System-Types/JoO90U_xlE-TgIBG_eDxgA/" />
