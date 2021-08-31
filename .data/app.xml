@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.03.00" ExportDate="2021-08-20T00:28:21.0661757+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.04.00" ExportDate="2021-08-31T16:56:24.3979185+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
-    <Dimensions />
+    <Dimensions>
+      <Dimension DimensionID="182" Name="English (United States)" SystemKey="" ExternalKey="en-US" Active="true" />
+      <Dimension DimensionID="183" Name="Deutsch (Deutschland)" SystemKey="" ExternalKey="de-DE" Active="true" />
+    </Dimensions>
   </Header>
   <AttributeSets>
     <AttributeSet StaticName="@All" Name="@All" Description="the fields used on all input types" Scope="System.Fields" AlwaysShareConfiguration="false">
@@ -11260,17 +11263,349 @@
     </AttributeSet>
     <AttributeSet StaticName="8cfea27d-ab69-42e7-bfcb-0aa054eacbfb" Name="SystemResources" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="GroupPolymorphism" Type="Empty" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f11a8cf1-bacc-4b8e-90df-adc1f476bd4b" KeyNumber="25180">
-            <Value Key="InputType" Value="empty-default" Type="String" />
-            <Value Key="Name" Value="GroupPolymorphism" Type="String" />
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9d4b1723-383d-4f16-8589-6eae07b2511d" KeyNumber="25353">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="System Resources" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Title" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="30490916-f80d-4bf2-b74c-09c8b83851cb" KeyNumber="25353">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="80ae7716-eb37-4e87-b932-7f16de538796" KeyNumber="25353">
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TestMessage" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c4d6ec9f-fca2-4413-be77-fa671d2ca9dd" KeyNumber="25350">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Test Message (TestMessage)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is just a dummy test message which will always be in the PresetSystem data to verify resources work.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="27eb0826-5452-4de3-806b-e285956bf6a3" KeyNumber="25350">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="a5bee366-0780-4ed1-9280-172d5662f490" KeyNumber="25350">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="SettingsEntityScope" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a7e23a29-1b9a-4022-8632-7277ff6845c3" KeyNumber="25349">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Scope / Reach of these Resources" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See docs.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="8d864fdc-d11c-479a-89fe-6206023288a6" KeyNumber="25349">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="046451e4-3860-47e5-82e5-e4dc78ec5a3c" KeyNumber="25349">
+            <Value Key="DropdownValues" Value=":Default (current App)&#xA;site:Site (these Settings affect all Apps of this Site)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MessageSiteScope" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="26de0eb1-19b2-488d-a58e-cf78d08f576d" KeyNumber="25352">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="6b48b656-45d8-4f65-8e4e-dfbee38aab6d" Type="Entity" />
+            <Value Key="InputType" Value="empty-message" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Important: Site-Scope only Works in the Content-App" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;&lt;strong&gt;Important Information about Site-Level Resources&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Normally all resources only affect the current app. Switching the above setting to &lt;strong&gt;Site&lt;/strong&gt; will affect the entire site&amp;nbsp;&lt;em&gt;but only if you are in the primary Content-App&lt;/em&gt;. On any other App it will still only affect the current app. Read more about &lt;a href=&quot;http://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;resources&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="CssFrameworkNotDetected" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d5cfd160-888f-46d0-b31f-8b25566d31d1" KeyNumber="25181">
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="8cfea27d-ab69-42e7-bfcb-0aa054eacbfb" Name="SystemResources" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9d4b1723-383d-4f16-8589-6eae07b2511d" KeyNumber="25353">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="System Resources" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Title" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="30490916-f80d-4bf2-b74c-09c8b83851cb" KeyNumber="25353">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="80ae7716-eb37-4e87-b932-7f16de538796" KeyNumber="25353">
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TestMessage" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c4d6ec9f-fca2-4413-be77-fa671d2ca9dd" KeyNumber="25350">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
             <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="CssFrameworkNotDetected" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Test Message (TestMessage)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is just a dummy test message which will always be in the PresetSystem data to verify resources work.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="27eb0826-5452-4de3-806b-e285956bf6a3" KeyNumber="25350">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="a5bee366-0780-4ed1-9280-172d5662f490" KeyNumber="25350">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="SettingsEntityScope" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a7e23a29-1b9a-4022-8632-7277ff6845c3" KeyNumber="25349">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Scope / Reach of these Resources" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See docs.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="8d864fdc-d11c-479a-89fe-6206023288a6" KeyNumber="25349">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="046451e4-3860-47e5-82e5-e4dc78ec5a3c" KeyNumber="25349">
+            <Value Key="DropdownValues" Value=":Default (current App)&#xA;site:Site (these Settings affect all Apps of this Site)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MessageSiteScope" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="26de0eb1-19b2-488d-a58e-cf78d08f576d" KeyNumber="25352">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="EnableExperimental" Value="" Type="Boolean" />
+            <Value Key="Formulas" Value="6b48b656-45d8-4f65-8e4e-dfbee38aab6d" Type="Entity" />
+            <Value Key="InputType" Value="empty-message" Type="String" />
+            <Value Key="IsEphemeral" Value="" Type="Boolean" />
+            <Value Key="Name" Value="Important: Site-Scope only Works in the Content-App" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;&lt;strong&gt;Important Information about Site-Level Resources&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Normally all resources only affect the current app. Switching the above setting to &lt;strong&gt;Site&lt;/strong&gt; will affect the entire site&amp;nbsp;&lt;em&gt;but only if you are in the primary Content-App&lt;/em&gt;. On any other App it will still only affect the current app. Read more about &lt;a href=&quot;http://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;resources&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -11306,29 +11641,67 @@
         </Attribute>
         <Attribute StaticName="SettingsEntityScope" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="198ac2ed-06af-4cf0-9ae4-94a665fba259" KeyNumber="25013">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="InputType" Value="string-dropdown" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Scope / Reach of these Settings" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Scope / Reach of these Settings" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6bf1cfc3-8a1e-4f48-a7c9-9f86ea03894a" KeyNumber="25013">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="" Type="Number" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="d8b1df1c-1a22-4a5d-9e72-69da716c7126" KeyNumber="25013">
-            <Value Key="DropdownValues" Value=":Default (current App)&#xA;site:Site (these Settings affect all Apps of this Site)" Type="String" />
-            <Value Key="DropdownValuesFormat" Value="value-label" Type="String" />
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+            <Value Key="DropdownValues" Value=":Default (current App)&#xA;site:Site (these Settings affect all Apps of this Site)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="MessageSiteScope" Type="Empty" IsTitle="false">
@@ -11551,29 +11924,67 @@
         </Attribute>
         <Attribute StaticName="SettingsEntityScope" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="198ac2ed-06af-4cf0-9ae4-94a665fba259" KeyNumber="25013">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="InputType" Value="string-dropdown" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Scope / Reach of these Settings" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Scope / Reach of these Settings" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Leave on Default in 99% of the cases. Only rare cases use Site. See &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6bf1cfc3-8a1e-4f48-a7c9-9f86ea03894a" KeyNumber="25013">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="" Type="Number" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="d8b1df1c-1a22-4a5d-9e72-69da716c7126" KeyNumber="25013">
-            <Value Key="DropdownValues" Value=":Default (current App)&#xA;site:Site (these Settings affect all Apps of this Site)" Type="String" />
-            <Value Key="DropdownValuesFormat" Value="value-label" Type="String" />
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+            <Value Key="DropdownValues" Value=":Default (current App)&#xA;site:Site (these Settings affect all Apps of this Site)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="MessageSiteScope" Type="Empty" IsTitle="false">
@@ -13546,11 +13957,12 @@
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c0313d2f-899f-4d31-b863-6c10ff6f8383" KeyString="813a3cb7-1a89-4477-bdfe-8863ab3ae59a">
       <Value Key="Description" Value="" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Configure / Override global settings. Please &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;read the docs&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Everything here is Work-In-Progress / Beta.&lt;/strong&gt;&lt;/p&gt;" Type="String" />
+      <Value Key="DynamicChildrenField" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Here you can configure System Settings. If you're new to this please &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;read the docs&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Remember that you can always create &lt;em&gt;custom settings&lt;/em&gt; for anything you want. These will not be stored here, but in a new ContentType called &lt;em&gt;Settings&lt;/em&gt; which you would create on your own.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
       <Value Key="Label" Value="System Settings" Type="String" />
       <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="ListInstructions" Value="&lt;p&gt;These settings override defaults provided at the global level. Make sure you understand Settings before doing much here. &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read the docs please&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Note: you should usually only have exactly 1 item in this list - except in rare cases where you have two items (one for the current App, one for the Site.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="ListInstructions" Value="&lt;p&gt;These settings override defaults provided at the global level. Make sure you understand Settings before doing much here. &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read the docs please&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Note: you should usually only have exactly 1 item in this list. The only exception is on the main &lt;strong&gt;Content&lt;/strong&gt; app where you have two items (one affecting only the current App, one affecting the entire Site).&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c83fbbf0-ef8c-43c7-8c70-42814991b30a" KeyString="5ad95efe-1dc9-4681-adb8-42d9e7f0183b">
@@ -13626,10 +14038,18 @@
       <Value Key="SettingsIdentifier" Value="WebResources.Fancybox3" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResourceItem" EntityGUID="72286f65-e38b-42ee-a0da-0c73e55f7ba4">
-      <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Html" Value="&lt;link data-enableoptimizations=&quot;true&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x&quot; crossorigin=&quot;anonymous&quot;&gt;&#xA;&#xA;&lt;script data-enableoptimizations=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&#xA;&#xA;" Type="String" />
-      <Value Key="ItemIdentifier" Value="Bootstrap5" Type="String" />
-      <Value Key="SettingsIdentifier" Value="WebResources.Bootstrap5" Type="String" />
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Html" Value="&lt;link data-enableoptimizations=&quot;true&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot; crossorigin=&quot;anonymous&quot;&gt;&#xA;&#xA;&lt;script data-enableoptimizations=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemIdentifier" Value="Bootstrap5" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SettingsIdentifier" Value="WebResources.Bootstrap5" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="17eab878-42c2-45c5-a766-c66a33ef1db6" KeyString="7edd0b8d-1405-44ed-ac33-d0d63a274bd6">
       <Value Key="Description" Value="" Type="String" />
@@ -13799,10 +14219,49 @@
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResourceItem" EntityGUID="3356ad17-91ce-4814-83c1-9f527697391a">
-      <Value Key="Enabled" Value="" Type="Boolean" />
-      <Value Key="Html" Value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css&quot; /&gt;&#xA;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js&quot;&gt;&lt;/script&gt;" Type="String" />
-      <Value Key="ItemIdentifier" Value="fancybox4" Type="String" />
-      <Value Key="SettingsIdentifier" Value="WebResources.fancybox4" Type="String" />
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Html" Value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css&quot; /&gt;&#xA;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js&quot;&gt;&lt;/script&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemIdentifier" Value="fancybox4" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SettingsIdentifier" Value="WebResources.fancybox4" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="6b48b656-45d8-4f65-8e4e-dfbee38aab6d">
+      <Value Key="Enabled" Value="True" Type="Boolean" />
+      <Value Key="Formula" Value="v1(data, context) { return data.SettingsEntityScope == &quot;site&quot;; }" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Title" Value="Setting Visible" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="4fc531f6-9548-4298-832e-5d98cd8ffb56" KeyString="8cfea27d-ab69-42e7-bfcb-0aa054eacbfb">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="DynamicChildrenField" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Here you can configure System Resources. If you're new to this please &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;read the docs&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;As of now, there are not many pre-defined &lt;em&gt;SystemResources&lt;/em&gt; - so if this form looks pretty empty that's expected 😉.&lt;/p&gt;&#xA;&lt;p&gt;Remember that you can always create &lt;em&gt;custom resources &lt;/em&gt;for anything you want. These will not be stored here, but in a new ContentType called&amp;nbsp;&lt;em&gt;Resources&lt;/em&gt; which you would create on your own.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="System Resources" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="&lt;p&gt;These settings override defaults provided at the global level. Make sure you understand Settings before doing much here. &lt;a href=&quot;https://r.2sxc.org/settings&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read the docs please&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Note: you should usually only have exactly 1 item in this list. The only exception is on the main &lt;strong&gt;Content&lt;/strong&gt; app where you have two items (one affecting only the current App, one affecting the entire Site).&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="8cfea27d-ab69-42e7-bfcb-0aa054eacbfb" AttributeSetName="SystemResources" EntityGUID="a0bedfbb-57eb-44b6-a4ce-738b199fdbc2">
+      <Value Key="SettingsEntityScope" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TestMessage" Value="This is a test-message for testing the Resources - always remember that the answer is 42!" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TestMessage" Value="Das ist eine Testmeldung für die Ressourcen (Resources). Vergiss nicht: die Antwort ist immer 42!" Type="String">
+        <Dimension DimensionID="183" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="System Resources" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
   </Entities>
   <PortalFiles />
@@ -13876,6 +14335,9 @@
     <Folder Id="10527" RelativePath="adam/System-Types/8Ls_yIzvx0OMcEKBSZGzCg/" />
     <Folder Id="10529" RelativePath="adam/System-Types/8Ls_yIzvx0OMcEKBSZGzCg/Icon/" />
     <Folder Id="10528" RelativePath="adam/System-Types/8Ls_yIzvx0OMcEKBSZGzCg/Link/" />
+    <Folder Id="11056" RelativePath="adam/System-Types/9jHFT0iVmEKDLl2YzY_7Vg/" />
+    <Folder Id="11059" RelativePath="adam/System-Types/9jHFT0iVmEKDLl2YzY_7Vg/Icon/" />
+    <Folder Id="11058" RelativePath="adam/System-Types/9jHFT0iVmEKDLl2YzY_7Vg/Link/" />
     <Folder Id="4692" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/" />
     <Folder Id="4693" RelativePath="adam/System-Types/AL2IJlEnJUCUvd1_dvT3Fg/Notes/" />
     <Folder Id="10479" RelativePath="adam/System-Types/arlCK0Adzka9ylcqXy3jug/" />
