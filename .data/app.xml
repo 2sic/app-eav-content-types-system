@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.05.00" ExportDate="2021-10-07T09:41:32.1587788+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.05.00" ExportDate="2021-10-12T21:13:42.9498251+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -8371,23 +8371,51 @@
         </Attribute>
         <Attribute StaticName="GroupContentPresentation" Type="Empty" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bce3f386-7820-4d9d-8d80-1500c7ff4e50" KeyNumber="11984">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="a233ee52-fe97-4725-98ba-8db297d2bfdd" Type="Entity" />
-            <Value Key="InputType" Value="empty-default" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Content-Item Presentation" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Presentation settings are used to configure &lt;em&gt;how&lt;/em&gt; your content will be shown. You can do very sophisticated things with this. &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read more about it in&amp;nbsp;help&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Formulas" Value="a233ee52-fe97-4725-98ba-8db297d2bfdd,c3b896f8-40ce-4c5a-8c93-71d29da61e2a,bb822c03-2199-4358-a206-a7fd0e80bc8f" Type="Entity" />
+            <Value Key="InputType" Value="empty-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Content-Item Presentation" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Presentation settings are used to configure &lt;em&gt;how&lt;/em&gt; your content will be shown. You can do very sophisticated things with this. &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read more about it in&amp;nbsp;help&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="2900df3a-3d19-45e7-aa5f-b03dc9549eea" KeyNumber="11984">
-            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="PresentationTypeStaticName" Type="String" IsTitle="false">
@@ -9507,23 +9535,51 @@
         </Attribute>
         <Attribute StaticName="GroupContentPresentation" Type="Empty" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bce3f386-7820-4d9d-8d80-1500c7ff4e50" KeyNumber="11984">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="True" Type="Boolean" />
-            <Value Key="Formulas" Value="a233ee52-fe97-4725-98ba-8db297d2bfdd" Type="Entity" />
-            <Value Key="InputType" Value="empty-default" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Content-Item Presentation" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Presentation settings are used to configure &lt;em&gt;how&lt;/em&gt; your content will be shown. You can do very sophisticated things with this. &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read more about it in&amp;nbsp;help&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Formulas" Value="a233ee52-fe97-4725-98ba-8db297d2bfdd,c3b896f8-40ce-4c5a-8c93-71d29da61e2a,bb822c03-2199-4358-a206-a7fd0e80bc8f" Type="Entity" />
+            <Value Key="InputType" Value="empty-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Content-Item Presentation" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Presentation settings are used to configure &lt;em&gt;how&lt;/em&gt; your content will be shown. You can do very sophisticated things with this. &lt;a href=&quot;https://r.2sxc.org/presentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Read more about it in&amp;nbsp;help&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="2900df3a-3d19-45e7-aa5f-b03dc9549eea" KeyNumber="11984">
-            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="PresentationTypeStaticName" Type="String" IsTitle="false">
@@ -15263,24 +15319,63 @@
       <Value Key="Title" Value="Setting Visible" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="77d48043-c9ef-4f26-8cc7-b8f2fa2d74c3">
-      <Value Key="ContentTypeStaticName" Value="" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Identifier" Value="oeu" Type="String" />
-      <Value Key="IsHidden" Value="False" Type="Boolean" />
-      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
-      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="Location" Value="Site" Type="String" />
-      <Value Key="Name" Value="aoeu" Type="String" />
-      <Value Key="Path" Value="_default.cshtml" Type="String" />
-      <Value Key="PresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="PublishData" Value="False" Type="Boolean" />
-      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean" />
-      <Value Key="SearchIndexingStreams" Value="" Type="String" />
-      <Value Key="StreamsToPublish" Value="" Type="String" />
-      <Value Key="Type" Value="C# Razor" Type="String" />
-      <Value Key="UseForList" Value="False" Type="Boolean" />
-      <Value Key="ViewController" Value="SearchMapper3.cs" Type="String" />
-      <Value Key="ViewNameInUrl" Value="" Type="String" />
+      <Value Key="ContentDemoEntity" Value="3dfc1655-dd6d-45be-a04e-ab35ba8817fd" Type="Entity" />
+      <Value Key="ContentTypeStaticName" Value="6e65443d-df3c-46d8-8814-ac54718d8bac" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="oeu" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentDemoEntity" Value="3dfc1655-dd6d-45be-a04e-ab35ba8817fd" Type="Entity" />
+      <Value Key="ListContentTypeStaticName" Value="6e65443d-df3c-46d8-8814-ac54718d8bac" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Demo with Presentation" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="_default.cshtml" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PresentationDemoEntity" Value="3dfc1655-dd6d-45be-a04e-ab35ba8817fd" Type="Entity" />
+      <Value Key="PresentationTypeStaticName" Value="6e65443d-df3c-46d8-8814-ac54718d8bac" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="SearchMapper3.cs" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="859a787b-f9d4-4069-89de-4e51d2a21bd2">
       <Value Key="Enabled" Value="True" Type="Boolean" />
@@ -15333,7 +15428,7 @@
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="aa42949c-b740-4132-91f7-b32bb4b13cac">
       <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data, context) {&#xA;  return data.default + (data.ContentTypeStaticName ? ' ✅' : '');&#xA;}" Type="String" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  var typeOk = (data.ContentTypeStaticName ? ' ✅' : '');&#xA;  var demoOk = (data.ContentDemoEntity.length ? '✅' : '➖');&#xA;  var indicator = typeOk + (typeOk ? '/' + demoOk : '');&#xA;  return data.default + indicator;&#xA;}" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
       <Value Key="Target" Value="Field.Settings.Name" Type="String" />
       <Value Key="Title" Value="Setting Name: Show if configured" Type="String" />
@@ -15931,6 +16026,40 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="c3b896f8-40ce-4c5a-8c93-71d29da61e2a">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  return data.PresentationDemoEntity.length &gt; 0;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Collapsed" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Setting Collapsed" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="bb822c03-2199-4358-a206-a7fd0e80bc8f">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  var typeOk = (data.PresentationTypeStaticName ? ' ✅' : '');&#xA;  var demoOk = (data.PresentationDemoEntity.length ? '✅' : '➖');&#xA;  var indicator = typeOk + (typeOk ? '/' + demoOk : '');&#xA;  return data.default + indicator;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Name" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Setting Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
