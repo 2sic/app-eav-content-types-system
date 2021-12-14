@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.00.00" ExportDate="2021-12-13T12:27:43.6234948+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.00.00" ExportDate="2021-12-14T18:59:32.6520289+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -18261,46 +18261,6 @@
       <Value Key="StreamName" Value="Default" Type="String" />
       <Value Key="UrlParameters" Value="" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="6aec670e-c79c-4289-8586-531abec79745" KeyString="@Hyperlink">
-      <Value Key="Description" Value="File UI Definitions" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Point to a link, a file, or even a set of files.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="Hyperlink / Link / File / Document" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="9c662c7f-65d6-4aa5-9bd5-5a40c6a42b2f" KeyString="@Number">
-      <Value Key="Description" Value="Configuration for a number field" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Let users pick / set a number.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="Number" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="ce686c77-a248-464a-8499-4e9c7f2c0488" KeyString="@string-font-icon-picker">
-      <Value Key="Description" Value="Configure a font-icon picker" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Select an icon from an icon-font. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-font-icon-picker&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for detailed instructions.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="Font-Icon Picker" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="925f1d0a-8946-40ef-b46c-e0ad01f5617e" KeyString="@string-url-path">
-      <Value Key="Description" Value="Configuration for a string-url-path field" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Allows text-input, but only for url-valid characters. Ideal to auto-generate path-parts based on other fields like the title. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-string-url-path&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="URL Path / Path-Part" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="xx ContentType" AttributeSetName="xx ContentType" EntityGUID="38418965-ca2d-4b3b-8c7b-d19a120fa238" KeyString="@All">
-      <Value Key="Description" Value="the fields used on all input types" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;General field configuration which is valid for almost any field. See &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/ui-field-all&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="General Settings" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="Notes" Value="" Type="String" />
-    </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="0047f7c3-26ee-44bb-9ab4-9eec48e37837" KeyString="ContentType">
       <Value Key="Description" Value="Description of a Content-Type (Metadata)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
@@ -18717,13 +18677,30 @@
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="95489982-4260-446b-9289-839cb132feb4" KeyString="@string-url-path">
-      <Value Key="Description" Value="Configuration for a string-url-path field" Type="String" />
-      <Value Key="EditInstructions" Value="" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="Url-Path or Path-Part" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="ListInstructions" Value="" Type="String" />
-      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Description" Value="Configuration for a string-url-path field" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="&lt;p&gt;Allows text-input, but only for url-valid characters. Ideal to auto-generate path-parts based on other fields like the title.&amp;nbsp;&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Url-Path or Path-Part" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c9da1ed4-42ab-4947-957d-7f40c0c44a94" KeyString="@string-wysiwyg">
       <Value Key="Description" Value="Edit text like using word with the tiny-mce rich-text editor" Type="String" />
@@ -20500,7 +20477,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This marks things which should be seen as obsolete in the UI. For example obsolete input-types.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="not_interested" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Is-Obsolete (Decorator)" Type="String">
@@ -20594,7 +20571,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This marks something as being the default. There are no properties to edit.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="star" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Is-Default (Decorator)" Type="String">
@@ -20620,7 +20597,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;Mark an item as recommended.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="thumb_up" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Is-Recommended (Decorator)" Type="String">
@@ -20647,7 +20624,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;By default, content-types without fields would result in empty items, and they would not be saved.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Use this decorator to mark a content-type which should save items even if they are completely empty.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="crop_free" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Save-Empty (Decorator)" Type="String">
@@ -20675,7 +20652,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This configures what Metadata is expected on this kind of item. It's mainly used to help create toolbars automatically.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Important: This wil not prevent other metadata, but simply make work easier.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="local_offer" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Metadata-Expected (Decorator)" Type="String">
@@ -20760,7 +20737,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;Used to decorate Content-Types to tell them what they usually describe.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="loyalty" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Metadata-For (Decorator)" Type="String">
@@ -20871,7 +20848,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This configures a Content-Type to have custom languages / translation settings&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="translate" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Language and Translation Settings (Decorator)" Type="String">
@@ -20925,6 +20902,49 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Title" Value="Disable Translation" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="4c88d78f-5f3e-4b66-95f2-6d63b7858847" AttributeSetName="MetadataForDecorator" EntityGUID="da6abab0-fa90-4bf9-bd1d-b0acc7288b35" KeyString="ContentType">
+      <Value Key="Amount" Value="1" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DeleteWarning" Value="This usually contains descriptions for content-types, and shouldn't be deleted." Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TargetName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TargetType" Value="5" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Metadata for ContentTypes" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="64e7dd21-ad14-4378-ac5a-e7a145f3a92c" KeyString="@Boolean">
+      <Value Key="Description" Value="Boolean UI Definitions" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Boolean (Yes/No)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
