@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.05.00" ExportDate="2022-03-24T14:40:29.5517507+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.05.00" ExportDate="2022-03-29T19:58:01.7576568+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -1632,7 +1632,7 @@
             <Value Key="Disabled" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="EnableExperimental" Value="" Type="Boolean">
@@ -8295,7 +8295,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fb106616-3e50-46bf-b204-567e06e26675" KeyNumber="27718">
-            <Value Key="DropdownValues" Value=":Default Crop - Use image as the template expects it, usually crop to center&#xA;none:Don't Crop - the entire image should be visible&#xA;compass:Corner or Side Crop - the most important part is in a corner or on a side" Type="String">
+            <Value Key="DropdownValues" Value=":Default Crop - Use image as the template expects it, usually crop to center&#xA;none:Don't Crop - the entire image should be visible&#xA;to:Corner or Side Crop - the most important part is in a corner or on a side" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
@@ -8306,7 +8306,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="CropCompass" Type="String" IsTitle="false">
+        <Attribute StaticName="CropTo" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d6923ea6-f842-456f-ba8e-75200f411231" KeyNumber="27720">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -8330,7 +8330,7 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="Crop Focus" Type="String">
+            <Value Key="Name" Value="Crop Focus / Crop To" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Name" Value="Zuschnitt - Fokus" Type="String">
@@ -8364,7 +8364,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fe5255fe-e806-426e-b433-61119f6507df" KeyNumber="27720">
-            <Value Key="DropdownValues" Value=":Default - Center&#xA;tl:Top Left&#xA;tc:Top Center&#xA;tr:Top Right&#xA;ml:Middle Left&#xA;mc:Middle Center&#xA;mr:Middle Right&#xA;bl:Bottom Left&#xA;bc:Bottom Center&#xA;br:Bottom Right" Type="String">
+            <Value Key="DropdownValues" Value=":🎯 Default - Center&#xA;tl:↖️ Top Left&#xA;tc:⬆️ Top Center&#xA;tr:↗️ Top Right&#xA;ml:⬅️ Middle Left&#xA;mc:🎯 Middle Center&#xA;mr:➡️ Middle Right&#xA;bl:↙️ Bottom Left&#xA;bc:⬇️ Bottom Center&#xA;br:↘️ Bottom Right" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
@@ -13361,7 +13361,7 @@
       <Value Key="SettingsIdentifier" Value="Images" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="358ce0df-52bf-4877-bf32-19c3fb723c73">
-      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1/1*, 3/4*, 1/2*, 1/4*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;koi experimental&quot;,&#xD;&#xA;        &quot;cssFramework&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;factor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230, &#xD;&#xA;            &quot;attributes&quot;: { &quot;sizes&quot;: &quot;(min-width: 960px) 720px, 100vw&quot; }&#xD;&#xA;          },&#xD;&#xA;          { &quot;factor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;factor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;factor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;factor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;factor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &quot;factor&quot;: &quot;6/12&quot;, &quot;width&quot;: 600 },&#xD;&#xA;          { &quot;factor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &quot;factor&quot;: &quot;4/12&quot;, &quot;width&quot;: 390 },&#xD;&#xA;          { &quot;factor&quot;: &quot;3/12&quot;, &quot;width&quot;: 285 },&#xD;&#xA;          { &quot;factor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;factor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
+      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;koi experimental&quot;,&#xD;&#xA;        &quot;cssFramework&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true,&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;factor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230, &#xD;&#xA;            &quot;attributes&quot;: { &quot;sizes&quot;: &quot;(max-width: 1400px) 100vw, 1230px&quot; }&#xD;&#xA;          },&#xD;&#xA;          { &quot;factor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;factor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;factor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;factor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;factor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &quot;factor&quot;: &quot;6/12&quot;, &quot;width&quot;: 600 },&#xD;&#xA;          { &quot;factor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &quot;factor&quot;: &quot;4/12&quot;, &quot;width&quot;: 390 },&#xD;&#xA;          { &quot;factor&quot;: &quot;3/12&quot;, &quot;width&quot;: 285 },&#xD;&#xA;          { &quot;factor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;factor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="AspectRatio" Value="1.618" Type="Number">
@@ -13393,7 +13393,7 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="35d4e680-2f92-455a-90b7-4a5a936c287f">
-      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;1/1*, 3/4*, 1/2*, 1/4*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
+      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1/1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="AspectRatio" Value="1.333" Type="Number">
@@ -13425,7 +13425,7 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="bdbff289-219d-46d6-b697-5d17050eebe9">
-      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2400, 2000, 1600, 1200, 800, 400&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
+      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;3000, 2400, 1600, 1200, 800&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="AspectRatio" Value="1.333" Type="Number">
@@ -13457,7 +13457,7 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="8affa267-ec04-408f-af93-48c0ae693e5c">
-      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2400, 2000, 1600, 1200, 800, 400&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
+      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;3000, 2400, 1600, 1200, 800&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="AspectRatio" Value="1.333" Type="Number">
@@ -15078,7 +15078,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1(data, context) { return data.CropBehavior == 'compass'; }" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.CropBehavior == 'to'; }" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Notes" Value="" Type="String">
@@ -15114,6 +15114,17 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="cb27a0f2-f921-48d0-a3bc-37c0e77b1d0c" AttributeSetName="ImageDecorator" EntityGUID="99ff22e6-17f8-4ac7-abfc-0518e63a025b">
+      <Value Key="CropBehavior" Value="to" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="CropTo" Value="tc" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
