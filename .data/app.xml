@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.07.00" ExportDate="2022-04-29T15:18:31.2354614+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.07.00" ExportDate="2022-05-03T15:56:56.6367747+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -5214,29 +5214,67 @@
         </Attribute>
         <Attribute StaticName="ItemIdentifier" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="885919d3-9278-4278-89c0-b83e5ceaa0bd" KeyNumber="25024">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="EnableExperimental" Value="" Type="Boolean" />
-            <Value Key="InputType" Value="string-dropdown" Type="String" />
-            <Value Key="IsEphemeral" Value="" Type="Boolean" />
-            <Value Key="Name" Value="Name / Item Identifier" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Select a predefined identifier or create your own with the TT-button. These identifiers are case-insensitive.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Name / Item Identifier" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Select a predefined identifier or create your own with the TT-button. These identifiers are case-insensitive.&amp;nbsp;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="78c62298-7189-45eb-a2cb-de21d26d9ac3" KeyNumber="25024">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="" Type="Number" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="7fc87496-192e-4d70-8884-74392a3fcee0" KeyNumber="25024">
-            <Value Key="DropdownValues" Value="Bootstrap4:Bootstrap4&#xA;Bootstrap5:Bootstrap5&#xA;fancybox3:fancybox3&#xA;fancybox4:fancybox4&#xA;FontAwesome5:FontAwesome5" Type="String" />
-            <Value Key="DropdownValuesFormat" Value="" Type="String" />
-            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="DropdownValues" Value="Bootstrap4:Bootstrap4&#xA;Bootstrap5:Bootstrap5&#xA;fancybox3:fancybox3&#xA;fancybox4:fancybox4&#xA;FontAwesome5:FontAwesome5&#xA;FontAwesome6:FontAwesome6" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="Enabled" Type="Boolean" IsTitle="false">
@@ -13689,7 +13727,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="12.07.00" Type="String">
+      <Value Key="Version" Value="13.07.00" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -14701,8 +14739,10 @@
       <Value Key="Title" Value="Value" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="9ff20ccf-3ff7-4a76-b749-dd22771df730" AttributeSetName="⚙️WebResources" EntityGUID="06f4fa58-2e91-4896-a16e-3bbaf9a5f491">
-      <Value Key="Items" Value="e6d3d600-ea17-4957-9c56-9bae78329c67,72286f65-e38b-42ee-a0da-0c73e55f7ba4,4b9ef331-480a-4a38-86f1-a580f8345677,3356ad17-91ce-4814-83c1-9f527697391a,38e0226d-4c31-4d2e-ab97-8e16483ddf94" Type="Entity" />
-      <Value Key="SettingsIdentifier" Value="WebResources" Type="String" />
+      <Value Key="Items" Value="e6d3d600-ea17-4957-9c56-9bae78329c67,72286f65-e38b-42ee-a0da-0c73e55f7ba4,4b9ef331-480a-4a38-86f1-a580f8345677,3356ad17-91ce-4814-83c1-9f527697391a,38e0226d-4c31-4d2e-ab97-8e16483ddf94,3e6811a8-87ab-4954-8402-6e2b3d80c6e2" Type="Entity" />
+      <Value Key="SettingsIdentifier" Value="WebResources" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResource" EntityGUID="e6d3d600-ea17-4957-9c56-9bae78329c67">
       <Value Key="Enabled" Value="True" Type="Boolean" />
@@ -14711,10 +14751,18 @@
       <Value Key="SettingsIdentifier" Value="WebResources.Bootstrap4" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResource" EntityGUID="38e0226d-4c31-4d2e-ab97-8e16483ddf94">
-      <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Html" Value="&lt;script defer async src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js&quot; integrity=&quot;sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;" Type="String" />
-      <Value Key="ItemIdentifier" Value="FontAwesome5" Type="String" />
-      <Value Key="SettingsIdentifier" Value="WebResources.FontAwesome5" Type="String" />
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Html" Value="&lt;script defer async data-enableoptimizations=&quot;bottom&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js&quot; integrity=&quot;sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemIdentifier" Value="FontAwesome5" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SettingsIdentifier" Value="WebResources.FontAwesome5" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResource" EntityGUID="4b9ef331-480a-4a38-86f1-a580f8345677">
       <Value Key="Enabled" Value="True" Type="Boolean" />
@@ -15059,7 +15107,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Html" Value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css&quot; data-enableoptimizations=&quot;bottom&quot; /&gt;&#xA;&lt;script defer async src=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js&quot; data-enableoptimizations=&quot;bottom&quot;&gt;&lt;/script&gt;" Type="String">
+      <Value Key="Html" Value="&lt;link rel=&quot;stylesheet&quot; data-enableoptimizations=&quot;bottom&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.26/dist/fancybox.css&quot; integrity=&quot;sha256-TKc3YkhtFZIGx8QxHcwXCosCWnTuDft8upXnvv2oFXg=&quot; crossorigin=&quot;anonymous&quot;&gt;&#xA;&lt;script defer async data-enableoptimizations=&quot;bottom&quot; src=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.26/dist/fancybox.umd.js&quot; integrity=&quot;sha256-D4Epl1XSKsE0D1vBveDYFoN61WfBppzP0OwRKU2BAmQ=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="ItemIdentifier" Value="fancybox4" Type="String">
@@ -16809,6 +16857,53 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="5e958dc6-2922-4d68-835c-7b9711538b12" AttributeSetName="NoteDecorator" EntityGUID="04c9dd2c-f931-48b0-a1ad-7473e2526f00" KeyGuid="3356ad17-91ce-4814-83c1-9f527697391a">
+      <Value Key="Note" Value="&lt;p&gt;Best update with exact version links and SRI from here:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&quot;https://www.jsdelivr.com/package/npm/@fancyapps/ui?path=dist&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jsdelivr.com/package/npm/@fancyapps/ui?path=dist&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="NoteType" Value="note" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Best update with exact version..." Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="5e958dc6-2922-4d68-835c-7b9711538b12" AttributeSetName="NoteDecorator" EntityGUID="049f481e-a3aa-4a85-afe7-8c88ccafd38d" KeyGuid="38e0226d-4c31-4d2e-ab97-8e16483ddf94">
+      <Value Key="Note" Value="&lt;p&gt;Get updated links from the &lt;a href=&quot;https://cdnjs.com/libraries/font-awesome/5.15.4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CDNJS&lt;/a&gt;.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="NoteType" Value="note" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Get updated links from the CDN..." Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="66f19c62-371e-4ad1-a98b-de0745507be4" AttributeSetName="⚙️WebResource" EntityGUID="3e6811a8-87ab-4954-8402-6e2b3d80c6e2">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Html" Value="&lt;script defer async data-enableoptimizations=&quot;bottom&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js&quot; integrity=&quot;sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemIdentifier" Value="FontAwesome6" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SettingsIdentifier" Value="WebResources.FontAwesome6" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="5e958dc6-2922-4d68-835c-7b9711538b12" AttributeSetName="NoteDecorator" EntityGUID="be43a43e-56c9-4660-97a4-a3aadafa370e" KeyGuid="3e6811a8-87ab-4954-8402-6e2b3d80c6e2">
+      <Value Key="Note" Value="&lt;p&gt;Get updated links from the &lt;a href=&quot;https://cdnjs.com/libraries/font-awesome/6.1.1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CDNJS&lt;/a&gt;.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="NoteType" Value="note" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Get updated links from the CDN..." Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
