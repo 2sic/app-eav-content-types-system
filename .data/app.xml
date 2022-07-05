@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.07.00" ExportDate="2022-05-03T15:56:56.6367747+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.07.03" ExportDate="2022-07-06T00:06:52.975339+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -1317,36 +1317,91 @@
       <Attributes>
         <Attribute StaticName="Query" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fbebbad2-659c-46bd-adde-e553421ac9cc" KeyNumber="11083">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
-            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
-            <Value Key="Name" Value="Query" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Pick the query which would be used to prepare the items a user can select.&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown-query" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Query" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Pick the query which would be used to prepare the items a user can select.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3439b79c-222e-4fef-8fc1-1267c6233eb2" KeyNumber="11083">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0db25a10-469d-46d8-a7bf-33254714fe5b" KeyNumber="11083">
             <Value Key="RowCount" Value="" Type="Number" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="72306c6f-004b-463a-a5e1-ba31faf32973" KeyNumber="11083">
-            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
-            <Value Key="EnableEdit" Value="False" Type="Boolean" />
-            <Value Key="EnableRemove" Value="True" Type="Boolean" />
-            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
-            <Value Key="Label" Value="Name" Type="String" />
-            <Value Key="Query" Value="Eav.Queries.Global.Queries" Type="String" />
-            <Value Key="Separator" Value="," Type="String" />
-            <Value Key="StreamName" Value="Default" Type="String" />
-            <Value Key="UrlParameters" Value="" Type="String" />
-            <Value Key="Value" Value="Name" Type="String" />
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Label" Value="Name" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Query" Value="Eav.Queries.Global.Queries" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Separator" Value="¶" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="StreamName" Value="Default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="UrlParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Value" Value="Name" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupMore" Type="Empty" IsTitle="false">
@@ -1644,7 +1699,7 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="Enable Image Config" Type="String">
+            <Value Key="Name" Value="Enable Image Config 🎯" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Notes" Value="" Type="String">
@@ -1667,13 +1722,13 @@
             <Value Key="ReverseToggle" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="TitleFalse" Value="Disable image configuration BETA" Type="String">
+            <Value Key="TitleFalse" Value="Disable image configuration" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="TitleIndeterminate" Value="Disable image configuration (default) BETA" Type="String">
+            <Value Key="TitleIndeterminate" Value="Disable image configuration (default)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="TitleTrue" Value="Enable image configuration if the file is an image BETA" Type="String">
+            <Value Key="TitleTrue" Value="Enable image configuration if the file is an image 🎯" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4046,7 +4101,7 @@
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="false" Type="String">
+            <Value Key="DefaultValue" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Disabled" Value="False" Type="Boolean">
@@ -4058,6 +4113,7 @@
             <Value Key="EnableExperimental" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+            <Value Key="Formulas" Value="f6be3e78-a86c-44da-97d7-f283481b5f8e" Type="Entity" />
             <Value Key="InputType" Value="boolean-tristate" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -4125,7 +4181,51 @@
             <Value Key="Name" Value="MsgPoliciesInherited" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;The policy is currently empty. In this case, the policy will be inherited from the configuration with the same name, from Global or Preset&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="&lt;h4&gt;&lt;span style=&quot;color: #236fa1;&quot;&gt;Important: Empty Policies auto-inherit Parent Policies&lt;/span&gt;&lt;/h4&gt;&#xA;&lt;p&gt;The policy is currently empty. In this case, the policy will be inherited from the configuration with the same name, from Global or Preset&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MsgAppPolicy" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e963ca63-2738-4fff-93f7-e3b2636157f5" KeyNumber="27747">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Formulas" Value="49c22fa1-4e1f-4585-92e7-10d18a6da0fe" Type="Entity" />
+            <Value Key="InputType" Value="empty-message" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="MsgAppPolicy" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;h4&gt;&lt;span style=&quot;color: #236fa1;&quot;&gt;Important: App Policies&lt;/span&gt;&lt;/h4&gt;&#xA;&lt;p&gt;You are editing the &lt;strong&gt;App Policies&lt;/strong&gt;. This will be merged with the Site or Global Policies.&lt;/p&gt;&#xA;&lt;p&gt;You also cannot change the Enabled / Report-Only at App-Level.&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -4159,6 +4259,7 @@
             <Value Key="EnableExperimental" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+            <Value Key="Formulas" Value="1571d7da-298c-476e-a25c-d2fe79c1052b" Type="Entity" />
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -4856,7 +4957,7 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="Advanced (beta)" Type="String">
+            <Value Key="Name" Value="Advanced" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Notes" Value="" Type="String">
@@ -9430,10 +9531,10 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="Duration in Seconds" Type="String">
+            <Value Key="Name" Value="Duration" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;value is stored as as seconds&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -9498,7 +9599,7 @@
             <Value Key="Name" Value="Duration for Logged In Users (but not editors)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;Note that the cache will be kept separate for each user, so if you have many users, this could require a lot of memory.&amp;nbsp;&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;The cache will be kept separate for each user. If you have many users, this could require a lot of memory, so we recommend to disable this.&amp;nbsp;&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -9526,7 +9627,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@number-dropdown" AttributeSetName="@number-dropdown" EntityGUID="ac9c54ca-8ab0-4291-979c-e1a54b5ffc12" KeyNumber="27725">
-            <Value Key="DropdownValues" Value=":Empty / no value&#xA;-1:Disabled&#xA;10:10 Seconds&#xA;30:30 Seconds&#xA;60:60 Seconds&#xA;300:5 Minutes" Type="String">
+            <Value Key="DropdownValues" Value=":Empty / no value&#xA;-1:Disabled&#xA;10:10 Seconds&#xA;30:30 Seconds&#xA;60:60 Seconds&#xA;300:5 Minutes&#xA;3600:1 hour&#xA;14400:4 hours&#xA;86400:1 day" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
@@ -9542,7 +9643,7 @@
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="60" Type="String">
+            <Value Key="DefaultValue" Value="300" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Disabled" Value="False" Type="Boolean">
@@ -9563,7 +9664,7 @@
             <Value Key="Name" Value="Duration for Editors" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;Editors spend a lot of time on the site, so some caching will improve the experience.&amp;nbsp;&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -9591,13 +9692,13 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@number-dropdown" AttributeSetName="@number-dropdown" EntityGUID="81849c1b-a597-4410-9026-a7a8e2b1b1fa" KeyNumber="27726">
-            <Value Key="DropdownValues" Value=":Empty / no value&#xA;-1:Disabled&#xA;10:10 Seconds&#xA;30:30 Seconds&#xA;60:60 Seconds&#xA;300:5 Minutes" Type="String">
+            <Value Key="DropdownValues" Value=":Empty / no value&#xA;-1:Disabled&#xA;10:10 Seconds&#xA;30:30 Seconds&#xA;60:60 Seconds&#xA;300:5 Minutes&#xA;3600:1 hour&#xA;14400:4 hours&#xA;86400:1 day" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -9625,10 +9726,10 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="DurationSystemAdmin" Type="String">
+            <Value Key="Name" Value="Duration System Admins" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;This is for super-users / host-users.&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -9656,13 +9757,13 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@number-dropdown" AttributeSetName="@number-dropdown" EntityGUID="8ae02ba2-e3b0-46ad-b11b-caa9bb3f07b5" KeyNumber="27728">
-            <Value Key="DropdownValues" Value=":Empty / no value&#xA;-1:Disabled&#xA;10:10 Seconds&#xA;30:30 Seconds&#xA;60:60 Seconds&#xA;300:5 Minutes" Type="String">
+            <Value Key="DropdownValues" Value=":Empty / no value&#xA;-1:Disabled&#xA;10:10 Seconds&#xA;30:30 Seconds&#xA;60:60 Seconds&#xA;300:5 Minutes&#xA;3600:1 hour&#xA;14400:4 hours&#xA;86400:1 day" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -9798,6 +9899,7 @@
             <Value Key="EnableExperimental" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+            <Value Key="Formulas" Value="46e32523-21b2-4485-8e10-ae846009e305" Type="Entity" />
             <Value Key="InputType" Value="string-json" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -10728,6 +10830,82 @@
             </Value>
             <Value Key="DropdownValues" Value="note:Notiz&#xA;warning:Warnung" Type="String">
               <Dimension DimensionID="183" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="1f1c8118-8ea5-4db5-8e3d-f5ef2131050b" Name="OpenGraph" Description="" Scope="System.Cms" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="OgTitle" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="40652b36-3a53-4f4b-930a-fdcf3ed12897" KeyNumber="28541">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="OgType" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f3d9bd90-0361-492f-9311-1b5a3a7a2744" KeyNumber="28540">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="website" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Open Graph Type" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="916d769b-3023-4e50-9b1d-d75176982315" KeyNumber="28540">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="9e8a4598-cc0a-4313-822e-acc79292af09" KeyNumber="28540">
+            <Value Key="DropdownValues" Value="article&#xA;book&#xA;music.song&#xA;music.album&#xA;music.playlist&#xA;music.radio_station&#xA;profile&#xA;video.movie&#xA;video.episode&#xA;video.tv_show&#xA;video.other&#xA;website" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -12104,10 +12282,10 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="Security (BETA)" Type="String">
+            <Value Key="Name" Value="Security / Content Security Policies" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;The security features are not yet ready. They will also not work, if the &lt;strong&gt;ContentSecurityPolicy &lt;/strong&gt;feature is not enabled.&amp;nbsp;&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -12739,6 +12917,97 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="22f9bf97-bf85-4fe4-9d72-900f8883e322" Name="TestQueryPickerWithComma" Description="" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5fc5f57f-0fde-4f15-a2e7-442bfc5fd5c5" KeyNumber="28544">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Query" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="55a54fb9-5b29-4e04-9936-c4d6e5186c88" KeyNumber="28545">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="entity-query" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Query" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="17be0908-3daf-4a42-9608-ee7e069fbcd2" KeyNumber="28545">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableDelete" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EntityType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Prefill" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@entity-query" AttributeSetName="@entity-query" EntityGUID="d8dccdef-7710-44bc-84ba-61b9e071f374" KeyNumber="28545">
+            <Value Key="Query" Value="Query with , Comma" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="StreamName" Value="Default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="UrlParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="dd009c7e-39d0-4324-a8b0-e6c55e032590" Name="TestUsingStringSource" Description="" Scope="System.Experimental" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
@@ -12753,6 +13022,318 @@
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Source" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="acc185a7-f300-4468-bce8-d6a64038989d" Name="ToolbarButtonDecorator" Description="" Scope="System.Decorators" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Command" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3bcbb4da-0920-4584-8b73-f0a8d6cf8345" KeyNumber="28535">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="metadata" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Command" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;The command / button this config is for.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="dce4d52e-4be4-4662-ae61-0595fb89c53a" KeyNumber="28535">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="22c72d94-e868-4ae6-b31b-e8c8171cba66" KeyNumber="28535">
+            <Value Key="DropdownValues" Value="Simple Value&#xA;Another Value&#xA;l:Left (will store an l)&#xA;r:Right (will store an r)&#xA;c:Center (... c)&#xA;m:Middle&#xA;random:Random value&#xA;MIT:MIT License" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Ui" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="68542f68-48a6-4458-a1e9-db057358936b" KeyNumber="28536">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Ui" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Any UI parameters which should be applied to the button.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="cade50c7-5332-43c2-a44d-12041b23cf24" KeyNumber="28536">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="56727ffd-d81d-4bfc-b3ad-8380b213cad8" KeyNumber="28536">
+            <Value Key="InputFontFamily" Value="monospace" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="5" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UiColor" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5bca2223-ee75-4cdc-a988-e7ca8d60d680" KeyNumber="28537">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="UiColor" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;The color parameter of the UI&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="8c3fe0be-822e-42ed-b359-f6399b41b79d" KeyNumber="28537">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f83c66f6-f7f5-4207-91ca-c1797d3944d6" KeyNumber="28537">
+            <Value Key="InputFontFamily" Value="monospace" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="1" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UiIcon" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fe8a5ae8-9330-4dea-baaf-f86f606beb87" KeyNumber="28538">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="UiIcon" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;An SVG (as plain text) to use.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="2e047acf-a3c2-4ff3-b089-b9efae3b998a" KeyNumber="28538">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="13fb5912-56fb-4fbc-9e4d-a9900345faed" KeyNumber="28538">
+            <Value Key="InputFontFamily" Value="monospace" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="5" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UiData" Type="Boolean" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e04f2af2-5eee-4daa-8028-44b07231d43e" KeyNumber="28539">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="boolean-tristate" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Ui - include Data" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="e3736f0e-f9ec-4e42-b146-549961603e95" KeyNumber="28539">
+            <Value Key="ReverseToggle" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleFalse" Value="Don't include data" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleIndeterminate" Value="Default - don't include data" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleTrue" Value="Include Data for UI" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
       </Attributes>
@@ -13727,7 +14308,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="13.07.00" Type="String">
+      <Value Key="Version" Value="14.07.03" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -14283,7 +14864,9 @@
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="f670e444-96a8-4a00-b588-70a6f8d879ef">
       <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  return !!data.DropdownValues || !!window.beta;&#xA;}" Type="String" />
+      <Value Key="Formula" Value="function v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  return !!data.DropdownValues;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
       <Value Key="Notes" Value="" Type="String" />
       <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
       <Value Key="Title" Value="Setting Visible" Type="String" />
@@ -14806,7 +15389,7 @@
       <Value Key="SettingsIdentifier" Value="Images" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="358ce0df-52bf-4877-bf32-19c3fb723c73">
-      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;attributes&quot;: {&#xD;&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xD;&#xA;    },&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap3&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs3&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-responsive&quot; },&#xD;&#xA;        &quot;setWidth&quot;: false&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap4&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs4&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap5&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true,&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230, &#xD;&#xA;            &quot;attributes&quot;: { &quot;sizes&quot;: &quot;(max-width: 1400px) 100vw, 1230px&quot; }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;6/12&quot;, &quot;width&quot;: 600 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;4/12&quot;, &quot;width&quot;: 390 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;3/12&quot;, &quot;width&quot;: 285 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
+      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;attributes&quot;: {&#xD;&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xD;&#xA;    },&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Bootstrap3&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs3&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-responsive&quot; },&#xD;&#xA;        &quot;setWidth&quot;: false&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Bootstrap4&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs4&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Bootstrap5&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true,&#xD;&#xA;        &quot;setHeight&quot; : true,&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230,&#xD;&#xA;            &quot;attributes&quot;:{&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 100vw, 1230px&quot;&#xD;&#xA;            }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;6/12&quot;, &#xD;&#xA;            &quot;width&quot;: 600, &#xD;&#xA;            &quot;attributes&quot;: {&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 50vw, (max-width: 576px) 100vw, 600px&quot; &#xD;&#xA;              }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;4/12&quot;, &#xD;&#xA;            &quot;width&quot;: 390,&#xD;&#xA;            &quot;attributes&quot;:{&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 34vw, (max-width: 991px) 50vw, (max-width: 575px) 100vw, 390px&quot;&#xD;&#xA;            }&#xD;&#xA;           },&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;3/12&quot;, &#xD;&#xA;            &quot;width&quot;: 285,&#xD;&#xA;            &quot;attributes&quot;: {&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 25vw, (max-width: 991px) 50vw, (max-width: 575px) 100vw, 285px&quot;&#xD;&#xA;              }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="AspectRatio" Value="1.618" Type="Number">
@@ -16574,19 +17157,19 @@
       </Value>
     </Entity>
     <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="f95dcbca-0080-460c-9190-eb72be7a7225" KeyString="be34f64b-7d1f-4ad0-b488-dabbbb01a186">
-      <Value Key="Description" Value="Configure LightSpeed Output Caching (BETA)" Type="String">
+      <Value Key="Description" Value="Configure LightSpeed Output Caching" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="&lt;p&gt;BETA - this is very experimental!&lt;/p&gt;" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;&lt;img srcset=&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iRWJlbmVfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxMTExLjkgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMTExLjkgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojMDAwMDNFO30NCjwvc3R5bGU+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzY3LjMsMTY4LjdoLTE0LjJjLTIuMywwLTMtMC43LTMtM1Y3Mi4zYzAtMi4zLDAuNy0zLDMtM2gxMS4yYzIuMywwLDMsMC43LDMsM1YxNjguN3ogTTM3NC42LDE1NGgzNi44DQoJCWMyLjMsMCwzLDAuNiwzLDN2OC43YzAsMi4zLTAuNywzLTMsM2gtMzYuOFYxNTR6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ0MSw2My43YzUuNCwwLDkuOSw0LjUsOS45LDEwLjFjMCw1LjUtNC41LDkuOC05LjksOS44Yy01LjUsMC05LjktNC4zLTkuOS05LjhTNDM1LjUsNjMuNyw0NDEsNjMuN3oNCgkJIE00MzMuMSw5OS40YzAtMi4zLDAuNy0zLDMtM2gxMC4yYzIuMywwLDMsMC43LDMsM3Y2Ni4zYzAsMi4zLTAuNywzLTMsM0g0MzZjLTIuMywwLTMtMC43LTMtM1Y5OS40SDQzMy4xeiIvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01MTkuMSwxMTQuNmMtMy4zLTMuMy03LjUtNS41LTEzLjEtNS41Yy0xMS44LDAtMjAuMywxMC4yLTIwLjMsMjMuNGMwLDEyLjgsOC41LDIzLjMsMjAuMywyMy4zDQoJCWM0LjgsMCw5LjEtMS43LDEzLjEtNS41djE0LjZjLTQuMSwzLTkuMiw1LjQtMTYuNiw1LjRjLTE5LjUsMC0zMi44LTE3LTMyLjgtMzcuOGMwLTIwLjIsMTMuMy0zNy42LDMyLjgtMzcuNg0KCQljNy43LDAsMTIuMSwyLDE2LjYsNC41VjExNC42eiBNNTI2LjIsMTAwLjFjMS0yLjEsMy0zLjcsNS4zLTMuN2g4YzIuMywwLDMsMC43LDMsM3Y2My4zYzAsMjguNS0xMi41LDQxLTM0LjYsNDENCgkJYy0xNS44LDAtMjYuNC00LjQtMjguNy01LjNjLTItMC45LTIuMy0xLjMtMS43LTMuNWwyLjEtOC41YzAuNi0yLjQsMS0yLjcsMy4xLTEuOGM0LjUsMS44LDEyLjUsNSwyMi42LDVjMTMuNiwwLDIxLTcuOCwyMS0yNC44DQoJCUw1MjYuMiwxMDAuMUw1MjYuMiwxMDAuMXoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNTgyLjMsMTY1LjdjMCwyLjMtMC42LDMtMywzaC0xMC4yYy0yLjEsMC0zLTAuNy0zLTNWNjYuOWMwLTIuMywwLjktMywzLTNoMTAuMmMyLjMsMCwzLDAuNywzLDNWMTY1Ljd6DQoJCSBNNTg5LjQsOTguN2MzLjMtMi4zLDcuNS0zLjgsMTIuOS0zLjhjMTUuNiwwLDI3LjUsOC40LDI3LjUsMzIuOHYzOC4xYzAsMi4zLTAuNiwzLTMsM2gtMTAuMmMtMi4xLDAtMy0wLjctMy0zdi0zNC41DQoJCWMwLTE1LjEtNS40LTIxLjktMTUuNS0yMS45Yy00LDAtNi41LDEuNi04LjgsMy4zTDU4OS40LDk4LjdMNTg5LjQsOTguN3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjQ4LjMsMTA5LjNjLTIuMywwLTMtMC43LTMtM3YtN2MwLTIuMywwLjctMywzLTNoNS4zVjgyLjVjMC0yLjMsMC42LTMsMy0zaDEwLjFjMi4zLDAsMywwLjcsMywzdjEzLjloMjEuOQ0KCQljMi4zLDAsMywwLjcsMywzLjF2Ni44YzAsMi4zLTAuNywzLTMsM0g2NDguM3ogTTY2OS42LDExNi42djIxLjNjMCwxMi44LDQuNCwxNy45LDEzLjEsMTcuOWMzLjEsMCw1LjUtMC4zLDguNS0xLjcNCgkJYzIuNy0xLjQsMy4zLTEuMywzLjgsMS43bDEuMyw3LjFjMC40LDIuMSwwLjMsMi44LTEuNiwzLjhjLTUuNywzLjUtMTEuOSwzLjUtMTMuOCwzLjVjLTE4LjcsMC0yNy40LTExLjgtMjcuNC0zMS40di0yMi4zDQoJCUw2NjkuNiwxMTYuNkw2NjkuNiwxMTYuNnoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNzMzLjcsMTcwYy03LjQtMS4xLTE1LjItMi44LTI0LjEtOC44Yy0yLTEuNC0xLjctMi4zLTAuNy00LjNsMy4xLTUuNGMxLTIsMS43LTMsNC0xLjMNCgkJYzQuOCwzLjMsMTAuMiw2LDE3LjgsNy4xTDczMy43LDE3MEw3MzMuNywxNzB6IE03NDAuOCwxNTcuNmM4LjctMC43LDEyLjgtNC41LDEyLjgtOS43YzAtNC43LTYuMi03LTE3LTguNA0KCQljLTE0LjgtMi0yNy43LTYuNS0yNy43LTIxLjdjMC0xMy4zLDEwLjUtMjIuNiwyOC4xLTIzdjEyLjdjLTkuMiwwLjYtMTIuOCw0LjEtMTIuOCw5LjVjMCw1LjUsNi4xLDcsMTcsOC41DQoJCWMxNC44LDEuOCwyNy43LDYuNSwyNy43LDIxLjZjMCwxMy4zLTEwLjksMjIuNC0yOC4xLDIzLjFWMTU3LjZ6IE03NDQsOTUuM2M2LjIsMS4xLDEyLjIsMi42LDIwLjksNy41YzIuMywxLjQsMS43LDIuNCwwLjksNC40DQoJCWwtMy4xLDUuM2MtMSwyLTEuOCwyLjgtNCwxLjRjLTUuMy0zLjMtOS4xLTUuMS0xNC42LTZWOTUuM0g3NDR6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTgwMi40LDE5NC43YzAsMi4zLTAuNywzLTMsM2gtMTAuMmMtMi4zLDAtMy0wLjctMy0zVjk5LjRjMC0yLjMsMC43LTMsMy0zaDVjMS43LDAsMy43LDAuOSw1LjQsMi40bDIuOCwzLjgNCgkJVjE5NC43eiBNODA5LjUsOTkuNGM0LjgtMi44LDkuMi00LjUsMTYuNi00LjVjMTkuMywwLDMyLjgsMTcuNSwzMi44LDM3LjZjMCwyMC43LTEzLjUsMzcuOC0zMi44LDM3LjhjLTYuNywwLTEyLjItMi4xLTE2LjYtNS40DQoJCXYtMTQuNmMzLjMsMy4xLDcuMSw1LjUsMTMuMSw1LjVjMTEuOCwwLDIwLjItMTAuNSwyMC4yLTIzLjNjMC0xMy4yLTguNC0yMy40LTIwLjItMjMuNGMtNS4xLDAtOS41LDItMTMuMSw1LjVWOTkuNHoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODg3LjksMTMzLjJjMCwxMy4yLDkuNCwyMy4xLDIxLjksMjMuMWM1LDAsMTIuMS0xLjEsMTkuNS01LjRjMi4xLTEsMi44LTEuNiw0LjMsMC4zbDQuMSw1LjENCgkJYzEuNCwxLjcsMS43LDIuNiwwLjQsNGMtNi41LDYuNC0xOC4zLDkuOS0yOC43LDkuOWMtMjEuNCwwLTM4LjItMTYuOS0zOC4yLTM3LjZjMC0xOS41LDE0LjYtMzUuNSwzMy40LTM3LjV2MTMuNA0KCQljLTEwLjIsMi4xLTE2LjYsMTEuMi0xNi42LDIzLjd2MUg4ODcuOXogTTg5NS4zLDEyNy4yaDMyLjFjLTEtOC40LTYtMTYuOS0xNS44LTE4LjlWOTVjMjEuMiwxLjcsMzIuMiwxOS4yLDMyLjIsMzkuOA0KCQljMCwyLjMtMC40LDMuMS0yLjgsMy4xaC00NS43Qzg5NC40LDEzNC42LDg5NC40LDEzMC41LDg5NS4zLDEyNy4yeiIvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05NzEuOSwxMzMuMmMwLDEzLjIsOS40LDIzLjEsMjEuOSwyMy4xYzUsMCwxMi4xLTEuMSwxOS41LTUuNGMyLjEtMSwyLjgtMS42LDQuMywwLjNsNC4xLDUuMQ0KCQljMS40LDEuNywxLjcsMi42LDAuNCw0Yy02LjUsNi40LTE4LjMsOS45LTI4LjcsOS45Yy0yMS40LDAtMzguMi0xNi45LTM4LjItMzcuNmMwLTE5LjUsMTQuNi0zNS41LDMzLjQtMzcuNXYxMy40DQoJCWMtMTAuMiwyLjEtMTYuNiwxMS4yLTE2LjYsMjMuN3YxSDk3MS45eiBNOTc5LjMsMTI3LjJoMzIuMWMtMS04LjQtNi0xNi45LTE1LjgtMTguOVY5NWMyMS4yLDEuNywzMi4yLDE5LjIsMzIuMiwzOS44DQoJCWMwLDIuMy0wLjQsMy4xLTIuOCwzLjFoLTQ1LjdDOTc4LjUsMTM0LjYsOTc4LjUsMTMwLjUsOTc5LjMsMTI3LjJ6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwODguNywxNjUuN2MtNSwyLjgtOS40LDQuNS0xNi42LDQuNWMtMTkuNSwwLTMyLjgtMTcuMy0zMi44LTM3LjZjMC0yMC43LDEzLjMtMzcuOCwzMi44LTM3LjgNCgkJYzYuNSwwLDEyLjIsMi4xLDE2LjYsNS40djE0LjZjLTMuMy0zLjEtNy4yLTUuNS0xMy4xLTUuNWMtMTEuOCwwLTIwLjMsMTAuNS0yMC4zLDIzLjNjMCwxMy4yLDguNSwyMy40LDIwLjMsMjMuNA0KCQljNS4xLDAsOS41LTIsMTMuMS01LjVWMTY1Ljd6IE0xMDk1LjgsNjYuOWMwLTIuMywwLjYtMywzLTNoMTAuMmMyLjMsMCwzLDAuNywzLDN2OTguOGMwLDIuMy0wLjcsMy0zLDNoLTVjLTEuOCwwLTMuOC0wLjctNS41LTIuNA0KCQlsLTIuNy0zLjhWNjYuOXoiLz4NCjwvZz4NCjxnIGlkPSJFYmVuZV8yXzAwMDAwMDIxMDkwNjY3ODg0NzcxMjE5ODMwMDAwMDAyNjYyMTU1MjkzOTQzODcyMTg1XyI+DQo8L2c+DQo8ZyBpZD0iRWJlbmVfMyI+DQo8L2c+DQo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTc4LjMsMTgxLjRjLTAuNC0wLjctMC4zLTEuNiwwLjQtMmMwLjctMC41LDEuNi0wLjMsMi4xLDAuM2wzOC40LDUwLjRjMTEuMS05LjIsMTkuOC0yMS4yLDI1LjEtMzQuOQ0KCWwtMTMuNi05LjdjLTAuNy0wLjUtMC44LTEuNC0wLjQtMmMwLjQtMC43LDEuMy0wLjksMi0wLjVsMTMuNCw4YzEuNS00LjcsMi43LTkuNSwzLjQtMTQuNmMtMTAuNS01LjItMjEuMy0xMC42LTMwLjEtMTUNCgljLTAuNy0wLjQtMS0xLjItMC43LTJjMC4zLTAuNywxLjItMS4xLDEuOS0wLjhsMjkuNSwxMS42YzAuMS0yLDAuMi00LDAuMi02di0yMS43bC00Ni42LTEwLjdjLTAuOC0wLjItMS4zLTAuOS0xLjEtMS43DQoJYzAuMS0wLjgsMC45LTEuMywxLjctMS4ybDQ2LjEsNS41VjQ5LjhsLTYyLjQsMzcuM2MtMC4yLDAuMS0wLjUsMC4yLTAuOCwwLjJjLTAuNSwwLTEtMC4yLTEuMy0wLjdjLTAuNC0wLjctMC4zLTEuNiwwLjQtMkwyNTAsMzcuNA0KCVYwSDEyMC44bC0wLjMsNDQuOWMwLDAuOC0wLjYsMS41LTEuNCwxLjVjMCwwLDAsMC0wLjEsMGMtMC44LDAtMS40LTAuNi0xLjUtMS40bC00LjItNDVIODUuNkM3Ny4xLDAsNjksMS4yLDYxLjMsMy41YzAsMCwwLDAsMCwwDQoJbDQ2LjYsNzAuNmMwLjQsMC43LDAuMywxLjYtMC40LDJjLTAuMywwLjItMC42LDAuMy0wLjksMC4zYy0wLjUsMC0wLjktMC4yLTEuMi0wLjZsLTUxLjctNjhjLTAuMy0wLjQtMC40LTAuOC0wLjMtMS4yDQoJYzAtMC4yLDAuMS0wLjMsMC4yLTAuNEMzOS40LDExLjksMjcuMiwyMS4zLDE4LDMzLjJsNDkuMSwzNWMwLjcsMC41LDAuOCwxLjQsMC40LDJjLTAuMywwLjQtMC44LDAuNy0xLjMsMC43DQoJYy0wLjMsMC0wLjUtMC4xLTAuOC0wLjJMMTMuNSwzOS41QzUsNTIuOCwwLDY4LjYsMCw4NS42Vjg3YzEzLjUsMy4xLDQzLjYsMTAuMiw2OS43LDE2LjRjMC44LDAuMiwxLjMsMSwxLjEsMS43DQoJYy0wLjEsMC43LTAuOCwxLjItMS41LDEuMmMtMC4xLDAtMC4xLDAtMC4yLDBMMCw5Ni41djE1LjlsNTIuMywxYzAuOCwwLDEuNSwwLjcsMS41LDEuNWMwLDAuOC0wLjYsMS41LTEuNCwxLjVsLTUyLjMsMnY4NC4yDQoJbDYyLjEtMzcuMWMwLjctMC40LDEuNi0wLjIsMiwwLjVjMC40LDAuNywwLjMsMS42LTAuNCwyTDAsMjE1djM1aDUuM2MtMC4xLTAuNSwwLTEsMC40LTEuNGw1MS00Ny40YzAuNi0wLjUsMS41LTAuNSwyLjEsMA0KCWMwLjYsMC42LDAuNiwxLjUsMC4xLDIuMUwxNi4xLDI1MGgzMi41Yy0wLjEtMC4xLTAuMi0wLjItMC4yLTAuM2MtMC4zLTAuNS0wLjMtMS4xLDAtMS42bDMwLjgtNDguOWMwLjQtMC43LDEuMy0wLjksMi0wLjUNCgljMC43LDAuNCwxLDEuMywwLjYsMkw1NywyNDkuM2MtMC4yLDAuNC0wLjUsMC42LTAuOSwwLjdoNzEuNmw1LjQtNzYuNmMwLjEtMC44LDAuNy0xLjQsMS41LTEuNGMwLjgsMCwxLjQsMC43LDEuNSwxLjVsMS45LDc2LjUNCgloMjYuNWMxOC4yLDAsMzUtNS43LDQ4LjktMTUuNEwxNzguMywxODEuNHogTTE5NC43LDQyLjlsMzAuNC00MS41YzAuMy0wLjUsMC45LTAuNywxLjUtMC42bDUuOSwxLjFjMC41LDAuMSwxLDAuNSwxLjEsMQ0KCWMwLjIsMC41LDAuMSwxLjEtMC4zLDEuNWwtMzYuMyw0MC4zYy0wLjMsMC4zLTAuNywwLjUtMS4xLDAuNWMtMC4zLDAtMC43LTAuMS0wLjktMC4zQzE5NC40LDQ0LjQsMTk0LjMsNDMuNSwxOTQuNyw0Mi45eg0KCSBNMTIwLjIsMTIxLjVjMC43LTAuMSwxLjQsMC4yLDEuNywwLjljMC4zLDAuNywwLjEsMS40LTAuNSwxLjhsLTYsNC4xYy0wLjEsMC4xLTAuMiwwLjEtMC40LDAuMmwtNy4zLDIuNWMtMC4yLDAuMS0wLjMsMC4xLTAuNSwwLjENCgljLTAuNSwwLTEuMS0wLjMtMS4zLTAuOGMtMC4zLTAuNy0wLjItMS41LDAuNC0xLjlsNy41LTUuNWMwLjItMC4xLDAuNC0wLjIsMC42LTAuM0wxMjAuMiwxMjEuNXogTTExOC4xLDgzLjQNCgljMC4xLDAuMSwwLjEsMC4yLDAuMiwwLjNsMS42LDQuOWMwLjIsMC43LTAuMSwxLjUtMC44LDEuOGMtMC4yLDAuMS0wLjQsMC4xLTAuNiwwLjFjLTAuNSwwLTEtMC4zLTEuMy0wLjdsLTIuOC00LjYNCgljMC0wLjEtMC4xLTAuMS0wLjEtMC4ybC0yLjUtNmMtMC4zLTAuNywwLTEuNSwwLjctMS45YzAuNy0wLjQsMS41LTAuMSwyLDAuNUwxMTguMSw4My40eiBNMTAyLjIsNDguOGMwLDAsMC0wLjEtMC4xLTAuMUw5MS4yLDIyLjUNCgljLTAuMy0wLjcsMC0xLjYsMC43LTEuOWMwLjctMC4zLDEuNi0wLjEsMiwwLjdsMTIuNywyMy45YzAsMC4xLDAuMSwwLjEsMC4xLDAuMmw4LjMsMjEuM2MwLjMsMC43LTAuMSwxLjYtMC44LDEuOQ0KCWMtMC4yLDAuMS0wLjQsMC4xLTAuNiwwLjFjLTAuNSwwLTEuMS0wLjMtMS4zLTAuOEwxMDIuMiw0OC44eiBNMTA3LjQsMTA4LjZjMC4xLDAsMC4xLDAsMC4yLDAuMWw0LDJjMC43LDAuMywxLDEuMSwwLjcsMS44DQoJYy0wLjIsMC42LTAuOCwxLTEuNCwxYy0wLjEsMC0wLjIsMC0wLjMsMGwtNC4zLTFjLTAuMSwwLTAuMy0wLjEtMC40LTAuMWwtNi42LTMuNWMtMC43LTAuNC0xLTEuMi0wLjctMS45YzAuMy0wLjcsMS4xLTEuMSwxLjktMC44DQoJTDEwNy40LDEwOC42eiBNOTguNywxMzAuNWwtMTMuNSw2Yy0wLjEsMC0wLjEsMC4xLTAuMiwwLjFMNjcuOSwxNDFjLTAuMSwwLTAuMywwLTAuNCwwYy0wLjYsMC0xLjItMC40LTEuNC0xDQoJYy0wLjMtMC43LDAuMS0xLjUsMC44LTEuOWwxNi44LTcuOGMwLjEtMC4xLDAuMi0wLjEsMC40LTAuMWwxMy43LTIuNmMwLjctMC4xLDEuNSwwLjMsMS43LDFDOTkuNywxMjkuNCw5OS40LDEzMC4yLDk4LjcsMTMwLjV6DQoJIE02Mi4yLDU3bDE2LjYsMTEuNmwxOC44LDE4LjFMNzYuNyw3Mi4yTDYyLjIsNTd6IE02OS40LDkyLjNjLTAuNy0wLjQtMS0xLjItMC43LTEuOWMwLjMtMC43LDEuMS0xLjEsMS45LTAuOGwxOS4xLDYuNw0KCWMwLjEsMCwwLjEsMCwwLjIsMC4xbDEwLjksNS42YzAuNywwLjMsMSwxLjEsMC43LDEuOGMtMC4yLDAuNi0wLjgsMS0xLjQsMWMtMC4xLDAtMC4yLDAtMC4zLDBsLTExLjktMi42Yy0wLjEsMC0wLjMtMC4xLTAuNC0wLjENCglMNjkuNCw5Mi4zeiBNNDkuOCwxMzUuOGMtMC4xLDAtMC4xLDAtMC4yLDBsLTI4LjUsMy40Yy0wLjEsMC0wLjEsMC0wLjIsMGMtMC43LDAtMS4zLTAuNS0xLjUtMS4yYy0wLjEtMC44LDAuNC0xLjUsMS4xLTEuNw0KCWwyNy45LTYuN2MwLjEsMCwwLjEsMCwwLjIsMGwyNi45LTMuNGMwLjgtMC4xLDEuNSwwLjQsMS43LDEuMmMwLjEsMC44LTAuMywxLjUtMS4xLDEuN0w0OS44LDEzNS44eiBNODUuOCwxNzJMNjUuNCwxOTENCgljLTAuMywwLjMtMC43LDAuNC0xLDAuNGMtMC40LDAtMC43LTAuMS0xLTAuNGMtMC42LTAuNS0wLjYtMS40LTAuMi0ybDE3LjktMjIuNmMwLDAsMC4xLTAuMSwwLjEtMC4xbDI0LjktMjQuOQ0KCWMwLjYtMC42LDEuNS0wLjYsMi4xLTAuMWMwLjYsMC41LDAuNywxLjQsMC4yLDIuMWwtMjIuNSwyOC40Qzg1LjksMTcxLjksODUuOCwxNzEuOSw4NS44LDE3MnogTTEyMi43LDE2NC4zbC04LjEsMjcuOA0KCWMwLDAuMSwwLDAuMS0wLjEsMC4ybC04LjcsMjAuOWMtMC4yLDAuNi0wLjgsMC45LTEuNCwwLjljLTAuMiwwLTAuMywwLTAuNS0wLjFjLTAuOC0wLjMtMS4yLTEuMS0wLjktMS44bDYuNC0yMi4xYzAsMCwwLTAuMSwwLTAuMQ0KCWwxMC4zLTI2LjZjMC4zLTAuNywxLjEtMS4xLDEuOS0wLjlDMTIyLjUsMTYyLjgsMTIzLDE2My42LDEyMi43LDE2NC4zeiBNMTI1LjUsMTMybC03LjEsMTQuNGMwLDAuMS0wLjEsMC4xLTAuMSwwLjJsLTYuOSwxMC40DQoJYy0wLjMsMC40LTAuOCwwLjctMS4zLDAuN2MtMC4zLDAtMC41LTAuMS0wLjctMC4yYy0wLjctMC40LTAuOS0xLjMtMC42LTJsNS43LTExLjRjMCwwLDAtMC4xLDAuMS0wLjFsOC4zLTEzLjMNCgljMC40LTAuNywxLjMtMC45LDItMC41QzEyNS42LDEzMC41LDEyNS45LDEzMS4zLDEyNS41LDEzMnogTTIyMCwxNDcuMmwxOS42LDExLjNjMC43LDAuNCwwLjksMS4yLDAuNiwyYy0wLjMsMC41LTAuOCwwLjktMS40LDAuOQ0KCWMtMC4yLDAtMC40LDAtMC41LTAuMWwtMjAuMS03LjljLTAuMSwwLTAuMi0wLjEtMC4yLTAuMWwtMTUuNS05LjdjLTAuNy0wLjQtMC45LTEuMy0wLjUtMS45YzAuMy0wLjcsMS4yLTEsMS45LTAuN2wxNiw2LjMNCglDMjE5LjksMTQ3LjEsMjIwLDE0Ny4xLDIyMCwxNDcuMnogTTIwNC4zLDEzNC43YzAuNywwLjMsMS4yLDEuMSwwLjksMS44Yy0wLjIsMC43LTAuOCwxLjEtMS40LDEuMWMtMC4xLDAtMC4yLDAtMC4zLDBsLTIzLjYtNC43DQoJYy0wLjEsMC0wLjIsMC0wLjMtMC4xbC0xOS03LjZjLTAuNy0wLjMtMS4xLTEuMS0wLjktMS44YzAuMi0wLjcsMS0xLjIsMS43LTFsMTguOCwzLjdjMC4xLDAsMC4xLDAsMC4yLDAuMUwyMDQuMywxMzQuN3oNCgkgTTE5Ni41LDk4LjFjMC4xLDAsMC4xLDAsMC4yLDBsMjguNS0zLjRjMC44LTAuMSwxLjUsMC40LDEuNywxLjJjMC4xLDAuOC0wLjQsMS41LTEuMSwxLjdsLTI3LjksNi43Yy0wLjEsMC0wLjEsMC0wLjIsMGwtMjYuOSwzLjQNCgljLTAuMSwwLTAuMSwwLTAuMiwwYy0wLjcsMC0xLjMtMC41LTEuNS0xLjJjLTAuMS0wLjgsMC4zLTEuNSwxLjEtMS43TDE5Ni41LDk4LjF6IE0xNjMuNSw5MC4xbDktOS4xYzAuNi0wLjYsMS41LTAuNiwyLjEtMC4xDQoJYzAuNiwwLjUsMC43LDEuNCwwLjIsMi4xbC04LjIsMTAuM2MwLDAuMS0wLjEsMC4xLTAuMSwwLjJsLTcuNCw2LjljLTAuMywwLjMtMC43LDAuNC0xLDAuNGMtMC40LDAtMC43LTAuMS0xLTAuNA0KCWMtMC42LTAuNS0wLjYtMS40LTAuMi0ybDYuNS04LjJDMTYzLjQsOTAuMiwxNjMuNSw5MC4yLDE2My41LDkwLjF6IE0xNDUuOSw5Mi4zbDYuMi0yMC42YzAtMC4xLDAuMS0wLjIsMC4xLTAuM2w3LjEtMTMuNQ0KCWMwLjQtMC43LDEuMi0xLDEuOS0wLjdjMC43LDAuMywxLjEsMS4xLDAuOSwxLjhMMTU3LDc1LjJjMCwwLjEsMCwwLjEtMC4xLDAuMmwtOC4yLDE3LjljLTAuMywwLjUtMC44LDAuOS0xLjQsMC45DQoJYy0wLjIsMC0wLjQsMC0wLjUtMC4xQzE0Niw5My44LDE0NS42LDkzLDE0NS45LDkyLjN6IE0xNDAuMiwxMTQuMmwyLjMtNy41YzAtMC4xLDAuMS0wLjIsMC4xLTAuM2wyLjYtNC45YzAuNC0wLjcsMS4yLTEsMS45LTAuNw0KCWMwLjcsMC4zLDEuMSwxLjEsMC45LDEuOGwtMS45LDUuOWMwLDAuMSwwLDAuMS0wLjEsMC4ybC0zLDYuNWMtMC4zLDAuNS0wLjgsMC45LTEuNCwwLjljLTAuMiwwLTAuNCwwLTAuNS0wLjENCglDMTQwLjQsMTE1LjgsMTQwLDExNSwxNDAuMiwxMTQuMnogTTE0Ni44LDE5OC44Yy0wLjEsMC0wLjEsMC0wLjIsMGMtMC43LDAtMS4zLTAuNS0xLjUtMS4ybC01LjctMjkuN2MwLTAuMSwwLTAuMSwwLTAuMmwtMS4zLTIzLjcNCglsLTAuNC0xLjhjMC0wLjEsMC0wLjEsMC0wLjJsLTAuNS05LjdjMC0wLjgsMC41LTEuNSwxLjMtMS42YzAuOC0wLjEsMS41LDAuNCwxLjcsMS4ybDEuNiw4LjZjMCwwLjEsMCwwLjEsMCwwLjJsMC43LDguNGwyLjksMTUuMw0KCWMwLDAuMSwwLDAuMSwwLDAuMmwyLjYsMzIuN0MxNDguMiwxOTgsMTQ3LjYsMTk4LjcsMTQ2LjgsMTk4Ljh6IE0xNDguNSwxMzhjLTAuMiwwLjEtMC41LDAuMi0wLjcsMC4yYy0wLjUsMC0wLjktMC4yLTEuMi0wLjYNCglsLTIuMi0zLjFjLTAuMS0wLjEtMC4xLTAuMi0wLjItMC40bC0wLjktMi43Yy0wLjItMC43LDAuMS0xLjUsMC44LTEuOGMwLjctMC4zLDEuNS0wLjEsMS45LDAuNWwxLjcsMi41YzAuMSwwLjEsMC4xLDAuMiwwLjEsMC4yDQoJbDEuNCwzLjRDMTQ5LjQsMTM2LjgsMTQ5LjEsMTM3LjYsMTQ4LjUsMTM4eiBNMTUwLjEsMTIxLjFjLTAuNywwLTEuMy0wLjUtMS41LTEuMmMtMC4xLTAuOCwwLjMtMS41LDEuMS0xLjdsOS42LTIuNA0KCWMwLjEsMCwwLjEsMCwwLjIsMGwxMC40LTEuMmMwLjgtMC4xLDEuNSwwLjQsMS43LDEuMmMwLjEsMC44LTAuNCwxLjUtMS4xLDEuN2wtMTAuMiwyLjRjLTAuMSwwLTAuMSwwLTAuMiwwbC05LjgsMS4yDQoJQzE1MC4yLDEyMS4xLDE1MC4yLDEyMS4xLDE1MC4xLDEyMS4xeiBNMTY0LjgsMTU0LjZjLTAuMiwwLjEtMC41LDAuMi0wLjcsMC4yYy0wLjUsMC0wLjktMC4yLTEuMi0wLjZsLTUuOS04LjYNCgljLTAuMS0wLjEtMC4xLTAuMi0wLjItMC40bC0yLjUtNy41Yy0wLjItMC43LDAuMS0xLjUsMC44LTEuOGMwLjctMC4zLDEuNS0wLjEsMS45LDAuNWw0LjYsNi45YzAuMSwwLjEsMC4xLDAuMiwwLjEsMC4ybDMuOSw5LjINCglDMTY1LjcsMTUzLjQsMTY1LjQsMTU0LjIsMTY0LjgsMTU0LjZ6IE0xNzQuOSwxNDcuMWMwLjUtMC42LDEuNC0wLjcsMi0wLjJsMTQuMSwxMGMwLjEsMCwwLjEsMC4xLDAuMiwwLjFsMTYuNCwxNS43DQoJYzAuNiwwLjUsMC42LDEuNCwwLjEsMmMtMC4zLDAuNC0wLjcsMC41LTEuMiwwLjVjLTAuMywwLTAuNi0wLjEtMC45LTAuM0wxODgsMTYyLjVjLTAuMS0wLjEtMC4xLTAuMS0wLjItMC4ybC0xMi44LTEzLjINCglDMTc0LjQsMTQ4LjYsMTc0LjQsMTQ3LjcsMTc0LjksMTQ3LjF6Ii8+DQo8L3N2Zz4NCg==&quot; alt=&quot;&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is an extremely powerful system to optimize performance. Read the &lt;a href=&quot;https://r.2sxc.org/lightspeed&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="LightSpeed Configuration BETA" Type="String">
+      <Value Key="Label" Value="LightSpeed Configuration" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
@@ -16671,7 +17254,7 @@
       <Value Key="DynamicChildrenField" Value="Items" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="&lt;p&gt;Content Security Policies are security configurations for CSP.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;BETA!&lt;/p&gt;&#xA;&lt;h3&gt;Important&lt;/h3&gt;&#xA;&lt;p&gt;This configuration will only work at Site or Global level. Configuring CSP at App level will not have an effect, as the configuration must apply to the entire page.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;To make app-specific Csp adjustments, use code.&amp;nbsp;&lt;/p&gt;" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;&lt;img src=&quot;/Portals/system-types/adam/System-Types/_YS31BOryEGpK48-PADraA/EditInstructions/blobid3.svg&quot; alt=&quot;&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;Content Security Policies are security configurations for CSP.&amp;nbsp;&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
@@ -16697,7 +17280,7 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;&lt;img srcset=&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iRWJlbmVfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOTY4LjkgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTY4LjkgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojMDAwMDNFO30NCgkuc3Qxe2ZpbGw6I0ZGRkZGRjt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTE2NC40LDI1MEgwVjg1LjZDMCwzOC40LDM4LjQsMCw4NS42LDBIMjUwdjE2NC40QzI1MCwyMTEuNiwyMTEuNiwyNTAsMTY0LjQsMjUweiIvPg0KPGc+DQoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE4Mi4yLDk2LjVjMCw1MS45LTMxLjksODAuOC01MS45LDg5LjFjLTIuOCwxLjEtNS45LDEuMS04LjYsMEM5Ni42LDE3NS4yLDY5LjcsMTQzLDY5LjcsOTYuNQ0KCQljMC00LjUsMi43LTguNiw2LjktMTAuNGw0NS0xOC44YzEuMS0wLjUsMy4xLTAuOSw0LjMtMC45YzEuMiwwLDMuMiwwLjQsNC4zLDAuOWw0NSwxOC44QzE3OS41LDg3LjgsMTgyLjIsOTEuOSwxODIuMiw5Ni41eg0KCQkgTTE3MSw5Ni41bC00NS0xOC44TDgxLDk2LjVjMCwzOS43LDIyLjIsNjkuMiw0NSw3OC44QzE0Ny45LDE2Ni4xLDE3MSwxMzcuMiwxNzEsOTYuNXogTTExOC4yLDEzNC42bDMzLjEtMzIuOQ0KCQljMS4xLTEuMSwyLjktMS4xLDQsMGw1LjMsNS4zYzEuMSwxLjEsMS4xLDIuOSwwLDRsLTQwLjUsNDAuMWMtMS4xLDEuMS0yLjksMS4xLTQsMGwtMjEuMy0yMS40Yy0xLjEtMS4xLTEuMS0yLjksMC00bDUuMy01LjMNCgkJYzEuMS0xLjEsMi45LTEuMSw0LDBMMTE4LjIsMTM0LjZ6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzkyLDE3MGMtMjYuOC0yLTQ3LjctMjQuMy00Ny43LTUxLjRjMC0yNy40LDIxLjMtNDkuNiw0Ny43LTUxLjV2MTUuMWMtMTgsMi4zLTMwLjQsMTguNi0zMC40LDM2LjUNCgkJYzAsMTcuNSwxMi40LDM0LjUsMzAuNCwzNi40VjE3MHogTTM5OS4zLDY3LjFjMTIuNSwxLjQsMjQuNyw2LjEsMzMuMiwxNC42YzEuNiwxLjYsMS4zLDIuNi0wLjMsNC4zbC02LjUsNy4xDQoJCWMtMS42LDEuNy0yLjYsMi00LjMsMC4zYy02LTYuNC0xMy4yLTkuOS0yMi4yLTExLjFWNjcuMXogTTM5OS4zLDE1NWM4LjktMS4xLDE2LTQuNywyMi4zLTExLjJjMS43LTEuNywyLjctMS4zLDQuMywwLjNsNi41LDcuMQ0KCQljMS42LDEuOCwxLjgsMi43LDAuMSw0LjRjLTguNyw4LjUtMjEuMiwxMy41LTMzLjIsMTQuNVYxNTV6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ3OC45LDE2OS43Yy0xOC43LTEuOC0zMy45LTE3LjgtMzMuOS0zNy41YzAtMTkuOSwxNS4zLTM1LjksMzMuOS0zNy42djE0LjhjLTEwLjIsMS44LTE3LjksMTEuMS0xNy45LDIyLjkNCgkJYzAsMTIuMiw4LjEsMjEuMywxNy45LDIzVjE2OS43eiBNNDg2LDE1NS4zYzEwLjItMS43LDE4LTExLjEsMTgtMjNzLTgtMjEuMy0xOC0yMi45Vjk0LjZjMTkuMiwyLDM0LjEsMTgsMzQuMSwzNy42DQoJCWMwLDE5LjUtMTQuOCwzNS42LTM0LjEsMzcuNVYxNTUuM3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNTU0LjcsMTY1LjNjMCwyLjMtMC43LDMtMywzaC0xMC4yYy0yLjMsMC0zLTAuNy0zLTNWOTljMC0yLjMsMC43LTMsMy0zaDUuMWMyLjcsMCw0LjQsMC40LDUuNSwxLjdsMi42LDQNCgkJVjE2NS4zeiBNNTYxLjgsOTguM2MzLjQtMi42LDcuNy0zLjgsMTIuOS0zLjhjMTUuNiwwLDI3LjUsOC40LDI3LjUsMzIuOHYzOC4xYzAsMi4zLTAuNywzLTMsM2gtMTAuMmMtMi4zLDAtMy0wLjctMy0zdi0zNC41DQoJCWMwLTE1LjEtNS41LTIxLjktMTUuNS0yMS45Yy00LjEsMC02LjcsMS40LTguOCwzLjNWOTguM3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjIwLjgsMTA5Yy0yLjMsMC0zLTAuNy0zLTN2LTdjMC0yLjMsMC43LTMsMy0zaDUuM1Y4Mi4xYzAtMi4zLDAuNi0zLDMtM2gxMC4xYzIuMywwLDMsMC43LDMsM1Y5NmgyMS45DQoJCWMyLjMsMCwzLDAuNywzLDMuMXY2LjhjMCwyLjMtMC43LDMtMywzSDYyMC44eiBNNjQyLjEsMTE2LjJ2MjEuM2MwLDEyLjgsNC40LDE3LjksMTMuMSwxNy45YzMuMSwwLDUuNS0wLjMsOC41LTEuNw0KCQljMi43LTEuNCwzLjMtMS4zLDMuOCwxLjdsMS4zLDcuMWMwLjQsMi4xLDAuMywyLjgtMS42LDMuOGMtNS43LDMuNS0xMS45LDMuNS0xMy44LDMuNWMtMTguNywwLTI3LjQtMTEuOC0yNy40LTMxLjR2LTIyLjNINjQyLjF6Ig0KCQkvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02OTcuMywxMzIuOGMwLDEzLjIsOS40LDIzLjEsMjEuOSwyMy4xYzUsMCwxMi4xLTEuMSwxOS41LTUuNGMyLjEtMSwyLjgtMS42LDQuMywwLjNsNC4xLDUuMQ0KCQljMS40LDEuNywxLjcsMi42LDAuNCw0Yy02LjUsNi40LTE4LjMsOS45LTI4LjcsOS45Yy0yMS40LDAtMzguMi0xNi45LTM4LjItMzcuNmMwLTE5LjUsMTQuNi0zNS41LDMzLjQtMzcuNXYxMy4zDQoJCWMtMTAuMiwyLjEtMTYuNiwxMS4yLTE2LjYsMjMuN1YxMzIuOHogTTcwNC43LDEyNi45aDMyLjFjLTEtOC40LTYtMTYuOS0xNS44LTE4LjlWOTQuNmMyMS4yLDEuNywzMi4yLDE5LjIsMzIuMiwzOS44DQoJCWMwLDIuMy0wLjQsMy4xLTIuOCwzLjFoLTQ1LjdDNzAzLjgsMTM0LjIsNzAzLjgsMTMwLjEsNzA0LjcsMTI2Ljl6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTc4Ny4xLDE2NS4zYzAsMi4zLTAuNywzLTMsM2gtMTAuMmMtMi4zLDAtMy0wLjctMy0zVjk5YzAtMi4zLDAuNy0zLDMtM2g1LjFjMi43LDAsNC40LDAuNCw1LjUsMS43bDIuNiw0DQoJCVYxNjUuM3ogTTc5NC4yLDk4LjNjMy40LTIuNiw3LjctMy44LDEyLjktMy44YzE1LjYsMCwyNy41LDguNCwyNy41LDMyLjh2MzguMWMwLDIuMy0wLjcsMy0zLDNoLTEwLjJjLTIuMywwLTMtMC43LTMtM3YtMzQuNQ0KCQljMC0xNS4xLTUuNS0yMS45LTE1LjUtMjEuOWMtNC4xLDAtNi43LDEuNC04LjgsMy4zVjk4LjN6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTg1My4xLDEwOWMtMi4zLDAtMy0wLjctMy0zdi03YzAtMi4zLDAuNy0zLDMtM2g1LjNWODIuMWMwLTIuMywwLjYtMywzLTNoMTAuMWMyLjMsMCwzLDAuNywzLDNWOTZoMjEuOQ0KCQljMi4zLDAsMywwLjcsMywzLjF2Ni44YzAsMi4zLTAuNywzLTMsM0g4NTMuMXogTTg3NC40LDExNi4ydjIxLjNjMCwxMi44LDQuNCwxNy45LDEzLjEsMTcuOWMzLjEsMCw1LjUtMC4zLDguNS0xLjcNCgkJYzIuNy0xLjQsMy4zLTEuMywzLjgsMS43bDEuMyw3LjFjMC40LDIuMSwwLjMsMi44LTEuNiwzLjhjLTUuNywzLjUtMTEuOSwzLjUtMTMuOCwzLjVjLTE4LjcsMC0yNy40LTExLjgtMjcuNC0zMS40di0yMi4zSDg3NC40eiINCgkJLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTgzLjIsMTY5LjZjLTEyLjgtMS0yMi4zLTQtMzItMTAuNWMtMi4xLTEuMy0xLjgtMi4zLTAuOS00LjNsNC40LTcuMWMxLjEtMiwyLTIuNyw0LjEtMS4zDQoJCWM4LjUsNS40LDE2LjIsNy40LDI0LjMsOC4yVjE2OS42eiBNOTg0LjksODIuNmMtMTMuNSwxLjMtMTYuOSw4LjctMTYuOSwxNS4zYzAsOS41LDEwLjEsMTEuNiwyNC42LDEzLjUNCgkJYzE3LjMsMi4xLDMzLjksNy41LDMzLjksMjguNWMwLDE1LjMtMTIuMiwyOS44LTM2LjEsMzB2LTE1LjFjMTEuNS0wLjQsMTkuNS00LjQsMTkuNS0xNC4yYzAtMTAuMi05LjUtMTIuOS0yNS40LTE1LjENCgkJYy0xNS41LTItMzMuMS03LjQtMzMuMS0yNy4xYzAtMTIuNCw4LjktMjkuOCwzMy41LTMxLjFWODIuNnogTTk5Miw2Ny40YzExLjgsMC45LDIwLjksNC41LDMxLDEwLjhjMiwxLjEsMS43LDIuMywwLjcsNC4zbC00LjMsNw0KCQljLTEuMSwyLTIuMSwyLjgtNC4xLDEuNGMtOC43LTUuNy0xNS41LTgtMjMuMy04LjRWNjcuNHoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTA1NS45LDEzMi44YzAsMTMuMiw5LjQsMjMuMSwyMS45LDIzLjFjNSwwLDEyLjEtMS4xLDE5LjUtNS40YzIuMS0xLDIuOC0xLjYsNC4zLDAuM2w0LjEsNS4xDQoJCWMxLjQsMS43LDEuNywyLjYsMC40LDRjLTYuNSw2LjQtMTguMyw5LjktMjguNyw5LjljLTIxLjQsMC0zOC4yLTE2LjktMzguMi0zNy42YzAtMTkuNSwxNC42LTM1LjUsMzMuNC0zNy41djEzLjMNCgkJYy0xMC4yLDIuMS0xNi42LDExLjItMTYuNiwyMy43VjEzMi44eiBNMTA2My4yLDEyNi45aDMyLjFjLTEtOC40LTYtMTYuOS0xNS44LTE4LjlWOTQuNmMyMS4yLDEuNywzMi4yLDE5LjIsMzIuMiwzOS44DQoJCWMwLDIuMy0wLjQsMy4xLTIuOCwzLjFoLTQ1LjdDMTA2Mi40LDEzNC4yLDEwNjIuNCwxMzAuMSwxMDYzLjIsMTI2Ljl6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTExNTcuMiwxMDkuM2MtOS44LDEuNy0xOCwxMC42LTE4LDIzYzAsMTIuMSw3LjgsMjEuMiwxOCwyMi45djE0LjZjLTE5LjctMS44LTM0LjEtMTguNS0zNC4xLTM3LjUNCgkJYzAtMTkuMiwxNC4zLTM1LjgsMzQuMS0zNy42VjEwOS4zeiBNMTE2NC4yLDk0LjZjOC40LDAuOSwxNiw0LDIyLjcsMTAuNWMxLjMsMS4zLDEsMi0wLjQsMy43bC01LjMsNS43Yy0xLjYsMS43LTIuNiwyLjEtNC4zLDAuNg0KCQljLTQuMy00LTguNy01LjMtMTIuOC02Vjk0LjZ6IE0xMTY0LjIsMTU1LjNjNS4xLTAuOSw4LjgtMi40LDEyLjgtNmMxLjgtMS42LDIuNy0xLjEsNC4zLDAuNmw1LjMsNS43YzEuNCwxLjcsMS43LDIuNCwwLjQsMy43DQoJCWMtNi44LDYuNS0xMy45LDkuNS0yMi43LDEwLjVWMTU1LjN6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyNDIuNiwxNjYuMWMtMy40LDIuNi03LjcsMy44LTEyLjksMy44Yy0xNS42LDAtMjcuNS04LjQtMjcuNS0zMi44Vjk5YzAtMi4zLDAuNy0zLDMtM2gxMC4yYzIuMywwLDMsMC43LDMsMw0KCQl2MzQuNmMwLDE0LjksNS41LDIxLjcsMTUuNSwyMS43YzQuMSwwLDYuNy0xLjQsOC44LTMuM1YxNjYuMXogTTEyNDkuNyw5OWMwLTIuMywwLjctMywzLTNoMTAuMmMyLjMsMCwzLDAuNywzLDN2NjYuMw0KCQljMCwyLjMtMC43LDMtMywzaC01LjFjLTIuNywwLTQuNC0wLjQtNS41LTEuN2wtMi42LTRWOTl6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEzMDYuOCwxNjUuM2MtMC4xLDIuMy0wLjcsMy0zLDNoLTEwLjJjLTIuMywwLTMtMC43LTMtM1Y5OWMwLTIuMywwLjctMywzLTNoNS4xYzQuNCwwLDUsMC45LDguMSw0LjRWMTY1LjN6DQoJCSBNMTMxMy45LDk5LjZjMy44LTIuNyw4LjktNS4xLDE4LjYtNS4xYzIuOCwwLDMuMSwwLjksMi44LDIuOGwtMS42LDEwLjRjLTAuNCwyLjMtMS4xLDIuOC0zLjQsMi44Yy03LDAtMTIuMSwxLjgtMTYuNSw1LjVWOTkuNnoiDQoJCS8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEzNjAuMyw2My40YzUuNCwwLDkuOSw0LjUsOS45LDEwLjFjMCw1LjUtNC41LDkuOC05LjksOS44Yy01LjUsMC05LjktNC4zLTkuOS05LjgNCgkJQzEzNTAuNCw2Ny45LDEzNTQuOCw2My40LDEzNjAuMyw2My40eiBNMTM1Mi4zLDk5YzAtMi4zLDAuNy0zLDMtM2gxMC4yYzIuMywwLDMsMC43LDMsM3Y2Ni4zYzAsMi4zLTAuNywzLTMsM2gtMTAuMg0KCQljLTIuMywwLTMtMC43LTMtM1Y5OXoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTM5MiwxMDljLTIuMywwLTMtMC43LTMtM3YtN2MwLTIuMywwLjctMywzLTNoNS4zVjgyLjFjMC0yLjMsMC42LTMsMy0zaDEwLjFjMi4zLDAsMywwLjcsMywzVjk2aDIxLjkNCgkJYzIuMywwLDMsMC43LDMsMy4xdjYuOGMwLDIuMy0wLjcsMy0zLDNIMTM5MnogTTE0MTMuMywxMTYuMnYyMS4zYzAsMTIuOCw0LjQsMTcuOSwxMy4xLDE3LjljMy4xLDAsNS41LTAuMyw4LjUtMS43DQoJCWMyLjctMS40LDMuMy0xLjMsMy44LDEuN2wxLjMsNy4xYzAuNCwyLjEsMC4zLDIuOC0xLjYsMy44Yy01LjcsMy41LTExLjksMy41LTEzLjgsMy41Yy0xOC43LDAtMjcuNC0xMS44LTI3LjQtMzEuNHYtMjIuM0gxNDEzLjN6Ig0KCQkvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNDc2LjcsMTk0LjNjLTEuMSwyLjQtMiwzLTMuOCwzaC0xMS42Yy0yLjEsMC0yLjctMC43LTEuNi0zbDE0LjYtMzIuNUwxNDQ1LjksOTljLTEtMi4zLTAuNi0zLDEuNi0zaDExLjYNCgkJYzIsMCwyLjcsMC43LDQsM2wyOC4zLDYyLjlMMTQ3Ni43LDE5NC4zeiBNMTQ4Ny4xLDEzNC43bDE1LjUtMzUuNmMxLjMtMi4zLDItMyw0LTNoMTEuNmMyLjEsMCwyLjYsMC43LDEuNiwzbC0yNC40LDU0LjENCgkJTDE0ODcuMSwxMzQuN3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTU4Ni4yLDE2NS4zYy0wLjEsMi4zLTAuNywzLTMsM0gxNTcyYy0yLjQsMC0zLTAuNy0zLTNWNzEuOWMwLTIuNCwwLjctMywzLTNoMTQuMlYxNjUuM3ogTTE1OTMuNSwxMTQuNmgxMi40DQoJCWMxNC44LDAsMTkuNi03LDE5LjYtMTUuOWMwLTguNy00LjgtMTUuNS0xOS42LTE1LjVoLTEyLjRWNjguOWgxMy4xYzE2LjYsMCwzNS41LDYuOCwzNS41LDI5LjhzLTE4LjksMzAuMi0zNS41LDMwLjJoLTEzLjFWMTE0LjZ6Ig0KCQkvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNjgzLjUsMTY5LjdjLTE4LjctMS44LTMzLjktMTcuOC0zMy45LTM3LjVjMC0xOS45LDE1LjMtMzUuOSwzMy45LTM3LjZ2MTQuOGMtMTAuMiwxLjgtMTcuOSwxMS4xLTE3LjksMjIuOQ0KCQljMCwxMi4yLDguMSwyMS4zLDE3LjksMjNWMTY5Ljd6IE0xNjkwLjYsMTU1LjNjMTAuMi0xLjcsMTgtMTEuMSwxOC0yM3MtOC0yMS4zLTE4LTIyLjlWOTQuNmMxOS4yLDIsMzQuMSwxOCwzNC4xLDM3LjYNCgkJYzAsMTkuNS0xNC44LDM1LjYtMzQuMSwzNy41VjE1NS4zeiIvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNzQzLjQsNjYuNWMwLTIuMywwLjctMywzLTNoMTAuMmMyLjQsMCwzLDAuNywzLDN2OTguOGMwLDIuMy0wLjcsMy0zLDNoLTEwLjJjLTIuMywwLTMtMC43LTMtM1Y2Ni41eiIvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNzk0LjgsNjMuNGM1LjQsMCw5LjksNC41LDkuOSwxMC4xYzAsNS41LTQuNSw5LjgtOS45LDkuOGMtNS41LDAtOS45LTQuMy05LjktOS44DQoJCUMxNzg0LjksNjcuOSwxNzg5LjMsNjMuNCwxNzk0LjgsNjMuNHogTTE3ODYuOSw5OWMwLTIuMywwLjctMywzLTNoMTAuMmMyLjMsMCwzLDAuNywzLDN2NjYuM2MwLDIuMy0wLjcsMy0zLDNoLTEwLjINCgkJYy0yLjMsMC0zLTAuNy0zLTNWOTl6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE4NTcuNiwxMDkuM2MtOS44LDEuNy0xOCwxMC42LTE4LDIzYzAsMTIuMSw3LjgsMjEuMiwxOCwyMi45djE0LjZjLTE5LjctMS44LTM0LjEtMTguNS0zNC4xLTM3LjUNCgkJYzAtMTkuMiwxNC4zLTM1LjgsMzQuMS0zNy42VjEwOS4zeiBNMTg2NC41LDk0LjZjOC40LDAuOSwxNiw0LDIyLjcsMTAuNWMxLjMsMS4zLDEsMi0wLjQsMy43bC01LjMsNS43Yy0xLjYsMS43LTIuNiwyLjEtNC4zLDAuNg0KCQljLTQuMy00LTguNy01LjMtMTIuOC02Vjk0LjZ6IE0xODY0LjUsMTU1LjNjNS4xLTAuOSw4LjgtMi40LDEyLjgtNmMxLjgtMS42LDIuNy0xLjEsNC4zLDAuNmw1LjMsNS43YzEuNCwxLjcsMS43LDIuNCwwLjQsMy43DQoJCWMtNi44LDYuNS0xMy45LDkuNS0yMi43LDEwLjVWMTU1LjN6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE5MjQuOSwxOTQuM2MtMS4xLDIuNC0yLDMtMy44LDNoLTExLjZjLTIuMSwwLTIuNy0wLjctMS42LTNsMTQuNi0zMi41TDE4OTQuMSw5OWMtMS0yLjMtMC42LTMsMS42LTNoMTEuNg0KCQljMiwwLDIuNywwLjcsNCwzbDI4LjMsNjIuOUwxOTI0LjksMTk0LjN6IE0xOTM1LjIsMTM0LjdsMTUuNS0zNS42YzEuMy0yLjMsMi0zLDQtM2gxMS42YzIuMSwwLDIuNiwwLjcsMS42LDNsLTI0LjQsNTQuMQ0KCQlMMTkzNS4yLDEzNC43eiIvPg0KPC9nPg0KPC9zdmc+DQo=&quot; alt=&quot;&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
@@ -16777,7 +17360,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1(data, context) {&#xA;  // in dev mode, we &#xA;  return data.ItemIdentifier == 'Dev';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  // in dev mode, we&#xA;  if (context.debug) return false;&#xA;  return data.ItemIdentifier == 'Dev' || !(context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Notes" Value="" Type="String">
@@ -16822,7 +17405,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return !data.Policies;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return !data.Policies &amp;&amp; (context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
@@ -16907,10 +17490,303 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="bdbce474-985f-462c-9cdf-17ae67094953">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1 (data, context) {&#xA;  const app = context.app;&#xA;  return context.debug || app.isSite || app.isGlobal;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="4bec0cff-16d5-46aa-a068-15b1d99e9f73">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1 (data, context) {&#xA;  // Only show on non-global non-site apps&#xA;  const app = context.app;&#xA;  return context.debug || (!app.isSite &amp;&amp; !app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="1571d7da-298c-476e-a25c-d2fe79c1052b">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1 (data, context) {&#xA;  if (context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  // detect if we're on app or site/global&#xA;  const onApp = !(context.app.isSite || context.app.isGlobal);&#xA;  var original = data.default;&#xA;  return onApp &#xA;    ? data.default.replace('Policies (', 'App Policies (') &#xA;    : data.default;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Name" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Name" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="49c22fa1-4e1f-4585-92e7-10d18a6da0fe">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1 (data, context) {&#xA;  const app = context.app;&#xA;  return !(app.isSite || app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="f6be3e78-a86c-44da-97d7-f283481b5f8e">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1 (data, context) {&#xA;  // in dev mode, we&#xA;  if (context.debug) return false;&#xA;  return !(context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Disabled" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Disabled" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="92f2eb3c-c3b7-4378-82df-b2393da6687e" AttributeSetName="⚙️ContentSecurityPolicy" EntityGUID="55e08e42-82c6-4bce-829c-b6a111a72ccc">
+      <Value Key="IsEnabled" Value="" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="IsEnforced" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemIdentifier" Value="Default" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Policies" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SettingsIdentifier" Value="ContentSecurityPolicies.Default" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="46e32523-21b2-4485-8e10-ae846009e305">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="f98bd75d-b516-4f43-b45e-28322eba8101" KeyString="acc185a7-f300-4468-bce8-d6a64038989d">
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="&lt;p&gt;WARNING - EXPERIMENTAL&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Toolbar Button Configuration (Decorator)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="4c88d78f-5f3e-4b66-95f2-6d63b7858847" AttributeSetName="MetadataForDecorator" EntityGUID="f68ce262-6b8a-4498-a7c0-7bb91a72a87f" KeyString="acc185a7-f300-4468-bce8-d6a64038989d">
+      <Value Key="Amount" Value="10" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DeleteWarning" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TargetName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TargetType" Value="5" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Metadata for content types" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="acc185a7-f300-4468-bce8-d6a64038989d" AttributeSetName="ToolbarButtonDecorator" EntityGUID="7ad912e0-632f-4d1c-8c5f-ac131572df87" KeyString="5e958dc6-2922-4d68-835c-7b9711538b12">
+      <Value Key="Command" Value="metadata" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Ui" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiColor" Value="D9CA1F" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiIcon" Value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;48&quot; width=&quot;48&quot;&gt;&lt;path d=&quot;M9 39H29V29H39V9Q39 9 39 9Q39 9 39 9H9Q9 9 9 9Q9 9 9 9V39Q9 39 9 39Q9 39 9 39ZM9 42Q7.75 42 6.875 41.125Q6 40.25 6 39V9Q6 7.75 6.875 6.875Q7.75 6 9 6H39Q40.25 6 41.125 6.875Q42 7.75 42 9V30L30 42ZM15 27V24H23.5V27ZM15 19V16H33V19ZM9 39V29V9Q9 9 9 9Q9 9 9 9Q9 9 9 9Q9 9 9 9V39Q9 39 9 39Q9 39 9 39Z&quot;/&gt;&lt;/svg&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="9f68aa8a-4d9d-463b-a9f8-77eba12050f9" KeyString="1f1c8118-8ea5-4db5-8e3d-f5ef2131050b">
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="&lt;p&gt;BETA / EXPERIMENTAL - Configure Open-Graph Data for this Page/Object&lt;/p&gt;&#xA;&lt;p&gt;As of right now it can only specify the type and title. In future, we'll add a lot of fields and also add merging OpenGraph values with other OpenGraph values added by content.&amp;nbsp;&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Open Graph Metadata" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="acc185a7-f300-4468-bce8-d6a64038989d" AttributeSetName="ToolbarButtonDecorator" EntityGUID="ddf58645-a30a-4486-b5f7-e63529709fb5" KeyString="1f1c8118-8ea5-4db5-8e3d-f5ef2131050b">
+      <Value Key="Command" Value="metadata" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Ui" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiColor" Value="759BC5" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiData" Value="" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiIcon" Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xA;&lt;!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --&gt;&#xA;&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;&#x9; height=&quot;48&quot; width=&quot;48&quot; viewBox=&quot;0 0 2500 2041&quot; style=&quot;enable-background:new 0 0 2500 2041;&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;path d=&quot;M2266.5,1687c-35.4,0-64.1-28.7-64.1-64.1s28.7-64.1,64.1-64.1c35.4,0,64.1,28.7,64.1,64.1&#xA;&#x9;S2301.9,1686.9,2266.5,1687L2266.5,1687z M1395.8,1758.8c69.8-100.5,152.5-244.5,203.3-417.6c108.1,22.2,208.9,58.1,318.3,112.7&#xA;&#x9;L1395.8,1758.8L1395.8,1758.8z M869.3,762.1c-16.9,70.3-28.4,145.3-31,224.1c-98.2,0-193.9,0-301.4,0V640.3&#xA;&#x9;C644.3,698.3,757.5,737.4,869.3,762.1L869.3,762.1z M234.7,481.9c-35.4,0-64.1-28.7-64.1-64.1s28.7-64.1,64.1-64.1&#xA;&#x9;s64.1,28.7,64.1,64.1C298.8,453.2,270.1,481.9,234.7,481.9z M1088.4,294.8C1018.3,392.7,938.1,530,888,696.5&#xA;&#x9;c-101-22-196.3-56.3-298.9-107.1L1088.4,294.8L1088.4,294.8z M1277.8,1242.8c0.1-26.3,0.1-53,0.2-80&#xA;&#x9;c55.4-11.1,99.4-53.8,112.5-108.5c67.7,0.1,132.4,0.1,195.8,0.1c-2.6,73-13.2,143.3-29.2,209.9&#xA;&#x9;C1471.3,1250.5,1380.2,1243.9,1277.8,1242.8z M1277.6,1311.2c96.4,1,181.6,6.8,261.5,19.3c-67.6,222.9-190.7,397.2-260.1,483.3&#xA;&#x9;C1277.9,1646.3,1277.4,1478.7,1277.6,1311.2z M888.2,1350.8c50.2,167.2,130.5,303.9,200.7,401l-512.5-296.2&#xA;&#x9;C639.1,1426.1,746.6,1382.4,888.2,1350.8L888.2,1350.8z M1108.3,1054.4c13,53.7,55.8,95.9,109.9,107.8c-0.1,27.3-0.2,54.2-0.2,80.8&#xA;&#x9;c-96.8,1.6-193.3,11.3-288.5,29c-16.6-68.2-27.5-140.9-29.9-217.5C967.5,1054.5,1036.4,1054.5,1108.3,1054.4L1108.3,1054.4z&#xA;&#x9; M1217.9,797.8c0.1,27,0.1,53.9,0.2,80.8c-54,11.9-96.7,53.9-109.8,107.5c-71.9,0.1-140.7,0.1-208.7,0.1&#xA;&#x9;c2.6-74.7,13.2-145.8,29.3-212.5C1017.6,789.1,1111.6,796.5,1217.9,797.8L1217.9,797.8z M1217.2,273c0.1,150,0.2,303.6,0.5,456.4&#xA;&#x9;c-100-1.2-188.1-7.8-270.8-21.6c69.5-227.6,198-397.2,270.3-479.9V273L1217.2,273z M1597.7,694.4c-50.7-169.4-132-310.2-200.9-409&#xA;&#x9;L1922,590.8C1857.2,620.3,1745.2,663.9,1597.7,694.4L1597.7,694.4z M1277,273v-45.9c68.5,83.7,192.3,256,260.9,478.6&#xA;&#x9;c-86.1,14.6-173.1,22.5-260.4,23.7C1277.3,577.3,1277.1,425.1,1277,273L1277,273z M1249.4,1097.3c-42.4,0-76.9-34.5-76.9-76.9&#xA;&#x9;s34.5-76.9,76.9-76.9s76.9,34.5,76.9,76.9S1291.8,1097.3,1249.4,1097.3L1249.4,1097.3z M1219.3,1818.5&#xA;&#x9;c-71.4-81.5-201-251.6-271.5-479.9c89.1-16.5,179.4-25.6,270-27.2C1217.5,1480.4,1218,1649.4,1219.3,1818.5L1219.3,1818.5z&#xA;&#x9; M1390.4,986c-13.3-54.4-57.2-97-112.5-108.1l-0.2-80.2c93.4-1.2,186.5-9.7,278.6-25.4c16.5,67.6,27.5,139.2,30,213.8&#xA;&#x9;C1522.9,986.1,1458.1,986.1,1390.4,986z M1954,985.9c-97.7,0.1-207.1,0.2-310.9,0.2c-2.5-78.8-15.2-154.1-32.1-225&#xA;&#x9;c159.4-33.1,284.4-81,343.1-112.2L1954,985.9L1954,985.9z M536.8,1054.6c107.5,0,203.6,0,301.8,0c2.4,81,13,157.7,30.1,229.5&#xA;&#x9;c-152.5,34.1-263.5,81.8-331.9,113.2L536.8,1054.6L536.8,1054.6z M1613.4,1275.4c16.4-69.8,25.5-143.8,28-220.9&#xA;&#x9;c103.8,0,214.8-0.1,312.5-0.2v345C1846.5,1339.4,1729.9,1299.8,1613.4,1275.4L1613.4,1275.4z M2266.5,1473.3&#xA;&#x9;c-40.2,0-78.5,16-105.4,41.9c-40.6-25.5-80.1-48.7-119.1-70V563.9l-794.7-463.2L499.4,542.5c-39.9-22.3-80.8-47-124.5-74.4&#xA;&#x9;c5.7-15.8,9.1-32.6,9.1-50.3c0-82.5-67-149.6-149.5-149.6S85,335.3,85,417.8s67.1,149.6,149.6,149.6c40.2,0,74.4-16,101.3-41.9&#xA;&#x9;c39.9,25,83.6,47.9,112.9,68.8v888.9l798.4,460.1l757.9-442.2c40.6,22.9,80.7,46.7,120.2,71.4c-5.8,16.1-8.7,33.2-8.6,50.3&#xA;&#x9;c0,82.5,67.2,149.6,149.7,149.6s149.6-67.1,149.6-149.6S2349,1473.3,2266.5,1473.3L2266.5,1473.3z&quot;/&gt;&#xA;&lt;/svg&gt;&#xA;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="d4f39222-e9af-4eb4-a84e-2142faf79859">
+      <Value Key="AllowEdit" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Query with , Comma" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Params" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsOut" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamWiring" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TestParameters" Value="[Demo:Demo]=true" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="VisualDesignerData" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="14971d8e-ed4d-400f-8629-46856dcd67a6">
+      <Value Key="ContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Test query with comma" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="_default.cshtml" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Pipeline" Value="d4f39222-e9af-4eb4-a84e-2142faf79859" Type="Entity" />
+      <Value Key="PresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
   </Entities>
-  <PortalFiles />
+  <PortalFiles>
+    <File Id="9114" RelativePath="adam\System-Types\_YS31BOryEGpK48-PADraA\EditInstructions\blobid3.svg" />
+    <File Id="9031" RelativePath="adam\System-Types\ystd-YAADEaRkOtyvnpyJQ\EditInstructions\blobid0.svg" />
+    <File Id="9111" RelativePath="adam\System-Types\ystd-YAADEaRkOtyvnpyJQ\EditInstructions\blobid0-1.svg" />
+    <File Id="9112" RelativePath="adam\System-Types\ystd-YAADEaRkOtyvnpyJQ\EditInstructions\blobid1.svg" />
+    <File Id="9113" RelativePath="adam\System-Types\ystd-YAADEaRkOtyvnpyJQ\EditInstructions\blobid2.svg" />
+  </PortalFiles>
   <PortalFolders>
+    <Folder Id="12296" RelativePath="adam/System-Types/_YS31BOryEGpK48-PADraA/EditInstructions/" />
+    <Folder Id="11858" RelativePath="adam/System-Types/ystd-YAADEaRkOtyvnpyJQ/EditInstructions/" />
     <Folder Id="2548" RelativePath="adam/System-Types/" />
+    <Folder Id="12295" RelativePath="adam/System-Types/_YS31BOryEGpK48-PADraA/" />
     <Folder Id="10451" RelativePath="adam/System-Types/0CNNjxblX0uBsXPyfz0wxg/" />
     <Folder Id="10452" RelativePath="adam/System-Types/0CNNjxblX0uBsXPyfz0wxg/Icon/" />
     <Folder Id="10471" RelativePath="adam/System-Types/0qsxR0Sn7Uye38wGGp4xTg/" />
@@ -17204,6 +18080,7 @@
     <Folder Id="10745" RelativePath="adam/System-Types/yGtgi1XqXEyny9iGpqdRsQ/" />
     <Folder Id="10747" RelativePath="adam/System-Types/yGtgi1XqXEyny9iGpqdRsQ/Icon/" />
     <Folder Id="10746" RelativePath="adam/System-Types/yGtgi1XqXEyny9iGpqdRsQ/Link/" />
+    <Folder Id="11857" RelativePath="adam/System-Types/ystd-YAADEaRkOtyvnpyJQ/" />
     <Folder Id="10489" RelativePath="adam/System-Types/ywoyZaafQ0iAYJzIoo0tWg/" />
     <Folder Id="10490" RelativePath="adam/System-Types/ywoyZaafQ0iAYJzIoo0tWg/Icon/" />
     <Folder Id="10459" RelativePath="adam/System-Types/Z9kUnjOuiEyynqYhvztcOQ/" />
