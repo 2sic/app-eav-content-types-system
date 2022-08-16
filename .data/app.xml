@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.07.03" ExportDate="2022-07-06T00:06:52.975339+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.07.05" ExportDate="2022-08-16T12:16:44.5523617+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -14308,7 +14308,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="14.07.03" Type="String">
+      <Value Key="Version" Value="14.07.05" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -17644,7 +17644,10 @@
       <Value Key="UiColor" Value="D9CA1F" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="UiIcon" Value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;48&quot; width=&quot;48&quot;&gt;&lt;path d=&quot;M9 39H29V29H39V9Q39 9 39 9Q39 9 39 9H9Q9 9 9 9Q9 9 9 9V39Q9 39 9 39Q9 39 9 39ZM9 42Q7.75 42 6.875 41.125Q6 40.25 6 39V9Q6 7.75 6.875 6.875Q7.75 6 9 6H39Q40.25 6 41.125 6.875Q42 7.75 42 9V30L30 42ZM15 27V24H23.5V27ZM15 19V16H33V19ZM9 39V29V9Q9 9 9 9Q9 9 9 9Q9 9 9 9Q9 9 9 9V39Q9 39 9 39Q9 39 9 39Z&quot;/&gt;&lt;/svg&gt;" Type="String">
+      <Value Key="UiData" Value="" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiIcon" Value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;48&quot; width=&quot;48&quot;&gt;&lt;path d=&quot;M9 39h20V29h10V9H9v30Zm0 3q-1.25 0-2.125-.875T6 39V9q0-1.25.875-2.125T9 6h30q1.25 0 2.125.875T42 9v21L30 42Zm6-15v-3h8.5v3Zm0-8v-3h18v3ZM9 39V9v30Z&quot;/&gt;&lt;/svg&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -17687,7 +17690,7 @@
       <Value Key="UiData" Value="" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="UiIcon" Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xA;&lt;!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --&gt;&#xA;&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;&#x9; height=&quot;48&quot; width=&quot;48&quot; viewBox=&quot;0 0 2500 2041&quot; style=&quot;enable-background:new 0 0 2500 2041;&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;path d=&quot;M2266.5,1687c-35.4,0-64.1-28.7-64.1-64.1s28.7-64.1,64.1-64.1c35.4,0,64.1,28.7,64.1,64.1&#xA;&#x9;S2301.9,1686.9,2266.5,1687L2266.5,1687z M1395.8,1758.8c69.8-100.5,152.5-244.5,203.3-417.6c108.1,22.2,208.9,58.1,318.3,112.7&#xA;&#x9;L1395.8,1758.8L1395.8,1758.8z M869.3,762.1c-16.9,70.3-28.4,145.3-31,224.1c-98.2,0-193.9,0-301.4,0V640.3&#xA;&#x9;C644.3,698.3,757.5,737.4,869.3,762.1L869.3,762.1z M234.7,481.9c-35.4,0-64.1-28.7-64.1-64.1s28.7-64.1,64.1-64.1&#xA;&#x9;s64.1,28.7,64.1,64.1C298.8,453.2,270.1,481.9,234.7,481.9z M1088.4,294.8C1018.3,392.7,938.1,530,888,696.5&#xA;&#x9;c-101-22-196.3-56.3-298.9-107.1L1088.4,294.8L1088.4,294.8z M1277.8,1242.8c0.1-26.3,0.1-53,0.2-80&#xA;&#x9;c55.4-11.1,99.4-53.8,112.5-108.5c67.7,0.1,132.4,0.1,195.8,0.1c-2.6,73-13.2,143.3-29.2,209.9&#xA;&#x9;C1471.3,1250.5,1380.2,1243.9,1277.8,1242.8z M1277.6,1311.2c96.4,1,181.6,6.8,261.5,19.3c-67.6,222.9-190.7,397.2-260.1,483.3&#xA;&#x9;C1277.9,1646.3,1277.4,1478.7,1277.6,1311.2z M888.2,1350.8c50.2,167.2,130.5,303.9,200.7,401l-512.5-296.2&#xA;&#x9;C639.1,1426.1,746.6,1382.4,888.2,1350.8L888.2,1350.8z M1108.3,1054.4c13,53.7,55.8,95.9,109.9,107.8c-0.1,27.3-0.2,54.2-0.2,80.8&#xA;&#x9;c-96.8,1.6-193.3,11.3-288.5,29c-16.6-68.2-27.5-140.9-29.9-217.5C967.5,1054.5,1036.4,1054.5,1108.3,1054.4L1108.3,1054.4z&#xA;&#x9; M1217.9,797.8c0.1,27,0.1,53.9,0.2,80.8c-54,11.9-96.7,53.9-109.8,107.5c-71.9,0.1-140.7,0.1-208.7,0.1&#xA;&#x9;c2.6-74.7,13.2-145.8,29.3-212.5C1017.6,789.1,1111.6,796.5,1217.9,797.8L1217.9,797.8z M1217.2,273c0.1,150,0.2,303.6,0.5,456.4&#xA;&#x9;c-100-1.2-188.1-7.8-270.8-21.6c69.5-227.6,198-397.2,270.3-479.9V273L1217.2,273z M1597.7,694.4c-50.7-169.4-132-310.2-200.9-409&#xA;&#x9;L1922,590.8C1857.2,620.3,1745.2,663.9,1597.7,694.4L1597.7,694.4z M1277,273v-45.9c68.5,83.7,192.3,256,260.9,478.6&#xA;&#x9;c-86.1,14.6-173.1,22.5-260.4,23.7C1277.3,577.3,1277.1,425.1,1277,273L1277,273z M1249.4,1097.3c-42.4,0-76.9-34.5-76.9-76.9&#xA;&#x9;s34.5-76.9,76.9-76.9s76.9,34.5,76.9,76.9S1291.8,1097.3,1249.4,1097.3L1249.4,1097.3z M1219.3,1818.5&#xA;&#x9;c-71.4-81.5-201-251.6-271.5-479.9c89.1-16.5,179.4-25.6,270-27.2C1217.5,1480.4,1218,1649.4,1219.3,1818.5L1219.3,1818.5z&#xA;&#x9; M1390.4,986c-13.3-54.4-57.2-97-112.5-108.1l-0.2-80.2c93.4-1.2,186.5-9.7,278.6-25.4c16.5,67.6,27.5,139.2,30,213.8&#xA;&#x9;C1522.9,986.1,1458.1,986.1,1390.4,986z M1954,985.9c-97.7,0.1-207.1,0.2-310.9,0.2c-2.5-78.8-15.2-154.1-32.1-225&#xA;&#x9;c159.4-33.1,284.4-81,343.1-112.2L1954,985.9L1954,985.9z M536.8,1054.6c107.5,0,203.6,0,301.8,0c2.4,81,13,157.7,30.1,229.5&#xA;&#x9;c-152.5,34.1-263.5,81.8-331.9,113.2L536.8,1054.6L536.8,1054.6z M1613.4,1275.4c16.4-69.8,25.5-143.8,28-220.9&#xA;&#x9;c103.8,0,214.8-0.1,312.5-0.2v345C1846.5,1339.4,1729.9,1299.8,1613.4,1275.4L1613.4,1275.4z M2266.5,1473.3&#xA;&#x9;c-40.2,0-78.5,16-105.4,41.9c-40.6-25.5-80.1-48.7-119.1-70V563.9l-794.7-463.2L499.4,542.5c-39.9-22.3-80.8-47-124.5-74.4&#xA;&#x9;c5.7-15.8,9.1-32.6,9.1-50.3c0-82.5-67-149.6-149.5-149.6S85,335.3,85,417.8s67.1,149.6,149.6,149.6c40.2,0,74.4-16,101.3-41.9&#xA;&#x9;c39.9,25,83.6,47.9,112.9,68.8v888.9l798.4,460.1l757.9-442.2c40.6,22.9,80.7,46.7,120.2,71.4c-5.8,16.1-8.7,33.2-8.6,50.3&#xA;&#x9;c0,82.5,67.2,149.6,149.7,149.6s149.6-67.1,149.6-149.6S2349,1473.3,2266.5,1473.3L2266.5,1473.3z&quot;/&gt;&#xA;&lt;/svg&gt;&#xA;" Type="String">
+      <Value Key="UiIcon" Value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;48&quot; width=&quot;48&quot;&gt;&lt;path d=&quot;M36.35 44q-2.35 0-4.025-1.675Q30.65 40.65 30.65 38.3q0-.35.075-.825t.225-.875L15.8 27.8q-.75.85-1.85 1.375t-2.25.525q-2.35 0-4.025-1.675Q6 26.35 6 24q0-2.4 1.675-4.05T11.7 18.3q1.15 0 2.2.45 1.05.45 1.9 1.3l15.15-8.7q-.15-.35-.225-.8-.075-.45-.075-.85 0-2.4 1.675-4.05T36.35 4q2.4 0 4.05 1.65t1.65 4.05q0 2.35-1.65 4.025-1.65 1.675-4.05 1.675-1.15 0-2.225-.375Q33.05 14.65 32.3 13.8l-15.15 8.4q.1.4.175.925.075.525.075.875t-.075.75q-.075.4-.175.8l15.15 8.6q.75-.7 1.75-1.125 1-.425 2.3-.425 2.4 0 4.05 1.65t1.65 4.05q0 2.35-1.65 4.025Q38.75 44 36.35 44Zm0-31.6q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q37.5 7 36.35 7t-1.925.775q-.775.775-.775 1.925t.775 1.925q.775.775 1.925.775ZM11.7 26.7q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q12.85 21.3 11.7 21.3t-1.925.775Q9 22.85 9 24t.775 1.925q.775.775 1.925.775ZM36.35 41q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q37.5 35.6 36.35 35.6t-1.925.775q-.775.775-.775 1.925t.775 1.925Q35.2 41 36.35 41Zm0-31.3ZM11.7 24Zm24.65 14.3Z&quot;/&gt;&lt;/svg&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -17771,6 +17774,23 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="acc185a7-f300-4468-bce8-d6a64038989d" AttributeSetName="ToolbarButtonDecorator" EntityGUID="9c99a32e-dbfa-47d5-aea2-2e0c0e21115a" KeyString="cb27a0f2-f921-48d0-a3bc-37c0e77b1d0c">
+      <Value Key="Command" Value="metadata" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Ui" Value="classes=single-field" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiColor" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiData" Value="" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UiIcon" Value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;24px&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24px&quot; fill=&quot;#000000&quot;&gt;&lt;path d=&quot;M0 0h24v24H0V0z&quot; fill=&quot;none&quot;/&gt;&lt;path d=&quot;M5 15H3v6h6v-2H5v-4zM5 5h4V3H3v6h2V5zm16-2h-6v2h4v4h2V3zm-2 16h-4v2h6v-6h-2v4zM12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z&quot;/&gt;&lt;/svg&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
