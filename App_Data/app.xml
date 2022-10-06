@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.07.05" ExportDate="2022-08-16T12:16:44.5523617+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.09.00" ExportDate="2022-10-06T22:04:41.4562666+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -16043,7 +16043,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This marks things which should be seen as obsolete in the UI. For example obsolete input-types.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="not_interested" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bTAgMThjLTQuNDIgMC04LTMuNTgtOC04IDAtMS44NS42My0zLjU1IDEuNjktNC45TDE2LjkgMTguMzFDMTUuNTUgMTkuMzcgMTMuODUgMjAgMTIgMjB6bTYuMzEtMy4xTDcuMSA1LjY5QzguNDUgNC42MyAxMC4xNSA0IDEyIDRjNC40MiAwIDggMy41OCA4IDggMCAxLjg1LS42MyAzLjU1LTEuNjkgNC45eiIvPjwvc3ZnPg==" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Is-Obsolete (Decorator)" Type="String">
@@ -16137,7 +16137,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This marks something as being the default. There are no properties to edit.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="star" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGZpbGw9IiMwMDAwMDAiPjxnPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjwvZz48Zz48cGF0aCBkPSJNMTIgMTcuMjcgMTguMTggMjFsLTEuNjQtNy4wM0wyMiA5LjI0bC03LjE5LS42MUwxMiAyIDkuMTkgOC42MyAyIDkuMjRsNS40NiA0LjczTDUuODIgMjEgMTIgMTcuMjd6Ii8+PC9nPjwvc3ZnPg==" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Is-Default (Decorator)" Type="String">
@@ -16163,7 +16163,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;Mark an item as recommended.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="thumb_up" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6bTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTkgMjFoOWMuODMgMCAxLjU0LS41IDEuODQtMS4yMmwzLjAyLTcuMDVjLjA5LS4yMy4xNC0uNDcuMTQtLjczdi0yYzAtMS4xLS45LTItMi0yaC02LjMxbC45NS00LjU3LjAzLS4zMmMwLS40MS0uMTctLjc5LS40NC0xLjA2TDE0LjE3IDEgNy41OCA3LjU5QzcuMjIgNy45NSA3IDguNDUgNyA5djEwYzAgMS4xLjkgMiAyIDJ6TTkgOWw0LjM0LTQuMzRMMTIgMTBoOXYybC0zIDdIOVY5ek0xIDloNHYxMkgxeiIvPjwvc3ZnPg==" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Is-Recommended (Decorator)" Type="String">
@@ -16190,7 +16190,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;By default, content-types without fields would result in empty items, and they would not be saved.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Use this decorator to mark a content-type which should save items even if they are completely empty.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="crop_free" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTMgNXY0aDJWNWg0VjNINWMtMS4xIDAtMiAuOS0yIDJ6bTIgMTBIM3Y0YzAgMS4xLjkgMiAyIDJoNHYtMkg1di00em0xNCA0aC00djJoNGMxLjEgMCAyLS45IDItMnYtNGgtMnY0em0wLTE2aC00djJoNHY0aDJWNWMwLTEuMS0uOS0yLTItMnoiLz48L3N2Zz4=" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Save-Empty (Decorator)" Type="String">
@@ -16218,7 +16218,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This configures what Metadata is expected on this kind of item. It's mainly used to help create toolbars automatically.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Important: This wil not prevent other metadata, but simply make work easier.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="local_offer" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTIxLjQxIDExLjU4bC05LTlDMTIuMDUgMi4yMiAxMS41NSAyIDExIDJINGMtMS4xIDAtMiAuOS0yIDJ2N2MwIC41NS4yMiAxLjA1LjU5IDEuNDJsOSA5Yy4zNi4zNi44Ni41OCAxLjQxLjU4czEuMDUtLjIyIDEuNDEtLjU5bDctN2MuMzctLjM2LjU5LS44Ni41OS0xLjQxcy0uMjMtMS4wNi0uNTktMS40MnpNMTMgMjAuMDFMNCAxMVY0aDd2LS4wMWw5IDktNyA3LjAyeiIvPjxjaXJjbGUgY3g9IjYuNSIgY3k9IjYuNSIgcj0iMS41Ii8+PC9zdmc+" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Metadata-Expected (Decorator)" Type="String">
@@ -16303,7 +16303,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;Used to decorate Content-Types to tell them what they usually describe.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="loyalty" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTIxLjQxIDExLjU4bC05LTlDMTIuMDUgMi4yMiAxMS41NSAyIDExIDJINGMtMS4xIDAtMiAuOS0yIDJ2N2MwIC41NS4yMiAxLjA1LjU5IDEuNDJsOSA5Yy4zNi4zNi44Ni41OCAxLjQxLjU4czEuMDUtLjIyIDEuNDEtLjU5bDctN2MuMzctLjM2LjU5LS44Ni41OS0xLjQxcy0uMjMtMS4wNi0uNTktMS40MnpNMTMgMjAuMDFMNCAxMVY0aDd2LS4wMWw5IDktNyA3LjAyeiIvPjxjaXJjbGUgY3g9IjYuNSIgY3k9IjYuNSIgcj0iMS41Ii8+PHBhdGggZD0iTTguOSAxMi41NWMwIC41Ny4yMyAxLjA3LjYgMS40NWwzLjUgMy41IDMuNS0zLjVjLjM3LS4zNy42LS44OS42LTEuNDUgMC0xLjEzLS45Mi0yLjA1LTIuMDUtMi4wNS0uNTcgMC0xLjA4LjIzLTEuNDUuNmwtLjYuNi0uNi0uNTljLS4zNy0uMzgtLjg5LS42MS0xLjQ1LS42MS0xLjEzIDAtMi4wNS45Mi0yLjA1IDIuMDV6Ii8+PC9zdmc+" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Metadata-For (Decorator)" Type="String">
@@ -16414,7 +16414,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This configures a Content-Type to have custom languages / translation settings&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="translate" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyLjg3IDE1LjA3bC0yLjU0LTIuNTEuMDMtLjAzYzEuNzQtMS45NCAyLjk4LTQuMTcgMy43MS02LjUzSDE3VjRoLTdWMkg4djJIMXYxLjk5aDExLjE3QzExLjUgNy45MiAxMC40NCA5Ljc1IDkgMTEuMzUgOC4wNyAxMC4zMiA3LjMgOS4xOSA2LjY5IDhoLTJjLjczIDEuNjMgMS43MyAzLjE3IDIuOTggNC41NmwtNS4wOSA1LjAyTDQgMTlsNS01IDMuMTEgMy4xMS43Ni0yLjA0ek0xOC41IDEwaC0yTDEyIDIyaDJsMS4xMi0zaDQuNzVMMjEgMjJoMmwtNC41LTEyem0tMi42MiA3bDEuNjItNC4zM0wxOS4xMiAxN2gtMy4yNHoiLz48L3N2Zz4=" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Language and Translation Settings (Decorator)" Type="String">
@@ -16558,7 +16558,7 @@
       <Value Key="EditInstructions" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="policy" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGZpbGw9IiMwMDAwMDAiPjxnPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIvPjwvZz48Zz48Zy8+PGc+PHBhdGggZD0iTTEyLDFMMyw1djZjMCw1LjU1LDMuODQsMTAuNzQsOSwxMmM1LjE2LTEuMjYsOS02LjQ1LDktMTJWNUwxMiwxeiBNMTksMTFjMCwxLjg1LTAuNTEsMy42NS0xLjM4LDUuMjFsLTEuNDUtMS40NSBjMS4yOS0xLjk0LDEuMDctNC41OC0wLjY0LTYuMjljLTEuOTUtMS45NS01LjEyLTEuOTUtNy4wNywwYy0xLjk1LDEuOTUtMS45NSw1LjEyLDAsNy4wN2MxLjcxLDEuNzEsNC4zNSwxLjkyLDYuMjksMC42NCBsMS43MiwxLjcyYy0xLjE5LDEuNDItMi43MywyLjUxLTQuNDcsMy4wNEM3Ljk4LDE5LjY5LDUsMTUuNTIsNSwxMVY2LjNsNy0zLjExbDcsMy4xMVYxMXogTTEyLDE1Yy0xLjY2LDAtMy0xLjM0LTMtM3MxLjM0LTMsMy0zIHMzLDEuMzQsMywzUzEzLjY2LDE1LDEyLDE1eiIvPjwvZz48L2c+PC9zdmc+" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Requirement (Decorator)" Type="String">
@@ -16584,7 +16584,7 @@
       <Value Key="EditInstructions" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="foundation" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGZpbGw9IiMwMDAwMDAiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIvPjxwYXRoIGQ9Ik0xOSwxMmgzTDEyLDNMMiwxMmgzdjNIM3YyaDJ2M2gydi0zaDR2M2gydi0zaDR2M2gydi0zaDJ2LTJoLTJWMTJ6IE03LDE1di00LjgxbDQtMy42VjE1SDd6IE0xMywxNVY2LjU5bDQsMy42VjE1SDEzeiIvPjwvc3ZnPg==" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Is-Shared (Decorator) - for Apps" Type="String">
@@ -16903,7 +16903,7 @@
       <Value Key="EditInstructions" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="sticky_note_2" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGZpbGw9IiMwMDAwMDAiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIvPjxwYXRoIGQ9Ik0xOSw1djlsLTUsMGwwLDVINVY1SDE5IE0xOSwzSDVDMy45LDMsMywzLjksMyw1djE0YzAsMS4xLDAuOSwyLDIsMmgxMGw2LTZWNUMyMSwzLjksMjAuMSwzLDE5LDN6IE0xMiwxNEg3di0yaDVWMTR6IE0xNywxMEg3VjhoMTBWMTB6Ii8+PC9zdmc+" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Note" Type="String">
@@ -17047,7 +17047,7 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This adjusts some features of the edit UI. It is still beta, so anything you do here may change in future.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="settings" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE5LjQzIDEyLjk4Yy4wNC0uMzIuMDctLjY0LjA3LS45OCAwLS4zNC0uMDMtLjY2LS4wNy0uOThsMi4xMS0xLjY1Yy4xOS0uMTUuMjQtLjQyLjEyLS42NGwtMi0zLjQ2Yy0uMDktLjE2LS4yNi0uMjUtLjQ0LS4yNS0uMDYgMC0uMTIuMDEtLjE3LjAzbC0yLjQ5IDFjLS41Mi0uNC0xLjA4LS43My0xLjY5LS45OGwtLjM4LTIuNjVDMTQuNDYgMi4xOCAxNC4yNSAyIDE0IDJoLTRjLS4yNSAwLS40Ni4xOC0uNDkuNDJsLS4zOCAyLjY1Yy0uNjEuMjUtMS4xNy41OS0xLjY5Ljk4bC0yLjQ5LTFjLS4wNi0uMDItLjEyLS4wMy0uMTgtLjAzLS4xNyAwLS4zNC4wOS0uNDMuMjVsLTIgMy40NmMtLjEzLjIyLS4wNy40OS4xMi42NGwyLjExIDEuNjVjLS4wNC4zMi0uMDcuNjUtLjA3Ljk4IDAgLjMzLjAzLjY2LjA3Ljk4bC0yLjExIDEuNjVjLS4xOS4xNS0uMjQuNDItLjEyLjY0bDIgMy40NmMuMDkuMTYuMjYuMjUuNDQuMjUuMDYgMCAuMTItLjAxLjE3LS4wM2wyLjQ5LTFjLjUyLjQgMS4wOC43MyAxLjY5Ljk4bC4zOCAyLjY1Yy4wMy4yNC4yNC40Mi40OS40Mmg0Yy4yNSAwIC40Ni0uMTguNDktLjQybC4zOC0yLjY1Yy42MS0uMjUgMS4xNy0uNTkgMS42OS0uOThsMi40OSAxYy4wNi4wMi4xMi4wMy4xOC4wMy4xNyAwIC4zNC0uMDkuNDMtLjI1bDItMy40NmMuMTItLjIyLjA3LS40OS0uMTItLjY0bC0yLjExLTEuNjV6bS0xLjk4LTEuNzFjLjA0LjMxLjA1LjUyLjA1LjczIDAgLjIxLS4wMi40My0uMDUuNzNsLS4xNCAxLjEzLjg5LjcgMS4wOC44NC0uNyAxLjIxLTEuMjctLjUxLTEuMDQtLjQyLS45LjY4Yy0uNDMuMzItLjg0LjU2LTEuMjUuNzNsLTEuMDYuNDMtLjE2IDEuMTMtLjIgMS4zNWgtMS40bC0uMTktMS4zNS0uMTYtMS4xMy0xLjA2LS40M2MtLjQzLS4xOC0uODMtLjQxLTEuMjMtLjcxbC0uOTEtLjctMS4wNi40My0xLjI3LjUxLS43LTEuMjEgMS4wOC0uODQuODktLjctLjE0LTEuMTNjLS4wMy0uMzEtLjA1LS41NC0uMDUtLjc0cy4wMi0uNDMuMDUtLjczbC4xNC0xLjEzLS44OS0uNy0xLjA4LS44NC43LTEuMjEgMS4yNy41MSAxLjA0LjQyLjktLjY4Yy40My0uMzIuODQtLjU2IDEuMjUtLjczbDEuMDYtLjQzLjE2LTEuMTMuMi0xLjM1aDEuMzlsLjE5IDEuMzUuMTYgMS4xMyAxLjA2LjQzYy40My4xOC44My40MSAxLjIzLjcxbC45MS43IDEuMDYtLjQzIDEuMjctLjUxLjcgMS4yMS0xLjA3Ljg1LS44OS43LjE0IDEuMTN6TTEyIDhjLTIuMjEgMC00IDEuNzktNCA0czEuNzkgNCA0IDQgNC0xLjc5IDQtNC0xLjc5LTQtNC00em0wIDZjLTEuMSAwLTItLjktMi0ycy45LTIgMi0yIDIgLjkgMiAyLS45IDItMiAyeiIvPjwvc3ZnPg==" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Edit Configuration (Decorator for Content-Types)" Type="String">
