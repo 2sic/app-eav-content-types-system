@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.10.00" ExportDate="2022-10-17T20:42:29.2930524+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.12.00" ExportDate="2022-11-08T15:45:26.2795539+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -1725,7 +1725,7 @@
             <Value Key="TitleFalse" Value="Disable image configuration" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="TitleIndeterminate" Value="Disable image configuration (default)" Type="String">
+            <Value Key="TitleIndeterminate" Value="Enable image configuration (default)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="TitleTrue" Value="Enable image configuration if the file is an image 🎯" Type="String">
@@ -9361,6 +9361,53 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MessageCropRequirements" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="11587585-b4e1-48e4-8f4b-51d4f3bba01f" KeyNumber="31756">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Formulas" Value="6e1d7fe2-f790-4a16-9ca9-4d93210c5c34" Type="Entity" />
+            <Value Key="InputType" Value="empty-message" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="MessageCropRequirements" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Important: Crop settings will only take effect if the template creating the HTML interprets the settings. If it seems like the settings don't work, please contact your web developer.&amp;nbsp;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Wichtig: Zuschnittseinstellungen haben nur einen Effekt, wenn der Template-Code (der Teil, welches HTML generiert) diese Einstellungen auch ber&amp;uuml;cksichtigt. Sollten deine Anpassungen nicht den erw&amp;uuml;nschten Effekt haben, frag bitte deinen Webdesigner.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="183" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -17357,14 +17404,20 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Give your image some alternate text for screen readers and configure how it should be resized.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="&lt;p&gt;Gib deinem Bild eine Alternativbeschreibung (f&amp;uuml;r Google und f&amp;uuml;r Menschen mit Behinderungen). Du kannst auch steuern, wie das Bild automatisch zugeschnitten wird.&amp;nbsp;&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="183" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Image Details" Type="String">
+      <Value Key="Label" Value="Image Details and Configuration" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Bild-Beschreibung und -Konfiguration" Type="String">
+        <Dimension DimensionID="183" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
@@ -18036,6 +18089,20 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Title" Value="Field.Value" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="6e1d7fe2-f790-4a16-9ca9-4d93210c5c34">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1(data, context) { return data.CropBehavior !== ''; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
