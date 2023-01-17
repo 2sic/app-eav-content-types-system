@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="15.00.00" ExportDate="2023-01-10T21:55:45.4306466+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="15.01.00" ExportDate="2023-01-17T22:39:51.7814292+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -5962,12 +5962,62 @@
             </Value>
           </Entity>
         </Attribute>
+        <Attribute StaticName="HintFeatureRequired" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="28b4578d-8771-4acc-9306-c89f7a06b8bf" KeyNumber="32156">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Formulas" Value="ad2e2046-6eef-4cb1-98dd-0ae513af9e50" Type="Entity" />
+            <Value Key="InputType" Value="empty-message" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="HintFeatureRequired" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;&lt;strong&gt;⚠️ Important&amp;nbsp;&lt;/strong&gt;&lt;strong&gt;⚠️&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This feature is not enabled on this site. So you can configure this, but the settings will not take effect until you enable the feature &lt;a href=&quot;https://patrons.2sxc.org/rf?AppAutoInstallerConfigurable&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AppAutoInstallerConfigurable&lt;/a&gt;.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
         <Attribute StaticName="AutoInstallApps" Type="Entity" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a4a9c154-90ea-4e8c-8895-2b8d5b0f2ee7" KeyNumber="31985">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Disabled" Value="False" Type="Boolean">
@@ -5985,7 +6035,7 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="AppsAutoInstall" Type="String">
+            <Value Key="Name" Value="Apps Auto Install Rules" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Notes" Value="" Type="String">
@@ -13925,7 +13975,7 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="Site Setup Settings (WIP v15 - not done yet)" Type="String">
+            <Value Key="Name" Value="Site Setup Settings (new in v15)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Notes" Value="" Type="String">
@@ -14470,6 +14520,9 @@
             <Value Key="DefaultValue" Value="false" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
             <Value Key="Disabled" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -14505,7 +14558,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="2cc0e49d-91fa-4d76-9d5a-4482789fc659" KeyNumber="32143">
-            <Value Key="ReverseToggle" Value="" Type="Boolean">
+            <Value Key="ReverseToggle" Value="True" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="TitleFalse" Value="Remove Export-Metadata Markers" Type="String">
@@ -20191,7 +20244,7 @@
       <Value Key="EditInstructions" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
+      <Value Key="Icon" Value="base64:PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggZD0iTTEwLjk3NSAyMS45NXEtMS45LS4yLTMuNTM3LTEuMDYzUTUuOCAyMC4wMjUgNC42IDE4LjY4OHEtMS4yLTEuMzM4LTEuODg3LTMuMDYzLS42ODgtMS43MjUtLjY4OC0zLjY1IDAtMy44NzUgMi41NjMtNi43MTNRNy4xNSAyLjQyNSAxMSAydjJxLTMuMDI1LjQyNS01IDIuNjg3LTEuOTc1IDIuMjYzLTEuOTc1IDUuMjg4UTQuMDI1IDE1IDYgMTcuMjYycTEuOTc1IDIuMjYzIDQuOTc1IDIuNjg4Wm0xLTQuOTVMNi45NSAxMS45NWwxLjQyNS0xLjQyNSAyLjYgMi42VjdoMnY2LjEyNWwyLjU3NS0yLjU3NUwxNi45NzUgMTJabTEgNC45NXYtMnExLjA3NS0uMTUgMi4wNjMtLjU3NS45ODctLjQyNSAxLjgzNy0xLjA3NWwxLjQ1IDEuNDVxLTEuMTc1LjkyNS0yLjUyNSAxLjQ4OC0xLjM1LjU2Mi0yLjgyNS43MTJabTMuOTUtMTYuM1ExNi4wNSA1IDE1LjA2MiA0LjU3NSAxNC4wNzUgNC4xNSAxMyA0VjJxMS40NzUuMTUgMi44MjUuNzEyIDEuMzUuNTYzIDIuNSAxLjQ4OFptMi44IDEyLjY1LTEuNC0xLjQyNXEuNjUtLjg1IDEuMDUtMS44MzguNC0uOTg3LjU1LTIuMDYyaDIuMDVxLS4yIDEuNDc1LS43NSAyLjgzNy0uNTUgMS4zNjMtMS41IDIuNDg4Wm0uMi03LjMyNXEtLjE1LTEuMDc1LS41NS0yLjA2My0uNC0uOTg3LTEuMDUtMS44MzdsMS40LTEuNDI1cS45NSAxLjEyNSAxLjUyNSAyLjQ4Ny41NzUgMS4zNjMuNzI1IDIuODM4WiIvPjwvc3ZnPg==" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Export Decorator" Type="String">
@@ -20222,7 +20275,7 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="&lt;p&gt;Special license ID for this system. Normally you would:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create such an item&lt;/li&gt;&#xA;&lt;li&gt;Exprort it as json&lt;/li&gt;&#xA;&lt;li&gt;Place it in the App_Data/system-custom folder&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This itself only provides an additional fingerprint for activating certain features. It does not enable the license. For this you must also have the matching license file, which you would get from 2sxc.&amp;nbsp;&lt;/p&gt;" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Special license ID for this system. Normally you would:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create such an item&lt;/li&gt;&#xA;&lt;li&gt;Exprort it as json&lt;/li&gt;&#xA;&lt;li&gt;Place it in the &lt;code&gt;App_Data/system-custom/entities/&lt;/code&gt; folder&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This itself only provides an additional fingerprint for activating certain features. It does not enable the license. For this you must also have the matching license file, which you would get from 2sxc.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
@@ -20374,6 +20427,184 @@
       <Value Key="Title" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="ad2e2046-6eef-4cb1-98dd-0ae513af9e50">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return !context.features.isEnabled('AppAutoInstallerConfigurable');&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="6e5e7f67-6ad6-4fd5-8531-c0a57f116bc0" KeyString="0948fd10-7ce2-4495-bc6e-7ccb8265857e">
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="&lt;p&gt;Here you can configure aspects of how new sites are setup.&lt;/p&gt;&#xA;&lt;p&gt;As of v15, you can what apps should be available in the Auto-Installer. If this feature is popular, we'll consider enhancing it to also support custom apps and more.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="⚙️SiteSetup" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="d7f2e4fa-5306-41bb-a3cd-d9529c838879" AttributeSetName="SystemExportConfiguration" EntityGUID="ca0051d4-0c30-4fee-b0b7-6c6136674941">
+      <Value Key="ExportFormat" Value="json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="FileName" Value="system-fields.json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Export Bundle: Input Fields (all except for deprecated)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PreserveMarkers" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="75634fd0-6a24-437c-afb9-e0547f1fce5d" KeyString="@Boolean">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="1f72eed7-9fe5-427d-b114-77a4aafebcce" KeyString="@boolean-tristate">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="bd8d6237-3d02-419b-bb73-c1cfe5deaa92" KeyString="@boolean-default">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="10e40456-cefa-4b70-bc34-e1d6a9d05443" KeyString="@All">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="0f74dc0f-d3cc-4103-92fd-2a1a5b667beb" KeyString="@Number">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="6b69eb2c-5b94-409b-9bdc-a862865516d7" KeyString="@number-dropdown">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="c3973f52-ddf2-4898-bcff-729cbff6a6e8" KeyString="@number-default">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="0230755c-ca5f-4f9d-9a0a-114113d09eb2" KeyString="@DateTime">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="2c26b020-ae4d-463a-b229-928eb31e0f96" KeyString="@datetime-default">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="300f1821-0323-4174-aac1-c74f2e7a2ae2" KeyString="@entity-content-blocks">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="575322c3-28d6-4112-b14b-9e0eb375e7e6" KeyString="@Entity">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="9c5458fd-68ea-4d91-9210-75d6af4ce347" KeyString="@entity-default">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="3a43b137-2770-437a-923a-3ea5490bcce1" KeyString="@entity-query">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="c79f4522-ab07-43a0-a58c-78b4134a752e" KeyString="@hyperlink-default">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="2755e55b-3e85-446a-b9b1-48370bf9bf19" KeyString="@hyperlink-library">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="db40aa97-8e63-4eac-8155-f88052dc483e" KeyString="@Hyperlink">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="6a9916cc-bac9-4d80-90e6-85bdadaac10f" KeyString="@empty-end">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="d3dc38fc-1bff-4f5b-9593-a9196322abfd" KeyString="@empty-default">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="956ac12c-bc75-46e1-89d8-57887fc2a5a6" KeyString="@empty-message">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="e890915e-cd9d-4d06-bce4-5e4825c78715" KeyString="@string-dropdown">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="bca12f37-749e-453b-a7a2-89942b848b95" KeyString="@string-dropdown-query">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="a00a459b-193c-4862-a76f-5fae34b08f69" KeyString="@string-font-icon-picker">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="a757b62d-045c-41b4-ae0b-6ecbe6bd3991" KeyString="@string-json">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="e6367472-10d6-44ab-a84d-52fe508c0b54" KeyString="@String">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="62be2f37-2a9f-4965-bcd4-6b682c6bebf2" KeyString="@string-default">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="78bc49c2-af62-49a2-9435-6990ed3bbffd" KeyString="@string-url-path">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="06535f71-fe53-441d-a367-55147ec2e087" KeyString="@string-wysiwyg">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="0100371f-246f-478d-8fdc-0119dd356bb8" KeyString="@custom-gps">
+      <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="d7f2e4fa-5306-41bb-a3cd-d9529c838879" AttributeSetName="SystemExportConfiguration" EntityGUID="2cb05c48-7925-4d5a-a7de-6ce4aad0b055">
+      <Value Key="ExportFormat" Value="json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="FileName" Value="system-fields-helpers.json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Export Bundle: Input Helpers (formula, custom input)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PreserveMarkers" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="2c5c2a96-0f8a-421e-926d-2447c1b13c09" KeyString="772dfff1-b236-4aa9-8359-5f53c08ff7bf">
+      <Value Key="Configuration" Value="2cb05c48-7925-4d5a-a7de-6ce4aad0b055" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="43e3739f-3b78-435c-8b09-9b96ec2cf7ee" KeyString="ContentType-InputType">
+      <Value Key="Configuration" Value="2cb05c48-7925-4d5a-a7de-6ce4aad0b055" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="d7f2e4fa-5306-41bb-a3cd-d9529c838879" AttributeSetName="SystemExportConfiguration" EntityGUID="87028109-9cea-4c17-b77f-d00b31f070c5">
+      <Value Key="ExportFormat" Value="json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="FileName" Value="system-query.json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Export Bundle: Query" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PreserveMarkers" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="0ffcf030-b969-4ce6-a40c-31dc74731f28" KeyString="DataPipeline">
+      <Value Key="Configuration" Value="87028109-9cea-4c17-b77f-d00b31f070c5" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="177d0ab0-23d0-4eae-94a4-9c7ef903c84d" KeyString="DataPipelinePart">
+      <Value Key="Configuration" Value="87028109-9cea-4c17-b77f-d00b31f070c5" Type="Entity" />
     </Entity>
   </Entities>
   <PortalFiles>

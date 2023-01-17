@@ -1,5 +1,6 @@
-<div class="sc-element">
-    @Edit.Toolbar()
+@inherits Custom.Hybrid.Razor14
+
+<div @Edit.TagToolbar()>
     <h1>
         System Types
     </h1>
@@ -13,3 +14,44 @@
         to manage the app. In there, export the types in the export UI (go to debug-mode)
     </div>
 </div>
+<hr>
+
+<h2>Export Bundles</h2>
+@{
+  var exports = AsList(App.Data["SystemExportConfiguration"]);
+}
+@foreach (var export in exports)
+{
+  var exportMarkers = export.Parents("SystemExportDecorator");
+  <div>
+    <h3 @Kit.Toolbar.Default(export)>
+      @export.Name (@exportMarkers.Count)
+    </h3>
+    <ul>
+      <li>File Name: @export.FileName</li>
+      <li>Preserve Markers: @export.PreserveMarkers</li>
+      <li><a href="/api/2sxc/admin/type/JsonBundleExport?appId=@(App.AppId)&exportConfiguration=@export.EntityGuid" target="_blank">download</a></li>
+    </ul>
+    <h4>Contents</h4>
+    <ol>
+      @foreach (var marker in exportMarkers)
+      {
+        var markerEntity = AsEntity(marker);
+        var target = markerEntity.MetadataFor;
+        var tType = target.TargetType;
+        var tTypeName = tType == 4 ? "Entity" : tType == 5 ? "ContentType" : "Unknown";
+        string targetTitle = "unknown";
+        string targetIdentifier = "unknown";
+        if (tType == 5) {
+          var ct = App.AppState.GetContentType(target.KeyString);
+          targetTitle = ct.Name;
+          targetIdentifier = ct.NameId;
+          targetIdentifier = (ct.NameId == targetTitle) ? "" : "(" + ct.NameId + ")";
+        }
+
+        <li>@tTypeName: @targetTitle @targetIdentifier</li>
+      }
+    </ol>
+  </div>
+  <hr>
+}
