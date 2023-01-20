@@ -1,4 +1,7 @@
 @inherits Custom.Hybrid.Razor14
+@using System
+@using ToSic.Eav.Data
+
 @*
   This file is used both multiple Apps
   - System-Types
@@ -37,9 +40,13 @@
           targetTitle = ct.Name;
           targetIdentifier = ct.NameId;
           targetIdentifier = (ct.NameId == targetTitle) ? "" : "(" + ct.NameId + ")";
+        } else if (tType == 4 && target.KeyGuid != null) {
+          var e = AsDynamic(App.AppState.List.One((Guid)target.KeyGuid));
+          targetTitle = e.EntityTitle;
+          targetIdentifier = e.EntityGuid.ToString();
         }
 
-        <li>@tTypeName: @targetTitle @targetIdentifier</li>
+        <li>@tTypeName: @targetTitle (@targetIdentifier)</li>
       }
     </ol>
   </div>
