@@ -16,10 +16,10 @@
 </div>
 <hr>
 
-<h2>Export Bundles</h2>
 @{
-  var exports = AsList(App.Data["SystemExportConfiguration"]);
+  var exports = AsList(App.Data["🧑‍💻SystemExportConfiguration"]);
 }
+<h2>Export Bundles (@exports.Count())</h2>
 @foreach (var export in exports)
 {
   var exportMarkers = export.Parents("SystemExportDecorator");
