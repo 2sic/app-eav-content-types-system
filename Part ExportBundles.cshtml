@@ -1,20 +1,10 @@
 @inherits Custom.Hybrid.Razor14
-
-<div @Edit.TagToolbar()>
-    <h1>
-        System Types
-    </h1>
-    <div>
-        this app manages all core data types which we'll distribute from now on...
-    </div>
-
-    <div>
-        Click here 
-        @Edit.Toolbar(actions: "app", settings: new { hover = "none", show = "always" }) 
-        to manage the app. In there, export the types in the export UI (go to debug-mode)
-    </div>
-</div>
-<hr>
+@*
+  This file is used both multiple Apps
+  - System-Types
+  - Data Sources (WIP - not used yet)
+  - System Queries
+*@
 
 @{
   var exports = AsList(App.Data["🧑‍💻SystemExportConfiguration"]);
