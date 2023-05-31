@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.00.01" ExportDate="2023-05-21T12:24:31.7186799+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.01.01" ExportDate="2023-05-31T14:50:03.3998045+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -8178,30 +8178,83 @@
         </Attribute>
         <Attribute StaticName="Hidden" Type="Boolean" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="340210e1-81b3-4764-a742-bf3f66b68687" KeyNumber="11964">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="false" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
-            <Value Key="InputType" Value="boolean-default" Type="String" />
-            <Value Key="Name" Value="Hidden" Type="String" />
-            <Value Key="Notes" Value="Show / hide this in the app selector. Advanced apps are usually set to hidden once the developer adds them to the necessary pages." Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="false" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="boolean-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Hidden" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="Show / hide this in the app selector. Advanced apps are usually set to hidden once the developer adds them to the necessary pages." Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="40b12003-1962-4004-aaae-4e08b7c7bab6" KeyNumber="11964">
-            <Value Key="TitleFalse" Value="Default (Visible)" Type="String" />
-            <Value Key="TitleIndeterminate" Value="Default (Visible)" Type="String" />
-            <Value Key="TitleTrue" Value="Hidden - will not appear in add-app list" Type="String" />
+            <Value Key="ReverseToggle" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleFalse" Value="Default (Visible)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleIndeterminate" Value="Default (Visible)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleTrue" Value="Hidden - will not appear in add-app list" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupFeatures" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="a70c7a0c-011d-4953-be26-fd1d84f7ab1c" KeyNumber="24752">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="00e026d9-685c-47ac-8c6b-41db9655911b" KeyNumber="24752">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="Formulas" Value="a0ed3d8d-3410-4317-b415-aee9b5d5b2c9" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="App Features" Type="String" />
             <Value Key="Notes" Value="" Type="String" />
@@ -8209,9 +8262,6 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="a70c7a0c-011d-4953-be26-fd1d84f7ab1c" KeyNumber="24752">
-            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="AllowTokenTemplates" Type="Boolean" IsTitle="false">
@@ -8275,11 +8325,15 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupRequirements" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="35750ea4-f0b9-4f63-a6b1-2c31505a8de6" KeyNumber="24751">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a8486bb9-04cc-4a34-8f7c-62b394553b11" KeyNumber="24751">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
             <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="Formulas" Value="6225b39f-aeef-4f14-92a1-8e66abae60f4" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="Installation Requirements" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;These are requirements for installing on another platform. The developer sets these values as he/she believes is correct.&amp;nbsp;&lt;/p&gt;" Type="String" />
@@ -8287,9 +8341,6 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="35750ea4-f0b9-4f63-a6b1-2c31505a8de6" KeyNumber="24751">
-            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="RequiredVersion" Type="String" IsTitle="false">
@@ -23925,6 +23976,34 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="a0ed3d8d-3410-4317-b415-aee9b5d5b2c9">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const token = 'Tokens: ' + (data.AllowTokenTemplates ? '✅' : '➖');&#xA;  const razor = 'Razor: ' + (data.AllowRazorTemplates ? '✅' : '➖');&#xA;  const ajax = 'Ajax: ' + (data.SupportsAjaxReload ? '✅' : '➖');&#xA;  return data.default + ' (' + [token, razor, ajax].join('; ') + ')';&#xA;});" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Name" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Name" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="6225b39f-aeef-4f14-92a1-8e66abae60f4">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const sxc = '2sxc: ' + (data.RequiredVersion || '?');&#xA;  const dnn = 'Dnn: ' + (data.RequiredDnnVersion || '?');&#xA;  const oqt = 'Oqt: ' + (data.RequiredOqtaneVersion || '❔');&#xA;  return data.default + ' (' + [sxc, dnn, oqt].join('; ') + ')';&#xA;});" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Name" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
