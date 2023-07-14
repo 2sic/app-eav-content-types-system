@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.02.00" ExportDate="2023-07-05T09:58:21.067818+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.03.00" ExportDate="2023-07-14T17:23:49.1821994+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -8345,67 +8345,225 @@
         </Attribute>
         <Attribute StaticName="RequiredVersion" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a9000056-63c8-4cde-b9b3-472c2113d959" KeyNumber="11966">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="08.03.00" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Required Version" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;The version of 2sxc required for this app to work. Use it when you rely on 2sxc features which don't&amp;nbsp;exist is other&amp;nbsp;versions. read more on &lt;a href=&quot;//2sxc.org/en/help?tag=app&quot; target=&quot;_blank&quot;&gt;2sxc.org/en/help?tag=app&lt;/a&gt;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="16.00.00" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Required Version" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;The version of 2sxc required for this app to work. Use it when you rely on 2sxc features which don't&amp;nbsp;exist is other&amp;nbsp;versions. read more on &lt;a href=&quot;//2sxc.org/en/help?tag=app&quot; target=&quot;_blank&quot;&gt;2sxc.org/en/help?tag=app&lt;/a&gt;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="b4e97da0-cec2-423b-bfd8-42911e5d9351" KeyNumber="11966">
-            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="1" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="73d48c11-9200-4c3f-8555-ae0ff83aa1c0" KeyNumber="11966">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="RequiredDnnVersion" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0f314a6f-2588-4f00-9a47-57b995528dc4" KeyNumber="11967">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="07.02.00" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Required DNN Version" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;The version of DNN&amp;nbsp;required for this app to work. Use it when you rely on DNN&amp;nbsp;features which don't exist is other versions. read more on &lt;a href=&quot;//2sxc.org/en/help?tag=app&quot; target=&quot;_blank&quot;&gt;2sxc.org/en/help?tag=app&lt;/a&gt;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="09.06.01" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Required DNN Version" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;The version of DNN&amp;nbsp;required for this app to work. Use it when you rely on DNN&amp;nbsp;features which don't exist is other versions. read more on &lt;a href=&quot;//2sxc.org/en/help?tag=app&quot; target=&quot;_blank&quot;&gt;2sxc.org/en/help?tag=app&lt;/a&gt;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f2a4fa6d-95f2-4742-b370-b8f6403cb3d9" KeyNumber="11967">
-            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="1" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6d7a591d-ca6b-456d-92ba-b68fe0785bb9" KeyNumber="11967">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="RequiredOqtaneVersion" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b5086140-80de-4b8b-a151-5cfa8114e23a" KeyNumber="24750">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="True" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Required Oqtane Version" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Minimum version of Oqtane supported. Leave empty if it doesn't support Oqtane.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Required Oqtane Version" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Minimum version of Oqtane supported. Leave empty if it doesn't support Oqtane.&amp;nbsp;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="06a055e9-5e5e-4212-ad06-27cb650c82f5" KeyNumber="24750">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3a6ca1a4-232b-42ae-a367-a3b70f49770b" KeyNumber="24750" />
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3a6ca1a4-232b-42ae-a367-a3b70f49770b" KeyNumber="24750">
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
         </Attribute>
         <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="89448369-3fd7-4e10-851a-958f8e93bd61" KeyNumber="24753">
@@ -20042,7 +20200,7 @@
       <Value Key="Title" Value="Value" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7edd0b8d-1405-44ed-ac33-d0d63a274bd6" AttributeSetName="⚙️Images" EntityGUID="89184eb0-1d4d-4429-8c38-c453f8aa149d">
-      <Value Key="Items" Value="358ce0df-52bf-4877-bf32-19c3fb723c73,35d4e680-2f92-455a-90b7-4a5a936c287f,bdbff289-219d-46d6-b697-5d17050eebe9,8affa267-ec04-408f-af93-48c0ae693e5c,8c454005-9a76-48b2-a63d-7e92a731bb80" Type="Entity" />
+      <Value Key="Items" Value="358ce0df-52bf-4877-bf32-19c3fb723c73,35d4e680-2f92-455a-90b7-4a5a936c287f,bdbff289-219d-46d6-b697-5d17050eebe9,8affa267-ec04-408f-af93-48c0ae693e5c,8c454005-9a76-48b2-a63d-7e92a731bb80,6c155e30-43a4-4564-bf3f-0d80c925c4d7" Type="Entity" />
       <Value Key="SettingsIdentifier" Value="Images" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
@@ -24027,6 +24185,41 @@
       <Value Key="Title" Value="Field.Settings.Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="6c155e30-43a4-4564-bf3f-0d80c925c4d7">
+      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;attributes&quot;: {&#xD;&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xD;&#xA;    },&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Bootstrap3&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs3&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-responsive&quot; },&#xD;&#xA;        &quot;setWidth&quot;: false&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Bootstrap4&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs4&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Bootstrap5&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true,&#xD;&#xA;        &quot;setHeight&quot; : true,&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230,&#xD;&#xA;            &quot;attributes&quot;:{&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 100vw, 1230px&quot;&#xD;&#xA;            }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;6/12&quot;, &#xD;&#xA;            &quot;width&quot;: 600, &#xD;&#xA;            &quot;attributes&quot;: {&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 50vw, (max-width: 576px) 100vw, 600px&quot; &#xD;&#xA;              }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;4/12&quot;, &#xD;&#xA;            &quot;width&quot;: 390,&#xD;&#xA;            &quot;attributes&quot;:{&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 34vw, (max-width: 991px) 50vw, (max-width: 575px) 100vw, 390px&quot;&#xD;&#xA;            }&#xD;&#xA;           },&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;3/12&quot;, &#xD;&#xA;            &quot;width&quot;: 285,&#xD;&#xA;            &quot;attributes&quot;: {&#xD;&#xA;              &quot;sizes&quot;: &quot;(max-width: 1400px) 25vw, (max-width: 991px) 50vw, (max-width: 575px) 100vw, 285px&quot;&#xD;&#xA;              }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="AspectRatio" Value="1" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Format" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Height" Value="865" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemIdentifier" Value="Square" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Quality" Value="73" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ResizeMode" Value="crop" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ScaleMode" Value="both" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="SettingsIdentifier" Value="Images.Square" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Width" Value="1400" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="7d64cbc8-6c71-433f-b691-bb5e0dcab9fa" KeyGuid="6c155e30-43a4-4564-bf3f-0d80c925c4d7">
+      <Value Key="Configuration" Value="48e9f943-45da-49b4-9ceb-2b91bb6a54be" Type="Entity" />
     </Entity>
   </Entities>
   <PortalFiles>
