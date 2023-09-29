@@ -37,9 +37,13 @@
         string targetIdentifier = "unknown";
         if (tType == 5) {
           var ct = App.AppState.GetContentType(target.KeyString);
-          targetTitle = ct.Name;
-          targetIdentifier = ct.NameId;
-          targetIdentifier = (ct.NameId == targetTitle) ? "" : "(" + ct.NameId + ")";
+          if (ct == null) {
+            targetTitle = "Error ContentType not Found; Metadata seems to point to bad entry. Md: " + markerEntity.EntityId + "; KeyString: " + target.KeyString;
+          } else {
+            targetTitle = ct.Name;
+            targetIdentifier = ct.NameId;
+            targetIdentifier = (ct.NameId == targetTitle) ? "" : "(" + ct.NameId + ")";
+          }
         } else if (tType == 4 && target.KeyGuid != null) {
           var e = AsDynamic(App.AppState.List.One((Guid)target.KeyGuid));
           targetTitle = e.EntityTitle;
