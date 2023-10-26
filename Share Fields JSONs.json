@@ -1,0 +1,44 @@
+enable sharing
+{ "ShareLevel": 1 }
+
+Enable Edit
+{
+  "SourceGuid": "f09fbd6a-ba83-4023-a5b4-b82b6ef7e9ff",
+  "InheritMetadata": true
+}
+
+
+Enable Create
+{
+  "SourceGuid": "916b17c1-f15d-4414-80e5-6d53b27ff463",
+  "InheritMetadata": true
+}
+
+EnableAddExisting
+{
+  "SourceGuid": "0fc6d925-77df-4ccc-80dd-5d9ddaf003c9",
+  "InheritMetadata": true
+}
+
+
+EnableRemove
+{
+  "SourceGuid": "9f51cb28-eab4-4eb6-9b44-6246b55a7a52",
+  "InheritMetadata": true
+}
+
+
+
+EnableTextEntry
+{
+  "SourceGuid": "c5825717-9c58-46d8-bafb-2bd8b3c2ec11",
+  "InheritMetadata": true
+}
+
+
+
+DataSources
+{
+  "SourceGuid": "5f7a115f-d935-4c77-8fc1-69024dd3828a",
+  "InheritMetadata": true
+}
