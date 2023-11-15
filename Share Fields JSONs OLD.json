@@ -1,0 +1,91 @@
+enable sharing
+{ "Share": true }
+
+---
+
+DataSources
+{ "InheritMetadataOf": "5f7a115f-d935-4c77-8fc1-69024dd3828a" }
+
+---
+
+GroupUiFeatures
+{ "InheritMetadataOf": "f786e83a-12b8-4c76-8593-cc84e385ff1b" }
+
+
+Enable Edit
+{ "InheritMetadataOf": "f09fbd6a-ba83-4023-a5b4-b82b6ef7e9ff" }
+
+Enable Create
+{ "InheritMetadataOf": "916b17c1-f15d-4414-80e5-6d53b27ff463" }
+
+EnableAddExisting
+{ "InheritMetadataOf": "0fc6d925-77df-4ccc-80dd-5d9ddaf003c9" }
+
+EnableRemove
+{ "InheritMetadataOf": "9f51cb28-eab4-4eb6-9b44-6246b55a7a52" }
+
+
+EnableTextEntry
+{ "InheritMetadataOf": "c5825717-9c58-46d8-bafb-2bd8b3c2ec11" }
+
+
+
+---
+
+GroupMultiSelect
+{ "InheritMetadataOf": "3dcbb74e-44bc-4bb3-83c0-ac8243190696" }
+
+AllowMultiValue
+{ "InheritMetadataOf": "faf06aa8-73cc-4cb0-baa5-da7a9e5d2203" }
+
+EnableReselect
+{ "InheritMetadataOf": "6bb3b9ac-0008-477e-825c-7ce8f57e910d" }
+
+Separator
+{ "InheritMetadataOf": "844c1c0b-09c7-46b3-8541-e9eef134cd69" }
+
+AllowMultiMin
+{ "InheritMetadataOf": "41f9d742-66fd-4729-8687-c9648d76d33a" }
+
+AllowMultiMax
+{ "InheritMetadataOf": "65e8eeaa-4914-449e-816d-31185f54e406" }
+
+
+---
+
+GroupDisplay
+{ "InheritMetadataOf": "7c7c7fe3-57be-4d2f-9767-a0f3e3944bf1" }
+
+PickerDisplayMode
+{ "InheritMetadataOf": "16057c04-0f49-4bd2-96e7-97d13bf3f8f5" }
+
+PickerDisplayConfiguration
+{ "InheritMetadataOf": "879356b3-0579-4fa1-b973-95c1b543c9db" }
+
+---
+
+GroupEditDialog
+{ "InheritMetadataOf": "bc89498a-6a98-4d7c-994f-4c04b8930154" }
+
+CreatePrefill
+{ "InheritMetadataOf": "594d3edf-5501-4ee5-8271-d216ceefac08" }
+
+CreateParameters
+{ "InheritMetadataOf": "c21252f1-6d64-4b59-91e0-5ce5a80c7bd4" }
+
+EditParameters
+{ "InheritMetadataOf": "46cb9c49-a1c8-4b5a-affe-32a7f6732dbd" }
+
+
+
+Some spare GUIds for later
+"a11fd6a9-1c06-4625-9fe4-74c86d9df458"
+"387016be-aebf-4e3e-8c73-b74966d17e49"
+"7a78bb88-f5e2-4122-baa6-b80d1e17b474"
+"2f751943-3165-4be1-b31d-05d59f41f9f9"
+"fef3e200-8981-4b79-bd64-29762f898dff"
+"6283a1b7-7a06-4358-8132-5d63c16daae6"
+"8cbe4301-307b-4813-bf0b-4f96a743d1bc"
+"613dcb2e-b2b2-49be-b19e-80e9d02f8141"
+"60bc9d29-693f-4af8-b58d-05835ca127c3"
+"a47040c5-d26b-4d9d-b13d-4ca5e3ffbb35"

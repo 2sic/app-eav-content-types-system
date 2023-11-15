@@ -1,32 +1,34 @@
 enable sharing
 { "ShareLevel": 1 }
+{ "Share": true }
 
 Enable Edit
 {
   "SourceGuid": "f09fbd6a-ba83-4023-a5b4-b82b6ef7e9ff",
   "InheritMetadata": true
 }
-
+{ "InheritMetadataOf": "f09fbd6a-ba83-4023-a5b4-b82b6ef7e9ff" }
 
 Enable Create
 {
   "SourceGuid": "916b17c1-f15d-4414-80e5-6d53b27ff463",
   "InheritMetadata": true
 }
+{ "InheritMetadataOf": "916b17c1-f15d-4414-80e5-6d53b27ff463" }
 
 EnableAddExisting
 {
   "SourceGuid": "0fc6d925-77df-4ccc-80dd-5d9ddaf003c9",
   "InheritMetadata": true
 }
-
+{ "InheritMetadataOf": "0fc6d925-77df-4ccc-80dd-5d9ddaf003c9" }
 
 EnableRemove
 {
   "SourceGuid": "9f51cb28-eab4-4eb6-9b44-6246b55a7a52",
   "InheritMetadata": true
 }
-
+{ "InheritMetadataOf": "9f51cb28-eab4-4eb6-9b44-6246b55a7a52" }
 
 
 EnableTextEntry
@@ -34,7 +36,7 @@ EnableTextEntry
   "SourceGuid": "c5825717-9c58-46d8-bafb-2bd8b3c2ec11",
   "InheritMetadata": true
 }
-
+{ "InheritMetadataOf": "c5825717-9c58-46d8-bafb-2bd8b3c2ec11" }
 
 
 DataSources
@@ -42,3 +44,42 @@ DataSources
   "SourceGuid": "5f7a115f-d935-4c77-8fc1-69024dd3828a",
   "InheritMetadata": true
 }
+{ "InheritMetadataOf": "5f7a115f-d935-4c77-8fc1-69024dd3828a" }
+
+GroupMultiSelect
+{
+  "SourceGuid": "3dcbb74e-44bc-4bb3-83c0-ac8243190696",
+  "InheritMetadata": true
+}
+
+
+AllowMultiValue
+{
+  "SourceGuid": "faf06aa8-73cc-4cb0-baa5-da7a9e5d2203",
+  "InheritMetadata": true
+}
+
+EnableReselect
+{
+  "SourceGuid": "6bb3b9ac-0008-477e-825c-7ce8f57e910d",
+  "InheritMetadata": true
+}
+
+Separator
+{
+  "SourceGuid": "844c1c0b-09c7-46b3-8541-e9eef134cd69",
+  "InheritMetadata": true
+}
+
+AllowMultiMin
+{
+  "SourceGuid": "41f9d742-66fd-4729-8687-c9648d76d33a",
+  "InheritMetadata": true
+}
+
+AllowMultiMax
+{
+  "SourceGuid": "65e8eeaa-4914-449e-816d-31185f54e406",
+  "InheritMetadata": true
+}
+
