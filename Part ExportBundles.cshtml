@@ -36,7 +36,7 @@
         string targetTitle = "unknown";
         string targetIdentifier = "unknown";
         if (tType == 5) {
-          var ct = App.GetContentType(target.KeyString);
+          var ct = App.Data.GetContentType(target.KeyString);
           if (ct == null) {
             targetTitle = "Error ContentType not Found; Metadata seems to point to bad entry. Md: " + markerEntity.EntityId + "; KeyString: " + target.KeyString;
           } else {
