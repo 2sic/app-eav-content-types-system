@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.09.00" ExportDate="2023-11-21T17:53:02.8990733+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.09.00" ExportDate="2023-11-21T18:48:34.4598806+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -25361,7 +25361,7 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+            <Value Key="VisibleInEditUI" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -25431,7 +25431,7 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+            <Value Key="VisibleInEditUI" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -25506,7 +25506,7 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+            <Value Key="VisibleInEditUI" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -32590,7 +32590,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v2((data) =&gt; { var ct = data.CopyrightType; return ct != '' &amp;&amp; ct != 'none'; });" Type="String">
+      <Value Key="Formula" Value="// v2((data) =&gt; { var ct = data.CopyrightType; return ct != '' &amp;&amp; ct != 'none'; });" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
@@ -32604,7 +32604,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v2((data) =&gt; { var ct = data.CopyrightType; return ct != '' &amp;&amp; ct != 'none'; });" Type="String">
+      <Value Key="Formula" Value="// v2((data) =&gt; { var ct = data.CopyrightType; return ct != '' &amp;&amp; ct != 'none'; });" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
@@ -32618,7 +32618,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v2((data) =&gt; { var ct = data.CopyrightType; return ct != '' &amp;&amp; ct != 'none'; });" Type="String">
+      <Value Key="Formula" Value="// v2((data) =&gt; { var ct = data.CopyrightType; return ct != '' &amp;&amp; ct != 'none'; });" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">

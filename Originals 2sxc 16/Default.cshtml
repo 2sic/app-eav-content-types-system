@@ -1,6 +1,6 @@
-@inherits Custom.Hybrid.RazorTyped
+@inherits Custom.Hybrid.Razor14
 
-<div @Kit.Toolbar.Default()>
+<div @Edit.TagToolbar()>
     <h1>
         System Types
     </h1>
@@ -10,7 +10,7 @@
 
     <div>
         Click here 
-        @Kit.Toolbar.Empty().App().Settings(show: "always", hover: "none").AsTag()
+        @Edit.Toolbar(actions: "app", settings: new { hover = "none", show = "always" }) 
         to manage the app. In there, export the types in the export UI (go to debug-mode)
     </div>
 </div>

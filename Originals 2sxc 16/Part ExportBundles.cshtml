@@ -1,4 +1,4 @@
-@inherits Custom.Hybrid.RazorTyped
+@inherits Custom.Hybrid.Razor14
 @using System
 @using ToSic.Eav.Data
 
@@ -10,20 +10,20 @@
 *@
 
 @{
-  var exports = AsItems(App.Data.GetStream("🧑‍💻SystemExportConfiguration")).ToList();
+  var exports = AsList(App.Data["🧑‍💻SystemExportConfiguration"]);
 }
 <h2>Export Bundles (@exports.Count())</h2>
 @foreach (var export in exports)
 {
-  var exportMarkers = export.Parents(type: "SystemExportDecorator").ToList();
+  var exportMarkers = export.Parents("SystemExportDecorator");
   <div>
     <h3 @Kit.Toolbar.Default(export)>
-      @export.Title  (@exportMarkers.Count)
+      @export.Name (@exportMarkers.Count)
     </h3>
     <ul>
-      <li>File Name: @export.Get("FileName")</li>
-      <li>Preserve Markers: @export.Get("PreserveMarkers")</li>
-      <li><a href="/api/2sxc/admin/type/JsonBundleExport?appId=@(App.AppId)&exportConfiguration=@export.Guid&indentation=1" target="_blank">download</a></li>
+      <li>File Name: @export.FileName</li>
+      <li>Preserve Markers: @export.PreserveMarkers</li>
+      <li><a href="/api/2sxc/admin/type/JsonBundleExport?appId=@(App.AppId)&exportConfiguration=@export.EntityGuid&indentation=1" target="_blank">download</a></li>
     </ul>
     <h4>Contents</h4>
     <ol>
@@ -36,7 +36,7 @@
         string targetTitle = "unknown";
         string targetIdentifier = "unknown";
         if (tType == 5) {
-          var ct = App.GetContentType(target.KeyString);
+          var ct = App.AppState.GetContentType(target.KeyString);
           if (ct == null) {
             targetTitle = "Error ContentType not Found; Metadata seems to point to bad entry. Md: " + markerEntity.EntityId + "; KeyString: " + target.KeyString;
           } else {
@@ -45,9 +45,9 @@
             targetIdentifier = (ct.NameId == targetTitle) ? "" : "(" + ct.NameId + ")";
           }
         } else if (tType == 4 && target.KeyGuid != null) {
-          var e = AsItem(App.Data.List.One((Guid)target.KeyGuid));
-          targetTitle = e.Title;
-          targetIdentifier = e.Guid.ToString();
+          var e = AsDynamic(App.AppState.List.One((Guid)target.KeyGuid));
+          targetTitle = e.EntityTitle;
+          targetIdentifier = e.EntityGuid.ToString();
         }
 
         <li>@tTypeName: @targetTitle (@targetIdentifier)</li>
