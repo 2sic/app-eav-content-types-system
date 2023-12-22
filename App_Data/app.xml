@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.09.00" ExportDate="2023-11-21T18:48:34.4598806+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.00.00" ExportDate="2023-12-22T14:56:07.7132474+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -6282,9 +6282,6 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="2edf7639-9b0e-4420-8066-b803c9e96ec4" Name="@string-picker3" Scope="System.Fields" AlwaysShareConfiguration="false">
-      <Attributes />
-    </AttributeSet>
     <AttributeSet StaticName="@string-url-path" Name="@string-url-path" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="AutoGenerateMask" Type="String" IsTitle="true">
@@ -7762,6 +7759,96 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="TitleTrue" Value="enable copyright input for images (toolbar-buttons)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DisplayPrefix" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="78e0ae31-81fd-44b1-b702-763cc04f0d8f" KeyNumber="35323">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="DisplayPrefix" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DisplayFormat" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bbed63a0-301d-4c36-969e-46fd281181c0" KeyNumber="35324">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="DisplayFormat" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="adf0a5fe-ef0c-46b7-b951-08df15c3020f" KeyNumber="35324">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="318364e3-5aa1-487f-b27d-5e42e3a2cb15" KeyNumber="35324">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValues" Value=":Default - [prefix] [owner] [year] [type] [message]" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Separator" Value="," Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -20262,6 +20349,75 @@
             </Value>
           </Entity>
         </Attribute>
+        <Attribute StaticName="EnableDelete" Type="Boolean" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f3153679-0e0b-4b97-9cba-044ff5d36620" KeyNumber="35325">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="false" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="boolean-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Enable Delete" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Boolean" AttributeSetName="@Boolean" EntityGUID="5c870c94-7c41-4590-97e9-e5fd024e2418" KeyNumber="35325">
+            <Value Key="ReverseToggle" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleFalse" Value="Delete disabled 🔒" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleIndeterminate" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="TitleTrue" Value="Delete enabled 🗑️" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
         <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1d2c6ccd-7060-44f1-9740-7990e1689f9d" KeyNumber="35280">
             <Value Key="CustomJavaScript" Value="" Type="String">
@@ -26470,7 +26626,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="16.09.00" Type="String">
+      <Value Key="Version" Value="17.00.00" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32723,6 +32879,38 @@
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="e6913d5f-d209-4dce-af00-a8dd39140f1b" KeyGuid="7116c320-769d-4d7c-94ef-76c176a17ba2">
       <Value Key="Configuration" Value="48e9f943-45da-49b4-9ceb-2b91bb6a54be" Type="Entity" />
     </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="20b15fba-b051-4f1c-b8ce-4c84f0bf3074" Json="True" KeyNumber="770">
+      <Value Key="DebugLog" Value="Caller: GetOrBuild; Line: 141; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Core\Caching\Apps\AppsCacheBase.cs&#xA;Caller: AppStateInitialized; Line: 117; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Persistence.Efc\Efc11Loader_App.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 244; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: EnsureAppConfiguredAndInformIfRefreshNeeded; Line: 37; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Work\AppCreate\AppInitializedChecker.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 244; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message" Type="String" />
+      <Value Key="DisplayName" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="Folder" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="Version" Value="00.00.16" Type="String" />
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="a6300f15-ff0b-442e-8b7a-fa1221c7a7a1" Json="True" KeyNumber="770">
+      <Value Key="DebugLog" Value="Caller: GetOrBuild; Line: 141; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Core\Caching\Apps\AppsCacheBase.cs&#xA;Caller: AppStateInitialized; Line: 117; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Persistence.Efc\Efc11Loader_App.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 243; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: EnsureAppConfiguredAndInformIfRefreshNeeded; Line: 37; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Work\AppCreate\AppInitializedChecker.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 243; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message" Type="String" />
+      <Value Key="DisplayName" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="Folder" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="Version" Value="00.00.16" Type="String" />
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="46236dbe-adff-43c0-a475-2e63db972388" Json="True" KeyNumber="770">
+      <Value Key="DebugLog" Value="Caller: GetOrBuild; Line: 141; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Core\Caching\Apps\AppsCacheBase.cs&#xA;Caller: AppStateInitialized; Line: 117; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Persistence.Efc\Efc11Loader_App.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 243; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: EnsureAppConfiguredAndInformIfRefreshNeeded; Line: 37; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Work\AppCreate\AppInitializedChecker.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 243; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message" Type="String" />
+      <Value Key="DisplayName" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="Folder" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="Version" Value="00.00.16" Type="String" />
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="f5b743e0-7bfa-4224-947f-6d5983727b4b" KeyNumber="770" />
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="3b0e0815-2198-4995-9ca8-fca144e34f57" KeyNumber="770" />
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="904485d8-40ff-4b15-b764-d96d3c4481bc" Json="True" KeyNumber="770">
+      <Value Key="DebugLog" Value="Caller: GetOrBuild; Line: 141; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Core\Caching\Apps\AppsCacheBase.cs&#xA;Caller: AppStateInitialized; Line: 117; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Persistence.Efc\Efc11Loader_App.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 243; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: EnsureAppConfiguredAndInformIfRefreshNeeded; Line: 37; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Work\AppCreate\AppInitializedChecker.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 243; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Resources: App-Resources/App-Resources - ToSic.Eav.Data.ContentType; Line: 0; File: Message&#xA;Caller: Has Type App Settings: App-Settings/App-Settings - ToSic.Eav.Data.ContentType; Line: 0; File: Message" Type="String" />
+      <Value Key="DisplayName" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="Folder" Value="35da6ff4-6936-4d03-9823-f225c396fce2" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="Version" Value="00.00.16" Type="String" />
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="99505a70-5f93-4fb7-bc67-642441cd88db" KeyNumber="770" />
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="de05cea7-2e9c-4d3d-b33a-4dbd7b3bc5cc" KeyNumber="770" />
   </Entities>
   <PortalFiles>
     <File Id="9114" RelativePath="adam\System-Types\_YS31BOryEGpK48-PADraA\EditInstructions\blobid3.svg" />
