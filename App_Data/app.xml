@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.01.06" ExportDate="2024-02-01T20:48:50.6980971+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.08.00" ExportDate="2024-05-16T15:46:14.1307109+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -1776,21 +1776,21 @@
     </AttributeSet>
     <AttributeSet StaticName="6fa7f390-7612-40c6-baff-2bcf6140a85f" Name="@entity-picker" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="DataSources" Type="Entity" IsTitle="false">
+        <Attribute StaticName="DataSources" Type="Entity" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;5f7a115f-d935-4c77-8fc1-69024dd3828a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="25d4a33d-fa9b-4e66-9f3d-365407e9bdb9" KeyNumber="35335">
             <Value Key="InputType" Value="entity-picker" Type="String" />
             <Value Key="Name" Value="DataSources" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupUiFeatures" Type="Empty" IsTitle="true">
+        <Attribute StaticName="GroupUiFeatures" Type="Empty" IsTitle="true" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;f786e83a-12b8-4c76-8593-cc84e385ff1b&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0c2c6978-b5bf-4bb3-9f4d-1dd4a490ce79" KeyNumber="35229">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupUiFeatures" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableEdit" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableEdit" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;f09fbd6a-ba83-4023-a5b4-b82b6ef7e9ff&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="111339a6-021f-4933-aeda-3d58dedd04a1" KeyNumber="35225">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -1859,7 +1859,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableCreate" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableCreate" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;916b17c1-f15d-4414-80e5-6d53b27ff463&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c1e0e24c-8e05-416d-a6c6-bf4b5fe5e8de" KeyNumber="35226">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -1928,7 +1928,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableAddExisting" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableAddExisting" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;0fc6d925-77df-4ccc-80dd-5d9ddaf003c9&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6faaa010-f43d-4c86-87e8-0a9588f6278c" KeyNumber="35271">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -1997,7 +1997,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableRemove" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableRemove" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;9f51cb28-eab4-4eb6-9b44-6246b55a7a52&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="627a1fbc-8800-4712-b45f-f81a1d25aa7d" KeyNumber="35227">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -2066,7 +2066,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableDelete" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableDelete" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;4274d627-fc80-412e-ad34-fa9ed21c6ba6&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="da307cdb-6334-4be6-aeac-699b1e4aa974" KeyNumber="35228">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -2135,21 +2135,21 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupMultiValue" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupMultiValue" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;3dcbb74e-44bc-4bb3-83c0-ac8243190696&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="228611de-c9d4-4605-855e-f398bce6d440" KeyNumber="35231">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupMultiValue" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;faf06aa8-73cc-4cb0-baa5-da7a9e5d2203&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7354055f-7614-4d76-881c-34fc9fef05ee" KeyNumber="35274">
             <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="Name" Value="AllowMultiValue" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableReselect" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableReselect" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;6bb3b9ac-0008-477e-825c-7ce8f57e910d&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b510c181-ac65-4e57-8b97-8d37cb29c955" KeyNumber="35273">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -2218,28 +2218,28 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiMin" Type="Number" IsTitle="false">
+        <Attribute StaticName="AllowMultiMin" Type="Number" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;41f9d742-66fd-4729-8687-c9648d76d33a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6b96dd86-400c-4676-a73b-0d7f72ae0410" KeyNumber="35233">
             <Value Key="InputType" Value="number-default" Type="String" />
             <Value Key="Name" Value="AllowMultiMin" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiMax" Type="Number" IsTitle="false">
+        <Attribute StaticName="AllowMultiMax" Type="Number" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;65e8eeaa-4914-449e-816d-31185f54e406&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="656472cc-5b45-484c-9bf7-2d61cbcdc696" KeyNumber="35232">
             <Value Key="InputType" Value="number-default" Type="String" />
             <Value Key="Name" Value="AllowMultiMax" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDisplay" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDisplay" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;7c7c7fe3-57be-4d2f-9767-a0f3e3944bf1&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cf69f6f9-9cbb-4560-b44e-d23cb8caf280" KeyNumber="35268">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupDisplay" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="PickerDisplayMode" Type="String" IsTitle="false">
+        <Attribute StaticName="PickerDisplayMode" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;16057c04-0f49-4bd2-96e7-97d13bf3f8f5&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3f5cc8d4-54c4-4fa4-8b6b-1cc695718da8" KeyNumber="35269">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -2316,7 +2316,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="PickerDisplayConfiguration" Type="Entity" IsTitle="false">
+        <Attribute StaticName="PickerDisplayConfiguration" Type="Entity" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;879356b3-0579-4fa1-b973-95c1b543c9db&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="093c0a1d-a44d-4fd5-aca7-00fcc786716d" KeyNumber="35270">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -2403,28 +2403,28 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;bc89498a-6a98-4d7c-994f-4c04b8930154&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="96bd0cfd-61b0-4774-b708-fa6c08c865c5" KeyNumber="35235">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupAdvanced" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreatePrefill" Type="String" IsTitle="false">
+        <Attribute StaticName="CreatePrefill" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;594d3edf-5501-4ee5-8271-d216ceefac08&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="13e84251-1e6e-4e70-a44f-74ab4d275990" KeyNumber="35234">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="CreatePrefill" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreateParameters" Type="String" IsTitle="false">
+        <Attribute StaticName="CreateParameters" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;c21252f1-6d64-4b59-91e0-5ce5a80c7bd4&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d1185e8c-4baf-4c39-a9fe-189d0ebe92bb" KeyNumber="35236">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="CreateParameters" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="EditParameters" Type="String" IsTitle="false">
+        <Attribute StaticName="EditParameters" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;46cb9c49-a1c8-4b5a-affe-32a7f6732dbd&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5e2e38d9-d4fb-4824-83f4-16066535e26c" KeyNumber="35237">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="EditParameters" Type="String" />
@@ -3113,7 +3113,7 @@
     </AttributeSet>
     <AttributeSet StaticName="2421dded-3aeb-47d2-ab9d-e2b72a2d821d" Name="@number-picker" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="DataSources" Type="Entity" IsTitle="true">
+        <Attribute StaticName="DataSources" Type="Entity" IsTitle="true" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;5f7a115f-d935-4c77-8fc1-69024dd3828a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bb8412e4-5ee4-416f-a832-e3fc61013433" KeyNumber="35221">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -3211,7 +3211,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;c5825717-9c58-46d8-bafb-2bd8b3c2ec11&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f734f8bf-be9d-4e34-abad-9b44d29b445d" KeyNumber="35223">
             <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="Name" Value="EnableTextEntry" Type="String" />
@@ -4911,7 +4911,7 @@
     </AttributeSet>
     <AttributeSet StaticName="e64dd20e-0055-4410-87a1-1238fe44707f" Name="@string-picker" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="DataSources" Type="Entity" IsTitle="true">
+        <Attribute StaticName="DataSources" Type="Entity" IsTitle="true" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;5f7a115f-d935-4c77-8fc1-69024dd3828a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ba35cdc7-30c7-4a89-a12f-b73abfe0692f" KeyNumber="35213">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5009,7 +5009,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupUiFeatures" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupUiFeatures" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;f786e83a-12b8-4c76-8593-cc84e385ff1b&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="63a1783c-f961-4889-bf4d-6be2a51d97cc" KeyNumber="35220">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5070,7 +5070,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableEdit" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableEdit" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;f09fbd6a-ba83-4023-a5b4-b82b6ef7e9ff&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f47f0a2f-f0f2-4013-a879-a4701e5197bd" KeyNumber="35214">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5139,7 +5139,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableCreate" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableCreate" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;916b17c1-f15d-4414-80e5-6d53b27ff463&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7e59a627-0326-449b-a2ac-c8a240709a15" KeyNumber="35215">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5208,7 +5208,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableAddExisting" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableAddExisting" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;0fc6d925-77df-4ccc-80dd-5d9ddaf003c9&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e956fa39-0ef9-4737-b8a3-55f21cb2f9ed" KeyNumber="35272">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5277,7 +5277,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableRemove" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableRemove" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;9f51cb28-eab4-4eb6-9b44-6246b55a7a52&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c5a65939-3946-4672-8944-7d0e98f40e66" KeyNumber="35216">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5346,7 +5346,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;c5825717-9c58-46d8-bafb-2bd8b3c2ec11&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="17be74dc-e865-4b27-90b3-e27226a989ab" KeyNumber="35222">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5415,7 +5415,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupMultiSelect" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupMultiSelect" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;3dcbb74e-44bc-4bb3-83c0-ac8243190696&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3425899b-e59e-410f-be17-6c75c6651d54" KeyNumber="35219">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5476,7 +5476,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;faf06aa8-73cc-4cb0-baa5-da7a9e5d2203&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cf3f055e-acd9-4695-a0d2-b88e84390509" KeyNumber="35217">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5545,7 +5545,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableReselect" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableReselect" Type="Boolean" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;6bb3b9ac-0008-477e-825c-7ce8f57e910d&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="896e1586-0ada-4769-8103-18239cdb21df" KeyNumber="35262">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5614,7 +5614,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="Separator" Type="String" IsTitle="false">
+        <Attribute StaticName="Separator" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;844c1c0b-09c7-46b3-8541-e9eef134cd69&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="01f13362-f773-4bcb-b374-25aca1585887" KeyNumber="35218">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5691,28 +5691,28 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiMin" Type="Number" IsTitle="false">
+        <Attribute StaticName="AllowMultiMin" Type="Number" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;41f9d742-66fd-4729-8687-c9648d76d33a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="38c666c2-c520-4695-8bd1-3dfb962e769e" KeyNumber="35238">
             <Value Key="InputType" Value="number-default" Type="String" />
             <Value Key="Name" Value="AllowMultiMin" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiMax" Type="Number" IsTitle="false">
+        <Attribute StaticName="AllowMultiMax" Type="Number" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;65e8eeaa-4914-449e-816d-31185f54e406&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3a7e12a5-4731-4c2b-a44d-5990d2c7042d" KeyNumber="35239">
             <Value Key="InputType" Value="number-default" Type="String" />
             <Value Key="Name" Value="AllowMultiMax" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDisplay" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDisplay" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;7c7c7fe3-57be-4d2f-9767-a0f3e3944bf1&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="95972322-030f-4998-afcc-5d0019269543" KeyNumber="35258">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupDisplay" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="PickerDisplayMode" Type="String" IsTitle="false">
+        <Attribute StaticName="PickerDisplayMode" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;16057c04-0f49-4bd2-96e7-97d13bf3f8f5&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="be4607f6-ebb4-4ab6-8a05-1a8da5cbca12" KeyNumber="35259">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5789,7 +5789,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="PickerDisplayConfiguration" Type="Entity" IsTitle="false">
+        <Attribute StaticName="PickerDisplayConfiguration" Type="Entity" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;879356b3-0579-4fa1-b973-95c1b543c9db&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1e5b623b-e9fa-47cb-964a-66d4518399e3" KeyNumber="35260">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5876,28 +5876,28 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;bc89498a-6a98-4d7c-994f-4c04b8930154&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="624d5c71-ea93-4f53-9cf1-fcce7cad733e" KeyNumber="35264">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupAdvanced" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreatePrefill" Type="String" IsTitle="false">
+        <Attribute StaticName="CreatePrefill" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;594d3edf-5501-4ee5-8271-d216ceefac08&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="71bb4662-4c4e-48bb-9a4b-d4887e69cc0c" KeyNumber="35265">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="CreatePrefill" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreateParameters" Type="String" IsTitle="false">
+        <Attribute StaticName="CreateParameters" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;c21252f1-6d64-4b59-91e0-5ce5a80c7bd4&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="26ebf45d-0623-47ef-aac7-9a908ca938ca" KeyNumber="35266">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="CreateParameters" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="EditParameters" Type="String" IsTitle="false">
+        <Attribute StaticName="EditParameters" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;46cb9c49-a1c8-4b5a-affe-32a7f6732dbd&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="abd99676-a860-4fd3-8561-f8670eaac950" KeyNumber="35267">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="EditParameters" Type="String" />
@@ -11614,9 +11614,7 @@
             <Value Key="EnableExperimental" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="InputType" Value="boolean-default" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
+            <Value Key="InputType" Value="boolean-tristate" Type="String" />
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -12189,6 +12187,107 @@
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="0c9042ac-395d-43d0-ad97-0cbe6bb6499a" KeyNumber="20002">
             <Value Key="DropdownValues" Value="None:&#xA;Koi CSS Framework:Koi?cssFramework&#xA;Host user staging/live:Permissions?IsSuperUser" Type="String" />
             <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="UsersWhoMaySwitchEditions" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="e64dd20e-0055-4410-87a1-1238fe44707f" AttributeSetName="@string-picker" EntityGUID="e8e7c3d9-b590-4888-b101-161f26fa7592" KeyNumber="35378">
+            <Value Key="AllowMultiMax" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="AllowMultiMin" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="CreateParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="CreatePrefill" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DataSources" Value="4bd91a3d-ea09-4ae5-b984-42d934f072ae" Type="Entity" />
+            <Value Key="EditParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableReselect" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="PickerDisplayMode" Value="list" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Separator" Value="," Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="61b2da59-8201-49ba-b33f-e5f14f580a5f" KeyNumber="35378">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Formulas" Value="afa379c8-d1a2-4a7b-bfef-8217a3bde6bb" Type="Entity" />
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-picker" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Users Who May Switch Editions" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;...in addition to the SuperUser&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
       </Attributes>
@@ -14571,6 +14670,238 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="353aa04d-f3dd-49ae-83ec-9987e6149aea" Name="HotBuildDataGeneratorConfiguration" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1120dcf7-b090-4f4c-b264-577b62a45a5c" KeyNumber="35371">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="HotBuild Data Generator Default Config" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Title" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Just a name for the configuration to tell them apart.&amp;nbsp;&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="bf59c500-4aef-4749-ba7b-db815d2ae66f" KeyNumber="35371">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="64d3cc80-d762-4c26-a5d7-88683c6a5b32" KeyNumber="35371">
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Target" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="28feedef-f9e3-40ba-874b-c111afa61ac2" KeyNumber="35372">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="/" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Target" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Target folder - typically blank or the name of an edition eg. &lt;strong&gt;staging&lt;/strong&gt;.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b351c318-9875-4a4d-8dec-b68b74eb6a6d" KeyNumber="35372">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="58dba26e-dd13-4f91-bbab-08f3d3e98138" KeyNumber="35372">
+            <Value Key="DropdownValues" Value="/:Root folder&#xA;/staging:staging folder&#xA;/live:live folder" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="BaseClass" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1fbd70fc-af19-4664-b76c-82ce4f301cad" KeyNumber="35373">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="Custom.Data.Item16" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Base Class from which all Data Classes Inherit" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c7872993-1b99-4480-ab32-d6685a3ad8ee" KeyNumber="35373">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="5cd30760-0d9c-44d0-ad0c-42045f0b6f96" KeyNumber="35373">
+            <Value Key="DropdownValues" Value="ThisApp.Data.Item16" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="cb27a0f2-f921-48d0-a3bc-37c0e77b1d0c" Name="ImageDecorator" Scope="System.Decorators" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="WarningGlobalFile" Type="Empty" IsTitle="false">
@@ -15269,9 +15600,6 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="84bb5fb9-d1cd-40d5-af95-adc083ad4c1b" Name="InputTypeStringPicker2" Scope="System.Fields" AlwaysShareConfiguration="false">
-      <Attributes />
-    </AttributeSet>
     <AttributeSet StaticName="529ba3a2-d7d4-4f40-a81b-ff819de03a9e" Name="IsDefaultDecorator" Scope="System.Decorators" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
@@ -15353,6 +15681,9 @@
       </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="18d2b1db-e1ed-45bc-8746-cd8885651063" Name="IsSharedDecorator" Scope="System.Decorators" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="5efb0bc2-03c3-45e0-a20b-dabf71b8cfd1" Name="IsTemplateDecorator" Scope="System.Decorators" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
     <AttributeSet StaticName="e2f569c9-d1dd-4458-a54e-4aaf53e9ae3c" Name="LanguagesDecorator" Scope="System.Decorators" AlwaysShareConfiguration="false">
@@ -19655,14 +19986,14 @@
     </AttributeSet>
     <AttributeSet StaticName="318133c2-1df8-4a0a-99dc-08abaae0ed53" Name="SysPickerSharedFields" Scope="System.Fields" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="GroupDataSources" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDataSources" Type="Empty" IsTitle="false" Guid="76843959-1a40-4b92-9ac7-e14ae5525d42" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6d6368c4-f3f6-4761-85be-2955ce52f7c4" KeyNumber="35281">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupDataSources" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="DataSources" Type="Entity" IsTitle="false">
+        <Attribute StaticName="DataSources" Type="Entity" IsTitle="false" Guid="5f7a115f-d935-4c77-8fc1-69024dd3828a" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6f08b256-40a8-4d12-8237-a76a2401f777" KeyNumber="35282">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -19759,7 +20090,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupUiFeatures" Type="Empty" IsTitle="true">
+        <Attribute StaticName="GroupUiFeatures" Type="Empty" IsTitle="true" Guid="f786e83a-12b8-4c76-8593-cc84e385ff1b" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4bff4743-575f-4221-947a-5baad25276b9" KeyNumber="35275">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -19820,7 +20151,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableEdit" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableEdit" Type="Boolean" IsTitle="false" Guid="f09fbd6a-ba83-4023-a5b4-b82b6ef7e9ff" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="095ceb76-e05b-4655-ba6b-e60cf012f9c0" KeyNumber="35276">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -19889,7 +20220,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableCreate" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableCreate" Type="Boolean" IsTitle="false" Guid="916b17c1-f15d-4414-80e5-6d53b27ff463" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d5c87d5a-d241-49ba-9823-cfaf8d801051" KeyNumber="35277">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -19958,7 +20289,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableAddExisting" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableAddExisting" Type="Boolean" IsTitle="false" Guid="0fc6d925-77df-4ccc-80dd-5d9ddaf003c9" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cba7c7df-977f-4b3f-ba7b-37ba8742a789" KeyNumber="35278">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20027,7 +20358,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableRemove" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableRemove" Type="Boolean" IsTitle="false" Guid="9f51cb28-eab4-4eb6-9b44-6246b55a7a52" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9420ea32-8570-403c-af05-1c8b7e183d7f" KeyNumber="35279">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20096,7 +20427,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableDelete" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableDelete" Type="Boolean" IsTitle="false" Guid="4274d627-fc80-412e-ad34-fa9ed21c6ba6" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f3153679-0e0b-4b97-9cba-044ff5d36620" KeyNumber="35325">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20165,7 +20496,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableTextEntry" Type="Boolean" IsTitle="false" Guid="c5825717-9c58-46d8-bafb-2bd8b3c2ec11" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1d2c6ccd-7060-44f1-9740-7990e1689f9d" KeyNumber="35280">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20234,7 +20565,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupMultiSelect" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupMultiSelect" Type="Empty" IsTitle="false" Guid="3dcbb74e-44bc-4bb3-83c0-ac8243190696" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7592ee8d-125d-4f48-aa8c-376662e4a731" KeyNumber="35283">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20295,7 +20626,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="AllowMultiValue" Type="Boolean" IsTitle="false" Guid="faf06aa8-73cc-4cb0-baa5-da7a9e5d2203" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9cd2974d-40f7-4279-810c-255b19e56878" KeyNumber="35284">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20364,7 +20695,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EnableReselect" Type="Boolean" IsTitle="false">
+        <Attribute StaticName="EnableReselect" Type="Boolean" IsTitle="false" Guid="6bb3b9ac-0008-477e-825c-7ce8f57e910d" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8d91a38a-df11-49f8-b29c-33fdc13b6dc1" KeyNumber="35285">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20434,7 +20765,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="Separator" Type="String" IsTitle="false">
+        <Attribute StaticName="Separator" Type="String" IsTitle="false" Guid="844c1c0b-09c7-46b3-8541-e9eef134cd69" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9a58bccc-650c-4926-a92b-69bf2c2a6479" KeyNumber="35286">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20512,7 +20843,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiMin" Type="Number" IsTitle="false">
+        <Attribute StaticName="AllowMultiMin" Type="Number" IsTitle="false" Guid="41f9d742-66fd-4729-8687-c9648d76d33a" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="399cb29f-7635-4522-a6e2-57c90ef44bf7" KeyNumber="35287">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20579,7 +20910,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="AllowMultiMax" Type="Number" IsTitle="false">
+        <Attribute StaticName="AllowMultiMax" Type="Number" IsTitle="false" Guid="65e8eeaa-4914-449e-816d-31185f54e406" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1f5dc29f-190e-4227-b7df-b035ae64d5de" KeyNumber="35288">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20646,7 +20977,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDisplay" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDisplay" Type="Empty" IsTitle="false" Guid="7c7c7fe3-57be-4d2f-9767-a0f3e3944bf1" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="30b66546-b066-43e0-bdca-3ca8c58aeb09" KeyNumber="35289">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20707,7 +21038,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="PickerDisplayMode" Type="String" IsTitle="false">
+        <Attribute StaticName="PickerDisplayMode" Type="String" IsTitle="false" Guid="16057c04-0f49-4bd2-96e7-97d13bf3f8f5" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6aa01f5c-ceae-44a7-80f3-85aa757a2271" KeyNumber="35290">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20784,7 +21115,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="PickerDisplayConfiguration" Type="Entity" IsTitle="false">
+        <Attribute StaticName="PickerDisplayConfiguration" Type="Entity" IsTitle="false" Guid="879356b3-0579-4fa1-b973-95c1b543c9db" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b0449d6f-b226-4e6c-a60f-27347eeee463" KeyNumber="35291">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20871,7 +21202,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupEditDialog" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupEditDialog" Type="Empty" IsTitle="false" Guid="bc89498a-6a98-4d7c-994f-4c04b8930154" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a18c8bbe-6e2a-4453-896e-017c3b7e1ecf" KeyNumber="35292">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -20932,7 +21263,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreatePrefill" Type="String" IsTitle="false">
+        <Attribute StaticName="CreatePrefill" Type="String" IsTitle="false" Guid="594d3edf-5501-4ee5-8271-d216ceefac08" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e8e416b4-a594-46ae-ab72-efcff879b7ef" KeyNumber="35293">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21006,7 +21337,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreateParameters" Type="String" IsTitle="false">
+        <Attribute StaticName="CreateParameters" Type="String" IsTitle="false" Guid="c21252f1-6d64-4b59-91e0-5ce5a80c7bd4" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f2710e88-e9ce-4e52-aff1-c5b823d50325" KeyNumber="35294">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21080,7 +21411,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="EditParameters" Type="String" IsTitle="false">
+        <Attribute StaticName="EditParameters" Type="String" IsTitle="false" Guid="46cb9c49-a1c8-4b5a-affe-32a7f6732dbd" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c5ae0bc5-a476-432b-ac53-6ee638575b6a" KeyNumber="35295">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21265,7 +21596,7 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false" Guid="0046b3fd-b3ee-47ee-be29-1f0df071069a" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="178bfb2b-1123-4699-ad4b-c60d5a309b02" KeyNumber="35359">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21326,7 +21657,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="Description" Type="String" IsTitle="false">
+        <Attribute StaticName="Description" Type="String" IsTitle="false" Guid="970d9f99-9fc7-4ebb-b5c3-8ce1518a0bce" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="26f199b0-89a9-4cde-992e-f9660a40b97e" KeyNumber="35355">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21412,7 +21743,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDescriptionEnd" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDescriptionEnd" Type="Empty" IsTitle="false" Guid="ee7ba734-558a-4362-85a5-8ee9421b6118" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0fb3bd85-97b1-40f7-b738-425b71c40a09" KeyNumber="35364">
             <Value Key="InputType" Value="empty-end" Type="String" />
             <Value Key="Name" Value="GroupDescriptionEnd" Type="String" />
@@ -21500,7 +21831,7 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreateTypes" Type="String" IsTitle="false">
+        <Attribute StaticName="CreateTypes" Type="String" IsTitle="false" Guid="3329843f-be88-47d2-a2c1-3c16724081d7" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d444dc7d-15ac-4f46-b78a-6c9aca3fbc3f" KeyNumber="35330">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21600,7 +21931,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false" Guid="ea9c3f94-578f-4c5f-b721-767f38fea57d" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2df2f3c0-f491-4c97-b658-aced8302db15" KeyNumber="35339">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21661,7 +21992,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false" Guid="49d939a6-b45c-405b-98e9-b7ee38a9c68a" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8d00a27b-2fcf-4fb8-b650-5674cffc8117" KeyNumber="35340">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21747,7 +22078,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false" Guid="2cd90609-840f-4ccf-aed6-8c6e39ea067e" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3d356c88-e262-43e8-9737-a4bf4df6472e" KeyNumber="35341">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -21833,7 +22164,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false">
+        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false" Guid="8a7dcb9e-f47b-4518-9519-f66db95f195e" SysSettings="{&quot;Share&quot;:true}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5dd99048-1e39-4759-9f63-f3bd8a3d2808" KeyNumber="35342">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -22751,6 +23082,77 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="a3a21a07-d75c-4ccd-b973-9f6829110b6e" Name="TimePicker" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="DateOnly" Type="DateTime" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5a711bf2-cb75-4d70-a279-433fbca10e5e" KeyNumber="35376">
+            <Value Key="InputType" Value="datetime-default" Type="String" />
+            <Value Key="Name" Value="DateOnly" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DateAndTime" Type="DateTime" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="356a75d3-71a5-44ce-bdb7-4a713014b617" KeyNumber="35377">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="datetime-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="DateAndTime" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@DateTime" AttributeSetName="@DateTime" EntityGUID="d3f64ac3-a9b1-49d1-990c-4fd20e4bbe1b" KeyNumber="35377">
+            <Value Key="UseTimePicker" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="acc185a7-f300-4468-bce8-d6a64038989d" Name="ToolbarButtonDecorator" Scope="System.Decorators" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Command" Type="String" IsTitle="true">
@@ -23057,6 +23459,118 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="TitleTrue" Value="Include Data for UI" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="50f841c7-cd18-448c-a72f-5dd6f41e96cd" Name="Tree" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cce2a83c-3062-4274-a103-8179bf60bf42" KeyNumber="35374">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TreeFilePicker" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e71b44f0-5e95-4247-908d-2fdce40d8407" KeyNumber="35375">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableExperimental" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-picker" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="IsEphemeral" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="TreeFilePicker" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="e64dd20e-0055-4410-87a1-1238fe44707f" AttributeSetName="@string-picker" EntityGUID="69e613e3-9f00-4550-ac7d-995327f17518" KeyNumber="35375">
+            <Value Key="AllowMultiMax" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="AllowMultiMin" Value="" Type="Number">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="CreateParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="CreatePrefill" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DataSources" Value="1013d510-2946-44cc-b376-e9b6c03eb937" Type="Entity" />
+            <Value Key="EditParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableReselect" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="PickerDisplayConfiguration" Value="43d9b274-9993-4e1a-8989-219637fbb044" Type="Entity" />
+            <Value Key="PickerDisplayMode" Value="tree" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Separator" Value="\n" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -24485,21 +24999,21 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;0046b3fd-b3ee-47ee-be29-1f0df071069a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9c960db8-f692-44f4-8987-3a814bacd826" KeyNumber="35363">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupDescription" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="Description" Type="String" IsTitle="false">
+        <Attribute StaticName="Description" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;970d9f99-9fc7-4ebb-b5c3-8ce1518a0bce&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e2203baf-e0c0-4528-8ef8-5d3b7e82dc17" KeyNumber="35358">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="Info" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDescriptionEnd" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDescriptionEnd" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;ee7ba734-558a-4362-85a5-8ee9421b6118&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d74563ad-7e89-4f73-9947-be6b5fa3beb3" KeyNumber="35365">
             <Value Key="InputType" Value="empty-end" Type="String" />
             <Value Key="Name" Value="GroupDescriptionEnd" Type="String" />
@@ -24580,28 +25094,28 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;ea9c3f94-578f-4c5f-b721-767f38fea57d&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="40eb6ed7-39bc-4631-80d9-b7b28fe9faeb" KeyNumber="35351">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupItemHelp" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;49d939a6-b45c-405b-98e9-b7ee38a9c68a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="dc1c7b5a-d6eb-40d2-9c70-da09455d2069" KeyNumber="35352">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="ItemTooltip" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;2cd90609-840f-4ccf-aed6-8c6e39ea067e&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="738f6880-a719-4f3a-b8ae-844ab6c45651" KeyNumber="35353">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="ItemInformation" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false">
+        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;8a7dcb9e-f47b-4518-9519-f66db95f195e&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0a15728c-1004-4bf6-b357-3f5bc1636932" KeyNumber="35354">
             <Value Key="InputType" Value="hyperlink-default" Type="String" />
             <Value Key="Name" Value="ItemHelpLink" Type="String" />
@@ -24686,14 +25200,14 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;0046b3fd-b3ee-47ee-be29-1f0df071069a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bf56e334-d3d9-41b7-958a-344b2face360" KeyNumber="35361">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupDescription" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="Description" Type="String" IsTitle="false">
+        <Attribute StaticName="Description" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;970d9f99-9fc7-4ebb-b5c3-8ce1518a0bce&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ccb4f3c5-d862-4344-aea9-a1347be0fff9" KeyNumber="35356">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="Info" Type="String" />
@@ -24929,7 +25443,7 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreateTypes" Type="String" IsTitle="false">
+        <Attribute StaticName="CreateTypes" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;3329843f-be88-47d2-a2c1-3c16724081d7&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="af46c152-0c44-45c9-a27e-e3b638e82855" KeyNumber="35333">
             <Value Key="InputType" Value="string-picker" Type="String" />
             <Value Key="Name" Value="CreateTypes" Type="String" />
@@ -25288,28 +25802,28 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;ea9c3f94-578f-4c5f-b721-767f38fea57d&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e924d435-7f5c-4183-855f-0cb3a679eec7" KeyNumber="35347">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupItemHelp" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;49d939a6-b45c-405b-98e9-b7ee38a9c68a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e8979efe-97d3-4be9-b954-4f7d42d25290" KeyNumber="35348">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="ItemTooltip" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;2cd90609-840f-4ccf-aed6-8c6e39ea067e&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="94b06805-f10e-474f-9ee1-a508b2b8090e" KeyNumber="35349">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="ItemInformation" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false">
+        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;8a7dcb9e-f47b-4518-9519-f66db95f195e&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2c53c996-7d1e-4587-b7ef-e463652940fd" KeyNumber="35350">
             <Value Key="InputType" Value="hyperlink-default" Type="String" />
             <Value Key="Name" Value="ItemHelpLink" Type="String" />
@@ -25394,21 +25908,21 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDescription" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;0046b3fd-b3ee-47ee-be29-1f0df071069a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9b55bd66-2ac7-4463-8f6b-83d0dcc0ef81" KeyNumber="35360">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupDescription" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="Description" Type="String" IsTitle="false">
+        <Attribute StaticName="Description" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;970d9f99-9fc7-4ebb-b5c3-8ce1518a0bce&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c65d2980-e69e-491b-9c3f-1b60caa5b0a3" KeyNumber="35357">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="Info" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupDescriptionEnd" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupDescriptionEnd" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;ee7ba734-558a-4362-85a5-8ee9421b6118&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d794d37c-e44f-4c89-8eb4-8fc54078cdb5" KeyNumber="35366">
             <Value Key="InputType" Value="empty-end" Type="String" />
             <Value Key="Name" Value="GroupDescriptionEnd" Type="String" />
@@ -26079,35 +26593,35 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="CreateTypes" Type="String" IsTitle="false">
+        <Attribute StaticName="CreateTypes" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;3329843f-be88-47d2-a2c1-3c16724081d7&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="da1fb7a2-71b7-4a1b-a0e5-16b2c0e7d3f0" KeyNumber="35332">
             <Value Key="InputType" Value="string-picker" Type="String" />
             <Value Key="Name" Value="CreateTypes" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false">
+        <Attribute StaticName="GroupItemHelp" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;ea9c3f94-578f-4c5f-b721-767f38fea57d&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f2270596-dc44-429c-a7e6-1bdc6a02d9d1" KeyNumber="35343">
             <Value Key="InputType" Value="empty-default" Type="String" />
             <Value Key="Name" Value="GroupItemHelp" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemTooltip" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;49d939a6-b45c-405b-98e9-b7ee38a9c68a&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="450c4e3a-2a97-4c14-822f-283292092213" KeyNumber="35344">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="ItemTooltip" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false">
+        <Attribute StaticName="ItemInformation" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;2cd90609-840f-4ccf-aed6-8c6e39ea067e&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f5028be2-e105-4f6a-8761-2b08016d4bc0" KeyNumber="35345">
             <Value Key="InputType" Value="string-wysiwyg" Type="String" />
             <Value Key="Name" Value="ItemInformation" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
-        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false">
+        <Attribute StaticName="ItemLink" Type="Hyperlink" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;8a7dcb9e-f47b-4518-9519-f66db95f195e&quot;}">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="83526a9f-9c59-4782-8b22-5f5f18137bff" KeyNumber="35346">
             <Value Key="InputType" Value="hyperlink-default" Type="String" />
             <Value Key="Name" Value="ItemHelpLink" Type="String" />
@@ -33072,7 +33586,7 @@
       <Value Key="ExportFormat" Value="json" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="FileName" Value="picker-experimental.json" Type="String">
+      <Value Key="FileName" Value="system-fields-pickers.json" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Name" Value="Export Bundle: Picker (experimental)" Type="String">
@@ -33223,13 +33737,13 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure a Item (Entity) Picker. This is a new concept which is still in BETA ⚠️, so it may still change a bit.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;The core idea is that you separate the UI (this configuration) from the Source Definition (see Source below). The Source can be reused in other pickers, and it allows many more features then were possible before.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Entity Picker (new)" Type="String">
+      <Value Key="Label" Value="Item (Entity) Picker (BETA v17)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
@@ -33252,13 +33766,13 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure a Number Picker. This is a new concept which is still in BETA ⚠️, so it may still change a bit.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;The core idea is that you separate the UI (this configuration) from the Source Definition (see Source below). The Source can be reused in other pickers, and it allows many more features then were possible before.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Number Picker (new)" Type="String">
+      <Value Key="Label" Value="Number Picker (BETA v17)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
@@ -33281,13 +33795,13 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure a String Picker. This is a new concept which is still in BETA ⚠️, so it may still change a bit.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;The core idea is that you separate the UI (this configuration) from the Source Definition (see Source below). The Source can be reused in other pickers, and it allows many more features then were possible before.&amp;nbsp;&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="String Picker (new)" Type="String">
+      <Value Key="Label" Value="String Picker (BETA v17)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
@@ -33632,16 +34146,16 @@
       <Value Key="AngularAssets" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ConfigTypes" Value="@string-picker" Type="String">
+      <Value Key="ConfigTypes" Value="@All,@string-picker" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Description" Value="String Picker Field" Type="String">
+      <Value Key="Description" Value="String Picker Field (BETA)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DisableI18n" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="String Picker (new v17)" Type="String">
+      <Value Key="Label" Value="String Picker (BETA v17)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Type" Value="@string-picker" Type="String">
@@ -33650,61 +34164,6 @@
       <Value Key="UseAdam" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-    </Entity>
-    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="28d39da4-944a-4a24-b5dd-d5c5e2705aa4" KeyString="84bb5fb9-d1cd-40d5-af95-adc083ad4c1b">
-      <Value Key="AdditionalSettings" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Description" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="DynamicChildrenField" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="EditInstructions" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Icon" Value="" Type="Hyperlink">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Label" Value="InputTypeStringPicker2 original label" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Link" Value="" Type="Hyperlink">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="ListInstructions" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Notes" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="f6ff223c-c601-4835-9190-27c5403f6df4" KeyString="84bb5fb9-d1cd-40d5-af95-adc083ad4c1b">
-      <Value Key="AngularAssets" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="ConfigTypes" Value="@string-picker" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Description" Value="string-picker2" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="DisableI18n" Value="False" Type="Boolean">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Label" Value="string-picker2 label from info" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="Type" Value="string-picker2" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-      <Value Key="UseAdam" Value="False" Type="Boolean">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="3da4165f-8d84-4a0b-867e-ccf06fb0052e" KeyString="84bb5fb9-d1cd-40d5-af95-adc083ad4c1b">
-      <Value Key="Configuration" Value="ab72c1ff-f0c6-4d22-bada-75e0168736dc" Type="Entity" />
     </Entity>
     <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="4c88d78f-5f3e-4b66-95f2-6d63b7858847" AttributeSetName="MetadataForDecorator" EntityGUID="ee57b531-b480-4687-bb6d-3a482ad062aa" KeyString="19655377-6626-4986-aea0-ec3c187186ad">
       <Value Key="Amount" Value="100" Type="Number">
@@ -34005,16 +34464,16 @@
       <Value Key="AngularAssets" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ConfigTypes" Value="@entity-picker" Type="String">
+      <Value Key="ConfigTypes" Value="@All,@entity-picker" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Description" Value="" Type="String">
+      <Value Key="Description" Value="Item (Entity) Picker (BETA)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DisableI18n" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Entity Picker (new v17)" Type="String">
+      <Value Key="Label" Value="Item (Entity) Picker (BETA v17)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Type" Value="@entity-picker" Type="String">
@@ -34078,16 +34537,16 @@
       <Value Key="ItemInformation" Value="&lt;p&gt;[item:Description]&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ItemLink" Value="https://2sxc.org/" Type="Hyperlink">
+      <Value Key="ItemLink" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ItemTooltip" Value="&lt;p&gt;tooltip ✅&lt;/p&gt;" Type="String">
+      <Value Key="ItemTooltip" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="[Item:Title] ([Item:Id])" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="MoreFields" Value="Description,Title" Type="String">
+      <Value Key="MoreFields" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Query" Value="System.UiPickers" Type="String">
@@ -34150,7 +34609,7 @@
       <Value Key="AngularAssets" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ConfigTypes" Value="@string-dropdown-query" Type="String">
+      <Value Key="ConfigTypes" Value="@All,@string-dropdown-query" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Description" Value="" Type="String">
@@ -34280,6 +34739,230 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Formula" Value="v2((data, context) =&gt; { return !!data.ContentTypeNames; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="c32d9f48-02bc-4def-92a2-5063960586c1">
+      <Value Key="AllowEdit" Value="True" Type="Boolean" />
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean" />
+      <Value Key="Name" Value="FilesAndFolders" Type="String" />
+      <Value Key="Params" Value="" Type="String" />
+      <Value Key="StreamsOut" Value="Default,Header,Folders,Files" Type="String" />
+      <Value Key="StreamWiring" Value="c9c79519-9698-45fa-806e-4affbe2dfee3:Files&gt;Out:Default&#xD;&#xA;c9c79519-9698-45fa-806e-4affbe2dfee3:Folders&gt;Out:Folders&#xD;&#xA;c9c79519-9698-45fa-806e-4affbe2dfee3:Files&gt;Out:Files" Type="String" />
+      <Value Key="TestParameters" Value="" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="c9c79519-9698-45fa-806e-4affbe2dfee3" KeyGuid="c32d9f48-02bc-4def-92a2-5063960586c1">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="AppFiles" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="3fe6c215-4c37-45c1-8883-b4b2a47162a7" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 380,&#xD;&#xA;  &quot;Left&quot;: 440&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="5f8e3968-e02b-40d5-ab77-f60c2e73d244" AttributeSetName="UiPickerSourceQuery" EntityGUID="1013d510-2946-44cc-b376-e9b6c03eb937">
+      <Value Key="CreateTypes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemInformation" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemLink" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemTooltip" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Title" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="MoreFields" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Query" Value="FilesAndFolders" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="QueryParameters" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamName" Value="Default,Folders,Files" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Test Data File System" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Value" Value="FullName" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="590d5961-c2d5-4f50-867a-5c609dd820c8" AttributeSetName="UiPickerModeTree" EntityGUID="43d9b274-9993-4e1a-8989-219637fbb044">
+      <Value Key="Title" Value="Tree Picker Configuration - Files" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectBranch" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectLeaf" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectRoot" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeBranchesStream" Value="Folders" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeChildIdField" Value="Id" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeChildParentRefField" Value="Parent" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeDepthMax" Value="10" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeLeavesStream" Value="Files" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeParentChildRefField" Value="Children" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeParentIdField" Value="Id" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeRelationship" Value="child-parent" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeShowRoot" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType-InputType" AttributeSetName="ContentType-InputType" EntityGUID="65054dae-9f44-49cd-912f-4786bccabe04" KeyString="2421dded-3aeb-47d2-ab9d-e2b72a2d821d">
+      <Value Key="AngularAssets" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ConfigTypes" Value="@All,@number-picker" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="Number Picker (BETA)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DisableI18n" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Number Picker (BETA v17)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="@number-picker" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="UseAdam" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="1b1c9808-6145-42d2-ab44-92389bba2db4" KeyString="5efb0bc2-03c3-45e0-a20b-dabf71b8cfd1">
+      <Value Key="AdditionalSettings" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="Mark Apps as being templates, so when installing, you must set the name" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Is Template (Decorator)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="8c78dabf-e0ad-4c26-b750-48138ecb8a39" AttributeSetName="SaveEmptyDecorator" EntityGUID="264cdcc6-6f95-4ba4-910b-1111bd41f5cd" KeyString="5efb0bc2-03c3-45e0-a20b-dabf71b8cfd1" />
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="eb2ffb14-b226-4437-b18f-0864eb3644c6" KeyString="5efb0bc2-03c3-45e0-a20b-dabf71b8cfd1">
+      <Value Key="Configuration" Value="9cf17242-8ad5-4a92-b93c-2e1bdde9ead9" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="4c88d78f-5f3e-4b66-95f2-6d63b7858847" AttributeSetName="MetadataForDecorator" EntityGUID="10fd7b99-8178-47b5-9307-317096877d4e" KeyString="5efb0bc2-03c3-45e0-a20b-dabf71b8cfd1">
+      <Value Key="Amount" Value="1" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DeleteWarning" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TargetName" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="TargetType" Value="3" Type="Number">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Metadata for App" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="5f8e3968-e02b-40d5-ab77-f60c2e73d244" AttributeSetName="UiPickerSourceQuery" EntityGUID="4bd91a3d-ea09-4ae5-b984-42d934f072ae">
+      <Value Key="CreateTypes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemInformation" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemLink" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ItemTooltip" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="[Item:Name] ([Item:UserName])" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="MoreFields" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Query" Value="System.Users" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="QueryParameters" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamName" Value="Default" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Get all Users" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Value" Value="Id" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="804274a3-8975-42a9-abd7-06dc970402aa" KeyGuid="4bd91a3d-ea09-4ae5-b984-42d934f072ae">
+      <Value Key="Configuration" Value="36ffa022-cd04-46c5-9634-2252810e0c2a" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="afa379c8-d1a2-4a7b-bfef-8217a3bde6bb">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  // if selection is Permissions, also show the who-may-switch&#xA;  return data.Mode.includes('Permissions?');&#xA;});" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
