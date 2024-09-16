@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.99.00" ExportDate="2024-07-10T14:31:48.0862446+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.00.02" ExportDate="2024-09-16T07:12:39.4869023+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -152,7 +152,7 @@
             <Value Key="Name" Value="Notes" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;Add notes / helpfull comments to aid the editor in adding his information. Note that you have a WYSIWYG for this field, but be carefull to KISS.&lt;/p&gt;&#xA;&lt;p&gt;You can also add helpfull links like &lt;a href=&quot;https://www.2sxc.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.2sxc.org&lt;/a&gt;.&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;Add notes / helpfull comments to aid the editor in adding his information. Note that you have a WYSIWYG for this field, but be careful to KISS.&lt;/p&gt;&#xA;&lt;p&gt;You can also add helpfull links like &lt;a href=&quot;https://www.2sxc.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.2sxc.org&lt;/a&gt;.&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
