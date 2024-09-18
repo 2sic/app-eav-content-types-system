@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.00.02" ExportDate="2024-09-17T22:32:44.1988273+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.00.02" ExportDate="2024-09-18T14:22:13.289342+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -29934,11 +29934,21 @@
       <Value Key="VarShowNotes" Value="" Type="Boolean" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="07958470-13f6-4e7d-b2a2-901517058e2a">
-      <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  // skip if already set&#xA;  if(context.cache.notFirstRun) return data.value;&#xA;  context.cache.notFirstRun = true;&#xA;&#xA;  // new without name - set empty so it's still required&#xA;  if(!data.Name) return '';&#xA;&#xA;  const hasQuery = data.Pipeline.length == 1;&#xA;  const hasList = data.UseForList;&#xA;  const hasContent = data.ContentTypeStaticName != '';&#xA;  const key = (hasContent || hasList ? 'c' : '') + (hasList ? 'l' : '') + (hasQuery ? 'q':'');&#xA;  if(key == '') return '-'; // default to No-Content if not set&#xA;  return key;&#xA;}" Type="String" />
-      <Value Key="Notes" Value="" Type="String" />
-      <Value Key="Target" Value="Field.Value" Type="String" />
-      <Value Key="Title" Value="Value: Initialize based on state" Type="String" />
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  // skip if already set&#xA;  if(context.cache.notFirstRun) return data.value;&#xA;  context.cache.notFirstRun = true;&#xA;&#xA;  // new without name - set empty so it's still required&#xA;  if(!data.Name) return '';&#xA;&#xA;  const hasQuery = data.Pipeline.length == 1;&#xA;  const hasList = data.UseForList;&#xA;  const hasContent = data.ContentTypeStaticName != '';&#xA;  const key = (hasContent || hasList ? 'c' : '') + (hasList ? 'l' : '') + (hasQuery ? 'q':'');&#xA;  if(key == '') return '-'; // default to No-Content if not set&#xA;  return key;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Value" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Value: Initialize based on state" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="5863dd8b-8b02-4386-a52f-d1db6eef1d66">
       <Value Key="AllowEdit" Value="True" Type="Boolean" />
@@ -30256,13 +30266,21 @@
       <Value Key="Title" Value="Setting Visible: Show if needed" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="f670e444-96a8-4a00-b588-70a6f8d879ef">
-      <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="function v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  return !!data.DropdownValues;&#xA;}" Type="String">
+      <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Notes" Value="" Type="String" />
-      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
-      <Value Key="Title" Value="Setting Visible" Type="String" />
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if(context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  return !!data.DropdownValues;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Setting Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="9841f99d-f188-4fb6-b8e0-05890cf288ae">
       <Value Key="Enabled" Value="True" Type="Boolean" />
@@ -30480,11 +30498,21 @@
       <Value Key="Title" Value="Setting Name" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="ae75440d-d7d7-46c9-b405-9508603322ea">
-      <Value Key="Enabled" Value="True" Type="Boolean" />
-      <Value Key="Formula" Value="v1(data, context, exp) {&#xA;  var entities = exp.getEntities();&#xA;  var isTristate = entities.find(a =&gt; a.type.id == '@boolean-tristate');&#xA;  // console.log('found', isTristate);&#xA;  return !!isTristate;&#xA;}" Type="String" />
-      <Value Key="Notes" Value="" Type="String" />
-      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
-      <Value Key="Title" Value="Setting Visible: Tristate only" Type="String" />
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v1(data, context, exp) {&#xA;  var entities = exp.getEntities();&#xA;  var isTristate = entities.find(a =&gt; a.type.guid == '@boolean-tristate');&#xA;  // console.log('found', isTristate);&#xA;  return !!isTristate;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Setting Visible: Tristate only" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="04e7161e-5867-4108-8a6b-aab2bd1778f2">
       <Value Key="Enabled" Value="True" Type="Boolean" />
@@ -32502,13 +32530,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  const empty = 'empty';&#xA;  const len = 30;&#xA;  // Remove HTML in note&#xA;  const noHtml = data.Note.replace(/&lt;\/?[^&gt;]+(&gt;|$)/g, ' ');&#xA;  if (!noHtml || noHtml == ' ') return empty;&#xA;&#xA;  // remove html things like &amp;nbsp;&#xA;  const converterTextArea = context.cache.converter &#xA;    || document.createElement(&quot;textarea&quot;);&#xA;  converterTextArea.innerHTML = noHtml;&#xA;  const cleanText = converterTextArea.value;&#xA;&#xA;  // Trim multiple spaces, created by multiple tags&#xA;  var final = cleanText.replace(/\s+/g, ' ').trim();&#xA;&#xA;  if (!final) return empty;&#xA;&#xA;  if (final.length &gt; len) final = final.substring(0, len) + &quot;...&quot;&#xA;  return final || empty;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  const empty = 'empty';&#xA;  const len = 30;&#xA;  // Remove HTML in note&#xA;  const noHtml = data.Note.replace(/&lt;\/?[^&gt;]+(&gt;|$)/g, ' ');&#xA;  if (!noHtml || noHtml == ' ') return empty;&#xA;&#xA;  // remove html things like &amp;nbsp;&#xA;  const converterTextArea = context.cache.converter &#xA;    || document.createElement(&quot;textarea&quot;);&#xA;  converterTextArea.innerHTML = noHtml;&#xA;  const cleanText = converterTextArea.value;&#xA;&#xA;  // Trim multiple spaces, created by multiple tags&#xA;  var final = cleanText.replace(/\s+/g, ' ').trim();&#xA;&#xA;  if (!final) return empty;&#xA;&#xA;  if (final.length &gt; len) final = final.substring(0, len) + &quot;...&quot;&#xA;  return final || empty;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Value" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Value" Type="String">
+      <Value Key="Title" Value="Value" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32567,13 +32598,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return !data.AspectRatio;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return !data.AspectRatio; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32704,13 +32738,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  var partMsg = function(target, value) {&#xA;    if (value == -1) return target + ' 🚫';&#xA;    return target + ' ' + value + 's';&#xA;  }&#xA;  var msg = '';&#xA;  if (!data.IsEnabled)&#xA;    return '🚫';&#xA;  msg = '✅ - ';&#xA;  msg += partMsg('Users', data.Duration);&#xA;  msg += ', ' + partMsg('Reg', data.DurationUsers);&#xA;  msg += ', ' + partMsg('Editors', data.DurationEditors);&#xA;  msg += ', ' + partMsg('SysAdmins', data.DurationSystemAdmin);&#xA;  return msg;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  var partMsg = function(target, value) {&#xA;    if (value == -1) return target + ' 🚫';&#xA;    return target + ' ' + value + 's';&#xA;  }&#xA;  var msg = '';&#xA;  if (!data.IsEnabled)&#xA;    return '🚫';&#xA;  msg = '✅ - ';&#xA;  msg += partMsg('Users', data.Duration);&#xA;  msg += ', ' + partMsg('Reg', data.DurationUsers);&#xA;  msg += ', ' + partMsg('Editors', data.DurationEditors);&#xA;  msg += ', ' + partMsg('SysAdmins', data.DurationSystemAdmin);&#xA;  return msg;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Value" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Value" Type="String">
+      <Value Key="Title" Value="Value" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32861,13 +32898,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return data.ItemIdentifier == 'Dev' ? 'not relevant for dev-mode configuration' : data.default;&#xA;  // return data.value;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return data.ItemIdentifier == 'Dev'&#xA;? 'not relevant for dev-mode configuration'&#xA;: data.default;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Notes" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Notes" Type="String">
+      <Value Key="Title" Value="Setting Notes" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32875,13 +32915,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return data.ItemIdentifier == 'Dev';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.ItemIdentifier == 'Dev'; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32889,13 +32932,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return !data.Policies &amp;&amp; (context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return !data.Policies &amp;&amp; (context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32903,13 +32949,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return !context.features.isEnabled('ContentSecurityPolicy');&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return !context.features.isEnabled('ContentSecurityPolicy'); }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32917,13 +32966,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return !context.features.isEnabled('ContentSecurityPolicy');&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return !context.features.isEnabled('ContentSecurityPolicy');&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32981,13 +33033,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  // Only show on non-global non-site apps&#xA;  const app = context.app;&#xA;  return context.debug || (!app.isSite &amp;&amp; !app.isGlobal);&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  // Only show on non-global non-site apps&#xA;  const app = context.app;&#xA;  return context.debug || (!app.isSite &amp;&amp; !app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -32995,13 +33050,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  if (context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  // detect if we're on app or site/global&#xA;  const onApp = !(context.app.isSite || context.app.isGlobal);&#xA;  var original = data.default;&#xA;  return onApp &#xA;    ? data.default.replace('Policies (', 'App Policies (') &#xA;    : data.default;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if (context.cache.secondRun) return data.value;&#xA;  context.cache.secondRun = true;&#xA;  // detect if we're on app or site/global&#xA;  const onApp = !(context.app.isSite || context.app.isGlobal);&#xA;  var original = data.default;&#xA;  return onApp &#xA;    ? data.default.replace('Policies (', 'App Policies (') &#xA;    : data.default;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Name" Type="String">
+      <Value Key="Title" Value="Setting Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33009,13 +33067,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  const app = context.app;&#xA;  return !(app.isSite || app.isGlobal);&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  const app = context.app;&#xA;  return !(app.isSite || app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33023,13 +33084,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  // in dev mode, we&#xA;  if (context.debug) return false;&#xA;  return !(context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  // in dev mode, we&#xA;  if (context.debug) return false;&#xA;  return !(context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Disabled" Type="String">
+      <Value Key="Title" Value="Setting Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33054,13 +33118,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v1 (data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33271,13 +33338,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  if (data.value === '{}') {&#xA;    return `{&#xA;  &quot;$schema&quot;: &quot;https://schemas.2sxc.org/image-resize/v13/index.json&quot;,&#xA;  &quot;recipe&quot;: {&#xA;    &quot;name&quot;: &quot;default&quot;,&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xA;    &quot;setWidth&quot;: false,&#xA;    &quot;attributes&quot;: {&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xA;    }&#xA;  }&#xA;}`;&#xA;  }&#xA;  return data.value;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  if (data.value === '{}') {&#xA;    return `{&#xA;  &quot;$schema&quot;: &quot;https://schemas.2sxc.org/image-resize/v13/index.json&quot;,&#xA;  &quot;recipe&quot;: {&#xA;    &quot;name&quot;: &quot;default&quot;,&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xA;    &quot;setWidth&quot;: false,&#xA;    &quot;attributes&quot;: {&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xA;    }&#xA;  }&#xA;}`;&#xA;  }&#xA;  return data.value;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Value" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Value" Type="String">
+      <Value Key="Title" Value="Value" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33299,13 +33369,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  const icon = data.Icon.toLowerCase();&#xA;  if (icon.indexOf('[app:path]/') == 0)&#xA;    return data.default + ' 👍🏽 [App:Path]/... is the best option';&#xA;  if (icon.indexOf('file:') == 0)&#xA;    return data.default + &quot; ⚠️ using 'file:...' is not ideal, see docs link in description below&quot;;&#xA;  return data.default;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  const icon = data.Icon.toLowerCase();&#xA;  if (icon.indexOf('[app:path]/') == 0)&#xA;    return data.default + ' 👍🏽 [App:Path]/... is the best option';&#xA;  if (icon.indexOf('file:') == 0)&#xA;    return data.default + &quot; ⚠️ using 'file:...' is not ideal, see docs link in description below&quot;;&#xA;  return data.default;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Name" Type="String">
+      <Value Key="Title" Value="Setting Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33313,13 +33386,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  const icon = data.Icon.toLowerCase();&#xA;  if (icon.indexOf('[app:path]/') == 0)&#xA;    return data.default + ' 👍🏽 [App:Path]/... is the best option';&#xA;  if (icon.indexOf('file:') == 0)&#xA;    return data.default + &quot; ⚠️ using 'file:...' is not ideal, see docs link in description below&quot;;&#xA;  return data.default;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  const icon = data.Icon.toLowerCase();&#xA;  if (icon.indexOf('[app:path]/') == 0)&#xA;    return data.default + ' 👍🏽 [App:Path]/... is the best option';&#xA;  if (icon.indexOf('file:') == 0)&#xA;    return data.default + &quot; ⚠️ using 'file:...' is not ideal, see docs link in description below&quot;;&#xA;  return data.default;&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Name" Type="String">
+      <Value Key="Title" Value="Setting Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33384,13 +33460,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.Target !== '';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.Target !== ''; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33398,13 +33477,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.Target === 'guid';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.Target === 'guid'; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33412,13 +33494,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.Target === 'url';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.Target === 'url'; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33457,13 +33542,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.WysiwygMode === 'enhanced';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.WysiwygMode === 'enhanced'; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33599,13 +33687,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return !context.features.isEnabled('EditUiGpsCustomDefaults');&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return !context.features.isEnabled('EditUiGpsCustomDefaults');&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Disabled" Type="String">
+      <Value Key="Title" Value="Setting Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33613,13 +33704,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return !data.DisableTranslation;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return !data.DisableTranslation; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33627,13 +33721,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return context.debug; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33641,13 +33738,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return context.debug; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33655,13 +33755,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return context.debug; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33669,13 +33772,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return context.app.isGlobal;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return context.app.isGlobal; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33683,13 +33789,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return context.app.isSite;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return context.app.isSite; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33697,13 +33806,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return !(context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return !(context.app.isSite || context.app.isGlobal);&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33711,13 +33823,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return !context.features.isEnabled('AppAutoInstallerConfigurable');&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return !context.features.isEnabled('AppAutoInstallerConfigurable');&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -33898,13 +34013,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return !context.features.isEnabled('DataExportImportBundles');&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return !context.features.isEnabled('DataExportImportBundles');&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34260,13 +34378,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.CustomConfiguration;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.CustomConfiguration; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34274,13 +34395,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return context.debug; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34351,13 +34475,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return context.debug;&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return context.debug; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34616,13 +34743,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return !context.debug;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return !context.debug; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Disabled" Type="String">
+      <Value Key="Title" Value="Setting Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34664,13 +34794,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return context.debug;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return context.debug; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34692,13 +34825,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return context.debug;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return context.debug; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34706,13 +34842,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return context.debug;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return context.debug; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34720,13 +34859,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return data.PreferredSources.indexOf('custom') &gt; -1;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return data.PreferredSources.indexOf('custom') &gt; -1; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34734,13 +34876,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  const hasCdn = data.CdnSourceEdit || data.CdnSourcePublic;&#xA;  if (!hasCdn) return false;&#xA;  // show the warning if any of the features are not enabled&#xA;  const f = context.features;&#xA;  if (!f.isEnabled('CdnSourceEdit') || !f.isEnabled('CdnSourcePublic'))&#xA;    return true;&#xA;  return false;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const hasCdn = data.CdnSourceEdit || data.CdnSourcePublic;&#xA;  if (!hasCdn) return false;&#xA;  // show the warning if any of the features are not enabled&#xA;  const f = context.features;&#xA;  if (!f.isEnabled('CdnSourceEdit') || !f.isEnabled('CdnSourcePublic'))&#xA;    return true;&#xA;  return false;&#xA;});" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34894,13 +35039,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://go.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  const detailsBlank = data.DescriptionExtended == '';&#xA;  return !detailsBlank || data.AddDescriptionDetailed;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const detailsBlank = data.DescriptionExtended == '';&#xA;  return !detailsBlank || data.AddDescriptionDetailed;&#xA;});" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34925,13 +35073,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://go.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return !!data.parameters?.showWarningGlobalFile;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return !!data.parameters?.showWarningGlobalFile; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34982,13 +35133,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://go.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return !!data.Query &amp;&amp; !!data.StreamName;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return !!data.Query &amp;&amp; !!data.StreamName; });" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -36461,13 +36615,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://go.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  const has = !!data.CachingUrlParameters;&#xA;  return data.default + (has ? ' ⌛' : '');&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const has = !!data.CachingUrlParameters;&#xA;  return data.default + (has ? ' ⌛' : '');&#xA;});" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Name" Type="String">
+      <Value Key="Title" Value="Setting Name" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
