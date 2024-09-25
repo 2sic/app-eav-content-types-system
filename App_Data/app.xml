@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.00.02" ExportDate="2024-09-23T09:34:37.1756482+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.01.01" ExportDate="2024-09-25T13:18:18.4312814+02:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -3380,6 +3380,27 @@
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f734f8bf-be9d-4e34-abad-9b44d29b445d" KeyNumber="35223">
             <Value Key="InputType" Value="boolean-default" Type="String" />
             <Value Key="Name" Value="EnableTextEntry" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupDisplay" Type="Empty" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;7c7c7fe3-57be-4d2f-9767-a0f3e3944bf1&quot;}">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="85157c35-65aa-4cda-abc5-6b9bcf03a524" KeyNumber="35421">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="GroupDisplay" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="PickerDisplayMode" Type="String" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;16057c04-0f49-4bd2-96e7-97d13bf3f8f5&quot;}">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cf8b519a-bcc8-4d9d-a8fb-c38e3f03cf49" KeyNumber="35422">
+            <Value Key="InputType" Value="string-picker" Type="String" />
+            <Value Key="Name" Value="PickerDisplayMode" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="PickerDisplayConfiguration" Type="Entity" IsTitle="false" SysSettings="{&quot;InheritMetadataOf&quot;:&quot;879356b3-0579-4fa1-b973-95c1b543c9db&quot;}">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cf73de72-6d93-430c-91ee-3c498be89aaa" KeyNumber="35423">
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="PickerDisplayConfiguration" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
@@ -30373,7 +30394,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="17.10.00" Type="String">
+      <Value Key="Version" Value="18.02.00" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -36980,7 +37001,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const typeName = context.target.entity.type.name;&#xA;  // For custom list, it can always be visible&#xA;  if (typeName == &quot;UiPickerSourceCustomList&quot;) {&#xA;    // console.log('custom list - show by default');&#xA;    return true;&#xA;  }&#xA;&#xA;  // For Entity Picker&#xA;  if (typeName == &quot;UiPickerSourceEntity&quot;) {&#xA;    // console.log('entity source');&#xA;    return data.ContentTypeNames.length &gt; 0;&#xA;  }&#xA;&#xA;  if (typeName == &quot;UiPickerSourceQuery&quot;) {&#xA;    // console.log('2dm query source');&#xA;    return data.Query.length &gt; 0;&#xA;  }&#xA;&#xA;  console.warn('formula for GroupItemHelp is running on an unexpected type: ' + typeName);&#xA;  // console.log('2dm data', data, context);&#xA;  return data.value;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const typeName = context.target.entity.type.name;&#xA;  // For custom list, it can always be visible&#xA;  if (typeName == &quot;UiPickerSourceCustomList&quot; || typeName == &quot;UiPickerSourceCustomCsv&quot;) {&#xA;    // console.log('custom list - show by default');&#xA;    return true;&#xA;  }&#xA;&#xA;  // For Entity Picker&#xA;  if (typeName == &quot;UiPickerSourceEntity&quot;) {&#xA;    // console.log('entity source');&#xA;    return data.ContentTypeNames.length &gt; 0;&#xA;  }&#xA;&#xA;  if (typeName == &quot;UiPickerSourceQuery&quot;) {&#xA;    // console.log('2dm query source');&#xA;    return data.Query.length &gt; 0;&#xA;  }&#xA;&#xA;  console.warn('formula for GroupItemHelp is running on an unexpected type: ' + typeName);&#xA;  // console.log('2dm data', data, context);&#xA;  return data.value;&#xA;});" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Notes" Value="" Type="String">
@@ -37952,7 +37973,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v2((data, context, item) =&gt; {&#xA;  console.warn('2dm in picker displaymode')&#xA;  const options = data.optionsRaw.map(o =&gt; ({&#xA;    ...o,&#xA;    noSelect: o.entity?.Disabled ?? false,&#xA;  }))&#xA;  return {&#xA;    options: options,&#xA;  };&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const options = data.optionsRaw.map(o =&gt; ({&#xA;    ...o,&#xA;    noSelect: o.entity?.Disabled ?? false,&#xA;  }))&#xA;  return {&#xA;    options: options,&#xA;  };&#xA;});" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Options" Type="String">
