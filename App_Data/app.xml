@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.01.01" ExportDate="2024-10-09T07:32:10.3106441+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="19.02.00" ExportDate="2025-01-17T14:16:49.6336809+01:00">
   <Header>
     <App Guid="35da6ff4-6936-4d03-9823-f225c396fce2" />
     <Language Default="en-us" />
@@ -1667,6 +1667,7 @@
             <Value Key="EnableExperimental" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+            <Value Key="Formulas" Value="27ffdc8c-2054-4ec0-a4f6-14517d27b71c" Type="Entity" />
             <Value Key="InputType" Value="empty-default" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1676,7 +1677,7 @@
             <Value Key="Name" Value="Experimental / Beta Features" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;These features are not final, so you should only use them with caution and the way they are configured may still change.&amp;nbsp;&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;These features are not final, so you should only use them with caution and the way they are configured may still change.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;We recommend that you use the entity-picker and that prefill instead.&amp;nbsp;&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -15906,7 +15907,7 @@
             <Value Key="Name" Value="Lightbox / PopUp Einstellungen" Type="String">
               <Dimension DimensionID="183" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;For help, see&amp;nbsp;&lt;a href=&quot;https://go.2sxc.org/image-lightbox&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -21427,7 +21428,7 @@
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="\n" Type="String">
+            <Value Key="DefaultValue" Value="," Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
@@ -21576,7 +21577,7 @@
             <Value Key="IsEphemeral" Value="" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="Multi-Select Maxmum Amount Allowed" Type="String">
+            <Value Key="Name" Value="Multi-Select Maximum Amount Allowed" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Notes" Value="&lt;p&gt;When allowing multiple, max amount to allow.&lt;/p&gt;" Type="String">
@@ -25897,7 +25898,7 @@
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="Name" Type="String">
+            <Value Key="DefaultValue" Value="FullName" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
@@ -25988,7 +25989,7 @@
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="Name" Type="String">
+            <Value Key="DefaultValue" Value="FullName" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
@@ -26111,7 +26112,7 @@
             <Value Key="Name" Value="Preview Value (to be used in the special preview)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;We recommend the Url as it's the most likely option to work, but you can also use placeholders to create your own path to the preview.&amp;nbsp;&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -29327,6 +29328,9 @@
             <Value Key="DefaultValue" Value="json" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+            <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
             <Value Key="Disabled" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -29373,7 +29377,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b74b6a5a-3084-406e-a1e7-21b6a533fbcc" KeyNumber="32141">
-            <Value Key="DropdownValues" Value="json:JSON&#xA;json-zip:Zipped JSON" Type="String">
+            <Value Key="DropdownValues" Value="json:JSON&#xA;json-zip:Zipped JSON (not supported yet)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
@@ -29451,7 +29455,7 @@
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="false" Type="String">
+            <Value Key="DefaultValue" Value="true" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DisableAutoTranslation" Value="" Type="Boolean">
@@ -30201,7 +30205,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="18.02.00" Type="String">
+      <Value Key="Version" Value="19.01.00" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -34136,7 +34140,7 @@
       </Value>
     </Entity>
     <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="4c88d78f-5f3e-4b66-95f2-6d63b7858847" AttributeSetName="MetadataForDecorator" EntityGUID="8eb1bb44-b148-43aa-a758-537a5f0fc2d1" KeyString="32698880-1c2e-41ab-bcfc-420091d3263f">
-      <Value Key="Amount" Value="1" Type="Number">
+      <Value Key="Amount" Value="100" Type="Number">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DeleteWarning" Value="" Type="String">
@@ -35911,7 +35915,7 @@
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Item (Entity) Picker (BETA v17)" Type="String">
+      <Value Key="Label" Value="Data Picker for Entity Field" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
@@ -35940,7 +35944,7 @@
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Number Picker (BETA v17)" Type="String">
+      <Value Key="Label" Value="Data Picker for Number Field" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
@@ -35969,7 +35973,7 @@
       <Value Key="Icon" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="String Picker (BETA v17)" Type="String">
+      <Value Key="Label" Value="Data Picker for Text/String Field" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Link" Value="" Type="Hyperlink">
@@ -36317,13 +36321,13 @@
       <Value Key="ConfigTypes" Value="@All,@string-picker" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Description" Value="String Picker Field (BETA)" Type="String">
+      <Value Key="Description" Value="Data Picker for Text/String Field (new v19)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DisableI18n" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="String Picker (BETA v17)" Type="String">
+      <Value Key="Label" Value="Data Picker String (new v19)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Type" Value="@string-picker" Type="String">
@@ -36635,13 +36639,13 @@
       <Value Key="ConfigTypes" Value="@All,@entity-picker" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Description" Value="Item (Entity) Picker (BETA)" Type="String">
+      <Value Key="Description" Value="Item Picker for Entities (new v19)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DisableI18n" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Item (Entity) Picker (BETA v17)" Type="String">
+      <Value Key="Label" Value="Data Picker Entity (new v19)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Type" Value="@entity-picker" Type="String">
@@ -36800,7 +36804,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const typeName = context.target.entity.type.name;&#xA;  // For custom list, it can always be visible&#xA;  if (typeName == &quot;UiPickerSourceCustomList&quot; || typeName == &quot;UiPickerSourceCustomCsv&quot;) {&#xA;    // console.log('custom list - show by default');&#xA;    return true;&#xA;  }&#xA;&#xA;  // For Entity Picker&#xA;  if (typeName == &quot;UiPickerSourceEntity&quot;) {&#xA;    // console.log('entity source');&#xA;    return data.ContentTypeNames.length &gt; 0;&#xA;  }&#xA;&#xA;  if (typeName == &quot;UiPickerSourceQuery&quot;) {&#xA;    // console.log('2dm query source');&#xA;    return data.Query.length &gt; 0;&#xA;  }&#xA;&#xA;  console.warn('formula for GroupItemHelp is running on an unexpected type: ' + typeName);&#xA;  // console.log('2dm data', data, context);&#xA;  return data.value;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const typeName = context.target.entity.type.name;&#xA;  // For custom list, it can always be visible&#xA;  if (typeName == 'UiPickerSourceCustomList'&#xA;    || typeName == 'UiPickerSourceCustomCsv'&#xA;    || typeName == 'UiPickerSourceAppAssets'&#xA;  ) {&#xA;    return true;&#xA;  }&#xA;&#xA;  // For Entity Picker&#xA;  if (typeName == &quot;UiPickerSourceEntity&quot;) {&#xA;    return data.ContentTypeNames.length &gt; 0;&#xA;  }&#xA;&#xA;  if (typeName == &quot;UiPickerSourceQuery&quot;) {&#xA;    return data.Query.length &gt; 0;&#xA;  }&#xA;&#xA;  // Warn on unknown type, as it can't determine how to set visibility&#xA;  console.warn('formula for GroupItemHelp is running on an unexpected type, so it is not clear when to show/hide: ' + typeName);&#xA;  // console.log('2dm data', data, context);&#xA;  return data.value;&#xA;});" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Notes" Value="" Type="String">
@@ -37019,13 +37023,13 @@
       <Value Key="ConfigTypes" Value="@All,@number-picker" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Description" Value="Number Picker (BETA)" Type="String">
+      <Value Key="Description" Value="Data Picker Number (new v19)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DisableI18n" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Label" Value="Number Picker (BETA v17)" Type="String">
+      <Value Key="Label" Value="Data Picker Number (new v19)" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Type" Value="@number-picker" Type="String">
@@ -37262,7 +37266,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// if parameters has a forView then take that, otherwise default to false&#xA;v2((data, context) =&gt; {&#xA;  console.log('debug 2dm lightspeed', data.parameters, data);&#xA;  return { &#xA;    value: data.parameters.forView == 'true', // defaults to false&#xA;    stop: true,&#xA;  }&#xA;});" Type="String">
+      <Value Key="Formula" Value="// if parameters has a forView then take that, otherwise default to false&#xA;v2((data, context) =&gt; {&#xA;  return { &#xA;    value: data.parameters.forView == 'true', // defaults to false&#xA;    stop: true,&#xA;  }&#xA;});" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
@@ -37700,7 +37704,7 @@
       <Value Key="Configuration" Value="ca0051d4-0c30-4fee-b0b7-6c6136674941" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a96ad21-027d-4679-8372-c39406ad1d11" AttributeSetName="UiPickerSourceCustomCsv" EntityGUID="b09500f5-0a16-4347-97d4-505bac83d0fc">
-      <Value Key="Csv" Value="Value,Title,Info,Disabled&#xA;list,&quot;Default&quot;,&quot;Dropdown with search and dialog when more need to be selected.&quot;,false&#xA;&#xA;auto-inline,&quot;Inline Auto WIP&quot;,&quot;Inline - automatically showing checkboxes or radio buttons, depending on the amount of items you can select&quot;,true&#xA;radio,&quot;Inline Radio Buttons WIP&quot;,&quot;Inline radio button selection for single-item choices&quot;,true&#xA;checkbox,&quot;Inline Checkboxes WIP&quot;,&quot;Inline checkbox list for multiple item selection&quot;,true&#xA;&#xA;tree,&quot;Tree structure - requires more configuration (BETA, doesn't work yet)&quot;,,true" Type="String">
+      <Value Key="Csv" Value="Value,Title,Info,Disabled,Rules&#xA;list,&quot;Default&quot;,&quot;Dropdown with search. Opens dialog when more need to be selected.&quot;,false&#xA;&#xA;auto-inline,&quot;Auto Radio/Checkbox&quot;,&quot;Inline - automatically showing checkboxes or radio buttons, depending on the amount of items you can select&quot;,false,&quot;warn-req=feature:PickerUiRadio;warn-req=feature:PickerUiCheckbox&quot;&#xA;radio,&quot;Inline Radio Buttons&quot;,&quot;Inline radio button selection for single-item choices&quot;,false,&quot;warn-req=feature:PickerUiRadio&quot;&#xA;checkbox,&quot;Inline Checkboxes&quot;,&quot;Inline checkbox list for multiple item selection&quot;,false,&quot;warn-req=feature:PickerUiCheckbox&quot;&#xA;&#xA;tree,&quot;Tree structure (BETA)&quot;,&quot;Requires more configuration (BETA, doesn't work yet)&quot;,true" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Description" Value="" Type="String">
@@ -37712,7 +37716,13 @@
       <Value Key="ItemLink" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ItemTooltip" Value="&lt;p&gt;[Item:Info]&lt;/p&gt;" Type="String">
+      <Value Key="ItemTooltip" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PreviewType" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PreviewValue" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Title" Value="Picker Shared - DisplayMode" Type="String">
@@ -37772,7 +37782,7 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  const options = data.optionsRaw.map(o =&gt; ({&#xA;    ...o,&#xA;    noSelect: o.entity?.Disabled ?? false,&#xA;  }))&#xA;  return {&#xA;    options: options,&#xA;  };&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  let temp = 0;&#xA;  const options = data.optionsRaw.map(o =&gt; ({&#xA;    ...o,&#xA;    noSelect: o.data?.Disabled ?? false,&#xA;    // conditions: (++temp % 2) ? `warn=feature:PickerUiRadio` : null,&#xA;  }))&#xA;  console.log(options);&#xA;  return {&#xA;    options: options,&#xA;  };&#xA;});" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Options" Type="String">
@@ -37942,7 +37952,7 @@
       <Value Key="ItemLink" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ItemTooltip" Value="" Type="String">
+      <Value Key="ItemTooltip" Value="&lt;p&gt;[Item:Description]&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Title" Type="String">
@@ -38157,19 +38167,19 @@
       <Value Key="Configuration" Value="9cf17242-8ad5-4a92-b93c-2e1bdde9ead9" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a96ad21-027d-4679-8372-c39406ad1d11" AttributeSetName="UiPickerSourceCustomCsv" EntityGUID="c37e1472-d258-4ce4-8733-d801a049f574">
-      <Value Key="Csv" Value="Value,Title,Info&#xA;,&quot;Not configured (default)&quot;,&quot;No special preview, or use the preview-setting from the source - this is the default for normal values&quot;&#xA;icon-css,&quot;Icon from Font in CSS&quot;,&quot;Show the value as an icon from an icon-font such as fontawesome, which is specified in the CSS - usually applied as a class.&quot;&#xA;icon-symbol,&quot;Icon symbols from Font&quot;,&quot;Symbol icons use a text-name to specify that they should show&quot;&#xA;svg,&quot;SVG preview&quot;,&quot;Show an SVG file - typically an icon&quot;&#xA;text-css,&quot;Text formatted by CSS&quot;,&quot;Show some text to see how the text-formatting changes&quot;&#xA;image,&quot;Image&quot;,&quot;Show an image which is specified by the data&quot;" Type="String">
+      <Value Key="Csv" Value="Value,Title,Info&#xA;,&quot;Not configured (default)&quot;,&quot;No special preview, or use the preview-setting from the source - this is the default for normal values&quot;&#xA;icon-css,&quot;Icon from Font in CSS&quot;,&quot;Show the value as an icon from an icon-font such as fontawesome, which is specified in the CSS - usually applied as a class.&quot;&#xA;icon-material,&quot;Icon Material (using font-symbols)&quot;,&quot;Symbol icons use a text-name to specify that they should show&quot;&#xA;svg,&quot;SVG preview&quot;,&quot;Show an SVG file - typically an icon&quot;&#xA;text-css,&quot;Text formatted by CSS&quot;,&quot;Show some text to see how the text-formatting changes&quot;&#xA;image,&quot;Image&quot;,&quot;Show an image like png/jpg etc. which is specified by the data&quot;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Description" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ItemInformation" Value="" Type="String">
+      <Value Key="ItemInformation" Value="&lt;p&gt;[Item:Info]&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="ItemLink" Value="" Type="Hyperlink">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ItemTooltip" Value="&lt;p&gt;[Item:Info]&lt;/p&gt;" Type="String">
+      <Value Key="ItemTooltip" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="PreviewType" Value="" Type="String">
@@ -38213,7 +38223,7 @@
       <Value Key="QueryParameters" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="StreamName" Value="Default" Type="String">
+      <Value Key="StreamName" Value="Folders" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Title" Value="AppAssets - App Folders" Type="String">
@@ -38314,7 +38324,7 @@
       <Value Key="ItemTooltip" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="PreviewType" Value="icon-symbol" Type="String">
+      <Value Key="PreviewType" Value="icon-material" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="PreviewValue" Value="[Item:Icon]" Type="String">
@@ -38357,7 +38367,7 @@
       <Value Key="Description" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="ItemInformation" Value="" Type="String">
+      <Value Key="ItemInformation" Value="&lt;p&gt;[Item:Description]&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="ItemLink" Value="" Type="Hyperlink">
@@ -38433,6 +38443,35 @@
     </Entity>
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="9f23ddcd-b9da-4979-aeff-98c27d8808f5" KeyGuid="a617f624-315d-41dc-b433-faf7924f64f1">
       <Value Key="Configuration" Value="ab72c1ff-f0c6-4d22-bada-75e0168736dc" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="27ffdc8c-2054-4ec0-a4f6-14517d27b71c">
+      <Value Key="Enabled" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Formula" Value="v2((data, context) =&gt; {&#xA;  return context.debug;&#xA;});" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Target" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="c740085a-d548-41f3-8d06-0a48b8692345" AttributeSetName="IsRecommendedDecorator" EntityGUID="fe3b9d97-1076-4860-ad7f-7c80008428e7" KeyString="6fa7f390-7612-40c6-baff-2bcf6140a85f">
+      <Value Key="Message" Value="new v19" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="c740085a-d548-41f3-8d06-0a48b8692345" AttributeSetName="IsRecommendedDecorator" EntityGUID="1bdf0ff1-be37-40e1-b9c3-f3b4d6c062d9" KeyString="2421dded-3aeb-47d2-ab9d-e2b72a2d821d">
+      <Value Key="Message" Value="new v19" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="c740085a-d548-41f3-8d06-0a48b8692345" AttributeSetName="IsRecommendedDecorator" EntityGUID="dce429d6-5813-435d-b46c-fb6d2ca6902d" KeyString="e64dd20e-0055-4410-87a1-1238fe44707f">
+      <Value Key="Message" Value="new v19" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
   </Entities>
   <PortalFiles>
